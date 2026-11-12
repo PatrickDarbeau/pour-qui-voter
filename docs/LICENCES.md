@@ -1,7 +1,7 @@
 # Note — Licence et responsabilité
 
 *Note de travail du 12/11/2026. Orientation, pas un avis juridique : à faire vérifier en cas de doute.*
-**Décision : en attente** (à prendre avant de rendre le dépôt public, vers le 08/01/2027).
+**Décision du 12/11/2026 : code sous EUPL 1.2, données sous CC BY-SA 4.0.** Mise en place : fichiers `LICENCE`, `LICENCE-DONNEES`, `MENTIONS-LEGALES.md`, page « Mentions légales » de l'application, champ `licence` des packs.
 
 ---
 

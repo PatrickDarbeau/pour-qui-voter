@@ -179,7 +179,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |Sujet|État|À faire avant de lancer|Référence|
 |-|-|-|-|
 |**Dons**|Reporté (décision du 12/11/2026)|☐ Vérifier les frais réels de chaque plateforme retenue<br>☐ Vérifier le régime fiscal des dons reçus par un particulier (impots.gouv.fr)<br>☐ Vérifier l'absence de risque au regard du droit électoral ; en cas de doute, demander un avis à la CNCCFP<br>☐ Choisir les plateformes, créer les comptes, transmettre les liens|[DONS.md](DONS.md)|
-|**Dépôt public, licence et responsabilité**|Décision en attente (avant le 08/01/2027)|☐ Choisir les licences : EUPL 1.2 ou MIT (code), CC BY-SA 4.0 ou CC BY 4.0 (données)<br>☐ Mentions légales, limitation de responsabilité, politique de confidentialité<br>☐ Vérifier qu'aucun fichier personnel n'est présent|[LICENCES.md](LICENCES.md)|
+|**Dépôt public, licence et responsabilité**|Licences choisies le 12/11/2026 ; passage en public vers le 08/01/2027|☑ Licences : EUPL 1.2 (code), CC BY-SA 4.0 (données)<br>☑ Mentions légales, limitation de responsabilité, politique de confidentialité<br>☐ Mentions légales : compléter l'éditeur (nom ou anonymat déclaré à l'hébergeur) et vérifier l'adresse de l'hébergeur<br>☐ Vérifier qu'aucun fichier personnel n'est présent|[LICENCES.md](LICENCES.md), [MENTIONS-LEGALES.md](../MENTIONS-LEGALES.md)|
 |**Dates légales de la campagne**|À vérifier|☐ Date limite d'inscription sur les listes électorales 2027<br>☐ Début exact de la réserve électorale|[CAMPAGNE.md](promotion/CAMPAGNE.md)|
 
 

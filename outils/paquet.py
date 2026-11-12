@@ -18,7 +18,7 @@ RACINE = Path(__file__).resolve().parent.parent
 DIST = RACINE / "dist"
 DOSSIER = "pour-qui-voter"  # dossier racine dans l'archive
 
-FICHIERS = ["index.html", "data/donnees.js", "data/donnees.json"]
+FICHIERS = ["index.html", "data/donnees.js", "data/donnees.json", "LICENCE", "LICENCE-DONNEES", "MENTIONS-LEGALES.md"]
 DOSSIERS = ["assets"]
 
 LISEZMOI = """POUR QUI VOTER ? — Présidentielle 2027
@@ -49,6 +49,13 @@ l'application : Édition > Import / export > Importer un pack.
 Avant d'importer, vous pouvez vérifier que le fichier n'a pas été modifié :
 l'empreinte SHA-256 affichée par l'application doit être identique à celle
 publiée à côté du pack.
+
+LICENCES
+--------
+Code : Licence publique de l'Union européenne EUPL 1.2 (fichier LICENCE).
+Données : Creative Commons BY-SA 4.0 (fichier LICENCE-DONNEES).
+Mentions légales, limitation de responsabilité et confidentialité :
+fichier MENTIONS-LEGALES.md, ou page « Mentions légales » de l'application.
 
 AVERTISSEMENT
 -------------

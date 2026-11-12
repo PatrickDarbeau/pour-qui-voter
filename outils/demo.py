@@ -99,6 +99,7 @@ def main():
         "origine": "officiel",
         "demo": True,
         "auteur": "Jeu de démonstration — candidats fictifs",
+        "licence": "CC BY-SA 4.0", "source_projet": "https://github.com/PatrickDarbeau/pour-qui-voter",
         "elections": {"tour1": "2027-04-18", "tour2": "2027-05-02"},
         "themes": themes, "mesures": mesures,
         "candidats": candidats, "positions": positions,

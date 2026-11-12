@@ -478,6 +478,51 @@
       ${boutonsBasDePage()}`;
   }
 
+  function vueMentions() {
+    const lien = (u, t) => (u ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(t || u)}</a>` : "");
+    return `
+      <span class="surtitre">Informations</span>
+      <h1>Mentions légales</h1>
+
+      <h2>Statut de l'outil</h2>
+      <p>« Pour qui voter ? » <strong>n'est pas un outil officiel</strong>. C'est un projet indépendant et bénévole, édité par un particulier.
+        Il n'est lié ni à l'État, ni à une administration, ni à un candidat, ni à un parti, et n'accepte aucun financement de leur part.</p>
+      <p>Contact et signalement d'erreurs : ${lien(CONFIG.signalement, "tickets du dépôt du projet")}.</p>
+      ${EN_LIGNE ? `<p>Hébergement de la démo en ligne : GitHub, Inc., San Francisco, États-Unis (${lien("https://github.com", "github.com")}).</p>` : ""}
+
+      <h2>Limitation de responsabilité</h2>
+      <ul class="liste">
+        <li>L'outil est une <strong>aide à la réflexion</strong>, fournie à titre informatif. Le résultat <strong>n'est pas une consigne de vote</strong>
+          et ne remplace pas la lecture des programmes officiels.</li>
+        <li>Les positions sont établies à partir de sources publiques, citées pour chaque position. Elles <strong>peuvent contenir des erreurs,
+          être incomplètes ou devenir obsolètes</strong>.</li>
+        <li>Le choix des mesures et la <a href="#/methode">méthode de calcul</a> comportent nécessairement une part de simplification.</li>
+        <li><strong>Aucune garantie</strong> d'exactitude, d'exhaustivité ou d'actualité n'est donnée. Vous restez <strong>seul responsable de votre vote</strong>.</li>
+        <li>Dans les limites permises par la loi, l'éditeur et les contributeurs ne sauraient être tenus responsables des conséquences de l'utilisation de l'outil.</li>
+        <li>Les données modifiées ou importées dans le mode Édition, ou diffusées par des tiers, relèvent de la responsabilité de leurs auteurs.</li>
+      </ul>
+
+      <h2>Confidentialité</h2>
+      <ul class="liste">
+        <li>L'outil <strong>ne collecte aucune donnée personnelle</strong> : ni compte, ni cookie, ni traceur, ni mesure d'audience, ni publicité.</li>
+        <li>Vos réponses sont enregistrées <strong>uniquement dans votre navigateur</strong>, pour reprendre plus tard. Elles ne sont jamais transmises.
+          Effacez-les avec « Recommencer à zéro » ou en effaçant les données du site dans votre navigateur.</li>
+        <li>Le lien de partage contient vos réponses dans l'adresse : ne le transmettez qu'à des personnes de confiance.</li>
+        <li>Les liens « source » mènent vers des sites tiers, soumis à leurs propres règles.</li>
+        ${EN_LIGNE ? "<li>Démo en ligne : l'hébergeur peut enregistrer des données techniques de connexion selon sa propre politique ; l'éditeur n'y a pas accès. Pour une confidentialité totale, utilisez la version téléchargée.</li>" : ""}
+      </ul>
+
+      <h2>Licences</h2>
+      <ul class="liste">
+        <li><strong>Code</strong> : Licence publique de l'Union européenne <strong>EUPL 1.2</strong> (fichier <code>LICENCE</code>).</li>
+        <li><strong>Données</strong> (mesures, positions, fiches) : <strong>Creative Commons BY-SA 4.0</strong> (fichier <code>LICENCE-DONNEES</code>).
+          Réutilisation libre en citant « Pour qui voter ? » et en partageant dans les mêmes conditions.</li>
+        <li>Les courtes citations des programmes restent la propriété de leurs auteurs et sont reproduites au titre du droit de courte citation, avec leur source.</li>
+      </ul>
+      <p class="doux">Code source : ${lien(CONFIG.depot)} · Données : version ${esc(D.version)}${D.licence ? ` (${esc(D.licence)})` : ""}</p>
+      ${boutonsBasDePage()}`;
+  }
+
   // Boutons de fin des pages d'information (Aide, Méthode) : Retour, résultats, questionnaire
   function boutonsBasDePage() {
     const n = nbRepondues();
@@ -523,7 +568,7 @@
     if (!EN_LIGNE && window.Edition && window.Edition.modifie()) { location.reload(); return; }
     const vues = {
       "": vueAccueil, priorites: vuePriorites, questionnaire: () => vueQuestionnaire(param),
-      resultats: () => vueResultats(param), candidats: vueCandidats, candidat: () => vueCandidat(param), methode: vueMethode, aide: vueAide, partage: () => vuePartage(param),
+      resultats: () => vueResultats(param), candidats: vueCandidats, candidat: () => vueCandidat(param), methode: vueMethode, aide: vueAide, mentions: vueMentions, partage: () => vuePartage(param),
     };
     app.innerHTML = (vues[route] || vueAccueil)();
     annoncerPage();
@@ -561,7 +606,7 @@
       etats.forEach(([d, o]) => (d.open = o));
     } else if (el.dataset.action === "retour") {
       // Revient à la page précédente de l'application, sinon à l'accueil
-      location.hash = pagePrecedente && !/^#\/(aide|methode)/.test(pagePrecedente) ? pagePrecedente : "#/";
+      location.hash = pagePrecedente && !/^#\/(aide|methode|mentions)/.test(pagePrecedente) ? pagePrecedente : "#/";
     } else if (el.dataset.action === "partager") {
       afficherPartage();
     } else if (el.dataset.action === "copier-partage") {
@@ -701,7 +746,7 @@
   let pagePrecedente = null; // pour le bouton « Retour » de la page d'aide
   window.addEventListener("hashchange", (e) => {
     const ancien = "#" + (e.oldURL.split("#")[1] || "/");
-    if (!/^#\/(aide|methode)/.test(ancien)) pagePrecedente = ancien;
+    if (!/^#\/(aide|methode|mentions)/.test(ancien)) pagePrecedente = ancien;
     rendre();
   });
   avertissement();

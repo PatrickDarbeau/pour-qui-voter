@@ -211,6 +211,8 @@ def cmd_publier(args):
     pack["version"] = args.version
     pack["date"] = date.today().isoformat()
     pack["origine"] = "officiel"
+    pack.setdefault("licence", "CC BY-SA 4.0")
+    pack.setdefault("source_projet", "https://github.com/PatrickDarbeau/pour-qui-voter")
     pack["demo"] = bool(args.demo)
     pack.pop("date_modification", None)
     for cle in ("themes", "mesures", "candidats", "positions"):

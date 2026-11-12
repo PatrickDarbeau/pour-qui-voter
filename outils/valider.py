@@ -70,6 +70,8 @@ def valider(pack):
         taux = len(exprimees & actives) / len(actives) if actives else 0
         if taux < 0.5:
             alertes.append(f"Candidat {c} : couverture faible ({taux:.0%})")
+    if not pack.get("licence"):
+        alertes.append("Licence des données non indiquée (champ « licence », ex. CC BY-SA 4.0)")
     st = pack.get("second_tour")
     if st and st.get("actif"):
         q = st.get("qualifies") or []

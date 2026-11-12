@@ -26,3 +26,8 @@ La démo se publie sur GitHub Pages avec le workflow manuel **« Démo en ligne 
 En démo en ligne, un bandeau invite à télécharger l'application et le mode Édition est désactivé.
 Pour tester ce mode en local : ajoutez `?demo` à l'adresse (ex. `http://localhost:8765/?demo`).
 Les liens de téléchargement se règlent dans `assets/js/config.js`.
+
+## Licences
+- **Code** : Licence publique de l'Union européenne **EUPL 1.2** — voir [LICENCE](LICENCE).
+- **Données** (thèmes, mesures, candidats, positions) : **Creative Commons BY-SA 4.0** — voir [LICENCE-DONNEES](LICENCE-DONNEES).
+- Mentions légales, limitation de responsabilité et confidentialité : [MENTIONS-LEGALES.md](MENTIONS-LEGALES.md).

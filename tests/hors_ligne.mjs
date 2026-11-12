@@ -100,6 +100,11 @@ try {
   await aller("#/edition/positions");
   ok(await js("document.querySelectorAll('.ed-cellule').length > 0"), "Mode Édition disponible en local");
 
+  // Pages d'information
+  await aller("#/mentions");
+  ok(await js("document.querySelector('main h1').textContent") === "Mentions légales", "Page Mentions légales (licences, responsabilité, confidentialité)");
+  ok(await js("document.querySelector('.pied').textContent.includes('EUPL')"), "Licences indiquées dans le pied de page");
+
   // Aucune requête réseau
   const externes = requetes.filter((u) => !u.startsWith("file:") && !u.startsWith("data:") && !u.startsWith("blob:"));
   ok(externes.length === 0, `Aucune requête réseau (${requetes.length} chargements locaux${externes.length ? ` ; externes : ${externes.join(", ")}` : ""})`);
