@@ -20,7 +20,7 @@
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
-        "Site de campagne propre au candidat"
+        "Site de campagne 2027 (gabrielattal.fr est son site des législatives 2024) et programme (non trouvés au 12/11/2026)"
       ]
     },
     {
@@ -69,6 +69,7 @@
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
+        "Site de campagne et programme 2027 (non trouvés ; le site du RN bloque la collecte automatique)",
         "Mandat actuel (députée) à confirmer",
         "Issue du pourvoi en cassation (éligibilité)",
         "Candidature éventuelle de Jordan Bardella",
@@ -192,8 +193,8 @@
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
-        "Site officiel de campagne (non trouvé au 12/11/2026)",
-        "Programme (non publié)"
+        "Site de campagne « La France qu'on veut » annoncé par la presse, adresse non trouvée au 12/11/2026",
+        "Programme (annoncé, non publié)"
       ]
     },
     {
@@ -205,17 +206,20 @@
       "biographie": "Secrétaire national du Parti communiste français, candidat en 2022. Candidature validée par les adhérents et officialisée en septembre 2026.",
       "slogan": null,
       "photo": null,
-      "site_officiel": "https://www.pcf.fr",
-      "pages_programme": [],
+      "site_officiel": "https://www.fabienroussel2027.fr",
+      "pages_programme": [
+        "https://www.fabienroussel2027.fr/materiel"
+      ],
       "programme_url": null,
       "statut": "declare",
       "derniere_collecte": "2026-11-12",
       "sources_profil": [
-        "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389"
+        "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389",
+        "https://www.fabienroussel2027.fr"
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
-        "Site de campagne propre au candidat"
+        "Programme détaillé (le site présente un manifeste, « VIVRE ! »)"
       ]
     },
     {
@@ -227,8 +231,10 @@
       "biographie": "Président de Reconquête, candidat en 2022. Candidature confirmée à l'automne 2026.",
       "slogan": null,
       "photo": null,
-      "site_officiel": "https://www.parti-reconquete.fr",
-      "pages_programme": [],
+      "site_officiel": "https://www.ericzemmour.fr",
+      "pages_programme": [
+        "https://www.ericzemmour.fr/priorites"
+      ],
       "programme_url": null,
       "statut": "declare",
       "derniere_collecte": "2026-11-12",
@@ -239,7 +245,7 @@
       "consulte_le": "2026-11-12",
       "a_verifier": [
         "Date de la déclaration officielle (17/09 ou 10/11/2026 selon les sources)",
-        "Site de campagne propre au candidat"
+        "Programme détaillé (page « Priorités » seulement)"
       ]
     }
   ]
