@@ -134,7 +134,7 @@
       <ol class="etapes">
         <li>Choisissez vos thèmes prioritaires (facultatif).</li>
         <li>Donnez votre avis sur chaque mesure ; marquez d'une ★ celles qui vous sont essentielles.</li>
-        <li>Découvrez le classement et le détail des accords et désaccords, sources à l'appui.</li>
+        <li>Découvrez le classement et le détail des accords et désaccords avec les candidats, sources à l'appui.</li>
       </ol>
       <p class="doux">Rien n'est envoyé sur internet : vos réponses restent sur cet appareil.</p>
       ${n ? `
