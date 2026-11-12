@@ -403,6 +403,16 @@
         Les éléments modifiés portent la mention « modifié ».</p>`)}
       ${q("Comment sauvegarder ou partager mes modifications ?", `<p>Dans <a href="#/edition/fichiers">Édition › Import / export</a>,
         cliquez sur <strong>Exporter le pack (JSON)</strong>. Pour un tableau lisible dans Excel, utilisez <strong>Exporter les positions (CSV)</strong>.</p>`)}
+      ${q("Puis-je l'utiliser en classe ou pour une autre élection ?", `<p>Oui. L'outil est pensé aussi pour un usage pédagogique.
+        Avec le mode <a href="#/edition/themes">Édition</a>, un enseignant peut remplacer les thèmes, les mesures et les candidats
+        pour simuler une autre élection : délégués de classe, représentants des parents d'élèves, conseil de la vie lycéenne,
+        conseil municipal des jeunes…</p>
+        <ol class="liste">
+          <li>Dans <strong>Thèmes</strong>, <strong>Mesures</strong> et <strong>Candidats</strong>, modifiez ou remplacez les éléments existants.</li>
+          <li>Dans <strong>Positions</strong>, indiquez la position de chaque candidat sur chaque mesure (la source peut être sa profession de foi).</li>
+          <li>Dans <strong>Import / export</strong>, exportez le pack (JSON) et distribuez-le aux élèves, qui l'importent sur leur poste.</li>
+        </ol>
+        <p class="doux">Comme rien n'est envoyé sur internet, l'outil peut être utilisé avec des élèves sans collecte de données personnelles.</p>`)}
       ${q("J'ai trouvé une erreur, que faire ?", `<p>Notez la mesure, le candidat et la source correcte, puis signalez-la au mainteneur
         (ticket sur le dépôt GitHub du projet). Elle sera corrigée dans le pack suivant.</p>`)}
 
