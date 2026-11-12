@@ -13,6 +13,7 @@ Décompressez l'archive, puis ouvrez `index.html` dans votre navigateur avec un 
 | `python outils/maj.py candidats` · `collecter` · `diff A B` · `publier --version AAAA.MM.JJ` | Mise à jour des données (voir la notice du développeur) |
 | `node tests/score.test.js` | Lance les tests du calcul de concordance |
 | `python -m unittest tests/test_outils.py` | Teste le validateur et l'outil de mise à jour |
+| `python outils/assembler.py --installer` | Assemble le pack réel (catalogue, candidats, positions en brouillon) et l'installe pour test |
 | `python outils/paquet.py` | Construit l'archive ZIP pour les utilisateurs dans `dist/` |
 | `node tests/hors_ligne.mjs` | Ouvre l'archive en `file://` avec Chrome et vérifie qu'aucune requête réseau n'est faite |
 | `python -m http.server 8765` | Lance un serveur local (facultatif) |

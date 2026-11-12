@@ -47,7 +47,13 @@
     return { reponses: {}, prioritaires: [], ordre: {} };
   }
   let etat = charger();
+  // Réponses enregistrées avec un autre catalogue de mesures (ex. pack de démo → pack réel) :
+  // les identifiants peuvent désigner d'autres mesures, on prévient l'utilisateur.
+  const signatureCatalogue = D.mesures.map((m) => m.id + ":" + m.intitule).join("|").length + "-" + D.mesures.length;
+  const reponsesObsoletes = Object.keys(etat.reponses).length > 0 && etat.catalogue && etat.catalogue !== signatureCatalogue
+    || Object.keys(etat.reponses).some((id) => !D.mesures.some((m) => m.id === id));
   function sauver() {
+    etat.catalogue = signatureCatalogue;
     try { localStorage.setItem(CLE, JSON.stringify(etat)); } catch (_) { /* ignoré */ }
   }
 
@@ -87,6 +93,7 @@
     const b = document.getElementById("bandeau-donnees");
     const msgs = [];
     if (D.demo) msgs.push("Données de démonstration : les candidats sont fictifs.");
+    if (D.brouillon) msgs.push("Données provisoires en cours de vérification : positions des candidats à relire, liste de candidats incomplète.");
     const age = (Date.now() - new Date(D.date)) / 86400000;
     const limite = Date.now() >= new Date("2027-02-01") ? 7 : 30;
     if (age > limite) msgs.push(`Données datées du ${new Date(D.date).toLocaleDateString("fr-FR")} : pensez à importer un pack plus récent.`);
@@ -136,6 +143,12 @@
         <li>Découvrez le classement et le détail des accords et désaccords avec les candidats, sources à l'appui.</li>
       </ol>
       <p class="doux">Rien n'est envoyé sur internet : vos réponses restent sur cet appareil.</p>
+      ${reponsesObsoletes ? `<p class="carte alerte">⚠️ <strong>Les mesures ont changé depuis vos dernières réponses</strong>
+        (nouveau pack de données). Vos anciennes réponses ne correspondent plus aux mêmes mesures :
+        cliquez sur « Recommencer à zéro » ci-dessous avant de refaire le questionnaire.</p>` : ""}
+      ${D.origine !== "officiel" && window.DONNEES && window.DONNEES.version !== D.version ? `<p class="carte alerte">ℹ️ Vous utilisez des
+        <strong>données modifiées localement</strong> (version ${esc(D.version)}) et non le pack fourni (${esc(window.DONNEES.version)}).
+        Pour utiliser ce dernier : <a href="#/edition/fichiers">Édition › Import / export › Revenir au pack embarqué</a>.</p>` : ""}
       ${n ? `
       <div class="carte reprise">
         <p><strong>Vous avez déjà commencé&nbsp;!</strong> ${n} mesure${n > 1 ? "s" : ""} sur ${mesuresActives.length}
