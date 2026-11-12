@@ -161,6 +161,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |12/11/2026|Aide : nouvelle question « Et pour le second tour ? » (pack du 19/04, réponses conservées, activation manuelle).|`1e4ff84`|
 |12/11/2026|Fiche candidat : boutons « ← Tous les candidats » et « Voir mes résultats » en bas de page.|`e1e89c8`|
 |12/11/2026|Note sur les licences et la responsabilité ([LICENCES.md](LICENCES.md)) ; décision en attente (§7).|`9411627`|
+|12/11/2026|Licences adoptées : **EUPL 1.2** (code) et **CC BY-SA 4.0** (données). Fichiers LICENCE, LICENCE-DONNEES, MENTIONS-LEGALES.md ; page « Mentions légales » et lien en pied de page ; champ `licence` dans les packs ; licences incluses dans l'archive ZIP ; test hors ligne étendu (15 contrôles).|`23bd0d1`|
 |—|**Prochaine étape : lot 7** — contenu réel : base de mesures, candidats et sites officiels. Premier pack réel le 15/01/2027.||
 
 \---
