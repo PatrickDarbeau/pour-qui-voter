@@ -1575,21 +1575,21 @@
       "candidat": "retailleau",
       "mesure": "trav2",
       "valeur": -1,
-      "source_url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+      "source_url": "https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/",
       "source_type": "site_officiel",
       "source_date": "2026-11-12",
-      "citation": "« Travaillez moins et vous vivrez mieux » : telle est la fausse promesse faite aux Français",
-      "a_confirmer": true
+      "citation": "Instaurer la Priorité Travail, c'est sortir des 35 heures par le haut",
+      "a_confirmer": false
     },
     {
       "candidat": "retailleau",
       "mesure": "trav3",
-      "valeur": 0.5,
-      "source_url": "https://republicains.fr/nos-propositions/",
+      "valeur": 1,
+      "source_url": "https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/",
       "source_type": "site_officiel",
       "source_date": "2026-11-12",
-      "citation": "Refonder le code du travail sur 50 principes, rendre le reste à la négociation collective",
-      "a_confirmer": true
+      "citation": "Que l'organisation du temps de travail soit laissée à la négociation collective […] en arrêtant de se référer à une durée hebdomadaire de 35 heures",
+      "a_confirmer": false
     },
     {
       "candidat": "retailleau",
@@ -1839,6 +1839,166 @@
       "source_type": "site_officiel",
       "source_date": "2026-11-12",
       "citation": "Héberger les données sensibles (État, santé, secteurs vitaux) en Europe, à la norme SecNumCloud",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "retr1",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Nous ne ferons pas l'économie de partir un peu plus tard à la retraite",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "retr2",
+      "valeur": 0.5,
+      "source_url": "https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Nous ne ferons pas l'économie de partir un peu plus tard à la retraite, en prenant en compte […] la pénibilité",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "retr3",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Nous ne ferons pas l'économie de partir un peu plus tard à la retraite",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "retr4",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Nous ne ferons pas l'économie de partir un peu plus tard à la retraite",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "retr8",
+      "valeur": 0.5,
+      "source_url": "https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "En prenant en compte, évidemment, la pénibilité des métiers",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "soli9",
+      "valeur": 1,
+      "source_url": "https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Un revenu familial, pour aider toutes les familles : 240 euros pour chaque enfant, quel que soit le niveau de revenus des parents",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "imm7",
+      "valeur": 0.5,
+      "source_url": "https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pour en bénéficier, les nouveaux venus devront justifier de cinq ans d'activité",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "imm8",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/actualites/2026/09/02/en-france-la-seule-cour-supreme-cest-le-peuple-je-lui-donnerai-le-dernier-mot/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La fin des aides sociales automatiques pour les étrangers […] serait appliquée aujourd'hui",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "imm1",
+      "valeur": 0.5,
+      "source_url": "https://republicains.fr/actualites/2026/09/02/en-france-la-seule-cour-supreme-cest-le-peuple-je-lui-donnerai-le-dernier-mot/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Le peuple français doit pouvoir décider, par référendum, de toute question législative […] la politique migratoire",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "ins1",
+      "valeur": 0.5,
+      "source_url": "https://republicains.fr/actualites/2026/09/02/en-france-la-seule-cour-supreme-cest-le-peuple-je-lui-donnerai-le-dernier-mot/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Alléger les contraintes nécessaires à l'organisation d'un référendum d'initiative partagée : plutôt que 5 millions de signatures, il en faudrait moitié moins",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "eu1",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/actualites/2026/08/02/lespace-schengen-doit-etre-reserve-aux-europeens/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Je ne suis pas du tout fédéraliste",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "eu2",
+      "valeur": 1,
+      "source_url": "https://republicains.fr/actualites/2026/09/02/en-france-la-seule-cour-supreme-cest-le-peuple-je-lui-donnerai-le-dernier-mot/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Remettre le droit de l'UE à sa juste place : au-dessus des lois […] mais en dessous de notre Constitution",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "eu3",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/actualites/2026/09/02/en-france-la-seule-cour-supreme-cest-le-peuple-je-lui-donnerai-le-dernier-mot/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Sinon, c'est un Frexit juridique, que je ne souhaite pas",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "jus6",
+      "valeur": 0.5,
+      "source_url": "https://republicains.fr/actualites/2026/06/06/il-faut-creer-une-cour-disciplinaire-de-la-magistrature/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Le Conseil constitutionnel a censuré un texte pourtant timide sur le durcissement de la justice des mineurs",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "jus7",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/actualites/2026/06/06/il-faut-creer-une-cour-disciplinaire-de-la-magistrature/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Le Conseil constitutionnel a censuré un texte pourtant timide sur le durcissement de la justice des mineurs",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "san7",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/actualites/2026/07/15/une-grande-nation-ne-repond-pas-a-la-souffrance-par-la-mort/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Une grande nation ne répond pas à la souffrance par la mort",
       "a_confirmer": false
     }
   ]

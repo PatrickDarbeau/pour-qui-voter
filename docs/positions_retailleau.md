@@ -2,7 +2,7 @@
 
 *Générée par `python outils/positions.py` depuis `outils/positions_retailleau.py`. Sources consultées le 2026-11-12.*
 
-**28 positions renseignées sur 158 mesures** (10 soutient, 7 en partie, 11 s'oppose) ; les 130 autres valent « ne se prononce pas » (aucun passage trouvé). 9 position(s) marquée(s) « à confirmer » ⚠.
+**44 positions renseignées sur 158 mesures** (13 soutient, 12 en partie, 19 s'oppose) ; les 114 autres valent « ne se prononce pas » (aucun passage trouvé). 15 position(s) marquée(s) « à confirmer » ⚠.
 
 ## 💶 Économie et fiscalité
 
@@ -24,8 +24,8 @@
 | Mesure | Position | Extrait du programme |
 |---|---|---|
 | Augmenter le SMIC de 10 % | · | — |
-| Réduire la durée légale du travail à 32 heures par semaine | **S'oppose** ⚠ | « « Travaillez moins et vous vivrez mieux » : telle est la fausse promesse faite aux Français » ([source](https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf)) |
-| Permettre aux entreprises de fixer la durée du travail par accord, au-delà de 35 heures | **Soutient en partie** ⚠ | « Refonder le code du travail sur 50 principes, rendre le reste à la négociation collective » ([source](https://republicains.fr/nos-propositions/)) |
+| Réduire la durée légale du travail à 32 heures par semaine | **S'oppose** | « Instaurer la Priorité Travail, c'est sortir des 35 heures par le haut » ([source](https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/)) |
+| Permettre aux entreprises de fixer la durée du travail par accord, au-delà de 35 heures | **Soutient** | « Que l'organisation du temps de travail soit laissée à la négociation collective […] en arrêtant de se référer à une durée hebdomadaire de 35 heures » ([source](https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/)) |
 | Réduire la durée d'indemnisation du chômage lorsque le marché de l'emploi est favorable | **Soutient** | « Elle réduit la durée maximale d'indemnisation, adapte les droits en fonction de la conjoncture » ([source](https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf)) |
 | Allonger la durée d'indemnisation du chômage et annuler les dernières réformes | **S'oppose** | « Réformer l'assurance chômage, en resserrant les conditions d'indemnisation » ([source](https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf)) |
 | Indexer automatiquement les salaires sur l'inflation | · | — |
@@ -37,14 +37,14 @@
 
 | Mesure | Position | Extrait du programme |
 |---|---|---|
-| Abaisser l'âge légal de départ à la retraite à 62 ans | · | — |
-| Porter l'âge légal de départ à la retraite à 65 ans | · | — |
-| Fixer l'âge légal de départ à 60 ans avec 40 années de cotisation | · | — |
-| Conserver l'âge légal de départ à 64 ans prévu par la réforme de 2023 | · | — |
+| Abaisser l'âge légal de départ à la retraite à 62 ans | **S'oppose** | « Nous ne ferons pas l'économie de partir un peu plus tard à la retraite » ([source](https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/)) |
+| Porter l'âge légal de départ à la retraite à 65 ans | **Soutient en partie** ⚠ | « Nous ne ferons pas l'économie de partir un peu plus tard à la retraite, en prenant en compte […] la pénibilité » ([source](https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/)) |
+| Fixer l'âge légal de départ à 60 ans avec 40 années de cotisation | **S'oppose** | « Nous ne ferons pas l'économie de partir un peu plus tard à la retraite » ([source](https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/)) |
+| Conserver l'âge légal de départ à 64 ans prévu par la réforme de 2023 | **S'oppose** ⚠ | « Nous ne ferons pas l'économie de partir un peu plus tard à la retraite » ([source](https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/)) |
 | Introduire une part de capitalisation dans le financement des retraites | **Soutient** | « Notre proposition de créer un étage de retraite par capitalisation pour tous » ([source](https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf)) |
 | Financer les retraites uniquement par répartition, en augmentant les cotisations si nécessaire | **S'oppose** | « Créer un étage de retraite par capitalisation pour tous » ([source](https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf)) |
 | Porter le minimum de pension au niveau du SMIC net pour une carrière complète | · | — |
-| Réintégrer le port de charges lourdes et les postures pénibles dans le compte pénibilité | · | — |
+| Réintégrer le port de charges lourdes et les postures pénibles dans le compte pénibilité | **Soutient en partie** | « En prenant en compte, évidemment, la pénibilité des métiers » ([source](https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/)) |
 | Créer un régime de retraite universel par points | · | — |
 
 ## 🩺 Santé
@@ -57,7 +57,7 @@
 | Rembourser intégralement les soins dentaires et optiques | · | — |
 | Remplacer l'aide médicale d'État (AME) par une aide limitée aux soins urgents | · | — |
 | Maintenir l'aide médicale d'État (AME) dans sa forme actuelle | · | — |
-| Légaliser une aide active à mourir strictement encadrée | · | — |
+| Légaliser une aide active à mourir strictement encadrée | **S'oppose** | « Une grande nation ne répond pas à la souffrance par la mort » ([source](https://republicains.fr/actualites/2026/07/15/une-grande-nation-ne-repond-pas-a-la-souffrance-par-la-mort/)) |
 | Développer les soins palliatifs sans légaliser l'aide active à mourir | · | — |
 | Supprimer les franchises médicales restant à la charge des patients | · | — |
 
@@ -73,7 +73,7 @@
 | Ouvrir le RSA aux jeunes de 18 à 25 ans | · | — |
 | Porter l'allocation aux adultes handicapés (AAH) au niveau du seuil de pauvreté | · | — |
 | Encadrer les prix d'un panier de produits alimentaires de base | · | — |
-| Verser les allocations familiales dès le premier enfant | · | — |
+| Verser les allocations familiales dès le premier enfant | **Soutient** | « Un revenu familial, pour aider toutes les familles : 240 euros pour chaque enfant, quel que soit le niveau de revenus des parents » ([source](https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/)) |
 
 ## 🎓 Éducation et jeunesse
 
@@ -197,8 +197,8 @@
 | Calculer le montant des amendes routières en fonction des revenus | · | — |
 | Maintenir des amendes routières forfaitaires identiques pour tous | · | — |
 | Construire 20 000 places de prison supplémentaires | · | — |
-| Abaisser la majorité pénale à 16 ans | · | — |
-| Maintenir la justice spécifique des mineurs et l'excuse de minorité | · | — |
+| Abaisser la majorité pénale à 16 ans | **Soutient en partie** ⚠ | « Le Conseil constitutionnel a censuré un texte pourtant timide sur le durcissement de la justice des mineurs » ([source](https://republicains.fr/actualites/2026/06/06/il-faut-creer-une-cour-disciplinaire-de-la-magistrature/)) |
+| Maintenir la justice spécifique des mineurs et l'excuse de minorité | **S'oppose** ⚠ | « Le Conseil constitutionnel a censuré un texte pourtant timide sur le durcissement de la justice des mineurs » ([source](https://republicains.fr/actualites/2026/06/06/il-faut-creer-une-cour-disciplinaire-de-la-magistrature/)) |
 | Doubler le budget de la justice sur le quinquennat | · | — |
 | Créer une peine de perpétuité réelle, sans possibilité de libération | · | — |
 
@@ -206,23 +206,23 @@
 
 | Mesure | Position | Extrait du programme |
 |---|---|---|
-| Organiser un référendum sur l'immigration | · | — |
+| Organiser un référendum sur l'immigration | **Soutient en partie** ⚠ | « Le peuple français doit pouvoir décider, par référendum, de toute question législative […] la politique migratoire » ([source](https://republicains.fr/actualites/2026/09/02/en-france-la-seule-cour-supreme-cest-le-peuple-je-lui-donnerai-le-dernier-mot/)) |
 | Supprimer le droit du sol sur l'ensemble du territoire | · | — |
 | Maintenir le droit du sol dans les conditions actuelles | · | — |
 | Régulariser les travailleurs sans papiers dans les métiers en tension | · | — |
 | Limiter les régularisations de sans-papiers aux cas exceptionnels | · | — |
 | Durcir les conditions du regroupement familial | · | — |
-| Réserver certaines prestations sociales aux Français (« priorité nationale ») | · | — |
-| Maintenir l'égalité d'accès aux prestations pour les étrangers en situation régulière | · | — |
+| Réserver certaines prestations sociales aux Français (« priorité nationale ») | **Soutient en partie** ⚠ | « Pour en bénéficier, les nouveaux venus devront justifier de cinq ans d'activité » ([source](https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/)) |
+| Maintenir l'égalité d'accès aux prestations pour les étrangers en situation régulière | **S'oppose** ⚠ | « La fin des aides sociales automatiques pour les étrangers […] serait appliquée aujourd'hui » ([source](https://republicains.fr/actualites/2026/09/02/en-france-la-seule-cour-supreme-cest-le-peuple-je-lui-donnerai-le-dernier-mot/)) |
 | Faire exécuter systématiquement les obligations de quitter le territoire (OQTF) | · | — |
 
 ## 🇪🇺 Europe et international
 
 | Mesure | Position | Extrait du programme |
 |---|---|---|
-| Renforcer l'intégration européenne | · | — |
-| Rendre des compétences aux États membres de l'Union européenne | · | — |
-| Organiser un référendum sur la sortie de l'Union européenne | · | — |
+| Renforcer l'intégration européenne | **S'oppose** | « Je ne suis pas du tout fédéraliste » ([source](https://republicains.fr/actualites/2026/08/02/lespace-schengen-doit-etre-reserve-aux-europeens/)) |
+| Rendre des compétences aux États membres de l'Union européenne | **Soutient** | « Remettre le droit de l'UE à sa juste place : au-dessus des lois […] mais en dessous de notre Constitution » ([source](https://republicains.fr/actualites/2026/09/02/en-france-la-seule-cour-supreme-cest-le-peuple-je-lui-donnerai-le-dernier-mot/)) |
+| Organiser un référendum sur la sortie de l'Union européenne | **S'oppose** | « Sinon, c'est un Frexit juridique, que je ne souhaite pas » ([source](https://republicains.fr/actualites/2026/09/02/en-france-la-seule-cour-supreme-cest-le-peuple-je-lui-donnerai-le-dernier-mot/)) |
 | Sortir du commandement intégré de l'OTAN | · | — |
 | Maintenir la pleine participation de la France à l'OTAN | · | — |
 | Porter le budget de la défense à 3 % du PIB | · | — |
@@ -234,7 +234,7 @@
 
 | Mesure | Position | Extrait du programme |
 |---|---|---|
-| Instaurer le référendum d'initiative citoyenne (RIC) | · | — |
+| Instaurer le référendum d'initiative citoyenne (RIC) | **Soutient en partie** ⚠ | « Alléger les contraintes nécessaires à l'organisation d'un référendum d'initiative partagée : plutôt que 5 millions de signatures, il en faudrait moitié moins » ([source](https://republicains.fr/actualites/2026/09/02/en-france-la-seule-cour-supreme-cest-le-peuple-je-lui-donnerai-le-dernier-mot/)) |
 | Introduire une dose de proportionnelle aux élections législatives | · | — |
 | Prendre en compte le vote blanc, avec annulation de l'élection s'il arrive en tête | · | — |
 | Compter le vote blanc à part, sans effet sur le résultat | · | — |

@@ -3,7 +3,8 @@
 Source : propositions des Républicains, dont il est le président et le candidat désigné
 (https://republicains.fr/nos-propositions/ et 8 documents PDF de décembre 2025 à septembre 2026, archivés le 12/11/2026).
 Attention : ce sont des propositions du parti ; la brochure « Le travail gagnant » est préfacée par le candidat.
-Thèmes non couverts à ce jour par ces documents : immigration, sécurité, justice, santé, institutions, Europe.
+Complété le 12/11/2026 par ses tribunes et entretiens publiés sur le site de LR (rubrique du candidat).
+Thèmes encore peu couverts : sécurité, santé (hors fin de vie), outre-mer, culture, numérique.
 Valeurs : 1 soutient · 0.5 soutient en partie · -1 s'oppose ; mesure absente = 0 (non trouvé).
 """
 U = "https://republicains.fr/wp-content/uploads/"
@@ -15,11 +16,17 @@ ELEC = U + "2026/05/LR_Electricite_vFF070626.pdf"
 LOGEMENT = U + "2026/05/LR_Logement.pdf"
 IA = U + "2026/07/LR_IA.pdf"
 ECOLE = U + "2026/09/LR_Ecole_vF.pdf"
+A = "https://republicains.fr/actualites/"
+TRIB_TRAVAIL = A + "2026/05/02/priorite-travail-france-35h-salaires-retraites/"
+ENT_CONSTIT = A + "2026/09/02/en-france-la-seule-cour-supreme-cest-le-peuple-je-lui-donnerai-le-dernier-mot/"
+ENT_SCHENGEN = A + "2026/08/02/lespace-schengen-doit-etre-reserve-aux-europeens/"
+ENT_JUSTICE = A + "2026/06/06/il-faut-creer-une-cour-disciplinaire-de-la-magistrature/"
+VIDEO_FIN_VIE = A + "2026/07/15/une-grande-nation-ne-repond-pas-a-la-souffrance-par-la-mort/"
 
 P = {
     "eco5": (1, PRODUIRE, "Cotisation sur la valeur ajoutée des entreprises (CVAE) : suppression définitive", False),
-    "trav2": (-1, TRAVAIL, "« Travaillez moins et vous vivrez mieux » : telle est la fausse promesse faite aux Français", True),
-    "trav3": (0.5, PROP, "Refonder le code du travail sur 50 principes, rendre le reste à la négociation collective", True),
+    "trav2": (-1, TRIB_TRAVAIL, "Instaurer la Priorité Travail, c'est sortir des 35 heures par le haut", False),
+    "trav3": (1, TRIB_TRAVAIL, "Que l'organisation du temps de travail soit laissée à la négociation collective […] en arrêtant de se référer à une durée hebdomadaire de 35 heures", False),
     "trav4": (1, TRAVAIL, "Elle réduit la durée maximale d'indemnisation, adapte les droits en fonction de la conjoncture", False),
     "trav5": (-1, TRAVAIL, "Réformer l'assurance chômage, en resserrant les conditions d'indemnisation", False),
     "trav8": (1, TRAVAIL, "Au-delà [de 1 623 heures], les heures travaillées sont exonérées de cotisations sociales, salariales comme patronales", False),
@@ -45,4 +52,21 @@ P = {
     "num4": (-1, IA, "Refuser a priori ces technologies quand nos voisins les utilisent, c'est a[ccepter un retard]", True),
     "num5": (0.5, IA, "Garanties […] interdiction de la reconnaissance faciale en temps réel dans l'espace public à des fins de surveillance de masse", True),
     "num9": (1, IA, "Héberger les données sensibles (État, santé, secteurs vitaux) en Europe, à la norme SecNumCloud", False),
+    # --- Tribunes et entretiens du candidat (site de LR)
+    "retr1": (-1, TRIB_TRAVAIL, "Nous ne ferons pas l'économie de partir un peu plus tard à la retraite", False),
+    "retr2": (0.5, TRIB_TRAVAIL, "Nous ne ferons pas l'économie de partir un peu plus tard à la retraite, en prenant en compte […] la pénibilité", True),
+    "retr3": (-1, TRIB_TRAVAIL, "Nous ne ferons pas l'économie de partir un peu plus tard à la retraite", False),
+    "retr4": (-1, TRIB_TRAVAIL, "Nous ne ferons pas l'économie de partir un peu plus tard à la retraite", True),
+    "retr8": (0.5, TRIB_TRAVAIL, "En prenant en compte, évidemment, la pénibilité des métiers", False),
+    "soli9": (1, TRIB_TRAVAIL, "Un revenu familial, pour aider toutes les familles : 240 euros pour chaque enfant, quel que soit le niveau de revenus des parents", False),
+    "imm7": (0.5, TRIB_TRAVAIL, "Pour en bénéficier, les nouveaux venus devront justifier de cinq ans d'activité", True),
+    "imm8": (-1, ENT_CONSTIT, "La fin des aides sociales automatiques pour les étrangers […] serait appliquée aujourd'hui", True),
+    "imm1": (0.5, ENT_CONSTIT, "Le peuple français doit pouvoir décider, par référendum, de toute question législative […] la politique migratoire", True),
+    "ins1": (0.5, ENT_CONSTIT, "Alléger les contraintes nécessaires à l'organisation d'un référendum d'initiative partagée : plutôt que 5 millions de signatures, il en faudrait moitié moins", True),
+    "eu1": (-1, ENT_SCHENGEN, "Je ne suis pas du tout fédéraliste", False),
+    "eu2": (1, ENT_CONSTIT, "Remettre le droit de l'UE à sa juste place : au-dessus des lois […] mais en dessous de notre Constitution", False),
+    "eu3": (-1, ENT_CONSTIT, "Sinon, c'est un Frexit juridique, que je ne souhaite pas", False),
+    "jus6": (0.5, ENT_JUSTICE, "Le Conseil constitutionnel a censuré un texte pourtant timide sur le durcissement de la justice des mineurs", True),
+    "jus7": (-1, ENT_JUSTICE, "Le Conseil constitutionnel a censuré un texte pourtant timide sur le durcissement de la justice des mineurs", True),
+    "san7": (-1, VIDEO_FIN_VIE, "Une grande nation ne répond pas à la souffrance par la mort", False),
 }
