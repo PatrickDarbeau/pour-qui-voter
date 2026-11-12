@@ -175,6 +175,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |12/11/2026|Lot 7, étape 2 : **brouillon du catalogue** — 158 mesures sur 17 thèmes (20 issues de la démo, 17 contrepoints, 121 nouvelles), 8 à 12 par thème, mesures opposées reliées ; généré par `outils/catalogue.py` → `data/brouillon/catalogue.json` et [catalogue_mesures.md](catalogue_mesures.md).|`762fb75`|
 |12/11/2026|Catalogue : plus aucune référence à une source d'inspiration externe ; les mesures sont reformulées et neutres (origine « nouveau »).|`a480918`|
 |12/11/2026|Notice §7 : ajout du nettoyage de l'historique Git et du choix du nom affiché, à faire avant le passage en public.|`11896d3`|
+|12/11/2026|Note [methode_choix_mesures.md](methode_choix_mesures.md) : méthode de choix des mesures, limites, améliorations possibles (A1–A6 avant le 15/01, B1–B3 pendant la campagne, C1–C4 outils).|`c216461`|
 |—|**Prochaine étape : lot 7** — relecture de neutralité du catalogue (étape 2), puis recensement des candidats (étape 3). Premier pack réel le 15/01/2027.||
 
 \---
