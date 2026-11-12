@@ -186,7 +186,8 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |12/11/2026|Lot 7, étape 5 : **positions de David Lisnard** en brouillon ([positions_lisnard.md](positions_lisnard.md)) — 45 mesures sur 158, chacune avec extrait et lien vers la page du programme de Nouvelle Énergie (3 axes + 5 pages thématiques, ajoutées à la collecte).|`84e0e83`|
 |12/11/2026|Lot 7, étape 5 : **positions de Bruno Retailleau** en brouillon ([positions_retailleau.md](positions_retailleau.md)) — 28 mesures sur 158, sourcées dans les propositions des Républicains (page + 8 PDF ajoutés à la collecte). Thèmes non couverts par ces documents : immigration, sécurité, justice, santé, institutions, Europe. Bibliothèque `pypdf` installée pour lire les PDF.|`d790a0d`|
 |12/11/2026|Lot 7, étape 5 : positions de **Bruno Retailleau** complétées par 18 tribunes et entretiens du candidat publiés sur le site de LR (35 h, retraites, référendum et Constitution, Europe, immigration, justice des mineurs, fin de vie, politique familiale) : 44 mesures sur 158 (contre 28).|`d3d2d35`|
-|—|**Prochaine étape : lot 7** — relecture des positions (Mélenchon, Lisnard, Retailleau), puis Glucksmann, Philippe, Roussel, Zemmour. Premier pack réel le 15/01/2027.||
+|12/11/2026|Lot 7, étape 5 : **positions de Raphaël Glucksmann** en brouillon ([positions_glucksmann.md](positions_glucksmann.md)) — 50 mesures sur 158, sourcées dans le livret de campagne « Révolution écologique » (glucks2027.fr) et le projet « Acte I » de Place publique. Fiche mise à jour : primaire gagnée le 11/10/2026 (66,17 %), site de campagne glucks2027.fr.|`c6aa556`|
+|—|**Prochaine étape : lot 7** — relecture des positions, puis Philippe, Roussel, Zemmour. Premier pack réel le 15/01/2027.||
 
 \---
 
