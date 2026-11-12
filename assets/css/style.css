@@ -154,9 +154,10 @@ h2 { font-size: 1.35rem; margin-top: 2.2rem; }
 .tuile:hover { transform: rotate(-1deg) translateY(-2px); }
 .tuile .ico { font-size: 1.8rem; display: block; margin-bottom: .3rem; }
 .tuile[aria-pressed="true"] { border-color: var(--encre); }
-.tuile[aria-pressed="true"]::after { /* croix de vote */
-  content: "✕"; position: absolute; top: .4rem; right: .6rem; font: 700 1.6rem var(--serif); color: var(--tampon);
-  transform: rotate(-8deg);
+.tuile[aria-pressed="true"]::after { /* coche « prioritaire » */
+  content: "✓ Prioritaire"; position: absolute; top: .5rem; right: .5rem;
+  font: 700 .72rem var(--sans); letter-spacing: .02em; color: #fff;
+  background: var(--c, var(--oui)); padding: .15rem .5rem; border-radius: 999px;
 }
 
 /* ---------- Questionnaire ---------- */
