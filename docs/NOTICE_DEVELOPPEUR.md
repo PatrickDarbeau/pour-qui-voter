@@ -188,7 +188,8 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |12/11/2026|Lot 7, étape 5 : positions de **Bruno Retailleau** complétées par 18 tribunes et entretiens du candidat publiés sur le site de LR (35 h, retraites, référendum et Constitution, Europe, immigration, justice des mineurs, fin de vie, politique familiale) : 44 mesures sur 158 (contre 28).|`d3d2d35`|
 |12/11/2026|Lot 7, étape 5 : **positions de Raphaël Glucksmann** en brouillon ([positions_glucksmann.md](positions_glucksmann.md)) — 50 mesures sur 158, sourcées dans le livret de campagne « Révolution écologique » (glucks2027.fr) et le projet « Acte I » de Place publique. Fiche mise à jour : primaire gagnée le 11/10/2026 (66,17 %), site de campagne glucks2027.fr.|`c6aa556`|
 |12/11/2026|Lot 7, étape 5 : **positions d'Édouard Philippe** en brouillon ([positions_philippe.md](positions_philippe.md)) — 46 mesures sur 158, sourcées dans le programme de son site de campagne edouardphilippe.fr (15 thèmes, mis à jour le 12/11/2026). Fiche : site de campagne au lieu du site d'Horizons.|`db2a762`|
-|—|**Prochaine étape : lot 7** — relecture des positions, puis Roussel et Zemmour ; Attal, Le Pen et Riner en attente de programme. Premier pack réel le 15/01/2027.||
+|12/11/2026|**Pack de test** installé dans l'application (`outils/assembler.py --installer`) : 158 mesures, 5 candidats (Glucksmann, Lisnard, Mélenchon, Philippe, Retailleau), 296 positions ; version `2026.11.12-test`, marqué « brouillon » (bandeau « données provisoires »). Alerte ajoutée si les réponses enregistrées ou des données locales ne correspondent plus au pack. Tous les tests passent. Saisie des 5 autres candidats en pause.|`a1ab527`|
+|—|**Prochaine étape : lot 7** — tests utilisateur du pack de test ; reprise ensuite des positions (Roussel, Zemmour ; Attal, Le Pen, Riner dès publication de leur programme). Premier pack réel le 15/01/2027.||
 
 \---
 
