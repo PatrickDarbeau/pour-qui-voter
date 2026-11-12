@@ -64,6 +64,19 @@ class TestPackDemo(unittest.TestCase):
         self.assertEqual(erreurs, [])
 
 
+class TestCatalogue(unittest.TestCase):
+    def test_catalogue_coherent(self):
+        import catalogue
+        ids = {m[0] for m in catalogue.M}
+        self.assertEqual(len(ids), len(catalogue.M))
+        for m in catalogue.M:
+            self.assertTrue(m[4] is None or m[4] in ids, m[0])
+        from collections import Counter
+        nb = Counter(m[1] for m in catalogue.M)
+        self.assertEqual(set(nb), {t[0] for t in catalogue.THEMES})
+        self.assertTrue(all(8 <= v <= 12 for v in nb.values()), nb)
+
+
 class TestDiff(unittest.TestCase):
     def test_aucune_difference(self):
         self.assertEqual(maj.diff_packs(PACK, copy.deepcopy(PACK)), [])

@@ -11,7 +11,7 @@ Voir aussi : [cahier des charges](../CAHIER_DES_CHARGES.md) §9 bis et §9 ter, 
 | # | Étape | Contenu | Qui | Échéance | État |
 |---|---|---|---|---|---|
 | **1** | **Thèmes** | Arrêter la liste des thèmes, avec leur icône et leur couleur | Moi (proposition) → vous (validation) | fin novembre 2026 | ✅ liste validée le 12/11/2026 (§2) |
-| **2** | **Catalogue des mesures** | Rédiger 130 à 170 mesures **neutres**, de 8 à 10 par thème, sans citer aucun candidat. Relier les mesures opposées. | Moi (rédaction) → vous et une seconde personne (relecture de neutralité) | mi-décembre | ⏳ |
+| **2** | **Catalogue des mesures** | Rédiger 130 à 170 mesures **neutres**, de 8 à 10 par thème, sans citer aucun candidat. Relier les mesures opposées. | Moi (rédaction) → vous et une seconde personne (relecture de neutralité) | mi-décembre | 🔄 brouillon de 158 mesures le 12/11/2026 ([catalogue_mesures.md](catalogue_mesures.md)), à relire |
 | **3** | **Recensement des candidats** | Candidats déclarés ou pressentis : identité, parti, **site officiel**, pages programme, statut | Recherche web (Hermès ou moi) → vérification | mi-décembre, puis en continu | ⏳ |
 | **4** | **Première collecte** | `maj.py collecter` sur les sites officiels : archivage des pages et des PDF. Premier test réel de `collecter`. | Moi | fin décembre | ⏳ |
 | **5** | **Saisie des positions** | Pour chaque candidat et chaque mesure : position, source, date et citation. Mention « à confirmer » si la source n'est pas officielle. | Hermès ou moi (brouillon) → **relecture humaine obligatoire** | début janvier | ⏳ |

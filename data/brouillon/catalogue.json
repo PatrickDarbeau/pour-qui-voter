@@ -1,0 +1,1548 @@
+{
+  "statut": "brouillon à relire",
+  "themes": [
+    {
+      "id": "eco",
+      "nom": "Économie et fiscalité",
+      "icone": "💶",
+      "couleur": "#2f6fb0",
+      "ordre": 0
+    },
+    {
+      "id": "trav",
+      "nom": "Travail et emploi",
+      "icone": "👷",
+      "couleur": "#5d6d7e",
+      "ordre": 1
+    },
+    {
+      "id": "retr",
+      "nom": "Retraites",
+      "icone": "👵",
+      "couleur": "#8e6c3a",
+      "ordre": 2
+    },
+    {
+      "id": "sante",
+      "nom": "Santé",
+      "icone": "🩺",
+      "couleur": "#c0392b",
+      "ordre": 3
+    },
+    {
+      "id": "soli",
+      "nom": "Solidarités et pouvoir d'achat",
+      "icone": "🤝",
+      "couleur": "#d35400",
+      "ordre": 4
+    },
+    {
+      "id": "edu",
+      "nom": "Éducation et jeunesse",
+      "icone": "🎓",
+      "couleur": "#8e44ad",
+      "ordre": 5
+    },
+    {
+      "id": "cult",
+      "nom": "Culture",
+      "icone": "🎭",
+      "couleur": "#b03a6e",
+      "ordre": 6
+    },
+    {
+      "id": "ecol",
+      "nom": "Écologie et énergie",
+      "icone": "🌿",
+      "couleur": "#27ae60",
+      "ordre": 7
+    },
+    {
+      "id": "agri",
+      "nom": "Agriculture et alimentation",
+      "icone": "🚜",
+      "couleur": "#7d8f2a",
+      "ordre": 8
+    },
+    {
+      "id": "loge",
+      "nom": "Logement et territoires",
+      "icone": "🏠",
+      "couleur": "#a0522d",
+      "ordre": 9
+    },
+    {
+      "id": "om",
+      "nom": "Outre-mer",
+      "icone": "🌴",
+      "couleur": "#16a085",
+      "ordre": 10
+    },
+    {
+      "id": "num",
+      "nom": "Numérique et libertés",
+      "icone": "💻",
+      "couleur": "#2c7fb8",
+      "ordre": 11
+    },
+    {
+      "id": "secu",
+      "nom": "Sécurité",
+      "icone": "🛡️",
+      "couleur": "#34495e",
+      "ordre": 12
+    },
+    {
+      "id": "just",
+      "nom": "Justice",
+      "icone": "⚖️",
+      "couleur": "#6c3483",
+      "ordre": 13
+    },
+    {
+      "id": "immi",
+      "nom": "Immigration",
+      "icone": "🧭",
+      "couleur": "#7f8c8d",
+      "ordre": 14
+    },
+    {
+      "id": "euro",
+      "nom": "Europe et international",
+      "icone": "🇪🇺",
+      "couleur": "#1f3a8a",
+      "ordre": 15
+    },
+    {
+      "id": "inst",
+      "nom": "Institutions et démocratie",
+      "icone": "🏛️",
+      "couleur": "#d68910",
+      "ordre": 16
+    }
+  ],
+  "mesures": [
+    {
+      "id": "eco1",
+      "theme": "eco",
+      "intitule": "Rétablir un impôt sur la fortune, avec un crédit d'impôt pour l'investissement dans les PME",
+      "description": "Retour d'un impôt sur l'ensemble du patrimoine, y compris financier.",
+      "opposee_a": "eco2",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "eco2",
+      "theme": "eco",
+      "intitule": "Conserver l'impôt sur la fortune immobilière (IFI) sans l'étendre au patrimoine financier",
+      "description": "Statu quo depuis 2018.",
+      "opposee_a": "eco1",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "eco3",
+      "theme": "eco",
+      "intitule": "Créer un impôt lié à la nationalité pour imposer en France les très hauts patrimoines partis à l'étranger",
+      "description": "Lutte contre l'exil fiscal par un impôt nouveau.",
+      "opposee_a": "eco4",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "eco4",
+      "theme": "eco",
+      "intitule": "Lutter contre l'exil fiscal par des conventions internationales plutôt que par un nouvel impôt",
+      "description": "Coopération fiscale entre États.",
+      "opposee_a": "eco3",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "eco5",
+      "theme": "eco",
+      "intitule": "Baisser les impôts de production des entreprises",
+      "description": "Réduction de la fiscalité pesant sur l'outil productif.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "eco6",
+      "theme": "eco",
+      "intitule": "Publier la liste et le montant des aides publiques reçues par chaque entreprise",
+      "description": "Transparence des aides aux entreprises.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "eco7",
+      "theme": "eco",
+      "intitule": "Conditionner les aides publiques aux entreprises à des engagements d'emploi et d'investissement",
+      "description": "Remboursement des aides en cas de non-respect.",
+      "opposee_a": "eco8",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "eco8",
+      "theme": "eco",
+      "intitule": "Simplifier les aides aux entreprises sans leur ajouter de conditions",
+      "description": "Moins de démarches, mêmes critères d'attribution.",
+      "opposee_a": "eco7",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "eco9",
+      "theme": "eco",
+      "intitule": "Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat",
+      "description": "Priorité à la réduction du déficit.",
+      "opposee_a": "eco10",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "eco10",
+      "theme": "eco",
+      "intitule": "Augmenter l'investissement public, même au prix d'un déficit plus élevé",
+      "description": "Priorité à la relance et à la transition.",
+      "opposee_a": "eco9",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "trav1",
+      "theme": "trav",
+      "intitule": "Augmenter le SMIC de 10 %",
+      "description": "Revalorisation exceptionnelle du salaire minimum.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "trav2",
+      "theme": "trav",
+      "intitule": "Réduire la durée légale du travail à 32 heures par semaine",
+      "description": "Semaine de quatre jours, sans baisse de salaire.",
+      "opposee_a": "trav3",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "trav3",
+      "theme": "trav",
+      "intitule": "Permettre aux entreprises de fixer la durée du travail par accord, au-delà de 35 heures",
+      "description": "Assouplissement de la durée légale.",
+      "opposee_a": "trav2",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "trav4",
+      "theme": "trav",
+      "intitule": "Réduire la durée d'indemnisation du chômage lorsque le marché de l'emploi est favorable",
+      "description": "Règles d'assurance chômage plus strictes.",
+      "opposee_a": "trav5",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "trav5",
+      "theme": "trav",
+      "intitule": "Allonger la durée d'indemnisation du chômage et annuler les dernières réformes",
+      "description": "Retour à des droits plus protecteurs.",
+      "opposee_a": "trav4",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "trav6",
+      "theme": "trav",
+      "intitule": "Indexer automatiquement les salaires sur l'inflation",
+      "description": "Hausse des salaires au même rythme que les prix.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "trav7",
+      "theme": "trav",
+      "intitule": "Réserver un tiers des sièges des conseils d'administration aux représentants des salariés",
+      "description": "Dans les grandes entreprises.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "trav8",
+      "theme": "trav",
+      "intitule": "Supprimer les cotisations salariales sur les heures supplémentaires",
+      "description": "Heures supplémentaires mieux rémunérées en net.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "trav9",
+      "theme": "trav",
+      "intitule": "Limiter l'écart entre le salaire le plus bas et le plus haut d'une entreprise à 1 pour 20",
+      "description": "Plafonnement des hautes rémunérations.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "retr1",
+      "theme": "retr",
+      "intitule": "Abaisser l'âge légal de départ à la retraite à 62 ans",
+      "description": "Retour sur la réforme de 2023.",
+      "opposee_a": "retr2",
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "retr2",
+      "theme": "retr",
+      "intitule": "Porter l'âge légal de départ à la retraite à 65 ans",
+      "description": "Allongement de la durée d'activité.",
+      "opposee_a": "retr1",
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "retr3",
+      "theme": "retr",
+      "intitule": "Fixer l'âge légal de départ à 60 ans avec 40 années de cotisation",
+      "description": "Retour à un départ plus précoce.",
+      "opposee_a": "retr2",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "retr4",
+      "theme": "retr",
+      "intitule": "Conserver l'âge légal de départ à 64 ans prévu par la réforme de 2023",
+      "description": "Application de la réforme existante.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "retr5",
+      "theme": "retr",
+      "intitule": "Introduire une part de capitalisation dans le financement des retraites",
+      "description": "Épargne retraite collective obligatoire en complément.",
+      "opposee_a": "retr6",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "retr6",
+      "theme": "retr",
+      "intitule": "Financer les retraites uniquement par répartition, en augmentant les cotisations si nécessaire",
+      "description": "Pas de capitalisation.",
+      "opposee_a": "retr5",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "retr7",
+      "theme": "retr",
+      "intitule": "Porter le minimum de pension au niveau du SMIC net pour une carrière complète",
+      "description": "Revalorisation des petites pensions.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "retr8",
+      "theme": "retr",
+      "intitule": "Réintégrer le port de charges lourdes et les postures pénibles dans le compte pénibilité",
+      "description": "Départs anticipés pour les métiers pénibles.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "retr9",
+      "theme": "retr",
+      "intitule": "Créer un régime de retraite universel par points",
+      "description": "Mêmes règles pour tous les actifs.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "san1",
+      "theme": "sante",
+      "intitule": "Recruter 20 000 soignants à l'hôpital public",
+      "description": "Plan pluriannuel d'embauches.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "san2",
+      "theme": "sante",
+      "intitule": "Réguler l'installation des médecins dans les zones déjà bien dotées",
+      "description": "Lutte contre les déserts médicaux par la contrainte.",
+      "opposee_a": "san3",
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "san3",
+      "theme": "sante",
+      "intitule": "Inciter financièrement les médecins à s'installer dans les déserts médicaux, sans contrainte",
+      "description": "Primes et aides à l'installation.",
+      "opposee_a": "san2",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "san4",
+      "theme": "sante",
+      "intitule": "Rembourser intégralement les soins dentaires et optiques",
+      "description": "Extension du « 100 % santé ».",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "san5",
+      "theme": "sante",
+      "intitule": "Remplacer l'aide médicale d'État (AME) par une aide limitée aux soins urgents",
+      "description": "Restriction des soins des étrangers en situation irrégulière.",
+      "opposee_a": "san6",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "san6",
+      "theme": "sante",
+      "intitule": "Maintenir l'aide médicale d'État (AME) dans sa forme actuelle",
+      "description": "Statu quo.",
+      "opposee_a": "san5",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "san7",
+      "theme": "sante",
+      "intitule": "Légaliser une aide active à mourir strictement encadrée",
+      "description": "Pour les malades en fin de vie qui le demandent.",
+      "opposee_a": "san8",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "san8",
+      "theme": "sante",
+      "intitule": "Développer les soins palliatifs sans légaliser l'aide active à mourir",
+      "description": "Priorité à l'accompagnement.",
+      "opposee_a": "san7",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "san9",
+      "theme": "sante",
+      "intitule": "Supprimer les franchises médicales restant à la charge des patients",
+      "description": "Sur les médicaments et consultations.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "soli1",
+      "theme": "soli",
+      "intitule": "Bloquer les prix des carburants en période de forte inflation",
+      "description": "Plafonnement temporaire des prix à la pompe.",
+      "opposee_a": "soli2",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "soli2",
+      "theme": "soli",
+      "intitule": "Aider de façon ciblée les ménages modestes plutôt que bloquer les prix",
+      "description": "Chèques ou aides sous conditions de ressources.",
+      "opposee_a": "soli1",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "soli3",
+      "theme": "soli",
+      "intitule": "Baisser la TVA sur l'énergie et les produits de première nécessité",
+      "description": "Baisse générale des prix.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "soli4",
+      "theme": "soli",
+      "intitule": "Conditionner le RSA à 15 heures d'activité par semaine",
+      "description": "Formation, insertion ou bénévolat.",
+      "opposee_a": "soli5",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "soli5",
+      "theme": "soli",
+      "intitule": "Verser le RSA sans obligation d'activité",
+      "description": "Droit inconditionnel au minimum social.",
+      "opposee_a": "soli4",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "soli6",
+      "theme": "soli",
+      "intitule": "Ouvrir le RSA aux jeunes de 18 à 25 ans",
+      "description": "Revenu minimum pour les jeunes adultes.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "soli7",
+      "theme": "soli",
+      "intitule": "Porter l'allocation aux adultes handicapés (AAH) au niveau du seuil de pauvreté",
+      "description": "Revalorisation de l'AAH.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "soli8",
+      "theme": "soli",
+      "intitule": "Encadrer les prix d'un panier de produits alimentaires de base",
+      "description": "Prix maximaux fixés par l'État.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "soli9",
+      "theme": "soli",
+      "intitule": "Verser les allocations familiales dès le premier enfant",
+      "description": "Aujourd'hui à partir du deuxième.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "edu1",
+      "theme": "edu",
+      "intitule": "Limiter les classes à 24 élèves en primaire",
+      "description": "Réduction des effectifs par classe.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "edu2",
+      "theme": "edu",
+      "intitule": "Augmenter le salaire des enseignants de 15 %",
+      "description": "Revalorisation sur la durée du quinquennat.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "edu3",
+      "theme": "edu",
+      "intitule": "Rendre l'uniforme obligatoire à l'école",
+      "description": "Tenue commune dans le primaire et le secondaire.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "edu4",
+      "theme": "edu",
+      "intitule": "Supprimer Parcoursup et rétablir un accès de droit à l'université après le baccalauréat",
+      "description": "Fin de la sélection à l'entrée.",
+      "opposee_a": "edu5",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "edu5",
+      "theme": "edu",
+      "intitule": "Renforcer la sélection à l'entrée de l'université",
+      "description": "Prérequis par filière.",
+      "opposee_a": "edu4",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "edu6",
+      "theme": "edu",
+      "intitule": "Rendre le service national universel obligatoire",
+      "description": "Pour tous les jeunes d'une classe d'âge.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "edu7",
+      "theme": "edu",
+      "intitule": "Réduire le financement public des écoles privées sous contrat",
+      "description": "Redéploiement vers le public.",
+      "opposee_a": "edu8",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "edu8",
+      "theme": "edu",
+      "intitule": "Maintenir le financement public de l'enseignement privé sous contrat",
+      "description": "Statu quo.",
+      "opposee_a": "edu7",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "edu9",
+      "theme": "edu",
+      "intitule": "Rendre la cantine scolaire gratuite pour tous les élèves",
+      "description": "Prise en charge par l'État et les collectivités.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "cult1",
+      "theme": "cult",
+      "intitule": "Porter le budget de la culture à 1 % du budget de l'État",
+      "description": "Hausse des moyens du ministère.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "cult2",
+      "theme": "cult",
+      "intitule": "Privatiser une partie de l'audiovisuel public",
+      "description": "Cession de chaînes ou de stations.",
+      "opposee_a": "cult3",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "cult3",
+      "theme": "cult",
+      "intitule": "Maintenir l'audiovisuel public entièrement public, avec un financement dédié",
+      "description": "Garantie d'indépendance et de moyens.",
+      "opposee_a": "cult2",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "cult4",
+      "theme": "cult",
+      "intitule": "Limiter à un seul grand média (télévision, radio ou presse nationale) le nombre de médias détenus par une même personne",
+      "description": "Lutte contre la concentration des médias.",
+      "opposee_a": "cult5",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "cult5",
+      "theme": "cult",
+      "intitule": "Assouplir les règles anti-concentration pour renforcer les groupes de médias français",
+      "description": "Face à la concurrence des plateformes.",
+      "opposee_a": "cult4",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "cult6",
+      "theme": "cult",
+      "intitule": "Supprimer le pass Culture",
+      "description": "Redéploiement des crédits.",
+      "opposee_a": "cult7",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "cult7",
+      "theme": "cult",
+      "intitule": "Maintenir et étendre le pass Culture",
+      "description": "Aide à l'accès des jeunes à la culture.",
+      "opposee_a": "cult6",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "cult8",
+      "theme": "cult",
+      "intitule": "Rendre gratuite l'entrée des musées nationaux",
+      "description": "Pour tous les publics.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "cult9",
+      "theme": "cult",
+      "intitule": "Créer un régime de protection sociale propre aux artistes-auteurs",
+      "description": "Sur le modèle de l'intermittence.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "ecl1",
+      "theme": "ecol",
+      "intitule": "Sortir progressivement du nucléaire",
+      "description": "Fermeture des réacteurs en fin de vie sans remplacement.",
+      "opposee_a": "ecl2",
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "ecl2",
+      "theme": "ecol",
+      "intitule": "Construire de nouveaux réacteurs nucléaires",
+      "description": "Programme de nouveaux EPR.",
+      "opposee_a": "ecl1",
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "ecl3",
+      "theme": "ecol",
+      "intitule": "Interdire les vols intérieurs lorsqu'un trajet en train de moins de 4 heures existe",
+      "description": "Report vers le rail.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "ecl4",
+      "theme": "ecol",
+      "intitule": "Taxer le kérosène des vols",
+      "description": "Fin de l'exonération du carburant aérien.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "ecl5",
+      "theme": "ecol",
+      "intitule": "Sortir du marché européen de l'électricité pour fixer les prix au niveau national",
+      "description": "Prix fondés sur les coûts de production français.",
+      "opposee_a": "ecl6",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "ecl6",
+      "theme": "ecol",
+      "intitule": "Rester dans le marché européen de l'électricité en réformant le calcul des prix",
+      "description": "Réforme au niveau européen.",
+      "opposee_a": "ecl5",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "ecl7",
+      "theme": "ecol",
+      "intitule": "Faire d'EDF une entreprise publique en monopole sur la production et la fourniture d'électricité",
+      "description": "Fin de la concurrence des fournisseurs.",
+      "opposee_a": "ecl8",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "ecl8",
+      "theme": "ecol",
+      "intitule": "Maintenir l'ouverture à la concurrence des fournisseurs d'électricité",
+      "description": "Statu quo.",
+      "opposee_a": "ecl7",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "ecl9",
+      "theme": "ecol",
+      "intitule": "Instaurer un moratoire sur les nouvelles éoliennes",
+      "description": "Arrêt des nouveaux projets.",
+      "opposee_a": "ecl10",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "ecl10",
+      "theme": "ecol",
+      "intitule": "Accélérer le développement de l'éolien et du solaire",
+      "description": "Objectifs et procédures accélérées.",
+      "opposee_a": "ecl9",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "agri1",
+      "theme": "agri",
+      "intitule": "Interdire le glyphosate en France",
+      "description": "Sortie de l'herbicide.",
+      "opposee_a": "agri2",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "agri2",
+      "theme": "agri",
+      "intitule": "Aligner les règles françaises sur les pesticides sur celles de l'Union européenne",
+      "description": "Fin des interdictions plus strictes qu'en Europe.",
+      "opposee_a": "agri1",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "agri3",
+      "theme": "agri",
+      "intitule": "Garantir aux agriculteurs des prix planchers couvrant leurs coûts de production",
+      "description": "Prix minimum fixé par filière.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "agri4",
+      "theme": "agri",
+      "intitule": "S'opposer à l'accord de libre-échange entre l'Union européenne et le Mercosur",
+      "description": "Protection des filières agricoles.",
+      "opposee_a": "agri5",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "agri5",
+      "theme": "agri",
+      "intitule": "Soutenir les accords de libre-échange, dont celui avec le Mercosur",
+      "description": "Ouverture de débouchés à l'export.",
+      "opposee_a": "agri4",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "agri6",
+      "theme": "agri",
+      "intitule": "Imposer 50 % de produits bio et locaux dans la restauration collective publique",
+      "description": "Cantines, hôpitaux, administrations.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "agri7",
+      "theme": "agri",
+      "intitule": "Interdire la création de nouveaux élevages industriels intensifs",
+      "description": "Fermes-usines.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "agri8",
+      "theme": "agri",
+      "intitule": "Faciliter la construction de réserves d'eau pour l'irrigation",
+      "description": "Retenues de substitution.",
+      "opposee_a": "agri9",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "agri9",
+      "theme": "agri",
+      "intitule": "Instaurer un moratoire sur les grandes réserves d'eau (« bassines »)",
+      "description": "Partage de l'eau en priorité.",
+      "opposee_a": "agri8",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "log1",
+      "theme": "loge",
+      "intitule": "Généraliser l'encadrement des loyers dans les zones tendues",
+      "description": "Plafonnement des loyers.",
+      "opposee_a": "log2",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "log2",
+      "theme": "loge",
+      "intitule": "Supprimer l'encadrement des loyers",
+      "description": "Liberté de fixation des loyers.",
+      "opposee_a": "log1",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "log3",
+      "theme": "loge",
+      "intitule": "Construire 150 000 logements sociaux par an",
+      "description": "Plan national de construction.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "log4",
+      "theme": "loge",
+      "intitule": "Supprimer l'obligation de 25 % de logements sociaux par commune (loi SRU)",
+      "description": "Liberté laissée aux maires.",
+      "opposee_a": "log5",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "log5",
+      "theme": "loge",
+      "intitule": "Renforcer les sanctions contre les communes qui ne respectent pas la loi SRU",
+      "description": "Plus de logements sociaux partout.",
+      "opposee_a": "log4",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "log6",
+      "theme": "loge",
+      "intitule": "Faire revenir les autoroutes concédées dans le giron de l'État",
+      "description": "Fin anticipée des concessions.",
+      "opposee_a": "log7",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "log7",
+      "theme": "loge",
+      "intitule": "Maintenir les concessions autoroutières jusqu'à leur terme en encadrant mieux les péages",
+      "description": "Statu quo amélioré.",
+      "opposee_a": "log6",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "log8",
+      "theme": "loge",
+      "intitule": "Garantir un service public de base à moins de 30 minutes de chaque habitant",
+      "description": "École, santé, poste, services de l'État.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "log9",
+      "theme": "loge",
+      "intitule": "Rendre gratuits les transports en commun locaux",
+      "description": "Bus, tramways, métros.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "om1",
+      "theme": "om",
+      "intitule": "Aligner le prix des produits de première nécessité des outre-mer sur celui de l'Hexagone",
+      "description": "Lutte contre la vie chère.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "om2",
+      "theme": "om",
+      "intitule": "Permettre aux territoires d'outre-mer qui le demandent une autonomie élargie, validée par référendum local",
+      "description": "Évolution institutionnelle à la carte.",
+      "opposee_a": "om3",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "om3",
+      "theme": "om",
+      "intitule": "Maintenir les statuts actuels des territoires d'outre-mer",
+      "description": "Pas de nouvelle évolution institutionnelle.",
+      "opposee_a": "om2",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "om4",
+      "theme": "om",
+      "intitule": "Supprimer l'octroi de mer",
+      "description": "Taxe locale sur les importations.",
+      "opposee_a": "om5",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "om5",
+      "theme": "om",
+      "intitule": "Maintenir l'octroi de mer, ressource des collectivités d'outre-mer",
+      "description": "Statu quo.",
+      "opposee_a": "om4",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "om6",
+      "theme": "om",
+      "intitule": "Lancer un plan d'urgence pour l'accès à l'eau potable outre-mer",
+      "description": "Notamment en Guadeloupe et à Mayotte.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "om7",
+      "theme": "om",
+      "intitule": "Supprimer le droit du sol à Mayotte",
+      "description": "Nationalité par filiation uniquement.",
+      "opposee_a": "om8",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "om8",
+      "theme": "om",
+      "intitule": "Maintenir le droit du sol à Mayotte dans les conditions actuelles",
+      "description": "Statu quo.",
+      "opposee_a": "om7",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "om9",
+      "theme": "om",
+      "intitule": "Renforcer l'aide aux billets d'avion entre les outre-mer et l'Hexagone",
+      "description": "Continuité territoriale.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "num1",
+      "theme": "num",
+      "intitule": "Interdire l'accès aux réseaux sociaux aux moins de 15 ans",
+      "description": "Vérification de l'âge obligatoire.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "num2",
+      "theme": "num",
+      "intitule": "Obliger les utilisateurs de réseaux sociaux à vérifier leur identité",
+      "description": "Fin de l'anonymat vis-à-vis des plateformes.",
+      "opposee_a": "num3",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "num3",
+      "theme": "num",
+      "intitule": "Garantir le droit à l'anonymat en ligne",
+      "description": "Pas d'identification obligatoire.",
+      "opposee_a": "num2",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "num4",
+      "theme": "num",
+      "intitule": "Interdire la reconnaissance faciale dans l'espace public",
+      "description": "Protection de la vie privée.",
+      "opposee_a": "num5",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "num5",
+      "theme": "num",
+      "intitule": "Autoriser la reconnaissance faciale dans l'espace public pour la sécurité",
+      "description": "Sous contrôle d'une autorité.",
+      "opposee_a": "num4",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "num6",
+      "theme": "num",
+      "intitule": "Augmenter la taxe sur les grandes entreprises du numérique",
+      "description": "Taxe sur les services numériques.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "num7",
+      "theme": "num",
+      "intitule": "Privilégier les logiciels libres dans les administrations",
+      "description": "Souveraineté et économies.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "num8",
+      "theme": "num",
+      "intitule": "Interdire l'usage du téléphone portable au collège et au lycée",
+      "description": "Pendant toute la journée scolaire.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "num9",
+      "theme": "num",
+      "intitule": "Héberger les données publiques sensibles uniquement chez des prestataires européens",
+      "description": "Cloud souverain.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "sec1",
+      "theme": "secu",
+      "intitule": "Recruter 10 000 policiers et gendarmes",
+      "description": "Renforcement des effectifs de terrain.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "sec2",
+      "theme": "secu",
+      "intitule": "Confier le contrôle de la police à une autorité indépendante du ministère de l'Intérieur",
+      "description": "À la place de l'IGPN actuelle.",
+      "opposee_a": "sec3",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "sec3",
+      "theme": "secu",
+      "intitule": "Maintenir le contrôle interne de la police (IGPN) en renforçant ses moyens",
+      "description": "Statu quo amélioré.",
+      "opposee_a": "sec2",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "sec4",
+      "theme": "secu",
+      "intitule": "Instaurer une présomption de légitime défense pour les policiers et gendarmes",
+      "description": "Renversement de la charge de la preuve.",
+      "opposee_a": "sec5",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "sec5",
+      "theme": "secu",
+      "intitule": "Conserver le régime actuel de la légitime défense, apprécié au cas par cas par le juge",
+      "description": "Statu quo.",
+      "opposee_a": "sec4",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "sec6",
+      "theme": "secu",
+      "intitule": "Rendre obligatoire le déclenchement de la caméra-piéton lors des interventions de police",
+      "description": "Traçabilité des interventions.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "sec7",
+      "theme": "secu",
+      "intitule": "Recréer une police de proximité",
+      "description": "Policiers affectés durablement à un quartier.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "sec8",
+      "theme": "secu",
+      "intitule": "Légaliser le cannabis avec une production et une vente encadrées par l'État",
+      "description": "Fin de la prohibition.",
+      "opposee_a": "sec9",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "sec9",
+      "theme": "secu",
+      "intitule": "Durcir les sanctions contre la consommation de stupéfiants",
+      "description": "Amendes et peines alourdies.",
+      "opposee_a": "sec8",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "jus1",
+      "theme": "just",
+      "intitule": "Instaurer des peines planchers",
+      "description": "Peines minimales pour les récidivistes.",
+      "opposee_a": "jus2",
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "jus2",
+      "theme": "just",
+      "intitule": "Développer les peines alternatives à la prison",
+      "description": "Travaux d'intérêt général, bracelet électronique.",
+      "opposee_a": "jus1",
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "jus3",
+      "theme": "just",
+      "intitule": "Calculer le montant des amendes routières en fonction des revenus",
+      "description": "Amendes proportionnelles.",
+      "opposee_a": "jus4",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "jus4",
+      "theme": "just",
+      "intitule": "Maintenir des amendes routières forfaitaires identiques pour tous",
+      "description": "Statu quo.",
+      "opposee_a": "jus3",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "jus5",
+      "theme": "just",
+      "intitule": "Construire 20 000 places de prison supplémentaires",
+      "description": "Contre la surpopulation carcérale.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "jus6",
+      "theme": "just",
+      "intitule": "Abaisser la majorité pénale à 16 ans",
+      "description": "Mineurs de 16 ans jugés comme des majeurs.",
+      "opposee_a": "jus7",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "jus7",
+      "theme": "just",
+      "intitule": "Maintenir la justice spécifique des mineurs et l'excuse de minorité",
+      "description": "Statu quo.",
+      "opposee_a": "jus6",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "jus8",
+      "theme": "just",
+      "intitule": "Doubler le budget de la justice sur le quinquennat",
+      "description": "Recrutement de magistrats et de greffiers.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "jus9",
+      "theme": "just",
+      "intitule": "Créer une peine de perpétuité réelle, sans possibilité de libération",
+      "description": "Pour les crimes les plus graves.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "imm1",
+      "theme": "immi",
+      "intitule": "Organiser un référendum sur l'immigration",
+      "description": "Consultation directe des Français.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "imm2",
+      "theme": "immi",
+      "intitule": "Supprimer le droit du sol sur l'ensemble du territoire",
+      "description": "Nationalité par filiation ou naturalisation.",
+      "opposee_a": "imm3",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "imm3",
+      "theme": "immi",
+      "intitule": "Maintenir le droit du sol dans les conditions actuelles",
+      "description": "Statu quo.",
+      "opposee_a": "imm2",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "imm4",
+      "theme": "immi",
+      "intitule": "Régulariser les travailleurs sans papiers dans les métiers en tension",
+      "description": "Titre de séjour lié à l'emploi.",
+      "opposee_a": "imm5",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "imm5",
+      "theme": "immi",
+      "intitule": "Limiter les régularisations de sans-papiers aux cas exceptionnels",
+      "description": "Durcissement des conditions.",
+      "opposee_a": "imm4",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "imm6",
+      "theme": "immi",
+      "intitule": "Durcir les conditions du regroupement familial",
+      "description": "Ressources, logement, langue.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "imm7",
+      "theme": "immi",
+      "intitule": "Réserver certaines prestations sociales aux Français (« priorité nationale »)",
+      "description": "Logement social, aides, emplois.",
+      "opposee_a": "imm8",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "imm8",
+      "theme": "immi",
+      "intitule": "Maintenir l'égalité d'accès aux prestations pour les étrangers en situation régulière",
+      "description": "Statu quo.",
+      "opposee_a": "imm7",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "imm9",
+      "theme": "immi",
+      "intitule": "Faire exécuter systématiquement les obligations de quitter le territoire (OQTF)",
+      "description": "Moyens et accords de retour.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "eu1",
+      "theme": "euro",
+      "intitule": "Renforcer l'intégration européenne",
+      "description": "Plus de compétences confiées à l'Union européenne.",
+      "opposee_a": "eu2",
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "eu2",
+      "theme": "euro",
+      "intitule": "Rendre des compétences aux États membres de l'Union européenne",
+      "description": "Europe des nations.",
+      "opposee_a": "eu1",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "eu3",
+      "theme": "euro",
+      "intitule": "Organiser un référendum sur la sortie de l'Union européenne",
+      "description": "Consultation sur l'appartenance à l'UE.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "eu4",
+      "theme": "euro",
+      "intitule": "Sortir du commandement intégré de l'OTAN",
+      "description": "Indépendance militaire.",
+      "opposee_a": "eu5",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "eu5",
+      "theme": "euro",
+      "intitule": "Maintenir la pleine participation de la France à l'OTAN",
+      "description": "Statu quo.",
+      "opposee_a": "eu4",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "eu6",
+      "theme": "euro",
+      "intitule": "Porter le budget de la défense à 3 % du PIB",
+      "description": "Hausse des dépenses militaires.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "eu7",
+      "theme": "euro",
+      "intitule": "Rétablir un service militaire obligatoire",
+      "description": "Pour les jeunes d'une classe d'âge.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "eu8",
+      "theme": "euro",
+      "intitule": "Maintenir ou augmenter l'aide militaire à l'Ukraine",
+      "description": "Livraisons d'armes et soutien financier.",
+      "opposee_a": "eu9",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "eu9",
+      "theme": "euro",
+      "intitule": "Cesser les livraisons d'armes à l'Ukraine et privilégier la négociation",
+      "description": "Priorité à la diplomatie.",
+      "opposee_a": "eu8",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "ins1",
+      "theme": "inst",
+      "intitule": "Instaurer le référendum d'initiative citoyenne (RIC)",
+      "description": "Référendum déclenché par pétition.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "ins2",
+      "theme": "inst",
+      "intitule": "Introduire une dose de proportionnelle aux élections législatives",
+      "description": "Modification du mode de scrutin.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "demo"
+    },
+    {
+      "id": "ins3",
+      "theme": "inst",
+      "intitule": "Prendre en compte le vote blanc, avec annulation de l'élection s'il arrive en tête",
+      "description": "Nouvelle élection avec d'autres candidats.",
+      "opposee_a": "ins4",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "ins4",
+      "theme": "inst",
+      "intitule": "Compter le vote blanc à part, sans effet sur le résultat",
+      "description": "Statu quo amélioré.",
+      "opposee_a": "ins3",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "ins5",
+      "theme": "inst",
+      "intitule": "Permettre de révoquer le président de la République par référendum d'initiative citoyenne",
+      "description": "En cours de mandat.",
+      "opposee_a": "ins6",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "ins6",
+      "theme": "inst",
+      "intitule": "Conserver la durée fixe du mandat présidentiel, sans révocation",
+      "description": "Statu quo.",
+      "opposee_a": "ins5",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "ins7",
+      "theme": "inst",
+      "intitule": "Rendre inéligible à vie un élu condamné pour corruption ou enrichissement personnel",
+      "description": "Sanction définitive.",
+      "opposee_a": "ins8",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "ins8",
+      "theme": "inst",
+      "intitule": "Maintenir des peines d'inéligibilité limitées dans le temps, fixées par le juge",
+      "description": "Statu quo.",
+      "opposee_a": "ins7",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "ins9",
+      "theme": "inst",
+      "intitule": "Rendre publiques les rémunérations des hauts fonctionnaires",
+      "description": "Transparence.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "ins10",
+      "theme": "inst",
+      "intitule": "Interdire aux hauts fonctionnaires de rejoindre une entreprise qu'ils ont contrôlée (« pantouflage »)",
+      "description": "Prévention des conflits d'intérêts.",
+      "opposee_a": "ins11",
+      "actif": true,
+      "origine": "praxis"
+    },
+    {
+      "id": "ins11",
+      "theme": "inst",
+      "intitule": "Encadrer le pantouflage par un délai et un avis déontologique, sans l'interdire",
+      "description": "Statu quo renforcé.",
+      "opposee_a": "ins10",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "ins12",
+      "theme": "inst",
+      "intitule": "Supprimer l'article 49.3 de la Constitution",
+      "description": "Fin de l'adoption d'un texte sans vote.",
+      "opposee_a": null,
+      "actif": true,
+      "origine": "nouveau"
+    }
+  ]
+}
