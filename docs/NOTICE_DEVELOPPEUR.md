@@ -11,8 +11,8 @@ Les règles du projet se trouvent dans le [cahier des charges](../CAHIER_DES_CHA
 
 | Lot | Contenu | Échéance visée | État | Commit / remarque |
 |---|---|---|---|---|
-| L1 | Format `donnees.json`, validateur, jeu de démonstration | 12/11/2026 | ✅ | `733f820` |
-| L2 | Parcours électeur, calcul du score, interface « bulletin de vote » | 12/11/2026 | ✅ | `733f820` — reste à vérifier l'ouverture par double-clic |
+| L1 | Format `donnees.json`, validateur, jeu de démonstration | 12/11/2026 | ✅ | `913fc2f` |
+| L2 | Parcours électeur, calcul du score, interface « bulletin de vote » | 12/11/2026 | ✅ | `913fc2f` — reste à vérifier l'ouverture par double-clic |
 | L3 | Mode Édition : CRUD, matrice mesures × candidats, import/export | 27/11/2026 | ⏳ | |
 | L4 | Résultats détaillés (graphique par thème), export PDF, lien de partage | 04/12/2026 | ⏳ | |
 | L5 | `outils/maj.py`, import/export de packs (F29 à F40) | 18/12/2026 | ⏳ | |
@@ -116,7 +116,7 @@ python outils/valider.py --publier
 
 | Date | Événement |
 |---|---|
-| 12/11/2026 | Cahier des charges validé. Lots 1 et 2 réalisés (`733f820`). Notice créée. |
+| 12/11/2026 | Cahier des charges validé. Lots 1 et 2 réalisés (`913fc2f`). Notice créée. |
 
 ---
 
