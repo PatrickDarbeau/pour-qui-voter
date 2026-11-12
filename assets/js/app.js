@@ -336,6 +336,8 @@
         </tbody></table></div>
 
       <h2>2. Ce qui compte pour vous pèse plus lourd</h2>
+      <p><strong>C'est facultatif.</strong> Vous n'êtes pas obligé de choisir des thèmes prioritaires ni de marquer des mesures essentielles.
+        Sans ces choix, toutes les mesures comptent de la même façon (poids 1).</p>
       <ul class="liste">
         <li>Une mesure d'un <strong>thème prioritaire</strong> compte <strong>2 fois</strong>.</li>
         <li>Une mesure marquée <strong>★ essentielle</strong> compte <strong>3 fois</strong>.</li>
