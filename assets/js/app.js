@@ -454,11 +454,12 @@
       const r = etat.reponses[el.dataset.etoile];
       if (r && r.avis) { r.essentielle = !r.essentielle; sauver(); majCarte(el.closest(".mesure"), el.dataset.etoile); }
     } else if (el.dataset.action === "imprimer") {
-      // Déplie tous les détails pour l'impression, puis restaure l'état
-      const fermes = [...app.querySelectorAll("details:not([open])")];
-      fermes.forEach((d) => (d.open = true));
+      // Pour l'impression : détail du premier candidat et tableau par thème dépliés, les autres résumés ;
+      // l'état d'affichage est restauré ensuite.
+      const etats = [...app.querySelectorAll("details")].map((d) => [d, d.open]);
+      etats.forEach(([d]) => (d.open = !!d.closest(".premier") || d.classList.contains("carte")));
       window.print();
-      fermes.forEach((d) => (d.open = false));
+      etats.forEach(([d, o]) => (d.open = o));
     } else if (el.dataset.action === "partager") {
       afficherPartage();
     } else if (el.dataset.action === "copier-partage") {

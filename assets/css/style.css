@@ -364,12 +364,14 @@ table.chaleur tbody th { white-space: nowrap; border: 0; }
   .entete, .pied, .actions, .bandeau, #zone-partage, .bulle-aide, dialog, .btn { display: none !important; }
   main { padding: 0; max-width: none; animation: none; }
   .entete-impression { display: block; border-bottom: 3px solid #1f3a8a; padding-bottom: .4rem; margin-bottom: 1rem; font-size: 9pt; color: #333; }
-  .carte { box-shadow: none; break-inside: avoid; }
+  .carte { box-shadow: none; }
+  .ligne-score, .podium, .faq, .partage { break-inside: avoid; }
+  h2, h3, h4 { break-after: avoid; }
   .tampon { animation: none; mix-blend-mode: normal; }
   .barre span { animation: none; }
   details > summary { list-style: none; }
-  .groupe-theme { break-inside: avoid; }
-  .radar, .chaleur-cadre { break-inside: avoid; }
-  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 8pt; color: #555; word-break: break-all; }
+  .groupe-theme li { break-inside: avoid; }
+  section.carte.bulletin:not(.premier) { padding-top: .5rem; padding-bottom: .5rem; margin: .4rem 0; }
+  .radar, .chaleur-cadre, details.carte { break-inside: avoid; }
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }

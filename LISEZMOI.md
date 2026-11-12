@@ -12,6 +12,7 @@ Décompressez l'archive, puis ouvrez `index.html` dans votre navigateur avec un 
 | `python outils/valider.py --publier` | Contrôle `data/donnees.json` et génère `data/donnees.js` |
 | `node tests/score.test.js` | Lance les tests du calcul de concordance |
 | `python -m http.server 8765` | Lance un serveur local (facultatif) |
+| `node tests/pdf.mjs docs/exemples/resultats-exemple.pdf` | Génère un PDF des résultats (serveur local lancé) pour contrôler l'impression |
 
 Le cahier des charges complet se trouve dans [CAHIER_DES_CHARGES.md](CAHIER_DES_CHARGES.md) (la liste des lots est au §10).
 Le suivi des lots, l'échéancier des packs et la procédure de mise à jour sont dans [docs/NOTICE_DEVELOPPEUR.md](docs/NOTICE_DEVELOPPEUR.md).
