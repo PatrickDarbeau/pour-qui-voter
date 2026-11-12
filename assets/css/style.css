@@ -410,3 +410,6 @@ a.carte.elimine { opacity: .5; filter: grayscale(.7); }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .urne-question { font: 800 30px var(--serif); fill: var(--rouge); }
 .ed-verrou { border-left: 4px solid var(--etoile); }
+
+/* Candidats dont les positions ne sont pas encore saisies */
+.en-attente { border-left: 4px solid #b9a36a; }

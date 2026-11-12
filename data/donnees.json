@@ -1,7 +1,7 @@
 {
   "format": 1,
-  "version": "2026.11.12-test",
-  "date": "2026-11-12",
+  "version": "2026.11.13-test",
+  "date": "2026-11-13",
   "origine": "officiel",
   "demo": false,
   "brouillon": true,
@@ -1559,6 +1559,28 @@
   ],
   "candidats": [
     {
+      "id": "attal",
+      "prenom": "Gabriel",
+      "nom": "Attal",
+      "parti": "Renaissance",
+      "couleur": "#1b9e77",
+      "biographie": "Ancien Premier ministre (2024). Secrétaire général de Renaissance. Candidature annoncée le 22 mai 2026.",
+      "slogan": null,
+      "photo": null,
+      "site_officiel": "https://parti-renaissance.fr",
+      "pages_programme": [],
+      "programme_url": null,
+      "statut": "declare",
+      "derniere_collecte": "2026-11-12",
+      "sources_profil": [
+        "https://lcp.fr/actualites/presidentielle-2027-gabriel-attal-officialise-sa-candidature-436721"
+      ],
+      "consulte_le": "2026-11-12",
+      "a_verifier": [
+        "Site de campagne 2027 (gabrielattal.fr est son site des législatives 2024) et programme (non trouvés au 12/11/2026)"
+      ]
+    },
+    {
       "id": "glucksmann",
       "prenom": "Raphaël",
       "nom": "Glucksmann",
@@ -1588,6 +1610,33 @@
       "consulte_le": "2026-11-12",
       "a_verifier": [
         "Programme complet (le plan « Révolution écologique » est présenté comme la première partie)"
+      ]
+    },
+    {
+      "id": "lepen",
+      "prenom": "Marine",
+      "nom": "Le Pen",
+      "parti": "Rassemblement national",
+      "couleur": "#7570b3",
+      "biographie": "Députée, ancienne présidente du Rassemblement national, candidate en 2012, 2017 et 2022. Candidature annoncée le 7 juillet 2026, après sa condamnation en appel ; pourvoi en cassation en cours.",
+      "slogan": null,
+      "photo": null,
+      "site_officiel": "https://rassemblementnational.fr",
+      "pages_programme": [],
+      "programme_url": null,
+      "statut": "declare",
+      "derniere_collecte": "2026-11-12",
+      "sources_profil": [
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-marine-le-pen-est-candidate-et-se-pourvoit-en-cassation",
+        "https://www.leclubdesjuristes.com/en-bref/marine-le-pen-candidate-a-la-presidentielle-de-2027-malgre-sa-condamnation-en-appel-16843/"
+      ],
+      "consulte_le": "2026-11-12",
+      "a_verifier": [
+        "Site de campagne et programme 2027 (non trouvés ; le site du RN bloque la collecte automatique)",
+        "Mandat actuel (députée) à confirmer",
+        "Issue du pourvoi en cassation (éligibilité)",
+        "Candidature éventuelle de Jordan Bardella",
+        "Site de campagne propre à la candidate"
       ]
     },
     {
@@ -1766,6 +1815,80 @@
       "consulte_le": "2026-11-12",
       "a_verifier": [
         "Site de campagne propre au candidat"
+      ]
+    },
+    {
+      "id": "riner",
+      "prenom": "Teddy",
+      "nom": "Riner",
+      "parti": "Sans étiquette",
+      "couleur": "#1f78b4",
+      "biographie": "Judoka, quintuple champion olympique. Candidature annoncée le 9 novembre 2026, sans étiquette (« ni de droite, ni de gauche »).",
+      "slogan": "La France qu'on veut",
+      "photo": null,
+      "site_officiel": null,
+      "pages_programme": [],
+      "programme_url": null,
+      "statut": "declare",
+      "derniere_collecte": null,
+      "sources_profil": [
+        "https://lcp.fr/actualites/le-judoka-teddy-riner-annonce-sa-candidature-a-l-election-presidentielle-de-2027-444920"
+      ],
+      "consulte_le": "2026-11-12",
+      "a_verifier": [
+        "Site de campagne « La France qu'on veut » annoncé par la presse, adresse non trouvée au 12/11/2026",
+        "Programme (annoncé, non publié)"
+      ]
+    },
+    {
+      "id": "roussel",
+      "prenom": "Fabien",
+      "nom": "Roussel",
+      "parti": "Parti communiste français",
+      "couleur": "#b15928",
+      "biographie": "Secrétaire national du Parti communiste français, candidat en 2022. Candidature validée par les adhérents et officialisée en septembre 2026.",
+      "slogan": null,
+      "photo": null,
+      "site_officiel": "https://www.fabienroussel2027.fr",
+      "pages_programme": [
+        "https://www.fabienroussel2027.fr/materiel"
+      ],
+      "programme_url": null,
+      "statut": "declare",
+      "derniere_collecte": "2026-11-12",
+      "sources_profil": [
+        "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389",
+        "https://www.fabienroussel2027.fr"
+      ],
+      "consulte_le": "2026-11-12",
+      "a_verifier": [
+        "Programme détaillé (le site présente un manifeste, « VIVRE ! »)"
+      ]
+    },
+    {
+      "id": "zemmour",
+      "prenom": "Éric",
+      "nom": "Zemmour",
+      "parti": "Reconquête",
+      "couleur": "#6a3d9a",
+      "biographie": "Président de Reconquête, candidat en 2022. Candidature confirmée à l'automne 2026.",
+      "slogan": null,
+      "photo": null,
+      "site_officiel": "https://www.ericzemmour.fr",
+      "pages_programme": [
+        "https://www.ericzemmour.fr/priorites"
+      ],
+      "programme_url": null,
+      "statut": "declare",
+      "derniere_collecte": "2026-11-12",
+      "sources_profil": [
+        "https://lcp.fr/actualites/presidentielle-2027-eric-zemmour-officialise-sa-candidature-441871",
+        "https://fr.euronews.com/2026/11/10/eric-zemmour-annonce-sa-candidature-a-la-presidentielle"
+      ],
+      "consulte_le": "2026-11-12",
+      "a_verifier": [
+        "Date de la déclaration officielle (17/09 ou 10/11/2026 selon les sources)",
+        "Programme détaillé (page « Priorités » seulement)"
       ]
     }
   ],
@@ -4732,6 +4855,6 @@
     }
   ],
   "journal": [
-    "Pack de test : 158 mesures, 5 candidats (Glucksmann, Lisnard, Mélenchon, Philippe, Retailleau), positions en brouillon à relire."
+    "Pack de test : 158 mesures, 10 candidats dont 5 avec positions en brouillon à relire ; positions non encore saisies : Attal, Le Pen, Riner, Roussel, Zemmour."
   ]
 }

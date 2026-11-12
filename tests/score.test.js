@@ -46,3 +46,13 @@ const res2 = Score.calculer(D2, { m1: { avis: 1 } }, []);
 assert.strictEqual(res2.resultats[1].exAequo, true);
 
 console.log("Tous les tests passent.");
+
+// Candidat sans positions : non classé, listé dans enAttente
+{
+  const D2 = { mesures: [{ id: "m1", theme: "t" }], candidats: [{ id: "a" }, { id: "b" }],
+    positions: [{ candidat: "a", mesure: "m1", valeur: 1 }] };
+  const r = Score.calculer(D2, { m1: { avis: 1 } }, []);
+  if (r.resultats.length !== 1 || r.resultats[0].candidat.id !== "a" || r.enAttente.map((c) => c.id).join() !== "b")
+    throw new Error("Candidat sans positions mal traité");
+  console.log("ok - candidat sans positions hors classement");
+}

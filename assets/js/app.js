@@ -219,7 +219,10 @@
   function vueResultats(option) {
     // Mode second tour : comparaison limitée aux deux qualifiés, sauf si l'on demande « tous »
     const restreint = T2 && option !== "tous";
-    const { nbMesures, resultats } = Score.calculer(D, etat.reponses, etat.prioritaires, restreint ? T2 : null);
+    const { nbMesures, resultats, enAttente } = Score.calculer(D, etat.reponses, etat.prioritaires, restreint ? T2 : null);
+    const blocAttente = enAttente.length ? `<p class="carte en-attente">⏳ <strong>Positions non encore saisies</strong> — ${enAttente
+      .map((c) => `<a href="#/candidat/${esc(c.id)}">${esc(nomComplet(c))}</a>`).join(", ")} :
+      ${enAttente.length > 1 ? "ces candidats ne sont pas classés" : "ce candidat n'est pas classé"} tant que leurs positions n'ont pas été relevées.</p>` : "";
     const bandeauT2 = T2 ? `<p class="carte t2">🗳 <strong>Second tour</strong> —
       ${restreint
         ? `comparaison limitée aux deux candidats qualifiés. <a href="#/resultats/tous">Voir aussi tous les candidats du premier tour</a>`
@@ -273,7 +276,7 @@
         Résultats du ${new Date().toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
         · données ${esc(D.version)} · ${nbMesures} mesures · outil non officiel, aide à la décision
       </div>
-      ${bandeauT2}
+      ${bandeauT2}${blocAttente}
       <div class="podium">
         <div>
           <span class="surtitre">Dépouillement</span>
@@ -303,10 +306,12 @@
     const ordre = T2 ? [...D.candidats].sort((a, b) => T2.includes(b.id) - T2.includes(a.id)) : D.candidats;
     return `<h1>Les candidats</h1>${T2 ? '<p class="doux">Second tour : les deux candidats qualifiés sont en tête ; les autres sont grisés.</p>' : ""}` + ordre.map((c) => {
       const elimine = T2 && !T2.includes(c.id);
+      const attente = !D.positions.some((p) => p.candidat === c.id && p.valeur !== 0);
       return `<a class="carte bulletin ${elimine ? "elimine" : ""}" href="#/candidat/${esc(c.id)}">
         <strong><span class="pastille" style="background:${couleurBarre(c)}"></span>${esc(nomComplet(c))}</strong>
         <span class="doux">— ${esc(c.parti)}</span>
         ${T2 ? (elimine ? '<span class="badge">Non qualifié</span>' : '<span class="badge qualifie">Qualifié au second tour</span>') : ""}
+        ${attente ? '<span class="badge">Positions non encore saisies</span>' : ""}
         <br><em>${esc(c.slogan || "")}</em>
       </a>`;
     }).join("");
@@ -330,6 +335,7 @@
       <h1><span class="pastille" style="background:${couleurBarre(c)}"></span>${esc(nomComplet(c))}</h1>
       <p><strong>${esc(c.parti)}</strong>${c.slogan ? ` — « ${esc(c.slogan)} »` : ""}</p>
       <p>${esc(c.biographie || "")}</p>
+      ${Object.values(pos).some((p) => p.valeur !== 0) ? "" : `<p class="carte en-attente">⏳ Les positions de ce candidat n’ont pas encore été relevées : il n’est pas classé dans les résultats.</p>`}
       ${c.site_officiel ? `<p>Site officiel : <a href="${esc(c.site_officiel)}" rel="noopener noreferrer" target="_blank">${esc(c.site_officiel)}</a></p>` : ""}
       ${sections}
       <div class="actions">

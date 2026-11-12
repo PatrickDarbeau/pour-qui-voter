@@ -5,7 +5,8 @@ Entrées : data/brouillon/catalogue.json, candidats.json, positions.json
 Sortie  : data/brouillon/pack_test.json
 
 Usage :
-    python outils/assembler.py               assemble le pack de test (candidats ayant des positions)
+    python outils/assembler.py               assemble le pack de test avec les 10 candidats
+                                             (ceux sans positions sont affichés « non encore saisis », hors classement)
     python outils/assembler.py --installer   l'installe aussi dans data/donnees.json + donnees.js
                                              (le pack de démo reste dans data/demo/)
 Le pack est marqué « brouillon » : l'application affiche alors un bandeau « données provisoires ».
@@ -30,7 +31,8 @@ def lire(nom):
 def main():
     cat, cands, pos = lire("catalogue.json"), lire("candidats.json")["candidats"], lire("positions.json")["positions"]
     avec_positions = {p["candidat"] for p in pos}
-    candidats = [c for c in cands if c["id"] in avec_positions]
+    candidats = cands
+    attente = [c["nom"] for c in cands if c["id"] not in avec_positions]
     pack = {
         "format": 1,
         "version": date.today().strftime("%Y.%m.%d") + "-test",
@@ -45,9 +47,10 @@ def main():
         "themes": cat["themes"],
         "mesures": cat["mesures"],
         "candidats": candidats,
-        "positions": [p for p in pos if p["candidat"] in avec_positions],
+        "positions": pos,
         "journal": [f"Pack de test : {len(cat['mesures'])} mesures, {len(candidats)} candidats "
-                    f"({', '.join(c['nom'] for c in candidats)}), positions en brouillon à relire."],
+                    f"dont {len(candidats) - len(attente)} avec positions en brouillon à relire ; "
+                    f"positions non encore saisies : {', '.join(attente) or 'aucun'}."],
     }
     erreurs, alertes = valider.valider(pack)
     for a in alertes:

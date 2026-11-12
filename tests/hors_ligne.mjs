@@ -73,7 +73,10 @@ try {
   ok(await js("!!document.querySelector('.tampon') && !!document.querySelector('.radar svg') && !!document.querySelector('table.chaleur')"),
     "Résultats : classement, radar et tableau par thème");
   const nbCand = await js("document.querySelectorAll('section.bulletin').length");
-  ok(nbCand === (await js("DONNEES.candidats.length")), `Tous les candidats classés (${nbCand})`);
+  const nbSaisis = await js("new Set(DONNEES.positions.filter((p) => p.valeur !== 0).map((p) => p.candidat)).size");
+  const nbTotal = await js("DONNEES.candidats.length");
+  ok(nbCand === nbSaisis, `Candidats ayant des positions classés (${nbCand}/${nbTotal})`);
+  ok(nbTotal === nbSaisis || await js("!!document.querySelector('.en-attente')"), "Candidats sans positions signalés à part");
 
   // Persistance après rechargement
   await cmd("Page.reload");
@@ -83,7 +86,8 @@ try {
   // Édition locale + mode second tour
   await js(`(() => {
     const d = JSON.parse(JSON.stringify(DONNEES));
-    d.second_tour = { actif: true, qualifies: [d.candidats[0].id, d.candidats[1].id] };
+    const saisis = [...new Set(d.positions.filter((p) => p.valeur !== 0).map((p) => p.candidat))];
+    d.second_tour = { actif: true, qualifies: [saisis[0], saisis[1]] };
     d.origine = "local";
     localStorage.setItem("pqv.donnees.v1", JSON.stringify(d));
   })()`);
@@ -96,7 +100,7 @@ try {
   await aller("#/resultats/tous");
   ok(await js("document.querySelectorAll('section.bulletin').length") === nbCand, "Second tour : « voir tous les candidats » fonctionne");
   await aller("#/candidats");
-  ok(await js("document.querySelectorAll('a.carte.elimine').length") === nbCand - 2, "Second tour : non-qualifiés grisés");
+  ok(await js("document.querySelectorAll('a.carte.elimine').length") === nbTotal - 2, "Second tour : non-qualifiés grisés");
   await aller("#/edition/positions");
   ok(await js("document.querySelectorAll('.ed-cellule').length > 0"), "Mode Édition disponible en local");
 

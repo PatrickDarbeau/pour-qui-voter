@@ -30,9 +30,13 @@
     const mesures = donnees.mesures.filter(
       (m) => m.actif !== false && reponses[m.id] && reponses[m.id].avis !== 0
     );
-    const candidats = donnees.candidats.filter(
+    // Un candidat sans aucune position saisie n'est pas classé : il est listé à part (enAttente)
+    const saisi = (c) => idx[c.id] && Object.values(idx[c.id]).some((p) => p.valeur !== 0);
+    const retenus = donnees.candidats.filter(
       (c) => !candidatsRetenus || candidatsRetenus.includes(c.id)
     );
+    const candidats = retenus.filter(saisi);
+    const enAttente = retenus.filter((c) => !saisi(c));
 
     const resultats = candidats.map((c) => {
       let num = 0, den = 0, exprimees = 0;
@@ -73,7 +77,7 @@
       const top = resultats[0].score;
       for (const r of resultats) r.exAequo = top !== null && r !== resultats[0] && top - r.score < SEUIL_EX_AEQUO;
     }
-    return { nbMesures: mesures.length, resultats };
+    return { nbMesures: mesures.length, resultats, enAttente };
   }
 
   const Score = { calculer, SEUIL_EX_AEQUO };
