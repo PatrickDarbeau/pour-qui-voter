@@ -303,3 +303,8 @@ button:disabled { opacity: .45; cursor: not-allowed; }
 .ed-section .ed-table { margin: 0; }
 .ed-section .ed-table td { padding-left: 1rem; }
 .ed-section > p { padding: .5rem 1rem; margin: 0; }
+table.methode { font-size: .95rem; }
+table.methode th, table.methode td { text-align: center; }
+table.methode td:first-child, table.methode tbody th { text-align: left; }
+table.methode small { color: var(--doux); }
+.carte:has(> table.methode) { overflow-x: auto; }

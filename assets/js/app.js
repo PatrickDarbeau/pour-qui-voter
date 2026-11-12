@@ -265,15 +265,63 @@
 
   function vueMethode() {
     return `
-      <h1>Méthode de calcul</h1>
-      <p>Pour chaque mesure où vous avez exprimé un avis (pour = +1, contre = −1), on compare avec la position du candidat :
-        soutient (+1), soutient partiellement (+0,5), ne se prononce pas (0), s'oppose (−1).</p>
-      <p>L'accord vaut le produit des deux. Chaque mesure est pondérée : ×2 si son thème est prioritaire, ×3 si vous l'avez marquée essentielle.</p>
-      <p>Le score est la moyenne pondérée des accords, ramenée de [−1 ; +1] à [0 ; 100 %].
-        Un candidat sans position sur une mesure obtient 0 pour celle-ci, soit 50 % : ni accord ni désaccord.</p>
-      <p>La <strong>couverture</strong> indique la part de vos mesures sur lesquelles le candidat s'est prononcé.
-        Deux candidats à moins de ${Score.SEUIL_EX_AEQUO} points sont signalés ex æquo.</p>
-      <p>Les positions proviennent en priorité du site officiel et du programme de chaque candidat ; chaque position est sourcée.</p>`;
+      <span class="surtitre">Transparence</span>
+      <h1>Comment est calculé votre résultat&nbsp;?</h1>
+      <p class="chapo">En résumé : pour chaque mesure, on regarde si le candidat pense comme vous.
+        On additionne les points, en donnant plus de poids à ce qui compte pour vous, puis on traduit le total en pourcentage.</p>
+
+      <h2>1. Chaque mesure rapporte ou fait perdre des points</h2>
+      <p>On compare votre avis à la position du candidat. Les mesures pour lesquelles vous avez répondu « Indifférent » ne comptent pas.</p>
+      <div class="carte"><table class="methode">
+        <thead><tr><th>Votre avis</th><th>Le candidat soutient</th><th>Soutient en partie</th><th>Ne se prononce pas</th><th>S'oppose</th></tr></thead>
+        <tbody>
+          <tr><th>Je soutiens</th><td class="ok">+1 point<br><small>d'accord</small></td><td class="ok">+½ point<br><small>plutôt d'accord</small></td><td>0 point</td><td class="ko">−1 point<br><small>en désaccord</small></td></tr>
+          <tr><th>Je m'oppose</th><td class="ko">−1 point<br><small>en désaccord</small></td><td class="ko">−½ point<br><small>plutôt en désaccord</small></td><td>0 point</td><td class="ok">+1 point<br><small>d'accord</small></td></tr>
+        </tbody></table></div>
+
+      <h2>2. Ce qui compte pour vous pèse plus lourd</h2>
+      <ul class="liste">
+        <li>Une mesure d'un <strong>thème prioritaire</strong> compte <strong>2 fois</strong>.</li>
+        <li>Une mesure marquée <strong>★ essentielle</strong> compte <strong>3 fois</strong>.</li>
+        <li>Les deux se cumulent : une mesure essentielle d'un thème prioritaire compte <strong>6 fois</strong>.</li>
+      </ul>
+
+      <h2>3. Le total devient un pourcentage</h2>
+      <p>On compare les points obtenus au maximum possible (accord total sur toutes vos mesures), puis on place le résultat sur une échelle de 0 à 100 % :</p>
+      <ul class="liste">
+        <li><strong>100 %</strong> : le candidat est d'accord avec vous sur tout ;</li>
+        <li><strong>50 %</strong> : autant d'accords que de désaccords, ou aucune position connue ;</li>
+        <li><strong>0 %</strong> : le candidat est en désaccord avec vous sur tout.</li>
+      </ul>
+
+      <h2>Un exemple</h2>
+      <div class="carte">
+        <p>Vous avez donné votre avis sur trois mesures, et la santé est un de vos thèmes prioritaires.</p>
+        <table class="methode">
+          <thead><tr><th>Mesure</th><th>Vous</th><th>Le candidat</th><th>Poids</th><th>Points</th></tr></thead>
+          <tbody>
+            <tr><td>Recruter des soignants <small>(santé, ★ essentielle)</small></td><td>Pour</td><td>Soutient</td><td>2 × 3 = 6</td><td class="ok">+1 × 6 = +6</td></tr>
+            <tr><td>Augmenter le SMIC</td><td>Pour</td><td>Soutient en partie</td><td>1</td><td class="ok">+½ × 1 = +0,5</td></tr>
+            <tr><td>Taxer le kérosène</td><td>Contre</td><td>Soutient</td><td>1</td><td class="ko">−1 × 1 = −1</td></tr>
+            <tr><th colspan="3">Total</th><th>8 (maximum possible)</th><th>+5,5</th></tr>
+          </tbody></table>
+        <p>Le candidat obtient 5,5 points sur 8 possibles. Sur l'échelle de 0 à 100 %, cela donne <strong>84,4 %</strong> de concordance.</p>
+        <p class="doux"><small>Pour les curieux : le total va de −8 (désaccord sur tout) à +8 (accord sur tout).
+          On ramène cet intervalle à 0–100 % : (5,5 + 8) ÷ 16 × 100 = 84,4 %.</small></p>
+      </div>
+
+      <h2>Deux indicateurs pour bien lire le résultat</h2>
+      <ul class="liste">
+        <li><strong>La couverture</strong> : la part de vos mesures sur lesquelles le candidat a une position connue.
+          Une couverture faible signifie que le score repose sur peu d'éléments : à prendre avec prudence.</li>
+        <li><strong>Ex æquo</strong> : quand deux candidats ont moins de ${Score.SEUIL_EX_AEQUO} points d'écart, ils sont signalés comme ex æquo.
+          La différence n'est alors pas significative.</li>
+      </ul>
+
+      <h2>D'où viennent les positions&nbsp;?</h2>
+      <p>En priorité du site officiel et du programme de chaque candidat. Chaque position est accompagnée de sa source, que vous pouvez consulter.
+        Une position tirée seulement de la presse ou d'une interview est marquée « à confirmer ».</p>
+      <p class="doux">Ce résultat est un éclairage, pas une consigne de vote. Il ne remplace pas la lecture des programmes.</p>`;
   }
 
   // ---------- Routage ----------
