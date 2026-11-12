@@ -160,6 +160,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |12/11/2026|Accueil, étape 3 : « détail des accords et désaccords avec les candidats ».|`4266ce4`|
 |12/11/2026|Aide : nouvelle question « Et pour le second tour ? » (pack du 19/04, réponses conservées, activation manuelle).|`1e4ff84`|
 |12/11/2026|Fiche candidat : boutons « ← Tous les candidats » et « Voir mes résultats » en bas de page.|`e1e89c8`|
+|12/11/2026|Note sur les licences et la responsabilité ([LICENCES.md](LICENCES.md)) ; décision en attente (§7).|`9411627`|
 |—|**Prochaine étape : lot 7** — contenu réel : base de mesures, candidats et sites officiels. Premier pack réel le 15/01/2027.||
 
 \---
@@ -178,7 +179,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |Sujet|État|À faire avant de lancer|Référence|
 |-|-|-|-|
 |**Dons**|Reporté (décision du 12/11/2026)|☐ Vérifier les frais réels de chaque plateforme retenue<br>☐ Vérifier le régime fiscal des dons reçus par un particulier (impots.gouv.fr)<br>☐ Vérifier l'absence de risque au regard du droit électoral ; en cas de doute, demander un avis à la CNCCFP<br>☐ Choisir les plateformes, créer les comptes, transmettre les liens|[DONS.md](DONS.md)|
-|**Dépôt public**|Prévu avec le lot 6 (vers le 08/01/2027)|☐ Choisir une licence (code et données)<br>☐ Vérifier qu'aucun fichier personnel n'est présent|—|
+|**Dépôt public, licence et responsabilité**|Décision en attente (avant le 08/01/2027)|☐ Choisir les licences : EUPL 1.2 ou MIT (code), CC BY-SA 4.0 ou CC BY 4.0 (données)<br>☐ Mentions légales, limitation de responsabilité, politique de confidentialité<br>☐ Vérifier qu'aucun fichier personnel n'est présent|[LICENCES.md](LICENCES.md)|
 |**Dates légales de la campagne**|À vérifier|☐ Date limite d'inscription sur les listes électorales 2027<br>☐ Début exact de la réserve électorale|[CAMPAGNE.md](promotion/CAMPAGNE.md)|
 
 
