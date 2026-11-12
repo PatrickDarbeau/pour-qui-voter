@@ -114,11 +114,29 @@ python outils/valider.py --publier
 
 ## 5. Journal du projet
 
-| Date | Événement |
-|---|---|
-| 12/11/2026 | Cahier des charges validé. Lots 1 et 2 réalisés (`913fc2f`). Notice créée. |
-| 12/11/2026 | Lot 3 (mode Édition) réalisé : thèmes, mesures, candidats, matrice des positions avec sources, import/export JSON et CSV, sauvegarde et restauration. |
-| 12/11/2026 | Lot 4 réalisé (graphiques, PDF, partage). Note sur les dons rédigée ; mise en place reportée (voir §7). |
+| Date | Événement | Commit |
+|---|---|---|
+| 12/11/2026 | Cahier des charges rédigé et validé : installation locale, données issues des sites officiels, démo en ligne secondaire, gouvernance des packs, dates des deux tours. | — |
+| 12/11/2026 | **Lots 1 et 2** : format des données, validateur, jeu de démonstration (candidats fictifs), parcours électeur, calcul du score testé, interface « bulletin de vote ». | `913fc2f` |
+| 12/11/2026 | Notice du développeur créée (suivi des lots, échéancier des packs, procédure). | `86d2bbc` |
+| 12/11/2026 | Dépôt GitHub privé créé (PatrickDarbeau/pour-qui-voter) ; adresse e-mail des commits remplacée par l'adresse anonyme GitHub (historique réécrit). | `752caa2` |
+| 12/11/2026 | Résultats groupés par thème ; en-tête civique avec messages contre l'abstention. | `51e6f9d` |
+| 12/11/2026 | Couleur propre à chaque thème ; correction de la politique de sécurité qui bloquait les barres de score. | `c033da7` |
+| 12/11/2026 | **Lot 3** : mode Édition (thèmes, mesures, candidats, matrice des positions sourcées, import/export JSON et CSV, sauvegarde et restauration). | `609cd5b` |
+| 12/11/2026 | Kit de campagne de promotion (YouTube, LinkedIn, X, Substack, autres canaux). | `29b4cdb` |
+| 12/11/2026 | Édition › Mesures : sections dépliables par thème, filtre, ajout direct dans un thème. | `ee3b7c6` |
+| 12/11/2026 | Thèmes prioritaires : pastille « ✓ Prioritaire » à la place de la croix. | `624df42` |
+| 12/11/2026 | Page Méthode réécrite en langage simple, avec exemple chiffré. | `145d27c` |
+| 12/11/2026 | Accueil : boutons Poursuivre, Voir mes résultats, Recommencer à zéro. | `81854de` |
+| 12/11/2026 | Page Aide (questions fréquentes) et bulles d'aide au survol. | `c9959af` |
+| 12/11/2026 | Fenêtre d'avertissement au démarrage (outil non officiel, aide à la décision). | `1d4e926` |
+| 12/11/2026 | **Lot 4** : radar et tableau coloré par thème, mise en page PDF, lien de partage avec avertissement. | `068f716` |
+| 12/11/2026 | PDF testé avec un vrai rendu Chrome et corrigé (4 pages) ; script `tests/pdf.mjs` et exemple. | `c16d4fe` |
+| 12/11/2026 | Usage pédagogique et adaptation à d'autres élections (avertissement et Aide). | `d431e53` |
+| 12/11/2026 | Page Aide : boutons Retour et Continuer le questionnaire. | `dabf007` |
+| 12/11/2026 | Note sur les dons rédigée ; **mise en place reportée** (voir §7). | `c722160` |
+| 12/11/2026 | Notice : décisions reportées et points à vérifier (§7). | `0377175` |
+| — | **Prochaine étape : lot 5** (outil `maj.py`, import/export de packs), échéance 18/12/2026. | |
 
 ---
 
