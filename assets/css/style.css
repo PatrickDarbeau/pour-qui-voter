@@ -213,8 +213,21 @@ h2 { font-size: 1.35rem; margin-top: 2.2rem; }
 details summary { cursor: pointer; color: var(--bleu); margin-top: .7rem; font-weight: 600; }
 .themes-mini { display: flex; flex-wrap: wrap; gap: .4rem; margin: .8rem 0; }
 .themes-mini span { font-size: .85rem; padding: .15rem .55rem; border-radius: 3px; background: var(--papier-2); }
-.groupe-theme { margin: .4rem 0 .8rem .2rem; padding-left: .8rem; border-left: 3px solid var(--bord); }
-.groupe-theme h4 { margin: .2rem 0; font: 700 .95rem var(--sans); }
+/* ---------- Couleur des thèmes ----------
+ * --c : couleur du thème (donnée) ; --tc : version lisible sur le fond courant. */
+.th { --c: var(--bleu); --tc: color-mix(in srgb, var(--c) 85%, var(--encre)); }
+@media (prefers-color-scheme: dark) { .th { --tc: color-mix(in srgb, var(--c) 55%, #fff); } }
+.titre-theme { color: var(--tc); }
+h1.titre-theme { border-bottom: 4px solid var(--c); padding-bottom: .3rem; display: inline-block; }
+h2.titre-theme { border-left: 6px solid var(--c); padding-left: .6rem; }
+.onglets a.th { color: var(--tc); border-color: color-mix(in srgb, var(--c) 45%, var(--bord)); }
+.onglets a.th.actif { background: var(--c); color: #fff; border-color: var(--c); }
+.tuile.th { border-top: 5px solid var(--c); }
+.tuile.th, .tuile.th .ico { color: var(--tc); }
+.tuile.th[aria-pressed="true"] { background: color-mix(in srgb, var(--c) 12%, var(--carte)); border-color: var(--c); }
+.themes-mini span.th { color: var(--tc); background: color-mix(in srgb, var(--c) 14%, var(--carte)); border: 1px solid color-mix(in srgb, var(--c) 35%, transparent); }
+.groupe-theme { margin: .4rem 0 .8rem .2rem; padding-left: .8rem; border-left: 3px solid var(--c, var(--bord)); }
+.groupe-theme h4 { margin: .2rem 0; font: 700 .95rem var(--sans); color: var(--tc); }
 ul.liste { padding-left: 1.2rem; }
 ul.liste li { margin: .35rem 0; }
 .ok { color: var(--oui); } .ko { color: var(--non); }

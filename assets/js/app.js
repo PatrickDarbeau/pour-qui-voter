@@ -22,6 +22,8 @@
   const mesuresActives = D.mesures.filter((m) => m.actif !== false);
   const mesuresDuTheme = (t) => mesuresActives.filter((m) => m.theme === t);
   const nomComplet = (c) => `${c.prenom || ""} ${c.nom}`.trim();
+  // Couleur propre à chaque thème (validée pour éviter toute injection CSS)
+  const thStyle = (t) => (t && /^#[0-9a-f]{3,8}$/i.test(t.couleur || "") ? `style="--c:${t.couleur}"` : "");
   const pct = (v) => (v === null || v === undefined ? "—" : v.toLocaleString("fr-FR") + " %");
   const pluriel = (n, mot) => `${n} ${mot}${n > 1 ? "s" : ""}`;
   const LIBELLE_POS ={ "1": "Soutient", "0.5": "Soutient partiellement", "0": "Ne se prononce pas", "-1": "S'oppose" };
@@ -120,7 +122,7 @@
 
   function vuePriorites() {
     const tuiles = themes.map((t) => `
-      <button class="tuile" data-theme="${esc(t.id)}" aria-pressed="${etat.prioritaires.includes(t.id)}">
+      <button class="tuile th" ${thStyle(t)} data-theme="${esc(t.id)}" aria-pressed="${etat.prioritaires.includes(t.id)}">
         <span class="ico" aria-hidden="true">${esc(t.icone)}</span>${esc(t.nom)}
       </button>`).join("");
     return `
@@ -137,8 +139,8 @@
     const t = themeParId[themeId] || themes[0];
     const i = themes.indexOf(t);
     const pct = Math.round((nbRepondues() / mesuresActives.length) * 100);
-    const onglets = themes.map((x) => `<a href="#/questionnaire/${esc(x.id)}"
-        class="${x.id === t.id ? "actif" : ""} ${themeFait(x.id) ? "fait" : ""}">${esc(x.icone)} ${esc(x.nom)}</a>`).join("");
+    const onglets = themes.map((x) => `<a href="#/questionnaire/${esc(x.id)}" ${thStyle(x)}
+        class="th ${x.id === t.id ? "actif" : ""} ${themeFait(x.id) ? "fait" : ""}">${esc(x.icone)} ${esc(x.nom)}</a>`).join("");
     const cartes = ordreMesures(t.id).map((m) => {
       const r = etat.reponses[m.id] || {};
       const b = (cls, avis, txt) => `<button class="${cls}" data-mesure="${esc(m.id)}" data-avis="${avis}"
@@ -158,7 +160,7 @@
     return `
       <div class="progression" aria-label="Progression ${pct} %"><span style="width:${pct}%"></span></div>
       <nav class="onglets" aria-label="Thèmes">${onglets}</nav>
-      <h1>${esc(t.icone)} ${esc(t.nom)}</h1>
+      <h1 class="th titre-theme" ${thStyle(t)}>${esc(t.icone)} ${esc(t.nom)}</h1>
       ${cartes}
       <div class="actions">
         <a class="btn secondaire" href="${prec}">Précédent</a>
@@ -185,7 +187,7 @@
       const sousListes = themes
         .map((t) => [t, liste.filter((x) => x.mesure.theme === t.id)])
         .filter(([, l]) => l.length)
-        .map(([t, l]) => `<div class="groupe-theme"><h4>${esc(t.icone)} ${esc(t.nom)} <span class="doux">(${l.length})</span></h4>
+        .map(([t, l]) => `<div class="groupe-theme th" ${thStyle(t)}><h4>${esc(t.icone)} ${esc(t.nom)} <span class="doux">(${l.length})</span></h4>
             <ul class="liste">${l.map(item).join("")}</ul></div>`).join("");
       return `<h3 class="${cls}">${titre} <span class="doux">(${liste.length})</span></h3>${sousListes}`;
     };
@@ -201,7 +203,7 @@
           ${k === 0 ? '<span class="badge">Vote préférentiel</span>' : ""}${r.exAequo ? '<span class="badge">Ex æquo</span>' : ""}</div>
         <details>
           <summary>Détail : ${pluriel(r.accords.length, "accord")}, ${pluriel(r.desaccords.length, "désaccord")}, ${r.silences.length} sans position</summary>
-          <div class="themes-mini">${Object.entries(r.themes).map(([t, v]) => `<span>${esc(themeParId[t]?.icone)} ${esc(themeParId[t]?.nom)} : ${pct(v)}</span>`).join("")}</div>
+          <div class="themes-mini">${Object.entries(r.themes).map(([t, v]) => `<span class="th" ${thStyle(themeParId[t])}>${esc(themeParId[t]?.icone)} ${esc(themeParId[t]?.nom)} : ${pct(v)}</span>`).join("")}</div>
           ${groupe(r.accords, "✔ Accords", "ok")}
           ${groupe(r.desaccords, "✘ Désaccords", "ko")}
           ${groupe(r.silences, "… Sans position connue", "")}
@@ -243,7 +245,7 @@
     if (!c) return "<p>Candidat introuvable.</p>";
     const pos = Object.fromEntries(D.positions.filter((p) => p.candidat === id).map((p) => [p.mesure, p]));
     const sections = themes.map((t) => `
-      <h2>${esc(t.icone)} ${esc(t.nom)}</h2>
+      <h2 class="th titre-theme" ${thStyle(t)}>${esc(t.icone)} ${esc(t.nom)}</h2>
       <table><tbody>${mesuresDuTheme(t.id).map((m) => {
         const p = pos[m.id];
         const v = p ? p.valeur : 0;
