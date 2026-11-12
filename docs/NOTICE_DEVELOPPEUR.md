@@ -178,7 +178,8 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |12/11/2026|Note [methode_choix_mesures.md](methode_choix_mesures.md) : méthode de choix des mesures, limites, améliorations possibles (A1–A6 avant le 15/01, B1–B3 pendant la campagne, C1–C4 outils).|`c216461`|
 |12/11/2026|Bilan du catalogue [bilan_catalogue.md](bilan_catalogue.md), régénéré automatiquement par `python outils/catalogue.py` : 158 mesures, 49 paires opposées, 59 mesures sans contrepoint.|`36f2c1f`|
 |12/11/2026|Reporté : ajout de contrepoints aux thèmes déséquilibrés (notice §7).|`db02c26`|
-|—|**Prochaine étape : lot 7** — relecture de neutralité du catalogue (étape 2), puis recensement des candidats (étape 3). Premier pack réel le 15/01/2027.||
+|12/11/2026|Lot 7, étape 3 : **recensement des candidats** ([recensement_candidats.md](recensement_candidats.md)) — 3 sources croisées (franceinfo, Candidator, République 2027) : 36 déclarés confirmés par au moins 2 sources, 13 à une seule source, 3 contradictoires, 9 pressentis. Soumis à validation avant les fiches de profil.|`cb63ce1`|
+|—|**Prochaine étape : lot 7** — validation de la liste des candidats, puis fiches de profil (étape 3) et collecte (étape 4). Premier pack réel le 15/01/2027.||
 
 \---
 
