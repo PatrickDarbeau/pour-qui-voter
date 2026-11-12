@@ -35,7 +35,31 @@
   <footer class="pied">
     Outil informatif et non partisan. Il ne remplace pas la lecture des programmes.
     Vos réponses restent sur cet appareil.
+    · <button class="lien" id="ouvrir-avertissement">Avertissement</button>
   </footer>
+
+  <dialog id="avertissement" class="avertissement" aria-labelledby="avert-titre">
+    <form method="dialog">
+      <span class="surtitre">Avant de commencer</span>
+      <h2 id="avert-titre">Une aide à la réflexion, pas une consigne de vote</h2>
+      <ul class="liste">
+        <li><strong>Ceci n'est pas un outil officiel.</strong> Il n'est lié ni à l'État, ni à un candidat, ni à un parti.
+          C'est un projet indépendant et bénévole.</li>
+        <li><strong>C'est une aide à la décision.</strong> Le résultat compare vos réponses à une sélection de mesures :
+          il ne résume pas un programme, une personnalité ni une vision.</li>
+        <li><strong>Les données peuvent contenir des erreurs ou être incomplètes.</strong> Chaque position est sourcée :
+          vérifiez-la, et consultez les programmes officiels des candidats.</li>
+        <li><strong>Vos réponses restent privées.</strong> Rien n'est envoyé sur internet ; tout reste sur cet appareil.</li>
+      </ul>
+      <p class="avert-civique">Quel que soit votre choix, l'essentiel est de voter :
+        <strong>18 avril et 2 mai 2027</strong>.</p>
+      <label class="avert-case"><input type="checkbox" id="avert-masquer"> Ne plus afficher ce message</label>
+      <div class="actions">
+        <a class="btn secondaire" href="#/aide" id="avert-aide">En savoir plus</a>
+        <button class="btn" value="ok" autofocus>J'ai compris</button>
+      </div>
+    </form>
+  </dialog>
   <noscript><p class="bandeau">JavaScript doit être activé.</p></noscript>
   <script src="data/donnees.js"></script>
   <script src="assets/js/score.js"></script>

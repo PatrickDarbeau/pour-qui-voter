@@ -488,7 +488,25 @@
     }, 6000);
   }
 
+  // ---------- Avertissement au démarrage ----------
+  const CLE_AVERT = "pqv.avertissement.masque";
+  function avertissement() {
+    const dlg = document.getElementById("avertissement");
+    if (!dlg || typeof dlg.showModal !== "function") return;
+    const caseMasquer = document.getElementById("avert-masquer");
+    const ouvrir = () => { try { caseMasquer.checked = localStorage.getItem(CLE_AVERT) === "1"; } catch (_) {} dlg.showModal(); };
+    dlg.addEventListener("close", () => {
+      try { caseMasquer.checked ? localStorage.setItem(CLE_AVERT, "1") : localStorage.removeItem(CLE_AVERT); } catch (_) {}
+    });
+    document.getElementById("avert-aide").addEventListener("click", () => dlg.close());
+    document.getElementById("ouvrir-avertissement").addEventListener("click", ouvrir);
+    let masque = false;
+    try { masque = localStorage.getItem(CLE_AVERT) === "1"; } catch (_) {}
+    if (!masque) ouvrir();
+  }
+
   window.addEventListener("hashchange", rendre);
+  avertissement();
   messagesCiviques();
   bandeau();
   rendre();

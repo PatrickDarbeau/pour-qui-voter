@@ -323,3 +323,18 @@ table.methode small { color: var(--doux); }
 .faq[open] > summary { border-bottom: 1px dashed var(--bord); }
 .faq > :not(summary) { margin: .8rem 1.2rem; }
 code { font-family: var(--mono); font-size: .9em; background: var(--papier-2); padding: .05rem .3rem; border-radius: 3px; }
+
+/* ---------- Avertissement au démarrage ---------- */
+.avertissement {
+  max-width: 600px; width: calc(100% - 32px); padding: 0; border: 0; border-radius: 8px;
+  background: var(--carte); color: var(--encre); box-shadow: 0 20px 60px rgba(0,0,0,.45);
+  border-top: 8px solid transparent;
+  border-image: linear-gradient(90deg, #1f3a8a 0 33.3%, #fff 33.3% 66.6%, #c8102e 66.6%) 1;
+}
+.avertissement::backdrop { background: rgba(10, 14, 30, .65); backdrop-filter: blur(3px); }
+.avertissement form { padding: 1.5rem 1.6rem 1.2rem; }
+.avertissement h2 { margin: .2rem 0 1rem; font-size: 1.45rem; }
+.avertissement[open] { animation: entree .25s ease-out; }
+.avert-civique { font-family: var(--serif); font-style: italic; border-left: 4px solid var(--rouge); padding-left: .8rem; }
+.avert-case { display: flex; align-items: center; gap: .5rem; font-size: .9rem; color: var(--doux); margin-top: 1rem; }
+.pied .lien { font: inherit; font-style: italic; }
