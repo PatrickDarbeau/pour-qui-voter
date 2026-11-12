@@ -457,6 +457,17 @@
 
       <h2>Voter</h2>
       ${q("Quand a lieu l'élection ?", `<p>Premier tour le <strong>dimanche 18 avril 2027</strong>, second tour le <strong>dimanche 2 mai 2027</strong>.</p>`)}
+      ${q("Et pour le second tour ?", `<p>Après le premier tour, seuls <strong>deux candidats</strong> restent en lice. L'outil passe alors en <strong>mode second tour</strong> :</p>
+        <ul class="liste">
+          <li>Un <strong>pack « second tour »</strong> est publié le lendemain du premier tour (19 avril 2027). Installez-le comme toute mise à jour
+            (<a href="#/edition/fichiers">Édition › Import / export</a>).</li>
+          <li><strong>Vos réponses sont conservées</strong> : inutile de refaire le questionnaire. Vous pouvez toutefois le revoir.</li>
+          <li>Les résultats ne comparent plus que les <strong>deux qualifiés</strong>. Un lien permet de revoir aussi tous les candidats du premier tour.</li>
+          <li>Dans la liste des candidats, les non-qualifiés apparaissent grisés.</li>
+        </ul>
+        <p class="doux">Vous pouvez aussi activer ce mode vous-même : <a href="#/edition/candidats">Édition › Candidats</a>,
+          section « Mode second tour », choisissez les deux qualifiés puis cochez « Activer ».
+          Un écart faible entre les deux reste possible : consultez le détail des accords et désaccords avant de vous décider.</p>`)}
       ${q("Comment vérifier mon inscription ou donner procuration ?", `<p>Inscription :
         <a href="https://www.service-public.fr/particuliers/vosdroits/R16396" target="_blank" rel="noopener noreferrer">service-public.fr</a>.
         Procuration : <a href="https://www.maprocuration.gouv.fr" target="_blank" rel="noopener noreferrer">maprocuration.gouv.fr</a>.</p>`)}
