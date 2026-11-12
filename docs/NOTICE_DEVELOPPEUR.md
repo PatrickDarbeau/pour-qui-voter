@@ -182,7 +182,8 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |12/11/2026|Lot 7, étape 3 : 10 candidats retenus (`candidatures_probables.txt`) ; **fiches de profil** en brouillon ([fiches_candidats.md](fiches_candidats.md)) générées par `outils/candidats.py` : biographies sourcées, sites vérifiés (1 site de campagne, 8 sites de parti ou mouvement, 1 sans site), couleurs neutres, points à vérifier listés.|`aac0103`|
 |12/11/2026|Lot 7, étape 4 : **première collecte** ([collecte_2026-11-12.md](collecte_2026-11-12.md)) — 24 pages archivées ; pages programme trouvées pour 5 candidats (Glucksmann, Lisnard, Mélenchon, Philippe, Retailleau) ; à compléter pour Attal, Le Pen (site protégé), Riner, Roussel, Zemmour. `maj.py collecter` : options `--pack` et `--decouvrir`, respect de robots.txt, pause d'une seconde.|`a4ae818`|
 |12/11/2026|Lot 7, étape 4 : recherche complémentaire — sites de campagne trouvés pour **Roussel** (fabienroussel2027.fr) et **Zemmour** (ericzemmour.fr), collectés ; 7 candidats sur 10 avec pages programme. Restent Attal, Le Pen et Riner. Sites écartés après vérification : ancien site des législatives 2024 d'Attal, domaines parqués au nom de Marine Le Pen.|`8594029`|
-|—|**Prochaine étape : lot 7** — compléter les pages programme manquantes, puis saisie des positions (étape 5). Premier pack réel le 15/01/2027.||
+|12/11/2026|Lot 7, étape 5 : **positions de Jean-Luc Mélenchon** en brouillon ([positions_melenchon.md](positions_melenchon.md)) — 111 mesures sur 158 (61 soutient, 10 en partie, 40 s'oppose ; 10 à confirmer), chacune avec extrait et lien vers le chapitre de « L'Avenir en commun » (6e éd.). Le PDF du site (contrat NFP 2024) a été écarté. Outil `outils/positions.py`.|`6b90f3b`|
+|—|**Prochaine étape : lot 7** — relecture des positions de Mélenchon, puis Lisnard, Retailleau, Glucksmann, Philippe, Roussel, Zemmour. Premier pack réel le 15/01/2027.||
 
 \---
 
