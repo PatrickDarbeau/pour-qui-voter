@@ -177,6 +177,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |12/11/2026|Notice §7 : ajout du nettoyage de l'historique Git et du choix du nom affiché, à faire avant le passage en public.|`11896d3`|
 |12/11/2026|Note [methode_choix_mesures.md](methode_choix_mesures.md) : méthode de choix des mesures, limites, améliorations possibles (A1–A6 avant le 15/01, B1–B3 pendant la campagne, C1–C4 outils).|`c216461`|
 |12/11/2026|Bilan du catalogue [bilan_catalogue.md](bilan_catalogue.md), régénéré automatiquement par `python outils/catalogue.py` : 158 mesures, 49 paires opposées, 59 mesures sans contrepoint.|`36f2c1f`|
+|12/11/2026|Reporté : ajout de contrepoints aux thèmes déséquilibrés (notice §7).|`db02c26`|
 |—|**Prochaine étape : lot 7** — relecture de neutralité du catalogue (étape 2), puis recensement des candidats (étape 3). Premier pack réel le 15/01/2027.||
 
 \---
