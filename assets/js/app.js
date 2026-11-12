@@ -319,7 +319,11 @@
       <p><strong>${esc(c.parti)}</strong>${c.slogan ? ` — « ${esc(c.slogan)} »` : ""}</p>
       <p>${esc(c.biographie || "")}</p>
       ${c.site_officiel ? `<p>Site officiel : <a href="${esc(c.site_officiel)}" rel="noopener noreferrer" target="_blank">${esc(c.site_officiel)}</a></p>` : ""}
-      ${sections}`;
+      ${sections}
+      <div class="actions">
+        <a class="btn secondaire" href="#/candidats">← Tous les candidats</a>
+        ${nbRepondues() ? '<a class="btn" href="#/resultats">Voir mes résultats</a>' : ""}
+      </div>`;
   }
 
   function vueMethode() {
