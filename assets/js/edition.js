@@ -19,6 +19,8 @@
   let W = null;          // copie de travail
   let modifie = false;   // modifié pendant cette visite du mode Édition
   let selection = null;  // élément en cours d'édition { type, id } ou position { cid, mid }
+  let filtreTheme = "";  // filtre de l'onglet Mesures
+  const ouverts = new Set(); // sections de thèmes dépliées
 
   function donneesActives() {
     const d = lire(CLE);
@@ -128,9 +130,9 @@
           <button type="submit" class="btn">Enregistrer</button>
         </div>
       </form>` : "";
-    const lignes = liste.map((x) => {
+    const ligne = (x) => {
       let info = "";
-      if (type === "mesures") info = W.themes.find((t) => t.id === x.theme)?.nom || "?";
+      if (type === "mesures") info = x.opposee_a ? "↔ mesure opposée liée" : "";
       if (type === "candidats") info = x.parti || "";
       if (type === "themes") info = `${W.mesures.filter((m) => m.theme === x.id).length} mesures`;
       return `<tr>
@@ -138,11 +140,39 @@
         <td class="doux">${esc(info)}</td>
         <td class="ed-actions"><button class="lien" data-ed="modifier" data-ed-type="${type}" data-ed-id="${esc(x.id)}">Modifier</button>
           <button class="lien ko" data-ed="supprimer" data-ed-type="${type}" data-ed-id="${esc(x.id)}">Supprimer</button></td></tr>`;
-    }).join("");
+    };
+
+    // Mesures : une section déroulante par thème, avec filtre
+    if (type === "mesures") {
+      const themes = [...W.themes].sort((a, b) => a.ordre - b.ordre);
+      const filtre = themes.some((t) => t.id === filtreTheme) ? filtreTheme : "";
+      const sections = themes.filter((t) => !filtre || t.id === filtre).map((t) => {
+        const ms = liste.filter((m) => m.theme === t.id);
+        const coul = /^#[0-9a-f]{3,8}$/i.test(t.couleur || "") ? `style="--c:${t.couleur}"` : "";
+        return `<details class="ed-section th" ${coul} ${ouverts.has(t.id) || filtre ? "open" : ""} data-ed-section="${esc(t.id)}">
+          <summary><span class="ed-section-titre">${esc(NOM_ITEM.themes(t))}</span>
+            <span class="doux">${ms.length} mesure${ms.length > 1 ? "s" : ""}</span>
+            <button class="lien" data-ed="ajouter" data-ed-type="mesures" data-ed-theme-cible="${esc(t.id)}">+ Ajouter ici</button></summary>
+          ${ms.length ? `<table class="ed-table"><tbody>${ms.map(ligne).join("")}</tbody></table>` : '<p class="doux">Aucune mesure dans ce thème.</p>'}
+        </details>`;
+      }).join("");
+      return `${form}
+        <div class="actions ed-barre">
+          <label class="ed-filtre">Thème :
+            <select data-ed-filtre>${[["", "Tous les thèmes"], ...themes.map((t) => [t.id, NOM_ITEM.themes(t)])]
+              .map(([v, l]) => `<option value="${esc(v)}" ${v === filtre ? "selected" : ""}>${esc(l)}</option>`).join("")}</select>
+          </label>
+          <span class="doux">${liste.length} mesures</span>
+          <span><button class="lien" data-ed="tout-ouvrir">Tout déplier</button>
+            <button class="lien" data-ed="tout-fermer">Tout replier</button></span>
+          <button class="btn" data-ed="ajouter" data-ed-type="mesures">+ Ajouter</button>
+        </div>${sections}`;
+    }
+
     return `${form}
       <div class="actions"><span class="doux">${liste.length} ${LIBELLES[type].toLowerCase()}</span>
         <button class="btn" data-ed="ajouter" data-ed-type="${type}">+ Ajouter</button></div>
-      <table class="ed-table"><tbody>${lignes}</tbody></table>`;
+      <table class="ed-table"><tbody>${liste.map(ligne).join("")}</tbody></table>`;
   }
 
   const SYMBOLE = { "1": "＋", "0.5": "½", "0": "·", "-1": "−" };
@@ -270,10 +300,13 @@
     else if (act === "ajouter") {
       const n = { id: nouvelId(type.slice(0, 1)) };
       if (type === "themes") Object.assign(n, { nom: "", icone: "", couleur: "#1f3a8a", ordre: W.themes.length });
-      if (type === "mesures") Object.assign(n, { theme: W.themes[0]?.id, intitule: "", actif: true });
+      if (type === "mesures") Object.assign(n, { theme: b.dataset.edThemeCible || filtreTheme || W.themes[0]?.id, intitule: "", actif: true });
+      e.preventDefault(); // bouton placé dans un <summary> : ne pas replier la section
       if (type === "candidats") Object.assign(n, { nom: "", statut: "declare", pages_programme: [] });
       selection = { type, nouveau: n };
     } else if (act === "annuler") selection = null;
+    else if (act === "tout-ouvrir") W.themes.forEach((t) => ouverts.add(t.id));
+    else if (act === "tout-fermer") ouverts.clear();
     else if (act === "supprimer") {
       const item = W[type].find((x) => x.id === id);
       if (type === "themes" && W.mesures.some((m) => m.theme === id)) { alert("Ce thème contient des mesures : supprimez-les ou déplacez-les d'abord."); return; }
@@ -322,6 +355,16 @@
       if (selection.nouveau) W[type].push(item);
     }
     selection = null; enregistrer(); rafraichir();
+  });
+
+  // Mémorise les sections dépliées et le filtre de thème
+  document.addEventListener("toggle", (e) => {
+    const d = e.target;
+    if (!d.dataset || !d.dataset.edSection) return;
+    d.open ? ouverts.add(d.dataset.edSection) : ouverts.delete(d.dataset.edSection);
+  }, true);
+  document.addEventListener("change", (e) => {
+    if (e.target.matches("[data-ed-filtre]")) { filtreTheme = e.target.value; rafraichir(); return; }
   });
 
   document.addEventListener("change", (e) => {

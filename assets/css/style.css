@@ -286,3 +286,19 @@ button:disabled { opacity: .45; cursor: not-allowed; }
 .ed-cellule.manque { box-shadow: inset 0 0 0 2px var(--tampon); }
 .ed-cellule.aconf { border-style: dashed; border-color: var(--etoile); }
 .ed-cellule.actif { outline: 3px solid var(--etoile); outline-offset: 1px; }
+.ed-barre { align-items: center; margin-top: 1rem; }
+.ed-filtre { display: flex; align-items: center; gap: .5rem; font-weight: 600; }
+.ed-filtre select { font: inherit; padding: .35rem .5rem; border: 1px solid var(--bord); border-radius: 4px; background: var(--carte); color: var(--encre); }
+.ed-section { margin: .8rem 0; border: 1px solid var(--bord); border-left: 6px solid var(--c, var(--bord)); border-radius: 4px; background: var(--carte); }
+.ed-section > summary {
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; padding: .7rem 1rem; cursor: pointer;
+  list-style: none; background: color-mix(in srgb, var(--c, var(--bord)) 10%, var(--carte));
+}
+.ed-section > summary::-webkit-details-marker { display: none; }
+.ed-section > summary::before { content: "▸"; transition: transform .15s; color: var(--tc); }
+.ed-section[open] > summary::before { transform: rotate(90deg); }
+.ed-section[open] > summary { border-bottom: 1px solid var(--bord); }
+.ed-section-titre { font: 700 1.1rem var(--serif); color: var(--tc); flex: 1; }
+.ed-section .ed-table { margin: 0; }
+.ed-section .ed-table td { padding-left: 1rem; }
+.ed-section > p { padding: .5rem 1rem; margin: 0; }
