@@ -129,7 +129,7 @@
       "description": "Retour d'un impôt sur l'ensemble du patrimoine, y compris financier.",
       "opposee_a": "eco2",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "eco2",
@@ -147,7 +147,7 @@
       "description": "Lutte contre l'exil fiscal par un impôt nouveau.",
       "opposee_a": "eco4",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "eco4",
@@ -174,7 +174,7 @@
       "description": "Transparence des aides aux entreprises.",
       "opposee_a": null,
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "eco7",
@@ -183,7 +183,7 @@
       "description": "Remboursement des aides en cas de non-respect.",
       "opposee_a": "eco8",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "eco8",
@@ -462,7 +462,7 @@
       "description": "Plafonnement temporaire des prix à la pompe.",
       "opposee_a": "soli2",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "soli2",
@@ -651,7 +651,7 @@
       "description": "Lutte contre la concentration des médias.",
       "opposee_a": "cult5",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "cult5",
@@ -741,7 +741,7 @@
       "description": "Prix fondés sur les coûts de production français.",
       "opposee_a": "ecl6",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "ecl6",
@@ -759,7 +759,7 @@
       "description": "Fin de la concurrence des fournisseurs.",
       "opposee_a": "ecl8",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "ecl8",
@@ -921,7 +921,7 @@
       "description": "Fin anticipée des concessions.",
       "opposee_a": "log7",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "log7",
@@ -1128,7 +1128,7 @@
       "description": "À la place de l'IGPN actuelle.",
       "opposee_a": "sec3",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "sec3",
@@ -1146,7 +1146,7 @@
       "description": "Renversement de la charge de la preuve.",
       "opposee_a": "sec5",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "sec5",
@@ -1164,7 +1164,7 @@
       "description": "Traçabilité des interventions.",
       "opposee_a": null,
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "sec7",
@@ -1218,7 +1218,7 @@
       "description": "Amendes proportionnelles.",
       "opposee_a": "jus4",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "jus4",
@@ -1461,7 +1461,7 @@
       "description": "Nouvelle élection avec d'autres candidats.",
       "opposee_a": "ins4",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "ins4",
@@ -1479,7 +1479,7 @@
       "description": "En cours de mandat.",
       "opposee_a": "ins6",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "ins6",
@@ -1497,7 +1497,7 @@
       "description": "Sanction définitive.",
       "opposee_a": "ins8",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "ins8",
@@ -1515,7 +1515,7 @@
       "description": "Transparence.",
       "opposee_a": null,
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "ins10",
@@ -1524,7 +1524,7 @@
       "description": "Prévention des conflits d'intérêts.",
       "opposee_a": "ins11",
       "actif": true,
-      "origine": "praxis"
+      "origine": "nouveau"
     },
     {
       "id": "ins11",

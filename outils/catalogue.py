@@ -7,8 +7,8 @@ Génère :
 Usage : python outils/catalogue.py
 
 Règles (docs/lot_7_pas_a_pas.md §3) : neutre, concrète, une idée par mesure, contrepoints reliés (opposee_a).
-Colonne « origine » : praxis = inspirée de la liste Praxis (reformulée), demo = reprise du jeu de démonstration,
-contrepoint = ajoutée pour l'équilibre, nouveau = rédigée pour couvrir le thème.
+Colonne « origine » : demo = reprise du jeu de démonstration, contrepoint = ajoutée pour l'équilibre,
+nouveau = rédigée pour le catalogue.
 """
 import json
 import sys
@@ -42,13 +42,13 @@ THEMES = [
 # (id, thème, intitulé, description, id opposé ou None, origine)
 M = [
     # ---- Économie et fiscalité
-    ("eco1", "eco", "Rétablir un impôt sur la fortune, avec un crédit d'impôt pour l'investissement dans les PME", "Retour d'un impôt sur l'ensemble du patrimoine, y compris financier.", "eco2", "praxis"),
+    ("eco1", "eco", "Rétablir un impôt sur la fortune, avec un crédit d'impôt pour l'investissement dans les PME", "Retour d'un impôt sur l'ensemble du patrimoine, y compris financier.", "eco2", "nouveau"),
     ("eco2", "eco", "Conserver l'impôt sur la fortune immobilière (IFI) sans l'étendre au patrimoine financier", "Statu quo depuis 2018.", "eco1", "contrepoint"),
-    ("eco3", "eco", "Créer un impôt lié à la nationalité pour imposer en France les très hauts patrimoines partis à l'étranger", "Lutte contre l'exil fiscal par un impôt nouveau.", "eco4", "praxis"),
+    ("eco3", "eco", "Créer un impôt lié à la nationalité pour imposer en France les très hauts patrimoines partis à l'étranger", "Lutte contre l'exil fiscal par un impôt nouveau.", "eco4", "nouveau"),
     ("eco4", "eco", "Lutter contre l'exil fiscal par des conventions internationales plutôt que par un nouvel impôt", "Coopération fiscale entre États.", "eco3", "contrepoint"),
     ("eco5", "eco", "Baisser les impôts de production des entreprises", "Réduction de la fiscalité pesant sur l'outil productif.", None, "demo"),
-    ("eco6", "eco", "Publier la liste et le montant des aides publiques reçues par chaque entreprise", "Transparence des aides aux entreprises.", None, "praxis"),
-    ("eco7", "eco", "Conditionner les aides publiques aux entreprises à des engagements d'emploi et d'investissement", "Remboursement des aides en cas de non-respect.", "eco8", "praxis"),
+    ("eco6", "eco", "Publier la liste et le montant des aides publiques reçues par chaque entreprise", "Transparence des aides aux entreprises.", None, "nouveau"),
+    ("eco7", "eco", "Conditionner les aides publiques aux entreprises à des engagements d'emploi et d'investissement", "Remboursement des aides en cas de non-respect.", "eco8", "nouveau"),
     ("eco8", "eco", "Simplifier les aides aux entreprises sans leur ajouter de conditions", "Moins de démarches, mêmes critères d'attribution.", "eco7", "contrepoint"),
     ("eco9", "eco", "Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat", "Priorité à la réduction du déficit.", "eco10", "nouveau"),
     ("eco10", "eco", "Augmenter l'investissement public, même au prix d'un déficit plus élevé", "Priorité à la relance et à la transition.", "eco9", "nouveau"),
@@ -83,7 +83,7 @@ M = [
     ("san8", "sante", "Développer les soins palliatifs sans légaliser l'aide active à mourir", "Priorité à l'accompagnement.", "san7", "nouveau"),
     ("san9", "sante", "Supprimer les franchises médicales restant à la charge des patients", "Sur les médicaments et consultations.", None, "nouveau"),
     # ---- Solidarités et pouvoir d'achat
-    ("soli1", "soli", "Bloquer les prix des carburants en période de forte inflation", "Plafonnement temporaire des prix à la pompe.", "soli2", "praxis"),
+    ("soli1", "soli", "Bloquer les prix des carburants en période de forte inflation", "Plafonnement temporaire des prix à la pompe.", "soli2", "nouveau"),
     ("soli2", "soli", "Aider de façon ciblée les ménages modestes plutôt que bloquer les prix", "Chèques ou aides sous conditions de ressources.", "soli1", "contrepoint"),
     ("soli3", "soli", "Baisser la TVA sur l'énergie et les produits de première nécessité", "Baisse générale des prix.", None, "nouveau"),
     ("soli4", "soli", "Conditionner le RSA à 15 heures d'activité par semaine", "Formation, insertion ou bénévolat.", "soli5", "nouveau"),
@@ -106,7 +106,7 @@ M = [
     ("cult1", "cult", "Porter le budget de la culture à 1 % du budget de l'État", "Hausse des moyens du ministère.", None, "nouveau"),
     ("cult2", "cult", "Privatiser une partie de l'audiovisuel public", "Cession de chaînes ou de stations.", "cult3", "nouveau"),
     ("cult3", "cult", "Maintenir l'audiovisuel public entièrement public, avec un financement dédié", "Garantie d'indépendance et de moyens.", "cult2", "nouveau"),
-    ("cult4", "cult", "Limiter à un seul grand média (télévision, radio ou presse nationale) le nombre de médias détenus par une même personne", "Lutte contre la concentration des médias.", "cult5", "praxis"),
+    ("cult4", "cult", "Limiter à un seul grand média (télévision, radio ou presse nationale) le nombre de médias détenus par une même personne", "Lutte contre la concentration des médias.", "cult5", "nouveau"),
     ("cult5", "cult", "Assouplir les règles anti-concentration pour renforcer les groupes de médias français", "Face à la concurrence des plateformes.", "cult4", "contrepoint"),
     ("cult6", "cult", "Supprimer le pass Culture", "Redéploiement des crédits.", "cult7", "nouveau"),
     ("cult7", "cult", "Maintenir et étendre le pass Culture", "Aide à l'accès des jeunes à la culture.", "cult6", "nouveau"),
@@ -117,9 +117,9 @@ M = [
     ("ecl2", "ecol", "Construire de nouveaux réacteurs nucléaires", "Programme de nouveaux EPR.", "ecl1", "demo"),
     ("ecl3", "ecol", "Interdire les vols intérieurs lorsqu'un trajet en train de moins de 4 heures existe", "Report vers le rail.", None, "demo"),
     ("ecl4", "ecol", "Taxer le kérosène des vols", "Fin de l'exonération du carburant aérien.", None, "demo"),
-    ("ecl5", "ecol", "Sortir du marché européen de l'électricité pour fixer les prix au niveau national", "Prix fondés sur les coûts de production français.", "ecl6", "praxis"),
+    ("ecl5", "ecol", "Sortir du marché européen de l'électricité pour fixer les prix au niveau national", "Prix fondés sur les coûts de production français.", "ecl6", "nouveau"),
     ("ecl6", "ecol", "Rester dans le marché européen de l'électricité en réformant le calcul des prix", "Réforme au niveau européen.", "ecl5", "contrepoint"),
-    ("ecl7", "ecol", "Faire d'EDF une entreprise publique en monopole sur la production et la fourniture d'électricité", "Fin de la concurrence des fournisseurs.", "ecl8", "praxis"),
+    ("ecl7", "ecol", "Faire d'EDF une entreprise publique en monopole sur la production et la fourniture d'électricité", "Fin de la concurrence des fournisseurs.", "ecl8", "nouveau"),
     ("ecl8", "ecol", "Maintenir l'ouverture à la concurrence des fournisseurs d'électricité", "Statu quo.", "ecl7", "contrepoint"),
     ("ecl9", "ecol", "Instaurer un moratoire sur les nouvelles éoliennes", "Arrêt des nouveaux projets.", "ecl10", "nouveau"),
     ("ecl10", "ecol", "Accélérer le développement de l'éolien et du solaire", "Objectifs et procédures accélérées.", "ecl9", "nouveau"),
@@ -139,7 +139,7 @@ M = [
     ("log3", "loge", "Construire 150 000 logements sociaux par an", "Plan national de construction.", None, "nouveau"),
     ("log4", "loge", "Supprimer l'obligation de 25 % de logements sociaux par commune (loi SRU)", "Liberté laissée aux maires.", "log5", "nouveau"),
     ("log5", "loge", "Renforcer les sanctions contre les communes qui ne respectent pas la loi SRU", "Plus de logements sociaux partout.", "log4", "nouveau"),
-    ("log6", "loge", "Faire revenir les autoroutes concédées dans le giron de l'État", "Fin anticipée des concessions.", "log7", "praxis"),
+    ("log6", "loge", "Faire revenir les autoroutes concédées dans le giron de l'État", "Fin anticipée des concessions.", "log7", "nouveau"),
     ("log7", "loge", "Maintenir les concessions autoroutières jusqu'à leur terme en encadrant mieux les péages", "Statu quo amélioré.", "log6", "contrepoint"),
     ("log8", "loge", "Garantir un service public de base à moins de 30 minutes de chaque habitant", "École, santé, poste, services de l'État.", None, "nouveau"),
     ("log9", "loge", "Rendre gratuits les transports en commun locaux", "Bus, tramways, métros.", None, "nouveau"),
@@ -165,18 +165,18 @@ M = [
     ("num9", "num", "Héberger les données publiques sensibles uniquement chez des prestataires européens", "Cloud souverain.", None, "nouveau"),
     # ---- Sécurité
     ("sec1", "secu", "Recruter 10 000 policiers et gendarmes", "Renforcement des effectifs de terrain.", None, "demo"),
-    ("sec2", "secu", "Confier le contrôle de la police à une autorité indépendante du ministère de l'Intérieur", "À la place de l'IGPN actuelle.", "sec3", "praxis"),
+    ("sec2", "secu", "Confier le contrôle de la police à une autorité indépendante du ministère de l'Intérieur", "À la place de l'IGPN actuelle.", "sec3", "nouveau"),
     ("sec3", "secu", "Maintenir le contrôle interne de la police (IGPN) en renforçant ses moyens", "Statu quo amélioré.", "sec2", "contrepoint"),
-    ("sec4", "secu", "Instaurer une présomption de légitime défense pour les policiers et gendarmes", "Renversement de la charge de la preuve.", "sec5", "praxis"),
+    ("sec4", "secu", "Instaurer une présomption de légitime défense pour les policiers et gendarmes", "Renversement de la charge de la preuve.", "sec5", "nouveau"),
     ("sec5", "secu", "Conserver le régime actuel de la légitime défense, apprécié au cas par cas par le juge", "Statu quo.", "sec4", "contrepoint"),
-    ("sec6", "secu", "Rendre obligatoire le déclenchement de la caméra-piéton lors des interventions de police", "Traçabilité des interventions.", None, "praxis"),
+    ("sec6", "secu", "Rendre obligatoire le déclenchement de la caméra-piéton lors des interventions de police", "Traçabilité des interventions.", None, "nouveau"),
     ("sec7", "secu", "Recréer une police de proximité", "Policiers affectés durablement à un quartier.", None, "nouveau"),
     ("sec8", "secu", "Légaliser le cannabis avec une production et une vente encadrées par l'État", "Fin de la prohibition.", "sec9", "nouveau"),
     ("sec9", "secu", "Durcir les sanctions contre la consommation de stupéfiants", "Amendes et peines alourdies.", "sec8", "nouveau"),
     # ---- Justice
     ("jus1", "just", "Instaurer des peines planchers", "Peines minimales pour les récidivistes.", "jus2", "demo"),
     ("jus2", "just", "Développer les peines alternatives à la prison", "Travaux d'intérêt général, bracelet électronique.", "jus1", "demo"),
-    ("jus3", "just", "Calculer le montant des amendes routières en fonction des revenus", "Amendes proportionnelles.", "jus4", "praxis"),
+    ("jus3", "just", "Calculer le montant des amendes routières en fonction des revenus", "Amendes proportionnelles.", "jus4", "nouveau"),
     ("jus4", "just", "Maintenir des amendes routières forfaitaires identiques pour tous", "Statu quo.", "jus3", "contrepoint"),
     ("jus5", "just", "Construire 20 000 places de prison supplémentaires", "Contre la surpopulation carcérale.", None, "nouveau"),
     ("jus6", "just", "Abaisser la majorité pénale à 16 ans", "Mineurs de 16 ans jugés comme des majeurs.", "jus7", "nouveau"),
@@ -206,14 +206,14 @@ M = [
     # ---- Institutions et démocratie
     ("ins1", "inst", "Instaurer le référendum d'initiative citoyenne (RIC)", "Référendum déclenché par pétition.", None, "demo"),
     ("ins2", "inst", "Introduire une dose de proportionnelle aux élections législatives", "Modification du mode de scrutin.", None, "demo"),
-    ("ins3", "inst", "Prendre en compte le vote blanc, avec annulation de l'élection s'il arrive en tête", "Nouvelle élection avec d'autres candidats.", "ins4", "praxis"),
+    ("ins3", "inst", "Prendre en compte le vote blanc, avec annulation de l'élection s'il arrive en tête", "Nouvelle élection avec d'autres candidats.", "ins4", "nouveau"),
     ("ins4", "inst", "Compter le vote blanc à part, sans effet sur le résultat", "Statu quo amélioré.", "ins3", "contrepoint"),
-    ("ins5", "inst", "Permettre de révoquer le président de la République par référendum d'initiative citoyenne", "En cours de mandat.", "ins6", "praxis"),
+    ("ins5", "inst", "Permettre de révoquer le président de la République par référendum d'initiative citoyenne", "En cours de mandat.", "ins6", "nouveau"),
     ("ins6", "inst", "Conserver la durée fixe du mandat présidentiel, sans révocation", "Statu quo.", "ins5", "contrepoint"),
-    ("ins7", "inst", "Rendre inéligible à vie un élu condamné pour corruption ou enrichissement personnel", "Sanction définitive.", "ins8", "praxis"),
+    ("ins7", "inst", "Rendre inéligible à vie un élu condamné pour corruption ou enrichissement personnel", "Sanction définitive.", "ins8", "nouveau"),
     ("ins8", "inst", "Maintenir des peines d'inéligibilité limitées dans le temps, fixées par le juge", "Statu quo.", "ins7", "contrepoint"),
-    ("ins9", "inst", "Rendre publiques les rémunérations des hauts fonctionnaires", "Transparence.", None, "praxis"),
-    ("ins10", "inst", "Interdire aux hauts fonctionnaires de rejoindre une entreprise qu'ils ont contrôlée (« pantouflage »)", "Prévention des conflits d'intérêts.", "ins11", "praxis"),
+    ("ins9", "inst", "Rendre publiques les rémunérations des hauts fonctionnaires", "Transparence.", None, "nouveau"),
+    ("ins10", "inst", "Interdire aux hauts fonctionnaires de rejoindre une entreprise qu'ils ont contrôlée (« pantouflage »)", "Prévention des conflits d'intérêts.", "ins11", "nouveau"),
     ("ins11", "inst", "Encadrer le pantouflage par un délai et un avis déontologique, sans l'interdire", "Statu quo renforcé.", "ins10", "contrepoint"),
     ("ins12", "inst", "Supprimer l'article 49.3 de la Constitution", "Fin de l'adoption d'un texte sans vote.", None, "nouveau"),
 ]
@@ -240,7 +240,7 @@ def main():
               "*Généré par `python outils/catalogue.py` à partir de `outils/catalogue.py` : modifiez ce dernier, puis relancez.*", "",
               f"**{len(M)} mesures, {len(THEMES)} thèmes.** Origine : "
               + ", ".join(f"{k} {v}" for k, v in sorted(origines.items()))
-              + " (praxis = inspirée de Praxis, reformulée ; demo = jeu de démonstration ; contrepoint = ajoutée pour l'équilibre ; nouveau = rédigée pour couvrir le thème).", "",
+              + " (demo = jeu de démonstration ; contrepoint = ajoutée pour l'équilibre ; nouveau = rédigée pour le catalogue).", "",
               "↔ indique la mesure opposée reliée. Points à vérifier : neutralité, exactitude des faits (statu quo cité), équilibre entre sensibilités.", ""]
     for t, n, i, _ in THEMES:
         lignes += [f"## {i} {n} ({par_theme[t]})", "", "| Id | Mesure | Précision | ↔ | Origine |", "|---|---|---|---|---|"]
