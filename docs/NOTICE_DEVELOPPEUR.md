@@ -171,6 +171,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |12/11/2026|Pack de démonstration (candidats fictifs) conservé à part dans `data/demo/donnees-demo.json` ; fourni dans l'archive (`exemples/`) ; choix « demo » ou « réelles » pour la démo en ligne ; question dans l'Aide ; test dédié.|`5211fcb`|
 |12/11/2026|Démo en ligne : mode Édition en **essai** (thèmes, mesures, positions modifiables dans le navigateur du visiteur), **candidats verrouillés** (liste, fiches, second tour), import de packs désactivé ; CDC §6 bis, LISEZMOI et Aide mis à jour ; test hors ligne étendu (20 contrôles).|`2f836b2`|
 |12/11/2026|**Lot 7 démarré** : note [lot_7_pas_a_pas.md](lot_7_pas_a_pas.md) (8 étapes) ; étape 1 validée — 17 thèmes (culture et outre-mer ajoutés).|`494b4a5`|
+|12/11/2026|Lot 7, étape 2 : liste « Référendums » de Praxis consultée (18 propositions) ; reformulées en mesures neutres avec 15 contrepoints ([mesures_source_praxis.md](mesures_source_praxis.md)), en attente de relecture.|`d1072e7`|
 |—|**Prochaine étape : lot 7, étape 2** — catalogue des mesures neutres, thème par thème, avec relecture. Premier pack réel le 15/01/2027.||
 
 \---
