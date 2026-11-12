@@ -114,6 +114,15 @@ class TestPositions(unittest.TestCase):
             self.assertTrue(src.startswith(("https://glucks2027.fr/", "https://place-publique.eu/")), mid)
             self.assertTrue(cit, mid)
 
+    def test_positions_philippe_valides(self):
+        import catalogue, positions_philippe
+        ids = {m[0] for m in catalogue.M}
+        for mid, (v, src, cit, conf) in positions_philippe.P.items():
+            self.assertIn(mid, ids)
+            self.assertIn(v, (-1, 0, 0.5, 1))
+            self.assertTrue(src.startswith("https://www.edouardphilippe.fr/programme/"), mid)
+            self.assertTrue(cit, mid)
+
 
 class TestDiff(unittest.TestCase):
     def test_aucune_difference(self):

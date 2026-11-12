@@ -2062,6 +2062,466 @@
       "a_confirmer": false
     },
     {
+      "candidat": "philippe",
+      "mesure": "eco1",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/comptes-publics",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Ne créer aucun nouvel impôt pendant cinq ans",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "eco5",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/entreprises",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "50 milliards d'euros d'impôts de production en moins contre 50 milliards d'euros d'aides en moins",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "eco9",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/comptes-publics",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Ramener le déficit de plus de 5 % à 2 % de la richesse nationale à la fin du mandat",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "eco10",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/comptes-publics",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Une règle inscrite dans la Constitution qui interdira aux parlementaires de creuser le déficit",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "trav2",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/travail",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Permettre aux entreprises de fixer librement leur temps de travail […] pour sortir des 35 heures",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "trav3",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/travail",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Permettre aux entreprises de fixer librement leur temps de travail, par accord d'entreprise",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "trav4",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/travail",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Limiter l'indemnisation chômage à 12 mois au maximum, contre 18 mois aujourd'hui",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "trav5",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/travail",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Limiter à 12 mois l'indemnisation chômage des moins de 50 ans",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "trav8",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/travail",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Les heures au-dessus de 35 h seront exonérées de cotisations sociales et d'impôt sur le revenu",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "retr1",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/retraites",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Porter progressivement l'âge de départ à 65 ans et la durée de cotisation à 45 ans",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "retr2",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/retraites",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Porter progressivement l'âge de départ à 65 ans et la durée de cotisation à 45 ans en moins de dix ans",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "retr3",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/retraites",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pourquoi Édouard Philippe refuse-t-il la retraite à 60 ans ?",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "retr4",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/retraites",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Porter progressivement l'âge de départ à 65 ans",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "retr5",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/retraites",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Généraliser la capitalisation collective à tous les salariés et ouvrir un plan d'épargne retraite à chaque Français",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "retr6",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/retraites",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Généraliser la capitalisation collective à tous les salariés",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "retr8",
+      "valeur": 0.5,
+      "source_url": "https://www.edouardphilippe.fr/programme/retraites",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Que la définition des critères de pénibilité soit négociée avec les partenaires sociaux",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "soli9",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/famille",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Verser une allocation familiale de 350 € par mois dès le premier enfant",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "edu1",
+      "valeur": 0.5,
+      "source_url": "https://www.edouardphilippe.fr/programme/ecole",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Diminuer la taille des classes en maternelle et en primaire",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "edu2",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/ecole",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Augmenter de 20 % en moyenne le salaire des enseignants pendant le quinquennat",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "num8",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/ecole",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Interdire strictement le téléphone portable à l'école primaire, au collège et au lycée",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "ecl1",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/energie",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Relancer le nucléaire",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "ecl2",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/energie",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Le lancement de 8 réacteurs EPR supplémentaires en plus des 6 déjà prévus",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "ecl10",
+      "valeur": 0.5,
+      "source_url": "https://www.edouardphilippe.fr/programme/energie",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Développer les renouvelables là où elles sont efficaces",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "agri2",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/adaptation-climatique",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Zéro surtransposition normative pour l'agriculture française",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "agri8",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/adaptation-climatique",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Édouard Philippe est-il pour les réserves d'eau agricoles, les bassines ? Oui.",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "agri9",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/adaptation-climatique",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Accélérer le stockage de l'eau par les agriculteurs, en plaçant « la protection avant la procédure »",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "om4",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/outre-mer",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Édouard Philippe veut-il supprimer l'octroi de mer ? Non, il veut le moderniser",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "om5",
+      "valeur": 0.5,
+      "source_url": "https://www.edouardphilippe.fr/programme/outre-mer",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Il reconnaît les avantages de cet impôt ancien […] Mais il manque de transparence",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "om6",
+      "valeur": 0.5,
+      "source_url": "https://www.edouardphilippe.fr/programme/outre-mer",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Garantir dans la durée, jusqu'en 2032, les financements de l'eau à Mayotte",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "om7",
+      "valeur": 0.5,
+      "source_url": "https://www.edouardphilippe.fr/programme/outre-mer",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La suspension totale du droit du sol à Mayotte pendant plusieurs années",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "om8",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/outre-mer",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La suspension totale du droit du sol à Mayotte pendant plusieurs années",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "num4",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/securite",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Édouard Philippe est-il pour la reconnaissance faciale ? Oui, de façon ciblée",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "num5",
+      "valeur": 0.5,
+      "source_url": "https://www.edouardphilippe.fr/programme/securite",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "[Reconnaissance faciale] dans le cadre de l'état d'urgence contre le narcotrafic et en cas d'émeutes",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "sec8",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/securite",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Édouard Philippe veut-il punir les consommateurs de drogue ? Oui",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "sec9",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/securite",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Des amendes réellement payées, au besoin prélevées sur les prestations sociales",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "jus1",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/justice",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Le rétablissement des peines planchers",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "jus5",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/justice",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Une loi d'accélération de la construction de prisons",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "jus6",
+      "valeur": 0.5,
+      "source_url": "https://www.edouardphilippe.fr/programme/justice",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Lever l'excuse de minorité pour les faits liés au narcotrafic et créer la comparution immédiate des mineurs",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "jus7",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/justice",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Lever l'excuse de minorité pour les faits liés au narcotrafic",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "imm4",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/immigration",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pas de régularisation massive […] il préfère […] des quotas pour choisir notre immigration économique",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "imm5",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/immigration",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pas de régularisation massive",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "imm6",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/immigration",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Un moratoire sur le regroupement familial",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "imm7",
+      "valeur": 0.5,
+      "source_url": "https://www.edouardphilippe.fr/programme/immigration",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Aligner les aides sociales versées aux étrangers sur la moyenne européenne",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "imm9",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/immigration",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Utiliser les centres de retour […] pour que les décisions d'éloignement soient enfin exécutées",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "eu7",
+      "valeur": -1,
+      "source_url": "https://www.edouardphilippe.fr/programme/defense",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Édouard Philippe mise d'abord sur l'engagement […] service militaire volontaire de 3 000 à 50 000 places",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "philippe",
+      "mesure": "eu8",
+      "valeur": 1,
+      "source_url": "https://www.edouardphilippe.fr/programme/defense",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Un soutien plein à l'Ukraine",
+      "a_confirmer": false
+    },
+    {
       "candidat": "retailleau",
       "mesure": "eco5",
       "valeur": 1,

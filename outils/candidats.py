@@ -71,11 +71,11 @@ CANDIDATS = [
     {
         "id": "philippe", "prenom": "Édouard", "nom": "Philippe", "parti": "Horizons",
         "biographie": "Ancien Premier ministre (2017-2020), maire du Havre, président d'Horizons. Candidat déclaré depuis septembre 2024.",
-        "pages_programme": ["https://horizonsleparti.fr/le-pole-idees/"],
+        "pages_programme": ["https://www.edouardphilippe.fr/programme", "https://www.edouardphilippe.fr/programme/adaptation-climatique", "https://www.edouardphilippe.fr/programme/comptes-publics", "https://www.edouardphilippe.fr/programme/defense", "https://www.edouardphilippe.fr/programme/ecole", "https://www.edouardphilippe.fr/programme/energie", "https://www.edouardphilippe.fr/programme/entreprises", "https://www.edouardphilippe.fr/programme/famille", "https://www.edouardphilippe.fr/programme/immigration", "https://www.edouardphilippe.fr/programme/intelligence-artificielle", "https://www.edouardphilippe.fr/programme/justice", "https://www.edouardphilippe.fr/programme/outre-mer", "https://www.edouardphilippe.fr/programme/protection-de-l-enfance", "https://www.edouardphilippe.fr/programme/retraites", "https://www.edouardphilippe.fr/programme/securite", "https://www.edouardphilippe.fr/programme/travail", "https://horizonsleparti.fr/le-plan-dedouard-philippe-contre-le-narcotrafic/"],
         "slogan": None,
-        "site_officiel": "https://horizonsleparti.fr", "site_type": "parti",
+        "site_officiel": "https://www.edouardphilippe.fr", "site_type": "campagne",
         "sources": ["https://connexionfrance.com/news/former-french-pm-edouard-philippe-announces-presidential-candidacy/676922"],
-        "a_verifier": ["Site de campagne propre au candidat"],
+        "a_verifier": [],
     },
     {
         "id": "retailleau", "prenom": "Bruno", "nom": "Retailleau", "parti": "Les Républicains",
