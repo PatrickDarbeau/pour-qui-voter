@@ -70,6 +70,11 @@ def valider(pack):
         taux = len(exprimees & actives) / len(actives) if actives else 0
         if taux < 0.5:
             alertes.append(f"Candidat {c} : couverture faible ({taux:.0%})")
+    st = pack.get("second_tour")
+    if st and st.get("actif"):
+        q = st.get("qualifies") or []
+        if len(q) != 2 or len(set(q)) != 2 or not set(q) <= candidats:
+            erreurs.append("Second tour actif : il faut exactement deux candidats qualifiés, différents et existants")
     for t in themes:
         n = sum(1 for m in pack["mesures"] if m["theme"] == t)
         if n < 2:

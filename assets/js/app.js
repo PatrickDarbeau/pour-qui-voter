@@ -4,8 +4,14 @@
 (function () {
   "use strict";
 
-  // Données modifiées localement (mode Édition, F27) prioritaires sur le pack embarqué
-  const D = (window.Edition && window.Edition.donneesActives()) || window.DONNEES;
+  // Démo en ligne (CDC §6 bis) : servie par un hébergeur web, hors poste local.
+  // « ?demo » dans l'adresse permet de tester ce mode en local.
+  const EN_LIGNE = (/^https?:$/.test(location.protocol) && !/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname))
+    || /[?&]demo\b/.test(location.search);
+  const CONFIG = window.CONFIG || {};
+  // Données modifiées localement (mode Édition, F27) prioritaires sur le pack embarqué — sauf en démo en ligne
+  const D = (!EN_LIGNE && window.Edition && window.Edition.donneesActives()) || window.DONNEES;
+  if (EN_LIGNE) document.documentElement.classList.add("en-ligne");
   const app = document.getElementById("app");
   const CLE = "pqv.reponses.v1";
 
@@ -21,6 +27,10 @@
   const themeParId = Object.fromEntries(themes.map((t) => [t.id, t]));
   const candParId = Object.fromEntries(D.candidats.map((c) => [c.id, c]));
   const mesuresActives = D.mesures.filter((m) => m.actif !== false);
+  // Mode second tour : identifiants des deux qualifiés, ou null
+  const T2 = D.second_tour && D.second_tour.actif && Array.isArray(D.second_tour.qualifies)
+    && D.second_tour.qualifies.length === 2 && D.second_tour.qualifies.every((id) => candParId[id])
+    ? D.second_tour.qualifies : null;
   const mesuresDuTheme = (t) => mesuresActives.filter((m) => m.theme === t);
   const nomComplet = (c) => `${c.prenom || ""} ${c.nom}`.trim();
   // Couleur propre à chaque thème (validée pour éviter toute injection CSS)
@@ -81,8 +91,17 @@
     const age = (Date.now() - new Date(D.date)) / 86400000;
     const limite = Date.now() >= new Date("2027-02-01") ? 7 : 30;
     if (age > limite) msgs.push(`Données datées du ${new Date(D.date).toLocaleDateString("fr-FR")} : pensez à importer un pack plus récent.`);
-    b.hidden = !msgs.length;
+    b.hidden = !msgs.length && !EN_LIGNE;
     b.textContent = msgs.join(" ");
+    if (EN_LIGNE) {
+      // Bandeau permanent de la démo en ligne, avec lien de téléchargement
+      const demo = document.createElement("div");
+      demo.className = "bandeau-demo";
+      demo.innerHTML = `<strong>Version de démonstration en ligne.</strong>
+        Pour une confidentialité totale, téléchargez l'application et utilisez-la sur votre ordinateur, même sans internet.
+        ${CONFIG.telechargement ? `<a class="btn-mini" href="${esc(CONFIG.telechargement)}" target="_blank" rel="noopener noreferrer">⬇ Télécharger</a>` : ""}`;
+      b.before(demo);
+    }
   }
 
   // ---------- Vues ----------
@@ -105,7 +124,9 @@
         </svg>
       </section>
       <div class="decompte">${decompte()}
-        <div><strong>${D.candidats.length}</strong> candidats<br><span class="doux">${mesuresActives.length} mesures, ${themes.length} thèmes</span></div>
+        ${T2
+          ? `<div><strong>2</strong> candidats au second tour<br><span class="doux">${T2.map((id) => esc(nomComplet(candParId[id]))).join(" · ")}</span></div>`
+          : `<div><strong>${D.candidats.length}</strong> candidats<br><span class="doux">${mesuresActives.length} mesures, ${themes.length} thèmes</span></div>`}
       </div>
       <ol class="etapes">
         <li>Choisissez vos thèmes prioritaires (facultatif).</li>
@@ -117,7 +138,7 @@
       <div class="carte reprise">
         <p><strong>Vous avez déjà commencé&nbsp;!</strong> ${n} mesure${n > 1 ? "s" : ""} sur ${mesuresActives.length}
           ${n >= mesuresActives.length ? "— questionnaire terminé." : "— vous pouvez reprendre où vous en étiez."}</p>
-        <div class="progression"><span style="width:${Math.min(100, Math.round((n / mesuresActives.length) * 100))}%"></span></div>
+        <div class="progression" role="progressbar" aria-label="Progression du questionnaire" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.min(100, Math.round((n / mesuresActives.length) * 100))}"><span style="width:${Math.min(100, Math.round((n / mesuresActives.length) * 100))}%"></span></div>
         <div class="actions">
           <a class="btn" href="#/questionnaire/${esc((themes.find((t) => !themeFait(t.id)) || themes[0]).id)}">${n >= mesuresActives.length ? "✎ Revoir mes réponses" : "▶ Poursuivre"}</a>
           <a class="btn secondaire" href="#/resultats">Voir mes résultats</a>
@@ -167,7 +188,7 @@
     const prec = i > 0 ? `#/questionnaire/${themes[i - 1].id}` : "#/priorites";
     const suiv = i < themes.length - 1 ? `#/questionnaire/${themes[i + 1].id}` : "#/resultats";
     return `
-      <div class="progression" aria-label="Progression ${pct} %"><span style="width:${pct}%"></span></div>
+      <div class="progression" role="progressbar" aria-label="Progression du questionnaire" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}"><span style="width:${pct}%"></span></div>
       <nav class="onglets" aria-label="Thèmes">${onglets}</nav>
       <h1 class="th titre-theme" ${thStyle(t)}>${esc(t.icone)} ${esc(t.nom)}</h1>
       ${cartes}
@@ -180,8 +201,14 @@
 
   function couleurBarre(c) { return /^#[0-9a-f]{3,6}$/i.test(c.couleur || "") ? c.couleur : "var(--accent)"; }
 
-  function vueResultats() {
-    const { nbMesures, resultats } = Score.calculer(D, etat.reponses, etat.prioritaires);
+  function vueResultats(option) {
+    // Mode second tour : comparaison limitée aux deux qualifiés, sauf si l'on demande « tous »
+    const restreint = T2 && option !== "tous";
+    const { nbMesures, resultats } = Score.calculer(D, etat.reponses, etat.prioritaires, restreint ? T2 : null);
+    const bandeauT2 = T2 ? `<p class="carte t2">🗳 <strong>Second tour</strong> —
+      ${restreint
+        ? `comparaison limitée aux deux candidats qualifiés. <a href="#/resultats/tous">Voir aussi tous les candidats du premier tour</a>`
+        : `vous voyez tous les candidats du premier tour. <a href="#/resultats">Revenir aux deux qualifiés</a>`}</p>` : "";
     if (!nbMesures) {
       return `<h1>Résultats</h1><p>Vous n'avez encore donné aucun avis (soutien ou opposition).</p>
         <a class="btn" href="#/priorites">Commencer le questionnaire</a>`;
@@ -231,6 +258,7 @@
         Résultats du ${new Date().toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
         · données ${esc(D.version)} · ${nbMesures} mesures · outil non officiel, aide à la décision
       </div>
+      ${bandeauT2}
       <div class="podium">
         <div>
           <span class="surtitre">Dépouillement</span>
@@ -257,11 +285,16 @@
   }
 
   function vueCandidats() {
-    return `<h1>Les candidats</h1>` + D.candidats.map((c) => `
-      <a class="carte bulletin" href="#/candidat/${esc(c.id)}">
+    const ordre = T2 ? [...D.candidats].sort((a, b) => T2.includes(b.id) - T2.includes(a.id)) : D.candidats;
+    return `<h1>Les candidats</h1>${T2 ? '<p class="doux">Second tour : les deux candidats qualifiés sont en tête ; les autres sont grisés.</p>' : ""}` + ordre.map((c) => {
+      const elimine = T2 && !T2.includes(c.id);
+      return `<a class="carte bulletin ${elimine ? "elimine" : ""}" href="#/candidat/${esc(c.id)}">
         <strong><span class="pastille" style="background:${couleurBarre(c)}"></span>${esc(nomComplet(c))}</strong>
-        <span class="doux">— ${esc(c.parti)}</span><br><em>${esc(c.slogan || "")}</em>
-      </a>`).join("");
+        <span class="doux">— ${esc(c.parti)}</span>
+        ${T2 ? (elimine ? '<span class="badge">Non qualifié</span>' : '<span class="badge qualifie">Qualifié au second tour</span>') : ""}
+        <br><em>${esc(c.slogan || "")}</em>
+      </a>`;
+    }).join("");
   }
 
   function vueCandidat(id) {
@@ -429,21 +462,43 @@
       </div>`;
   }
 
+  // ---------- Accessibilité : titre de l'onglet et annonce de la page ----------
+  function annoncerPage() {
+    const h1 = app.querySelector("h1");
+    const titre = h1 ? h1.textContent.trim() : "Accueil";
+    document.title = `${titre} — Pour qui voter ? 2027`;
+    const a = document.getElementById("annonce-page");
+    if (a) a.textContent = titre;
+  }
+  document.getElementById("aller-contenu")?.addEventListener("click", () => app.focus());
+
   // ---------- Routage ----------
   function rendre() {
     const [, route, param] = (location.hash || "#/").split("/");
+    if (route === "edition" && EN_LIGNE) {
+      app.innerHTML = `<span class="surtitre">Mode Édition</span><h1>Indisponible dans la démo en ligne</h1>
+        <p>La modification des données se fait uniquement dans la version téléchargée de l'application, installée sur votre ordinateur.</p>
+        <div class="actions">
+          <a class="btn secondaire" href="#/">Retour à l'accueil</a>
+          ${CONFIG.telechargement ? `<a class="btn" href="${esc(CONFIG.telechargement)}" target="_blank" rel="noopener noreferrer">⬇ Télécharger l'application</a>` : ""}
+        </div>`;
+      annoncerPage();
+      return;
+    }
     if (route === "edition" && window.Edition) {
       window.Edition.afficher(app, param);
+      annoncerPage();
       window.scrollTo(0, 0);
       return;
     }
     // En quittant le mode Édition après des modifications, on recharge pour les prendre en compte
-    if (window.Edition && window.Edition.modifie()) { location.reload(); return; }
+    if (!EN_LIGNE && window.Edition && window.Edition.modifie()) { location.reload(); return; }
     const vues = {
       "": vueAccueil, priorites: vuePriorites, questionnaire: () => vueQuestionnaire(param),
-      resultats: vueResultats, candidats: vueCandidats, candidat: () => vueCandidat(param), methode: vueMethode, aide: vueAide, partage: () => vuePartage(param),
+      resultats: () => vueResultats(param), candidats: vueCandidats, candidat: () => vueCandidat(param), methode: vueMethode, aide: vueAide, partage: () => vuePartage(param),
     };
     app.innerHTML = (vues[route] || vueAccueil)();
+    annoncerPage();
     window.scrollTo(0, 0);
     app.focus({ preventScroll: true });
   }
@@ -510,7 +565,7 @@
     carte.classList.add("repondue");
     const pct = Math.round((nbRepondues() / mesuresActives.length) * 100);
     const barre = document.querySelector(".progression span");
-    if (barre) barre.style.width = pct + "%";
+    if (barre) { barre.style.width = pct + "%"; barre.parentElement.setAttribute("aria-valuenow", pct); }
     const t = mesuresActives.find((m) => m.id === id)?.theme;
     const onglet = document.querySelector(`.onglets a[href="#/questionnaire/${t}"]`);
     if (onglet) onglet.classList.toggle("fait", themeFait(t));

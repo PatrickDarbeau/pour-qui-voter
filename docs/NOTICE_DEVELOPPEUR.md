@@ -16,7 +16,7 @@ Les règles du projet se trouvent dans le [cahier des charges](../CAHIER_DES_CHA
 | L3 | Mode Édition : CRUD, matrice mesures × candidats, import/export | 27/11/2026 | ✅ | voir journal (12/11/2026) |
 | L4 | Résultats détaillés (graphique par thème), export PDF, lien de partage | 04/12/2026 | ✅ | radar + carte de chaleur, impression, partage |
 | L5 | `outils/maj.py`, import/export de packs (F29 à F40) | 18/12/2026 | ✅ | `maj.py` candidats/collecter/diff/publier ; import avec aperçu, empreinte, fusion |
-| L6 | Accessibilité, tests, paquet ZIP, démo en ligne, mode second tour | 08/01/2027 | ⏳ | |
+| L6 | Accessibilité, tests, paquet ZIP, démo en ligne, mode second tour | 08/01/2027 | ✅ | `paquet.py`, tests hors ligne et Python, mode démo, second tour, workflow Pages manuel |
 | L7 | Recherche et saisie des données réelles, puis packs réguliers | dès le 11/01/2027 | ⏳ | avec Hermès pour la recherche |
 | — | **Jalon : version complète publiée** | **15/03/2027** | ⏳ | impératif |
 
@@ -58,6 +58,10 @@ Le **jeudi précédent**, le développeur lance la collecte (étapes 1 à 3). Le
 
 > Les commandes `maj.py` sont disponibles. L'étape 3 (extraction) reste manuelle, dans le mode Édition de l'application ; exportez ensuite le pack (JSON) et copiez-le dans `data/donnees.json` avant l'étape 5.
 
+### Après le premier tour — activer le mode second tour
+- [ ] Dans Édition › Candidats, section « Mode second tour » : choisir les deux qualifiés, cocher « Activer ».
+- [ ] Exporter le pack, le copier dans `data/donnees.json`, puis publier (pack P14 du 19/04/2027).
+
 ### Étape 1 — Veille des candidats (30 min)
 - [ ] Consulter les annonces de candidature, de retrait et de ralliement de la semaine.
 - [ ] À partir de mars : consulter les publications du Conseil constitutionnel (parrainages, puis liste officielle).
@@ -98,7 +102,8 @@ python outils/maj.py publier --version AAAA.MM.JJ
 - [ ] La commande valide le pack, fixe la version et la date, retire les marques « modifié localement », rédige le `journal` à partir des différences avec le pack précédent (ou utilisez `--journal "texte"`), puis génère `data/donnees.js`.
 - [ ] Elle écrit `dist/donnees-AAAA-MM-JJ.json` et son fichier `.sha256`, et affiche la **ligne à copier dans le registre** (§4).
 - [ ] Pour comparer deux packs à tout moment : `python outils/maj.py diff ancien.json nouveau.json`.
-- [ ] Construire le ZIP de l'application (commande prévue au lot 6).
+- [ ] Construire le ZIP de l'application : `python outils/paquet.py` (écrit `dist/pour-qui-voter-<version>.zip` et son `.sha256`).
+- [ ] Vérifier l'archive : `node tests/hors_ligne.mjs` (ouverture par double-clic, aucune requête réseau).
 - [ ] Publier le pack, son empreinte et le ZIP sur la page de démonstration et sur le dépôt.
 - [ ] Commit : `git commit -m "Pack PN du JJ/MM/AAAA"` puis `git tag pack-AAAA-MM-JJ`.
 - [ ] Mettre à jour le §2 (état ✅) et le §4 (registre).
@@ -138,7 +143,8 @@ python outils/maj.py publier --version AAAA.MM.JJ
 | 12/11/2026 | Note sur les dons rédigée ; **mise en place reportée** (voir §7). | `c722160` |
 | 12/11/2026 | Notice : décisions reportées et points à vérifier (§7). | `0377175` |
 | 12/11/2026 | **Lot 5** : `outils/maj.py` (candidats, collecter, diff, publier) ; import de pack avec aperçu des changements, empreinte SHA-256, contrôle de version et choix pour les modifications locales. Pack de démo republié. | voir git |
-| — | **Prochaine étape : lot 6** (accessibilité, tests, paquet ZIP, démo en ligne, mode second tour), échéance 08/01/2027. | |
+| 12/11/2026 | **Lot 6** : mode second tour (réglage dans Édition › Candidats), mode démo en ligne (bandeau, édition désactivée), accessibilité (lien d'évitement, titres de page, barres de progression), archive ZIP avec lanceurs, test hors ligne (13 contrôles) et tests Python (11), workflow GitHub Pages manuel. | voir git |
+| — | **Prochaine étape : lot 7** — contenu réel : base de mesures, candidats et sites officiels. Premier pack réel le 15/01/2027. | |
 
 ---
 

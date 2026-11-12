@@ -169,7 +169,21 @@
         </div>${sections}`;
     }
 
-    return `${form}
+    // Candidats : réglage du mode second tour (pack, CDC §9 ter)
+    let t2 = "";
+    if (type === "candidats") {
+      const st = W.second_tour || { actif: false, qualifies: [] };
+      const sel = (i) => `<select data-ed-t2="${i}"><option value="">— choisir —</option>${W.candidats.map((c) =>
+        `<option value="${esc(c.id)}" ${st.qualifies?.[i] === c.id ? "selected" : ""}>${esc(NOM_ITEM.candidats(c))}</option>`).join("")}</select>`;
+      t2 = `<section class="carte ed-t2"><h3>🗳 Mode second tour</h3>
+        <p class="doux">À activer après le premier tour (18 avril 2027) : les résultats ne compareront plus que les deux candidats qualifiés.</p>
+        <div class="ed-grille">
+          <label class="ed-champ"><span>Qualifié n° 1</span>${sel(0)}</label>
+          <label class="ed-champ"><span>Qualifié n° 2</span>${sel(1)}</label>
+          <label class="ed-champ ed-case"><span>Activer le mode second tour</span><input type="checkbox" data-ed-t2="actif" ${st.actif ? "checked" : ""}></label>
+        </div></section>`;
+    }
+    return `${t2}${form}
       <div class="actions"><span class="doux">${liste.length} ${LIBELLES[type].toLowerCase()}</span>
         <button class="btn" data-ed="ajouter" data-ed-type="${type}">+ Ajouter</button></div>
       <table class="ed-table"><tbody>${liste.map(ligne).join("")}</tbody></table>`;
@@ -367,6 +381,16 @@
   }, true);
   document.addEventListener("change", (e) => {
     if (e.target.matches("[data-ed-filtre]")) { filtreTheme = e.target.value; rafraichir(); return; }
+    if (e.target.matches("[data-ed-t2]")) {
+      const st = W.second_tour || (W.second_tour = { actif: false, qualifies: ["", ""] });
+      const k = e.target.dataset.edT2;
+      if (k === "actif") st.actif = e.target.checked; else st.qualifies[Number(k)] = e.target.value;
+      if (st.actif && (st.qualifies.filter(Boolean).length !== 2 || st.qualifies[0] === st.qualifies[1])) {
+        alert("Choisissez deux candidats différents avant d'activer le mode second tour.");
+        st.actif = false; rafraichir(); return;
+      }
+      enregistrer();
+    }
   });
 
   document.addEventListener("change", (e) => {

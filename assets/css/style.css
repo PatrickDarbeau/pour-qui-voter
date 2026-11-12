@@ -387,3 +387,25 @@ ul.changements li span { display: inline-block; width: 1.2rem; font-weight: 700;
 .chg-ajout span { color: var(--oui); } .chg-retrait span { color: var(--non); } .chg-modif span { color: var(--etoile); }
 .ed-choix { white-space: nowrap; }
 .ed-choix label { margin-right: .8rem; cursor: pointer; }
+
+/* ---------- Second tour (lot 6) ---------- */
+.t2 { border-left: 5px solid var(--bleu); }
+a.carte.elimine { opacity: .5; filter: grayscale(.7); }
+.badge.qualifie { color: var(--oui); }
+.ed-t2 { border-left: 5px solid var(--bleu); }
+
+/* ---------- Démo en ligne (lot 6) ---------- */
+.bandeau-demo {
+  background: var(--encre); color: var(--papier); padding: .6rem 16px; text-align: center; font-size: .92rem;
+  display: flex; gap: .4rem .8rem; justify-content: center; align-items: center; flex-wrap: wrap;
+}
+.btn-mini {
+  background: var(--papier); color: var(--encre); padding: .25rem .8rem; border-radius: 4px;
+  font-weight: 700; text-decoration: none; white-space: nowrap;
+}
+.en-ligne .entete nav a[href="#/edition"] { display: none; }
+
+/* ---------- Accessibilité (lot 6) ---------- */
+.evitement { position: absolute; left: -9999px; top: 0; z-index: 100; background: var(--encre); color: var(--papier); padding: .6rem 1rem; }
+.evitement:focus { left: 8px; top: 8px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

@@ -1,0 +1,41 @@
+# Publication de la démo en ligne sur GitHub Pages (CDC §6 bis).
+# Déclenchement MANUEL uniquement (onglet Actions > « Démo en ligne » > Run workflow),
+# car GitHub Pages n'est gratuit que pour un dépôt public.
+# Seuls les fichiers de l'application sont publiés (pas les outils, tests, sources ni docs).
+name: Démo en ligne
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Valider les données
+        run: python outils/valider.py
+      - name: Préparer le site
+        run: |
+          mkdir -p _site/data
+          cp index.html _site/
+          cp -r assets _site/
+          cp data/donnees.js data/donnees.json _site/data/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+      - id: deploiement
+        uses: actions/deploy-pages@v4
