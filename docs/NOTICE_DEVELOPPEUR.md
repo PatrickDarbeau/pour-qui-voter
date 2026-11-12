@@ -147,6 +147,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 | 12/11/2026 | Règle adoptée : le journal est mis à jour après chaque lot ou mise à jour, dans le même commit. | — |
 | 12/11/2026 | Page Méthode, §2 : rappel que thèmes prioritaires et mesures essentielles sont facultatifs. | `a90bb84` |
 | 12/11/2026 | Page Méthode : boutons en bas de page (Retour, Voir mes résultats, Continuer le questionnaire), communs avec l'Aide. | `6c7b3ae` |
+| 12/11/2026 | Accueil : « ? » rouge sur le bulletin animé qui tombe dans l'urne. | `5e9f0e3` |
 | — | **Prochaine étape : lot 7** — contenu réel : base de mesures, candidats et sites officiels. Premier pack réel le 15/01/2027. | |
 
 ---
