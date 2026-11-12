@@ -113,12 +113,20 @@
         <li>Découvrez le classement et le détail des accords et désaccords, sources à l'appui.</li>
       </ol>
       <p class="doux">Rien n'est envoyé sur internet : vos réponses restent sur cet appareil.</p>
-      <div class="actions">
-        <a class="btn" href="#/priorites">${n ? "Reprendre" : "Commencer"}</a>
-        ${n ? `<a class="btn secondaire" href="#/resultats">Voir mes résultats (${n} réponses)</a>` : ""}
-      </div>
+      ${n ? `
+      <div class="carte reprise">
+        <p><strong>Vous avez déjà commencé&nbsp;!</strong> ${n} mesure${n > 1 ? "s" : ""} sur ${mesuresActives.length}
+          ${n >= mesuresActives.length ? "— questionnaire terminé." : "— vous pouvez reprendre où vous en étiez."}</p>
+        <div class="progression"><span style="width:${Math.min(100, Math.round((n / mesuresActives.length) * 100))}%"></span></div>
+        <div class="actions">
+          <a class="btn" href="#/questionnaire/${esc((themes.find((t) => !themeFait(t.id)) || themes[0]).id)}">${n >= mesuresActives.length ? "✎ Revoir mes réponses" : "▶ Poursuivre"}</a>
+          <a class="btn secondaire" href="#/resultats">Voir mes résultats</a>
+          <button class="btn secondaire" data-action="effacer">↺ Recommencer à zéro</button>
+        </div>
+      </div>` : `
+      <div class="actions"><a class="btn" href="#/priorites">Commencer</a></div>`}
       <p class="doux" style="margin-top:2rem">Données : version ${esc(D.version)} du ${new Date(D.date).toLocaleDateString("fr-FR")}
-        — origine : ${D.origine === "officiel" ? "pack officiel" : `données modifiées localement (${window.Edition ? window.Edition.nbModifs() : "?"} éléments)`}.</p>`;
+        — origine : ${D.origine === "officiel" ? "pack officiel" : `données modifiées localement (${window.Edition ? pluriel(window.Edition.nbModifs(), "élément") : "?"})`}.</p>`;
   }
 
   function vuePriorites() {
@@ -165,6 +173,7 @@
       ${cartes}
       <div class="actions">
         <a class="btn secondaire" href="${prec}">Précédent</a>
+        <button class="lien" data-action="effacer" title="Effacer toutes vos réponses">↺ Recommencer à zéro</button>
         <a class="btn" href="${suiv}">${i < themes.length - 1 ? "Thème suivant" : "Voir les résultats"}</a>
       </div>`;
   }
@@ -370,7 +379,7 @@
       if (confirm("Effacer toutes vos réponses ?")) {
         etat = { reponses: {}, prioritaires: [], ordre: {} };
         sauver();
-        location.hash = "#/";
+        if (location.hash === "#/" || location.hash === "") rendre(); else location.hash = "#/";
       }
     }
   });
