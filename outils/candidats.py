@@ -33,6 +33,7 @@ CANDIDATS = [
     {
         "id": "glucksmann", "prenom": "Raphaël", "nom": "Glucksmann", "parti": "Place publique",
         "biographie": "Député européen, cofondateur de Place publique. Candidature annoncée le 23 août 2026 ; participant à la primaire sociale-démocrate d'octobre 2026.",
+        "pages_programme": ["https://place-publique.eu/pages/69jA2SKIG5udlNX7wI3dmc/le-projet"],
         "slogan": None,
         "site_officiel": "https://place-publique.eu", "site_type": "parti",
         "sources": ["https://lcp.fr/actualites/gagner-en-2027-raphael-glucksmann-lance-sa-campagne-et-veut-ramener-la-gauche-au-pouvoir",
@@ -51,6 +52,7 @@ CANDIDATS = [
     {
         "id": "lisnard", "prenom": "David", "nom": "Lisnard", "parti": "Nouvelle Énergie",
         "biographie": "Maire de Cannes. A quitté Les Républicains pour se présenter sous l'étiquette de son mouvement, Nouvelle Énergie.",
+        "pages_programme": ["https://www.unenouvelleenergie.fr/notre-programme/"],
         "slogan": None,
         "site_officiel": "https://www.unenouvelleenergie.fr", "site_type": "mouvement",
         "sources": ["https://lcp.fr/actualites/je-suis-candidat-david-lisnard-quitte-lr-et-relance-le-debat-sur-une-primaire-a-droite"],
@@ -59,6 +61,7 @@ CANDIDATS = [
     {
         "id": "melenchon", "prenom": "Jean-Luc", "nom": "Mélenchon", "parti": "La France insoumise",
         "biographie": "Fondateur de La France insoumise, ancien député et ancien ministre, candidat en 2012, 2017 et 2022. Programme : « L'Avenir en commun » (nouvelle version 2026).",
+        "pages_programme": ["https://melenchon2027.fr/programme/laec/", "https://melenchon2027.fr/programme/plans-thematiques/", "https://melenchon2027.fr/programme/plans-investissement/"],
         "slogan": None,
         "site_officiel": "https://melenchon2027.fr", "site_type": "campagne",
         "sources": ["https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
@@ -68,6 +71,7 @@ CANDIDATS = [
     {
         "id": "philippe", "prenom": "Édouard", "nom": "Philippe", "parti": "Horizons",
         "biographie": "Ancien Premier ministre (2017-2020), maire du Havre, président d'Horizons. Candidat déclaré depuis septembre 2024.",
+        "pages_programme": ["https://horizonsleparti.fr/le-pole-idees/"],
         "slogan": None,
         "site_officiel": "https://horizonsleparti.fr", "site_type": "parti",
         "sources": ["https://connexionfrance.com/news/former-french-pm-edouard-philippe-announces-presidential-candidacy/676922"],
@@ -76,6 +80,7 @@ CANDIDATS = [
     {
         "id": "retailleau", "prenom": "Bruno", "nom": "Retailleau", "parti": "Les Républicains",
         "biographie": "Président des Républicains, ancien ministre de l'Intérieur. Candidature annoncée le 12 février 2026 ; désigné par son parti en avril 2026.",
+        "pages_programme": ["https://republicains.fr/nos-propositions/"],
         "slogan": None,
         "site_officiel": "https://republicains.fr", "site_type": "parti",
         "sources": ["https://www.publicsenat.fr/actualites/politique/je-suis-pret-bruno-retailleau-se-declare-candidat-a-lelection-presidentielle-2027",
@@ -113,14 +118,19 @@ CANDIDATS = [
 def main():
     ids = [c["id"] for c in CANDIDATS]
     assert len(set(ids)) == len(ids), "identifiants en double"
+    # Conserver la date de dernière collecte écrite par « maj.py collecter »
+    sortie = RACINE / "data" / "brouillon" / "candidats.json"
+    anciens = {}
+    if sortie.exists():
+        anciens = {x["id"]: x for x in json.loads(sortie.read_text(encoding="utf-8")).get("candidats", [])}
     fiches = []
     for k, c in enumerate(sorted(CANDIDATS, key=lambda x: x["nom"])):
         fiches.append({
             "id": c["id"], "prenom": c["prenom"], "nom": c["nom"], "parti": c["parti"],
             "couleur": PALETTE[k % len(PALETTE)], "biographie": c["biographie"], "slogan": c["slogan"],
             "photo": None, "site_officiel": c["site_officiel"],
-            "pages_programme": [], "programme_url": None, "statut": "declare",
-            "derniere_collecte": None, "sources_profil": c["sources"], "consulte_le": CONSULTE,
+            "pages_programme": c.get("pages_programme", []), "programme_url": None, "statut": "declare",
+            "derniere_collecte": anciens.get(c["id"], {}).get("derniere_collecte"), "sources_profil": c["sources"], "consulte_le": CONSULTE,
             "a_verifier": c["a_verifier"],
         })
     sortie = RACINE / "data" / "brouillon" / "candidats.json"

@@ -16,8 +16,12 @@ import json
 import re
 import shutil
 import sys
+import time
 import urllib.error
+import urllib.parse
 import urllib.request
+import urllib.robotparser
+from html.parser import HTMLParser
 from datetime import date
 from pathlib import Path
 
@@ -85,6 +89,58 @@ def telecharger(url):
         return r.read(), r.headers.get("Content-Type", "")
 
 
+MOTS_PROGRAMME = re.compile(r"programme|proposition|projet|mesure|engagement|propose|plan-|nos-idees|idees|thematique|avenir-en-commun", re.I)
+PAUSE = 1.0  # secondes entre deux requêtes vers un même site (politesse)
+_robots = {}
+
+
+def autorise(url):
+    """Respect du fichier robots.txt du site."""
+    base = "{0.scheme}://{0.netloc}".format(urllib.parse.urlparse(url))
+    if base not in _robots:
+        rp = urllib.robotparser.RobotFileParser(base + "/robots.txt")
+        try:
+            req = urllib.request.Request(base + "/robots.txt", headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(req, timeout=15) as r:
+                rp.parse(r.read().decode("utf-8", "replace").splitlines())
+        except Exception:
+            rp.parse([])  # robots.txt absent ou illisible : tout est permis
+        _robots[base] = rp
+    return _robots[base].can_fetch(USER_AGENT, url)
+
+
+class _Liens(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.liens = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "a":
+            href = dict(attrs).get("href")
+            if href:
+                self.liens.append(href)
+
+
+def decouvrir(url_page, contenu, maximum=12):
+    """Liens de la même site dont l'adresse évoque un programme ou des propositions."""
+    p = _Liens()
+    try:
+        p.feed(contenu.decode("utf-8", "replace"))
+    except Exception:
+        return []
+    hote = urllib.parse.urlparse(url_page).netloc.replace("www.", "")
+    vus, res = set(), []
+    for h in p.liens:
+        u = urllib.parse.urljoin(url_page, h).split("#")[0]
+        pu = urllib.parse.urlparse(u)
+        if pu.scheme not in ("http", "https") or pu.netloc.replace("www.", "") != hote:
+            continue
+        if MOTS_PROGRAMME.search(pu.path) and u not in vus and u.rstrip("/") != url_page.rstrip("/"):
+            vus.add(u)
+            res.append(u)
+    return res[:maximum]
+
+
 def derniere_collecte_avant(jour):
     if not SOURCES.exists():
         return None
@@ -93,7 +149,8 @@ def derniere_collecte_avant(jour):
 
 
 def cmd_collecter(args):
-    pack = charger()
+    chemin_pack = Path(args.pack) if args.pack else DONNEES
+    pack = charger(chemin_pack)
     jour = date.today().isoformat()
     cible = SOURCES / jour
     precedente = derniere_collecte_avant(jour)
@@ -111,7 +168,15 @@ def cmd_collecter(args):
         dossier.mkdir(parents=True, exist_ok=True)
         index = {}
         print(f"— {nom(c)} : {len(urls)} page(s)")
-        for url in urls:
+        a_traiter = list(urls)
+        decouvertes = []
+        while a_traiter:
+            url = a_traiter.pop(0)
+            if not autorise(url):
+                rapport["erreurs"].append(f"{nom(c)} : {url} (interdit par robots.txt)")
+                print(f"   ⊘ {url} — interdit par robots.txt")
+                continue
+            time.sleep(PAUSE)
             try:
                 contenu, type_contenu = telecharger(url)
             except (urllib.error.URLError, TimeoutError, OSError) as e:
@@ -123,7 +188,15 @@ def cmd_collecter(args):
             index[url] = {"fichier": fichier, "sha256": hashlib.sha256(contenu).hexdigest(),
                           "type": type_contenu, "consulte_le": jour, "octets": len(contenu)}
             print(f"   ✓ {url}")
+            # Découverte : depuis le site officiel, suivre les liens « programme / propositions »
+            if args.decouvrir and url == c.get("site_officiel") and "html" in (type_contenu or "html"):
+                for u in decouvrir(url, contenu):
+                    if u not in urls and u not in a_traiter and u not in index:
+                        decouvertes.append(u)
+                        a_traiter.append(u)
         (dossier / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
+        if decouvertes:
+            rapport.setdefault("pages_decouvertes", {})[c["id"]] = decouvertes
 
         # Comparaison avec la collecte précédente
         ancien_index = {}
@@ -141,7 +214,7 @@ def cmd_collecter(args):
                 rapport["disparues"].append(f"{nom(c)} : {url}")
         c["derniere_collecte"] = jour
 
-    enregistrer(pack)
+    enregistrer(pack, chemin_pack)
     (cible / "rapport.json").parent.mkdir(parents=True, exist_ok=True)
     (cible / "rapport.json").write_text(json.dumps(rapport, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -256,6 +329,8 @@ def main():
     sp.add_parser("candidats", help="lister les candidats et leurs sources").set_defaults(f=cmd_candidats)
     c = sp.add_parser("collecter", help="archiver les pages officielles")
     c.add_argument("--candidat")
+    c.add_argument("--pack", help="fichier de candidats à utiliser (défaut : data/donnees.json)")
+    c.add_argument("--decouvrir", action="store_true", help="suivre les liens « programme / propositions » du site officiel")
     c.set_defaults(f=cmd_collecter)
     d = sp.add_parser("diff", help="comparer deux packs")
     d.add_argument("ancien")
