@@ -11,11 +11,22 @@
 </head>
 <body>
   <header class="entete">
-    <a href="#/" class="logo">🗳️ Pour qui voter&nbsp;?</a>
-    <nav>
-      <a href="#/candidats">Candidats</a>
-      <a href="#/methode">Méthode</a>
-    </nav>
+    <div class="entete-haut">
+      <a href="#/" class="logo">
+        <span class="logo-titre">Pour qui voter&nbsp;?</span>
+        <span class="logo-sous">Présidentielle · 18 avril &amp; 2 mai 2027</span>
+      </a>
+      <nav>
+        <a href="#/candidats">Candidats</a>
+        <a href="#/methode">Méthode</a>
+        <a href="#/priorites" class="nav-cta">Faire le test</a>
+      </nav>
+    </div>
+    <div class="civique" role="note" aria-live="polite">
+      <span class="civique-ico" aria-hidden="true">✊</span>
+      <span id="civique-texte">Voter est un droit, c'est aussi un devoir civique.</span>
+      <a href="https://www.service-public.fr/particuliers/vosdroits/R16396" target="_blank" rel="noopener noreferrer">Vérifier mon inscription →</a>
+    </div>
   </header>
   <div id="bandeau-donnees" class="bandeau" hidden></div>
   <main id="app" tabindex="-1"><p>Chargement…</p></main>

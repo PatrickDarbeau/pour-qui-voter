@@ -179,6 +179,16 @@
     const item = (x) => `<li>${esc(x.mesure.intitule)}
         <span class="doux">— vous : ${x.avis > 0 ? "pour" : "contre"} ; candidat : ${LIBELLE_POS[String(x.position?.valeur ?? 0)]}
         ${x.position?.source_url ? `· <a href="${esc(x.position.source_url)}" rel="noopener noreferrer" target="_blank">source</a>` : ""}</span></li>`;
+    // Regroupe une liste de mesures par thème, dans l'ordre des thèmes
+    const groupe = (liste, titre, cls) => {
+      if (!liste.length) return "";
+      const sousListes = themes
+        .map((t) => [t, liste.filter((x) => x.mesure.theme === t.id)])
+        .filter(([, l]) => l.length)
+        .map(([t, l]) => `<div class="groupe-theme"><h4>${esc(t.icone)} ${esc(t.nom)} <span class="doux">(${l.length})</span></h4>
+            <ul class="liste">${l.map(item).join("")}</ul></div>`).join("");
+      return `<h3 class="${cls}">${titre} <span class="doux">(${liste.length})</span></h3>${sousListes}`;
+    };
     const blocs = resultats.map((r, k) => `
       <section class="carte bulletin ${k === 0 ? "premier" : ""}" style="animation-delay:${k * 60}ms">
         <span class="rang">N° ${k + 1}</span>
@@ -192,9 +202,9 @@
         <details>
           <summary>Détail : ${pluriel(r.accords.length, "accord")}, ${pluriel(r.desaccords.length, "désaccord")}, ${r.silences.length} sans position</summary>
           <div class="themes-mini">${Object.entries(r.themes).map(([t, v]) => `<span>${esc(themeParId[t]?.icone)} ${esc(themeParId[t]?.nom)} : ${pct(v)}</span>`).join("")}</div>
-          ${r.accords.length ? `<h3 class="ok">Accords</h3><ul class="liste">${r.accords.map(item).join("")}</ul>` : ""}
-          ${r.desaccords.length ? `<h3 class="ko">Désaccords</h3><ul class="liste">${r.desaccords.map(item).join("")}</ul>` : ""}
-          ${r.silences.length ? `<h3>Sans position connue</h3><ul class="liste">${r.silences.map(item).join("")}</ul>` : ""}
+          ${groupe(r.accords, "✔ Accords", "ok")}
+          ${groupe(r.desaccords, "✘ Désaccords", "ko")}
+          ${groupe(r.silences, "… Sans position connue", "")}
           <p><a href="#/candidat/${esc(r.candidat.id)}">Voir la fiche du candidat</a></p>
         </details>
       </section>`).join("");
@@ -322,7 +332,31 @@
     if (onglet) onglet.classList.toggle("fait", themeFait(t));
   }
 
+  // ---------- Messages civiques de l'en-tête ----------
+  const MESSAGES_CIVIQUES = [
+    "Voter est un droit, c'est aussi un devoir civique.",
+    "N'oubliez pas de vous inscrire sur les listes électorales !",
+    "Imaginez un pays décidé sans vous… Votez les 18 avril et 2 mai 2027.",
+    "Chaque voix compte : l'abstention ne choisit jamais à votre place.",
+    "Absent le jour J ? Pensez à la procuration.",
+    "Imaginez que votre voix soit celle qui fait la différence.",
+  ];
+  function messagesCiviques() {
+    const el = document.getElementById("civique-texte");
+    if (!el || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let i = 0;
+    setInterval(() => {
+      el.classList.add("cache");
+      setTimeout(() => {
+        i = (i + 1) % MESSAGES_CIVIQUES.length;
+        el.textContent = MESSAGES_CIVIQUES[i];
+        el.classList.remove("cache");
+      }, 400);
+    }, 6000);
+  }
+
   window.addEventListener("hashchange", rendre);
+  messagesCiviques();
   bandeau();
   rendre();
 })();
