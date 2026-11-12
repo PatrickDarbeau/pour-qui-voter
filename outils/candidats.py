@@ -52,7 +52,7 @@ CANDIDATS = [
     {
         "id": "lisnard", "prenom": "David", "nom": "Lisnard", "parti": "Nouvelle Énergie",
         "biographie": "Maire de Cannes. A quitté Les Républicains pour se présenter sous l'étiquette de son mouvement, Nouvelle Énergie.",
-        "pages_programme": ["https://www.unenouvelleenergie.fr/notre-programme/"],
+        "pages_programme": ["https://www.unenouvelleenergie.fr/notre-programme/", "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/", "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/", "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/", "https://www.unenouvelleenergie.fr/notre-programme/agriculture/", "https://www.unenouvelleenergie.fr/notre-programme/education/", "https://www.unenouvelleenergie.fr/notre-programme/immigration/", "https://www.unenouvelleenergie.fr/notre-programme/sante/", "https://www.unenouvelleenergie.fr/notre-programme/securite/"],
         "slogan": None,
         "site_officiel": "https://www.unenouvelleenergie.fr", "site_type": "mouvement",
         "sources": ["https://lcp.fr/actualites/je-suis-candidat-david-lisnard-quitte-lr-et-relance-le-debat-sur-une-primaire-a-droite"],

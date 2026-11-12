@@ -2,6 +2,456 @@
   "statut": "brouillon à relire",
   "positions": [
     {
+      "candidat": "lisnard",
+      "mesure": "eco5",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La baisse de la fiscalité de production doit être intensifiée",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "eco9",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pour un plan de réduction des déficits et de la dette publics",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "eco10",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Cette « règle d'or » s'appliquerait aux dépenses de fonctionnement mais pas à l'investissement",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "trav2",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Les incitations à travailler davantage doivent stimuler la capacité de croissance française",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "trav3",
+      "valeur": 0.5,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La simplification et l'assouplissement des règles du code du Travail",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "retr1",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La norme de l'âge légal de 65 ans est un impératif national urgent",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "retr2",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La norme de l'âge légal de 65 ans est un impératif national urgent",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "retr3",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La norme de l'âge légal de 65 ans est un impératif national urgent",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "retr4",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La norme de l'âge légal de 65 ans est un impératif national urgent",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "retr5",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Faire évoluer tous les autres régimes vers la capitalisation",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "retr6",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Faire évoluer tous les autres régimes vers la capitalisation",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "san2",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/sante/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Cela ne passe ni par la contrainte, ni par les injonctions administratives",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "san3",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/sante/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La Sécurité sociale rembourse mieux les actes dans les zones sous-dotées que dans les zones saturées",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "san5",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Supprimer l'Aide Médicale d'État (AME) et la remplacer par une aide d'urgence",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "san6",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Supprimer l'Aide Médicale d'État (AME) et la remplacer par une aide d'urgence",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "edu2",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/education/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Une augmentation de 20 % des rémunérations en cinq ans, conditionnée à une réorganisation profonde",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "edu4",
+      "valeur": 0.5,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/sante/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Supprimer Parcoursup",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "edu7",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/education/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "L'enseignement privé n'est pas le problème",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "edu8",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/education/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Un chèque-éducation : un financement public équivalent, que la famille choisisse l'enseignement public ou privé",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "ecl1",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Favoriser la production d'énergie décarbonée en s'appuyant sur le nucléaire",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "ecl2",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Construction d'EPR de nouvelle génération, déploiement de mini-réacteurs nucléaires",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "ecl10",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "« Énergies renouvelables » dérogatoires aux prix du marché […] Il faut mettre un terme à cette gabegie",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "agri1",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/agriculture/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "L'usage raisonné des phytosanitaires sur base scientifique",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "agri2",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/agriculture/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "En finir avec les surtranspositions françaises, l'alignement réglementaire avec le marché commun",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "agri8",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/agriculture/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Oui aux bassines, lorsqu'elles sont techniquement justifiées et localement décidées",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "agri9",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/agriculture/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Oui aux bassines, lorsqu'elles sont techniquement justifiées et localement décidées",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "log4",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La suppression de l'article 55 de la loi SRU […] obligeant les communes à disposer de 20 % et bientôt 25 % de logements sociaux",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "log5",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La suppression de l'article 55 de la loi SRU",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "sec1",
+      "valeur": 0.5,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Un plan massif de remise à niveau de la police nationale",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "jus1",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Rétablir les peines planchers pour les récidivistes",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "jus2",
+      "valeur": 0.5,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Le recours plus effectif des peines alternatives à la prison",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "jus5",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "L'augmentation des places de prison",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "jus6",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Abaisser la majorité pénale à 16 ans",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "jus7",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Inverser le principe de l'excuse de minorité dès 13 ans",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "jus8",
+      "valeur": 0.5,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Donner un budget décent à la justice […] Il faut rattraper la moyenne européenne",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "imm1",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Un référendum sera nécessaire",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "imm2",
+      "valeur": 0.5,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Mettre fin à l'automaticité du droit du sol",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "imm3",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Mettre fin à l'automaticité du droit du sol",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "imm4",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Supprimer toute possibilité d'être régularisé après être entré clandestinement sur le territoire",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "imm5",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Supprimer toute possibilité d'être régularisé après être entré clandestinement sur le territoire",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "imm6",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Conditionner le regroupement familial à des critères de ressources et des tests d'intégration",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "imm7",
+      "valeur": 0.5,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Conditionner les prestations sociales non contributives aux étrangers résidant régulièrement […] depuis au moins cinq ans",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "imm9",
+      "valeur": 0.5,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Expulser systématiquement les étrangers condamnés pour délits graves et les fichés S étrangers",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "eu2",
+      "valeur": 1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Redéfinir les compétences […] et les compétences qui doivent rester de niveau national ou régional",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lisnard",
+      "mesure": "eu3",
+      "valeur": -1,
+      "source_url": "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "L'Europe institutionnelle est une conquête et un outil nécessaire",
+      "a_confirmer": true
+    },
+    {
       "candidat": "melenchon",
       "mesure": "eco3",
       "valeur": 1,

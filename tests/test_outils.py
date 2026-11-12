@@ -87,6 +87,15 @@ class TestPositions(unittest.TestCase):
             self.assertTrue(src.startswith("https://melenchon2027.fr/"), mid)
             self.assertTrue(cit, mid)
 
+    def test_positions_lisnard_valides(self):
+        import catalogue, positions_lisnard
+        ids = {m[0] for m in catalogue.M}
+        for mid, (v, src, cit, conf) in positions_lisnard.P.items():
+            self.assertIn(mid, ids)
+            self.assertIn(v, (-1, 0, 0.5, 1))
+            self.assertTrue(src.startswith("https://www.unenouvelleenergie.fr/"), mid)
+            self.assertTrue(cit, mid)
+
 
 class TestDiff(unittest.TestCase):
     def test_aucune_difference(self):

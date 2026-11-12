@@ -87,7 +87,15 @@
       "photo": null,
       "site_officiel": "https://www.unenouvelleenergie.fr",
       "pages_programme": [
-        "https://www.unenouvelleenergie.fr/notre-programme/"
+        "https://www.unenouvelleenergie.fr/notre-programme/",
+        "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/",
+        "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+        "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/",
+        "https://www.unenouvelleenergie.fr/notre-programme/agriculture/",
+        "https://www.unenouvelleenergie.fr/notre-programme/education/",
+        "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+        "https://www.unenouvelleenergie.fr/notre-programme/sante/",
+        "https://www.unenouvelleenergie.fr/notre-programme/securite/"
       ],
       "programme_url": null,
       "statut": "declare",
