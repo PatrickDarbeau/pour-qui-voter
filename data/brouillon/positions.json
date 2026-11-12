@@ -1,0 +1,1115 @@
+{
+  "statut": "brouillon à relire",
+  "positions": [
+    {
+      "candidat": "melenchon",
+      "mesure": "eco3",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Instaurer un impôt universel sur les entreprises […] et sur les revenus des particuliers pour lutter contre l'évasion fiscale",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "eco5",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Remplacer la CVAE par un nouvel impôt sur les entreprises, dont la progressivité sera fonction du chiffre d'affaires",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "eco7",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/introduction",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pas d'arrosage d'aides publiques sans contreparties écologiques et sociales",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "eco8",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/introduction",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pas d'arrosage d'aides publiques sans contreparties écologiques et sociales",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "eco9",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La suspension pour tous des règles budgétaires des 3 % de déficit",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "eco10",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/decouvrir/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "D'immenses investissements productifs sont nécessaires […] la droite brandit la dette pour justifier son inaction",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "trav1",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Porter immédiatement le SMIC mensuel à 1 700 euros net",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "trav2",
+      "valeur": 0.5,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Passer aux 32 heures dans les métiers pénibles ou de nuit et favoriser leur généralisation par la négociation collective",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "trav3",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Rétablir immédiatement la durée légale hebdomadaire du temps de travail à 35 heures",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "trav4",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Rétablir une assurance chômage protectrice",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "trav5",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Rétablir une assurance chômage protectrice",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "trav6",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Indexer les salaires sur l'inflation dans le privé comme dans la fonction publique",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "trav8",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "En majorant les heures supplémentaires, cotisations incluses, à 25 % pour les quatre premières et 50 % au-delà",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "trav9",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Fixer un salaire maximal autorisé pour limiter l'écart de 1 à 20",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "retr1",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Abroger la réforme Macron passant l'âge de départ à la retraite à 64 ans, puis abaisser l'âge de départ",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "retr2",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Abroger la réforme Macron passant l'âge de départ à la retraite à 64 ans",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "retr3",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Restaurer le droit à la retraite à 60 ans à taux plein pour 40 annuités de cotisations",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "retr4",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Abroger la réforme Macron passant l'âge de départ à la retraite à 64 ans",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "retr5",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Supprimer les avantages fiscaux de la retraite par capitalisation pour financer le système par répartition",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "retr6",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Supprimer les avantages fiscaux de la retraite par capitalisation pour financer le système par répartition",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "retr7",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Porter, a minima, toutes les pensions pour une carrière complète […] au niveau du SMIC revalorisé",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "retr8",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Réinstaurant les facteurs de risques supprimés par Macron en 2017",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "san1",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/plans-thematiques/sante/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Plan de recrutement pluriannuel pour avoir 100 000 soignant·es et médecins supplémentaires à l'hôpital",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "san2",
+      "valeur": 0.5,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Actionner tous les leviers contre les déserts médicaux",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "san4",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Garantir le zéro reste à charge",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "san5",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Intégrer l'aide médicale d'État (AME) au régime général de la Sécurité sociale […] et renforcer sa couverture",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "san6",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Intégrer l'aide médicale d'État (AME) au régime général de la Sécurité sociale […] et renforcer sa couverture",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "san7",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Ajouter dans la Constitution le droit de mourir dans la dignité (y compris avec assistance)",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "san8",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Le droit de mourir dans la dignité (y compris avec assistance) et l'accès garanti à des soins palliatifs",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "san9",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Garantir le zéro reste à charge en supprimant les franchises médicales",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "soli1",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Bloquer et encadrer les prix des produits de première nécessité (alimentation, énergie, carburant)",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "soli2",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Bloquer et encadrer les prix des produits de première nécessité (alimentation, énergie, carburant)",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "soli6",
+      "valeur": 0.5,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Financer l'autonomie des jeunes […] grâce à la garantie d'autonomie",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "soli7",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Revalorisant l'allocation aux adultes handicapés (AAH) à hauteur du SMIC",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "soli8",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Bloquer et encadrer les prix des produits de première nécessité (alimentation, énergie, carburant)",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "edu1",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Réduire partout les effectifs par classe pour faire mieux que la moyenne européenne de 19 élèves",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "edu2",
+      "valeur": 0.5,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Revaloriser l'ensemble des personnels de l'Éducation nationale",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "edu3",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Mettre fin à l'expérimentation de l'uniforme",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "edu4",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Garantir à tous les bacheliers l'accès sans sélection […] en démantelant le système Parcoursup",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "edu5",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Garantir à tous les bacheliers l'accès sans sélection à la formation de leur choix",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "edu6",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Le service national universel (SNU) […] a été aussi coûteux qu'inutile",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "edu7",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Appliquer un malus au financement public des établissements privés sous contrat",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "edu8",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Abolir les privilèges de l'enseignement privé",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "edu9",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La gratuité […] y compris de la cantine, du transport, des activités périscolaires",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "cult2",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Garantir l'indépendance, le pluralisme et le financement de l'audiovisuel public",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "cult3",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Instaurant une contribution audiovisuelle dédiée, universelle et progressive",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "cult4",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Démanteler les empires médiatiques des milliardaires. Adopter une loi anti-concentration dans les médias",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "cult5",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Élargir les règles anti-concentration",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "cult6",
+      "valeur": 0.5,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Réorientant les moyens du pass Culture vers des projets collectifs à l'école",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "cult7",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Réorientant les moyens du pass Culture vers des projets collectifs à l'école",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "cult8",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Étendre la gratuité à tous les musées et les bibliothèques",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "cult9",
+      "valeur": 0.5,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Améliorer le régime des intermittents du spectacle […] et l'étendre aux autres professions",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ecl1",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Le nucléaire n'est pas non plus une solution d'avenir",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ecl2",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Le nucléaire n'est pas non plus une solution d'avenir",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ecl3",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Supprimer les lignes aériennes intérieures quand l'alternative en train est inférieure à quatre heures",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ecl4",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Mettre fin aux niches fiscales sur le kérosène",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ecl5",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La sortie coordonnée du marché européen de l'énergie",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ecl6",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La sortie coordonnée du marché européen de l'énergie",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ecl7",
+      "valeur": 0.5,
+      "source_url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Créer un pôle public de l'énergie en lien avec des coopératives locales et EDF, et en renationalisant Engie",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ecl8",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Créer un pôle public de l'énergie […] en renationalisant Engie",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ecl9",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre5",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Déployer l'éolien en mer […] pour atteindre au moins 45 gigawatts",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ecl10",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Organiser le 100 % d'énergies renouvelables",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "agri1",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Interdire immédiatement les plus dangereux (glyphosate, néonicotinoïdes)",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "agri2",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Interdire immédiatement les plus dangereux (glyphosate, néonicotinoïdes)",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "agri3",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Instaurant des prix planchers pour les agriculteurs",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "agri4",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Rompre avec les accords internationaux qui augmentent la déforestation […] : Mercosur",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "agri5",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Rompre avec les accords internationaux […] : Mercosur",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "agri6",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Porter l'alimentation dans la restauration collective et scolaire à 100 % biologique et locale",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "agri7",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Interdire les fermes-usines",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "agri8",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Instaurant un moratoire immédiat sur les méga-bassines",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "agri9",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Instaurant un moratoire immédiat sur les méga-bassines",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "log1",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "[Encadrer les loyers] à la baisse dans les grandes villes",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "log2",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "[Encadrer les loyers] à la baisse dans les grandes villes",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "log3",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Produire 200 000 logements publics par an",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "log4",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Rehausser le seuil de logements sociaux à 30 % dans les villes (loi SRU)",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "log5",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Aggraver les sanctions contre les communes hors la loi",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "log6",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Renationaliser les autoroutes en revenant sur les hausses de prix passées",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "log7",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Renationaliser les autoroutes",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "log8",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Un service public de santé de proximité à moins de 30 minutes de chaque Français",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "om1",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Un encadrement des prix et des marges sur les produits de première nécessité pour lutter contre la vie chère",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "om2",
+      "valeur": 0.5,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Organiser l'accession de la Kanaky-Nouvelle-Calédonie à l'indépendance au 1er janvier 2028",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "om6",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Reconnaître le statut de crise sanitaire et écologique concernant l'eau potable [Guadeloupe, Martinique]",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "om7",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre4",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Garantir le droit du sol intégral […] le rétablir sur l'ensemble du territoire national",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "om9",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Contrôler le prix des billets d'avion entre les Outre-mer et l'Hexagone",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "num4",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Interdire la reconnaissance faciale […] dans les espaces publics",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "num5",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Interdire la reconnaissance faciale […] dans les espaces publics",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "num7",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre7",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Généraliser l'usage des logiciels libres dans les administrations publiques",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "num9",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre7",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Garantir l'hébergement des données des services publics […] sur des serveurs publics situés en France",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "sec2",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Supprimer l'IGPN et l'IGGN et les remplacer par une autorité indépendante",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "sec3",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Supprimer l'IGPN et l'IGGN et les remplacer par une autorité indépendante",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "sec4",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Refuser la loi dite « permis de tuer XXL » instaurant une présomption de légitime défense pour les policiers",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "sec5",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Refuser la loi […] instaurant une présomption de légitime défense pour les policiers",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "sec7",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Rétablir la police de proximité comme pilier du service public",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "sec8",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Légaliser et encadrer par un monopole d'État la consommation, la production et la vente de cannabis",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "sec9",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Légaliser et encadrer par un monopole d'État […] le cannabis",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "jus2",
+      "valeur": 0.5,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Sortir de la logique du tout carcéral",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "jus5",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Sortir de la logique du tout carcéral […] mécanisme contraignant de régulation carcérale",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "jus6",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Revenir sur toutes les mesures qui alignent la justice des mineurs sur celle des adultes",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "jus7",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Rétablir les principes de l'ordonnance de février 1945 de primauté de l'action éducative",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "imm2",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre4",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Garantir le droit du sol intégral à tous les enfants nés en France",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "imm3",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre4",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Garantir le droit du sol intégral à tous les enfants nés en France",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "imm4",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Régulariser les travailleurs, étudiants, parents d'enfants scolarisés sans papiers",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "imm5",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Régulariser les travailleurs, étudiants, parents d'enfants scolarisés sans papiers",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ins1",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Instaurer le référendum d'initiative citoyenne (RIC)",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ins2",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Élire l'Assemblée nationale au scrutin proportionnel",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ins3",
+      "valeur": 0.5,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Reconnaître le vote blanc […] et instaurer un seuil de votes exprimés pour valider une élection",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ins5",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/introduction",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Les référendums citoyens, dont celui permettant de révoquer un élu, du conseiller municipal au président",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ins6",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/introduction",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Révoquer un élu, du conseiller municipal au président",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ins10",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Interdire le pantouflage",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ins11",
+      "valeur": -1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Interdire le pantouflage",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "melenchon",
+      "mesure": "ins12",
+      "valeur": 1,
+      "source_url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Abolir les procédures de « votes forcés » du Parlement comme l'article 49.3",
+      "a_confirmer": false
+    }
+  ]
+}

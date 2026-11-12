@@ -77,6 +77,17 @@ class TestCatalogue(unittest.TestCase):
         self.assertTrue(all(8 <= v <= 12 for v in nb.values()), nb)
 
 
+class TestPositions(unittest.TestCase):
+    def test_positions_melenchon_valides(self):
+        import catalogue, positions_melenchon
+        ids = {m[0] for m in catalogue.M}
+        for mid, (v, src, cit, conf) in positions_melenchon.P.items():
+            self.assertIn(mid, ids)
+            self.assertIn(v, (-1, 0, 0.5, 1))
+            self.assertTrue(src.startswith("https://melenchon2027.fr/"), mid)
+            self.assertTrue(cit, mid)
+
+
 class TestDiff(unittest.TestCase):
     def test_aucune_difference(self):
         self.assertEqual(maj.diff_packs(PACK, copy.deepcopy(PACK)), [])
