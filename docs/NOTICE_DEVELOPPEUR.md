@@ -180,7 +180,8 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |12/11/2026|Reporté : ajout de contrepoints aux thèmes déséquilibrés (notice §7).|`db02c26`|
 |12/11/2026|Lot 7, étape 3 : **recensement des candidats** ([recensement_candidats.md](recensement_candidats.md)) — 3 sources croisées (franceinfo, Candidator, République 2027) : 36 déclarés confirmés par au moins 2 sources, 13 à une seule source, 3 contradictoires, 9 pressentis. Soumis à validation avant les fiches de profil.|`cb63ce1`|
 |12/11/2026|Lot 7, étape 3 : 10 candidats retenus (`candidatures_probables.txt`) ; **fiches de profil** en brouillon ([fiches_candidats.md](fiches_candidats.md)) générées par `outils/candidats.py` : biographies sourcées, sites vérifiés (1 site de campagne, 8 sites de parti ou mouvement, 1 sans site), couleurs neutres, points à vérifier listés.|`aac0103`|
-|—|**Prochaine étape : lot 7** — relecture des fiches, puis première collecte sur les sites officiels (étape 4). Premier pack réel le 15/01/2027.||
+|12/11/2026|Lot 7, étape 4 : **première collecte** ([collecte_2026-11-12.md](collecte_2026-11-12.md)) — 24 pages archivées ; pages programme trouvées pour 5 candidats (Glucksmann, Lisnard, Mélenchon, Philippe, Retailleau) ; à compléter pour Attal, Le Pen (site protégé), Riner, Roussel, Zemmour. `maj.py collecter` : options `--pack` et `--decouvrir`, respect de robots.txt, pause d'une seconde.|`a4ae818`|
+|—|**Prochaine étape : lot 7** — compléter les pages programme manquantes, puis saisie des positions (étape 5). Premier pack réel le 15/01/2027.||
 
 \---
 
