@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- F26 / RGPD : aucune connexion réseau autorisée -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'">
+  <title>Pour qui voter ? — Présidentielle 2027</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="entete">
+    <a href="#/" class="logo">🗳️ Pour qui voter&nbsp;?</a>
+    <nav>
+      <a href="#/candidats">Candidats</a>
+      <a href="#/methode">Méthode</a>
+    </nav>
+  </header>
+  <div id="bandeau-donnees" class="bandeau" hidden></div>
+  <main id="app" tabindex="-1"><p>Chargement…</p></main>
+  <footer class="pied">
+    Outil informatif et non partisan. Il ne remplace pas la lecture des programmes.
+    Vos réponses restent sur cet appareil.
+  </footer>
+  <noscript><p class="bandeau">JavaScript doit être activé.</p></noscript>
+  <script src="data/donnees.js"></script>
+  <script src="assets/js/score.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

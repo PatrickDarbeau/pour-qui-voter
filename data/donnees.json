@@ -1,0 +1,1085 @@
+{
+  "format": 1,
+  "version": "2026.11.12-demo",
+  "date": "2026-11-12",
+  "origine": "officiel",
+  "demo": true,
+  "auteur": "Jeu de démonstration — candidats fictifs",
+  "elections": {
+    "tour1": "2027-04-18",
+    "tour2": "2027-05-02"
+  },
+  "themes": [
+    {
+      "id": "economie",
+      "nom": "Économie",
+      "icone": "💶",
+      "couleur": "#2f6fb0",
+      "ordre": 0
+    },
+    {
+      "id": "sante",
+      "nom": "Santé",
+      "icone": "🩺",
+      "couleur": "#c0392b",
+      "ordre": 1
+    },
+    {
+      "id": "education",
+      "nom": "Éducation",
+      "icone": "🎓",
+      "couleur": "#8e44ad",
+      "ordre": 2
+    },
+    {
+      "id": "ecologie",
+      "nom": "Écologie",
+      "icone": "🌿",
+      "couleur": "#27ae60",
+      "ordre": 3
+    },
+    {
+      "id": "securite",
+      "nom": "Sécurité et justice",
+      "icone": "⚖️",
+      "couleur": "#34495e",
+      "ordre": 4
+    },
+    {
+      "id": "institutions",
+      "nom": "Institutions et Europe",
+      "icone": "🏛️",
+      "couleur": "#d68910",
+      "ordre": 5
+    }
+  ],
+  "mesures": [
+    {
+      "id": "eco1",
+      "theme": "economie",
+      "intitule": "Abaisser l'âge légal de départ à la retraite à 62 ans",
+      "description": "Revenir sur le recul de l'âge de départ.",
+      "opposee_a": "eco2",
+      "actif": true
+    },
+    {
+      "id": "eco2",
+      "theme": "economie",
+      "intitule": "Porter l'âge légal de départ à la retraite à 65 ans",
+      "description": "Allonger la durée d'activité pour financer les retraites.",
+      "opposee_a": "eco1",
+      "actif": true
+    },
+    {
+      "id": "eco3",
+      "theme": "economie",
+      "intitule": "Augmenter le SMIC de 10 %",
+      "description": "Revalorisation exceptionnelle du salaire minimum.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "eco4",
+      "theme": "economie",
+      "intitule": "Baisser les impôts de production des entreprises",
+      "description": "Réduire la fiscalité pesant sur l'outil productif.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "san1",
+      "theme": "sante",
+      "intitule": "Recruter 20 000 soignants à l'hôpital public",
+      "description": "Plan pluriannuel d'embauches.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "san2",
+      "theme": "sante",
+      "intitule": "Réguler l'installation des médecins dans les zones surdotées",
+      "description": "Lutter contre les déserts médicaux.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "san3",
+      "theme": "sante",
+      "intitule": "Rembourser intégralement les soins dentaires et optiques",
+      "description": "Extension du « 100 % santé ».",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "edu1",
+      "theme": "education",
+      "intitule": "Limiter les classes à 24 élèves en primaire",
+      "description": "Réduction des effectifs par classe.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "edu2",
+      "theme": "education",
+      "intitule": "Augmenter le salaire des enseignants de 15 %",
+      "description": "Revalorisation sur la durée du quinquennat.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "edu3",
+      "theme": "education",
+      "intitule": "Rendre l'uniforme obligatoire à l'école",
+      "description": "Tenue commune dans le primaire et le secondaire.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "ecl1",
+      "theme": "ecologie",
+      "intitule": "Sortir progressivement du nucléaire",
+      "description": "Fermeture des réacteurs en fin de vie sans remplacement.",
+      "opposee_a": "ecl2",
+      "actif": true
+    },
+    {
+      "id": "ecl2",
+      "theme": "ecologie",
+      "intitule": "Construire de nouveaux réacteurs nucléaires",
+      "description": "Programme de nouveaux EPR.",
+      "opposee_a": "ecl1",
+      "actif": true
+    },
+    {
+      "id": "ecl3",
+      "theme": "ecologie",
+      "intitule": "Interdire les vols intérieurs lorsqu'un trajet en train de moins de 4 h existe",
+      "description": "Report modal vers le rail.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "ecl4",
+      "theme": "ecologie",
+      "intitule": "Taxer le kérosène des vols",
+      "description": "Fin de l'exonération du carburant aérien.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "sec1",
+      "theme": "securite",
+      "intitule": "Recruter 10 000 policiers et gendarmes",
+      "description": "Renforcement des effectifs de terrain.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "sec2",
+      "theme": "securite",
+      "intitule": "Instaurer des peines planchers",
+      "description": "Peines minimales pour les récidivistes.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "sec3",
+      "theme": "securite",
+      "intitule": "Développer les peines alternatives à la prison",
+      "description": "Travaux d'intérêt général, bracelet électronique.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "ins1",
+      "theme": "institutions",
+      "intitule": "Instaurer le référendum d'initiative citoyenne",
+      "description": "Référendum déclenché par pétition.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "ins2",
+      "theme": "institutions",
+      "intitule": "Introduire une dose de proportionnelle aux législatives",
+      "description": "Modification du mode de scrutin.",
+      "opposee_a": null,
+      "actif": true
+    },
+    {
+      "id": "ins3",
+      "theme": "institutions",
+      "intitule": "Renforcer l'intégration européenne",
+      "description": "Plus de compétences confiées à l'Union européenne.",
+      "opposee_a": null,
+      "actif": true
+    }
+  ],
+  "candidats": [
+    {
+      "id": "c1",
+      "prenom": "Claire",
+      "nom": "Durand",
+      "parti": "Parti de l'Avenir Social (fictif)",
+      "couleur": "#e74c3c",
+      "biographie": "Ancienne inspectrice du travail, députée depuis 2017.",
+      "slogan": "Le progrès pour tous",
+      "photo": null,
+      "site_officiel": null,
+      "pages_programme": [],
+      "programme_url": null,
+      "statut": "fictif",
+      "derniere_collecte": null
+    },
+    {
+      "id": "c2",
+      "prenom": "Marc",
+      "nom": "Lefèvre",
+      "parti": "Union Libérale (fictif)",
+      "couleur": "#3498db",
+      "biographie": "Chef d'entreprise, ancien ministre de l'Économie.",
+      "slogan": "Libérer l'énergie française",
+      "photo": null,
+      "site_officiel": null,
+      "pages_programme": [],
+      "programme_url": null,
+      "statut": "fictif",
+      "derniere_collecte": null
+    },
+    {
+      "id": "c3",
+      "prenom": "Inès",
+      "nom": "Moreau",
+      "parti": "Mouvement Écologiste (fictif)",
+      "couleur": "#2ecc71",
+      "biographie": "Ingénieure agronome, maire d'une ville moyenne.",
+      "slogan": "Réparer la planète",
+      "photo": null,
+      "site_officiel": null,
+      "pages_programme": [],
+      "programme_url": null,
+      "statut": "fictif",
+      "derniere_collecte": null
+    },
+    {
+      "id": "c4",
+      "prenom": "Paul",
+      "nom": "Garnier",
+      "parti": "Rassemblement National-Populaire (fictif)",
+      "couleur": "#2c3e50",
+      "biographie": "Avocat, conseiller régional.",
+      "slogan": "La France d'abord",
+      "photo": null,
+      "site_officiel": null,
+      "pages_programme": [],
+      "programme_url": null,
+      "statut": "fictif",
+      "derniere_collecte": null
+    }
+  ],
+  "positions": [
+    {
+      "candidat": "c1",
+      "mesure": "eco1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "eco2",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "eco3",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "eco4",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "san1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "san2",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "san3",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "edu1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "edu2",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "edu3",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "ecl1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "ecl2",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "ecl3",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "ecl4",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "sec1",
+      "valeur": 0.5,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "sec2",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "sec3",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "ins1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "ins2",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c1",
+      "mesure": "ins3",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "eco1",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "eco2",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "eco3",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "eco4",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "san1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "san2",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "san3",
+      "valeur": 0,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "edu1",
+      "valeur": 0,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "edu2",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "edu3",
+      "valeur": 0.5,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "ecl1",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "ecl2",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "ecl3",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "ecl4",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "sec1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "sec2",
+      "valeur": 0.5,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "sec3",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "ins1",
+      "valeur": 0,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "ins2",
+      "valeur": 0.5,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c2",
+      "mesure": "ins3",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "eco1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "eco2",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "eco3",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "eco4",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "san1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "san2",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "san3",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "edu1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "edu2",
+      "valeur": 0.5,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "edu3",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "ecl1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "ecl2",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "ecl3",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "ecl4",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "sec1",
+      "valeur": 0,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "sec2",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "sec3",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "ins1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "ins2",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c3",
+      "mesure": "ins3",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "eco1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "eco2",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "eco3",
+      "valeur": 0,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "eco4",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "san1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "san2",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "san3",
+      "valeur": 0.5,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "edu1",
+      "valeur": 0.5,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "edu2",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "edu3",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "ecl1",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "ecl2",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "ecl3",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "ecl4",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "sec1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "sec2",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "sec3",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "ins1",
+      "valeur": 1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "ins2",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    },
+    {
+      "candidat": "c4",
+      "mesure": "ins3",
+      "valeur": -1,
+      "source_url": "https://exemple.invalid/programme-fictif",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-01",
+      "citation": null,
+      "a_confirmer": false
+    }
+  ],
+  "journal": [
+    "Création du jeu de démonstration."
+  ]
+}
