@@ -247,11 +247,6 @@ a.carte:hover { transform: translateX(4px); }
   .entete nav a { margin-left: .7rem; }
   .ligne-score .nom { min-width: 0; flex-basis: 100%; }
 }
-@media print {
-  .entete, .pied, .actions, .bandeau { display: none; }
-  body { background: #fff; }
-  details { display: block; } details > * { display: block; }
-}
 
 /* ---------- Mode Édition ---------- */
 .bandeau-ed { padding: .5rem .8rem; border-left: 4px solid var(--etoile); background: var(--carte); }
@@ -338,3 +333,43 @@ code { font-family: var(--mono); font-size: .9em; background: var(--papier-2); p
 .avert-civique { font-family: var(--serif); font-style: italic; border-left: 4px solid var(--rouge); padding-left: .8rem; }
 .avert-case { display: flex; align-items: center; gap: .5rem; font-size: .9rem; color: var(--doux); margin-top: 1rem; }
 .pied .lien { font: inherit; font-style: italic; }
+
+/* ---------- Graphiques (lot 4) ---------- */
+.radar { margin: 1rem 0; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 1rem; align-items: center; }
+.radar svg { width: 100%; height: auto; overflow: visible; }
+.radar-grille { fill: none; stroke: var(--bord); stroke-width: 1; }
+.radar-moitie { stroke: var(--doux); stroke-dasharray: 4 4; }
+.radar-rayon { stroke: var(--bord); }
+.radar-etiquette { font: 600 13px var(--sans); fill: var(--encre); }
+.radar-repere { font: 10px var(--mono); fill: var(--doux); }
+.legende { list-style: none; padding: 0; margin: 0 0 .6rem; display: grid; gap: .3rem; font-weight: 600; }
+.chaleur-cadre { overflow-x: auto; margin-top: .8rem; }
+table.chaleur { border-collapse: separate; border-spacing: 3px; font-size: .9rem; }
+table.chaleur td { text-align: center; font-weight: 700; border-radius: 3px; min-width: 3rem; padding: .45rem .3rem; border: 0; }
+table.chaleur thead th { text-align: center; vertical-align: bottom; font-size: .78rem; border: 0; }
+table.chaleur tbody th { white-space: nowrap; border: 0; }
+.chaleur-ico { display: block; font-size: 1.2rem; }
+.chaleur-total { background: var(--papier-2); }
+.partage h3 { margin-top: 0; }
+.partage-ligne { display: flex; gap: .6rem; flex-wrap: wrap; }
+.partage-ligne input { flex: 1 1 260px; font: .85rem var(--mono); padding: .55rem; border: 1px solid var(--bord); border-radius: 4px; background: var(--papier); color: var(--encre); }
+.entete-impression { display: none; }
+@media (max-width: 640px) { .radar { grid-template-columns: 1fr; } }
+
+/* ---------- Impression / PDF (lot 4) ---------- */
+@media print {
+  :root { --papier: #fff; --papier-2: #f1f1f1; --carte: #fff; --encre: #111; --doux: #555; --bord: #ccc; color-scheme: light; }
+  @page { margin: 14mm 12mm; }
+  body { background: #fff !important; font-size: 11pt; }
+  .entete, .pied, .actions, .bandeau, #zone-partage, .bulle-aide, dialog, .btn { display: none !important; }
+  main { padding: 0; max-width: none; animation: none; }
+  .entete-impression { display: block; border-bottom: 3px solid #1f3a8a; padding-bottom: .4rem; margin-bottom: 1rem; font-size: 9pt; color: #333; }
+  .carte { box-shadow: none; break-inside: avoid; }
+  .tampon { animation: none; mix-blend-mode: normal; }
+  .barre span { animation: none; }
+  details > summary { list-style: none; }
+  .groupe-theme { break-inside: avoid; }
+  .radar, .chaleur-cadre { break-inside: avoid; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 8pt; color: #555; word-break: break-all; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

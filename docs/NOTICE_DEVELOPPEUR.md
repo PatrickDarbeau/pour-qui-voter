@@ -14,7 +14,7 @@ Les règles du projet se trouvent dans le [cahier des charges](../CAHIER_DES_CHA
 | L1 | Format `donnees.json`, validateur, jeu de démonstration | 12/11/2026 | ✅ | `913fc2f` |
 | L2 | Parcours électeur, calcul du score, interface « bulletin de vote » | 12/11/2026 | ✅ | `913fc2f` — reste à vérifier l'ouverture par double-clic |
 | L3 | Mode Édition : CRUD, matrice mesures × candidats, import/export | 27/11/2026 | ✅ | voir journal (12/11/2026) |
-| L4 | Résultats détaillés (graphique par thème), export PDF, lien de partage | 04/12/2026 | ⏳ | |
+| L4 | Résultats détaillés (graphique par thème), export PDF, lien de partage | 04/12/2026 | ✅ | radar + carte de chaleur, impression, partage |
 | L5 | `outils/maj.py`, import/export de packs (F29 à F40) | 18/12/2026 | ⏳ | |
 | L6 | Accessibilité, tests, paquet ZIP, démo en ligne, mode second tour | 08/01/2027 | ⏳ | |
 | L7 | Recherche et saisie des données réelles, puis packs réguliers | dès le 11/01/2027 | ⏳ | avec Hermès pour la recherche |

@@ -220,7 +220,17 @@
           <p><a href="#/candidat/${esc(r.candidat.id)}">Voir la fiche du candidat</a></p>
         </details>
       </section>`).join("");
+    const G = window.Graphiques;
+    const profil = G ? `
+      <h2>Votre profil par thème</h2>
+      ${G.radar(themes, resultats.slice(0, 3))}
+      <details class="carte" open><summary>Tous les candidats, thème par thème</summary>${G.chaleur(themes, resultats)}</details>` : "";
     return `
+      <div class="entete-impression">
+        <strong>Pour qui voter ? — Présidentielle 2027</strong><br>
+        Résultats du ${new Date().toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+        · données ${esc(D.version)} · ${nbMesures} mesures · outil non officiel, aide à la décision
+      </div>
       <div class="podium">
         <div>
           <span class="surtitre">Dépouillement</span>
@@ -234,12 +244,16 @@
         ${exAequo.map((r) => esc(nomComplet(r.candidat))).join(", ")}. Consultez le détail avant de vous décider.</p>` : ""}
       <p class="doux">La couverture indique la part de vos mesures sur lesquelles le candidat s'est prononcé.
         Ce résultat est un éclairage, pas une consigne de vote.</p>
+      <h2>Classement</h2>
       ${blocs}
+      ${profil}
       <div class="actions">
         <a class="btn secondaire" href="#/questionnaire/${esc(themes[0].id)}">Modifier mes réponses</a>
-        <button class="btn secondaire" data-action="imprimer">Imprimer / PDF</button>
+        <button class="btn secondaire" data-action="imprimer">🖨 Imprimer / PDF</button>
+        <button class="btn secondaire" data-action="partager">🔗 Lien de partage</button>
         <button class="btn secondaire" data-action="effacer">Recommencer</button>
-      </div>`;
+      </div>
+      <div id="zone-partage"></div>`;
   }
 
   function vueCandidats() {
@@ -411,7 +425,7 @@
     if (window.Edition && window.Edition.modifie()) { location.reload(); return; }
     const vues = {
       "": vueAccueil, priorites: vuePriorites, questionnaire: () => vueQuestionnaire(param),
-      resultats: vueResultats, candidats: vueCandidats, candidat: () => vueCandidat(param), methode: vueMethode, aide: vueAide,
+      resultats: vueResultats, candidats: vueCandidats, candidat: () => vueCandidat(param), methode: vueMethode, aide: vueAide, partage: () => vuePartage(param),
     };
     app.innerHTML = (vues[route] || vueAccueil)();
     window.scrollTo(0, 0);
@@ -440,7 +454,24 @@
       const r = etat.reponses[el.dataset.etoile];
       if (r && r.avis) { r.essentielle = !r.essentielle; sauver(); majCarte(el.closest(".mesure"), el.dataset.etoile); }
     } else if (el.dataset.action === "imprimer") {
+      // Déplie tous les détails pour l'impression, puis restaure l'état
+      const fermes = [...app.querySelectorAll("details:not([open])")];
+      fermes.forEach((d) => (d.open = true));
       window.print();
+      fermes.forEach((d) => (d.open = false));
+    } else if (el.dataset.action === "partager") {
+      afficherPartage();
+    } else if (el.dataset.action === "copier-partage") {
+      const champ = document.getElementById("lien-partage");
+      champ.select();
+      (navigator.clipboard ? navigator.clipboard.writeText(champ.value) : Promise.reject())
+        .then(() => { el.textContent = "✓ Copié"; })
+        .catch(() => { document.execCommand && document.execCommand("copy"); el.textContent = "✓ Copié"; });
+    } else if (el.dataset.action === "charger-partage") {
+      const p = decoderPartage(el.dataset.code);
+      if (p) { etat.reponses = p.reponses; etat.prioritaires = p.prioritaires; sauver(); location.hash = "#/resultats"; }
+    } else if (el.dataset.action === "ouvrir-tout") {
+      app.querySelectorAll("details").forEach((d) => (d.open = true));
     } else if (el.dataset.action === "effacer") {
       if (confirm("Effacer toutes vos réponses ?")) {
         etat = { reponses: {}, prioritaires: [], ordre: {} };
@@ -486,6 +517,65 @@
         el.classList.remove("cache");
       }, 400);
     }, 6000);
+  }
+
+  // ---------- Lien de partage (F17) ----------
+  // Format : prioritaires séparés par « , » puis « | » puis « id:p|c|i[*] » séparés par « ; »
+  // (p = pour, c = contre, i = indifférent, * = essentielle). Encodé en base64 « URL ».
+  const b64 = (s) => btoa(unescape(encodeURIComponent(s))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  const deb64 = (s) => decodeURIComponent(escape(atob(s.replace(/-/g, "+").replace(/_/g, "/"))));
+  function encoderPartage() {
+    const rep = Object.entries(etat.reponses)
+      .map(([id, r]) => `${id}:${r.avis === 1 ? "p" : r.avis === -1 ? "c" : "i"}${r.essentielle ? "*" : ""}`).join(";");
+    return b64(`${etat.prioritaires.join(",")}|${rep}`);
+  }
+  function decoderPartage(code) {
+    try {
+      const [prio, rep] = deb64(code).split("|");
+      const ids = new Set(D.mesures.map((m) => m.id));
+      const reponses = {};
+      for (const e of (rep || "").split(";").filter(Boolean)) {
+        const [id, v] = e.split(":");
+        if (!ids.has(id) || !/^[pci]\*?$/.test(v)) continue; // ignore les mesures inconnues
+        reponses[id] = { avis: v[0] === "p" ? 1 : v[0] === "c" ? -1 : 0, essentielle: v.endsWith("*") };
+      }
+      const prioritaires = (prio || "").split(",").filter((t) => themeParId[t]);
+      return { reponses, prioritaires };
+    } catch (_) { return null; }
+  }
+  function afficherPartage() {
+    const zone = document.getElementById("zone-partage");
+    const lien = location.href.split("#")[0] + "#/partage/" + encoderPartage();
+    zone.innerHTML = `<div class="carte partage">
+      <h3>🔗 Partager vos réponses</h3>
+      <p><strong>⚠️ Attention :</strong> ce lien contient <strong>toutes vos réponses</strong>, donc vos opinions politiques.
+        Toute personne qui l'ouvre pourra les voir. Ne le partagez qu'avec des personnes de confiance,
+        et évitez les réseaux sociaux publics.</p>
+      <p class="doux">Le lien ne passe par aucun serveur : vos réponses sont écrites dans l'adresse elle-même.
+        Il fonctionne avec la même version de l'application${location.protocol === "file:" ? " (ici un fichier local : il ne marchera que sur un ordinateur qui a l'application au même emplacement)" : ""}.</p>
+      <div class="partage-ligne">
+        <input type="text" id="lien-partage" readonly value="${esc(lien)}" aria-label="Lien de partage">
+        <button class="btn" data-action="copier-partage">Copier</button>
+      </div></div>`;
+    zone.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+  function vuePartage(code) {
+    const p = decoderPartage(code || "");
+    if (!p || !Object.keys(p.reponses).length) {
+      return `<h1>Lien de partage invalide</h1><p>Ce lien est incomplet ou provient d'une autre version des données.</p>
+        <a class="btn" href="#/">Retour à l'accueil</a>`;
+    }
+    const n = Object.values(p.reponses).filter((r) => r.avis).length;
+    const res = Score.calculer(D, p.reponses, p.prioritaires).resultats[0];
+    return `<span class="surtitre">Lien de partage</span>
+      <h1>Quelqu'un vous a partagé ses réponses</h1>
+      <p>Ce lien contient <strong>${n}</strong> avis sur ${mesuresActives.length} mesures${p.prioritaires.length ? ` et ${p.prioritaires.length} thème(s) prioritaire(s)` : ""}.
+        ${res ? `Le candidat le plus proche de ces réponses est <strong>${esc(nomComplet(res.candidat))}</strong> (${pct(res.score)}).` : ""}</p>
+      ${nbRepondues() ? `<p class="carte">⚠️ Charger ces réponses <strong>remplacera les vôtres</strong> (${nbRepondues()} réponses) sur cet appareil.</p>` : ""}
+      <div class="actions">
+        <a class="btn secondaire" href="#/">Ne pas charger</a>
+        <button class="btn" data-action="charger-partage" data-code="${esc(code)}">Charger et voir les résultats</button>
+      </div>`;
   }
 
   // ---------- Avertissement au démarrage ----------
