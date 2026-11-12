@@ -184,7 +184,8 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |12/11/2026|Lot 7, étape 4 : recherche complémentaire — sites de campagne trouvés pour **Roussel** (fabienroussel2027.fr) et **Zemmour** (ericzemmour.fr), collectés ; 7 candidats sur 10 avec pages programme. Restent Attal, Le Pen et Riner. Sites écartés après vérification : ancien site des législatives 2024 d'Attal, domaines parqués au nom de Marine Le Pen.|`8594029`|
 |12/11/2026|Lot 7, étape 5 : **positions de Jean-Luc Mélenchon** en brouillon ([positions_melenchon.md](positions_melenchon.md)) — 111 mesures sur 158 (61 soutient, 10 en partie, 40 s'oppose ; 10 à confirmer), chacune avec extrait et lien vers le chapitre de « L'Avenir en commun » (6e éd.). Le PDF du site (contrat NFP 2024) a été écarté. Outil `outils/positions.py`.|`6b90f3b`|
 |12/11/2026|Lot 7, étape 5 : **positions de David Lisnard** en brouillon ([positions_lisnard.md](positions_lisnard.md)) — 45 mesures sur 158, chacune avec extrait et lien vers la page du programme de Nouvelle Énergie (3 axes + 5 pages thématiques, ajoutées à la collecte).|`84e0e83`|
-|—|**Prochaine étape : lot 7** — relecture des positions (Mélenchon, Lisnard), puis Retailleau, Glucksmann, Philippe, Roussel, Zemmour. Premier pack réel le 15/01/2027.||
+|12/11/2026|Lot 7, étape 5 : **positions de Bruno Retailleau** en brouillon ([positions_retailleau.md](positions_retailleau.md)) — 28 mesures sur 158, sourcées dans les propositions des Républicains (page + 8 PDF ajoutés à la collecte). Thèmes non couverts par ces documents : immigration, sécurité, justice, santé, institutions, Europe. Bibliothèque `pypdf` installée pour lire les PDF.|`d790a0d`|
+|—|**Prochaine étape : lot 7** — relecture des positions (Mélenchon, Lisnard, Retailleau), puis Glucksmann, Philippe, Roussel, Zemmour. Premier pack réel le 15/01/2027.||
 
 \---
 
