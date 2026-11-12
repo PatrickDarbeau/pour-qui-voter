@@ -379,7 +379,8 @@
       <h2>D'où viennent les positions&nbsp;?</h2>
       <p>En priorité du site officiel et du programme de chaque candidat. Chaque position est accompagnée de sa source, que vous pouvez consulter.
         Une position tirée seulement de la presse ou d'une interview est marquée « à confirmer ».</p>
-      <p class="doux">Ce résultat est un éclairage, pas une consigne de vote. Il ne remplace pas la lecture des programmes.</p>`;
+      <p class="doux">Ce résultat est un éclairage, pas une consigne de vote. Il ne remplace pas la lecture des programmes.</p>
+      ${boutonsBasDePage()}`;
   }
 
   function vueAide() {
@@ -456,10 +457,17 @@
       ${q("Comment vérifier mon inscription ou donner procuration ?", `<p>Inscription :
         <a href="https://www.service-public.fr/particuliers/vosdroits/R16396" target="_blank" rel="noopener noreferrer">service-public.fr</a>.
         Procuration : <a href="https://www.maprocuration.gouv.fr" target="_blank" rel="noopener noreferrer">maprocuration.gouv.fr</a>.</p>`)}
-      <div class="actions">
+      ${boutonsBasDePage()}`;
+  }
+
+  // Boutons de fin des pages d'information (Aide, Méthode) : Retour, résultats, questionnaire
+  function boutonsBasDePage() {
+    const n = nbRepondues();
+    return `<div class="actions">
         <button class="btn secondaire" data-action="retour">← Retour</button>
-        ${nbRepondues()
-          ? `<a class="btn" href="#/questionnaire/${esc((themes.find((t) => !themeFait(t.id)) || themes[0]).id)}">▶ Continuer le questionnaire</a>`
+        ${n ? `<a class="btn secondaire" href="#/resultats">Voir mes résultats</a>` : ""}
+        ${n
+          ? `<a class="btn" href="#/questionnaire/${esc((themes.find((t) => !themeFait(t.id)) || themes[0]).id)}">▶ ${n >= mesuresActives.length ? "Revoir mes réponses" : "Continuer le questionnaire"}</a>`
           : `<a class="btn" href="#/priorites">▶ Commencer le questionnaire</a>`}
       </div>`;
   }
@@ -535,7 +543,7 @@
       etats.forEach(([d, o]) => (d.open = o));
     } else if (el.dataset.action === "retour") {
       // Revient à la page précédente de l'application, sinon à l'accueil
-      location.hash = pagePrecedente && !pagePrecedente.startsWith("#/aide") ? pagePrecedente : "#/";
+      location.hash = pagePrecedente && !/^#\/(aide|methode)/.test(pagePrecedente) ? pagePrecedente : "#/";
     } else if (el.dataset.action === "partager") {
       afficherPartage();
     } else if (el.dataset.action === "copier-partage") {
@@ -675,7 +683,7 @@
   let pagePrecedente = null; // pour le bouton « Retour » de la page d'aide
   window.addEventListener("hashchange", (e) => {
     const ancien = "#" + (e.oldURL.split("#")[1] || "/");
-    if (!ancien.startsWith("#/aide")) pagePrecedente = ancien;
+    if (!/^#\/(aide|methode)/.test(ancien)) pagePrecedente = ancien;
     rendre();
   });
   avertissement();
