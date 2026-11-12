@@ -3,170 +3,183 @@
 Ce document de travail sert au mainteneur. Mettez-le à jour à chaque lot terminé et à chaque pack publié.
 Les règles du projet se trouvent dans le [cahier des charges](../CAHIER_DES_CHARGES.md) : §9 bis pour la procédure, §9 ter pour la gouvernance des données, §10 pour le planning.
 
----
+\---
 
-## 1. Suivi des lots de développement
+## 1\. Suivi des lots de développement
 
 État : ✅ terminé · 🔄 en cours · ⏳ à faire
 
-| Lot | Contenu | Échéance visée | État | Commit / remarque |
-|---|---|---|---|---|
-| L1 | Format `donnees.json`, validateur, jeu de démonstration | 12/11/2026 | ✅ | `913fc2f` |
-| L2 | Parcours électeur, calcul du score, interface « bulletin de vote » | 12/11/2026 | ✅ | `913fc2f` — reste à vérifier l'ouverture par double-clic |
-| L3 | Mode Édition : CRUD, matrice mesures × candidats, import/export | 27/11/2026 | ✅ | voir journal (12/11/2026) |
-| L4 | Résultats détaillés (graphique par thème), export PDF, lien de partage | 04/12/2026 | ✅ | radar + carte de chaleur, impression, partage |
-| L5 | `outils/maj.py`, import/export de packs (F29 à F40) | 18/12/2026 | ✅ | `maj.py` candidats/collecter/diff/publier ; import avec aperçu, empreinte, fusion |
-| L6 | Accessibilité, tests, paquet ZIP, démo en ligne, mode second tour | 08/01/2027 | ✅ | `paquet.py`, tests hors ligne et Python, mode démo, second tour, workflow Pages manuel |
-| L7 | Recherche et saisie des données réelles, puis packs réguliers | dès le 11/01/2027 | ⏳ | avec Hermès pour la recherche |
-| — | **Jalon : version complète publiée** | **15/03/2027** | ⏳ | impératif |
+|Lot|Contenu|Échéance visée|État|Commit / remarque|
+|-|-|-|-|-|
+|L1|Format `donnees.json`, validateur, jeu de démonstration|12/11/2026|✅|`913fc2f`|
+|L2|Parcours électeur, calcul du score, interface « bulletin de vote »|12/11/2026|✅|`913fc2f` — reste à vérifier l'ouverture par double-clic|
+|L3|Mode Édition : CRUD, matrice mesures × candidats, import/export|27/11/2026|✅|voir journal (12/11/2026)|
+|L4|Résultats détaillés (graphique par thème), export PDF, lien de partage|04/12/2026|✅|radar + carte de chaleur, impression, partage|
+|L5|`outils/maj.py`, import/export de packs (F29 à F40)|18/12/2026|✅|`maj.py` candidats/collecter/diff/publier ; import avec aperçu, empreinte, fusion|
+|L6|Accessibilité, tests, paquet ZIP, démo en ligne, mode second tour|08/01/2027|✅|`paquet.py`, tests hors ligne et Python, mode démo, second tour, workflow Pages manuel|
+|L7|Recherche et saisie des données réelles, puis packs réguliers|dès le 11/01/2027|⏳|avec Hermès pour la recherche|
+|—|**Jalon : version complète publiée**|**15/03/2027**|⏳|impératif|
 
 > À chaque lot terminé : cocher la ligne, noter le commit et ajouter une entrée au §5 (journal).
 
----
+\---
 
-## 2. Échéancier des packs de données
+## 2\. Échéancier des packs de données
 
 Règle (CDC §9 ter) : un pack par mois jusqu'à fin janvier 2027, puis un par semaine jusqu'au premier tour.
 Les packs hebdomadaires sont publiés le **vendredi**.
 
-| N° | Date | Type | Contenu attendu | État |
-|---|---|---|---|---|
-| P0 | 12/11/2026 | démo | Candidats fictifs (actuel) | ✅ |
-| P1 | 15/01/2027 | mensuel | Premier pack réel : candidats déclarés ou pressentis, 15 thèmes, 120 mesures minimum | ⏳ |
-| P2 | 29/01/2027 | mensuel | Compléments, corrections | ⏳ |
-| P3 | 05/02/2027 | hebdo | | ⏳ |
-| P4 | 12/02/2027 | hebdo | | ⏳ |
-| P5 | 19/02/2027 | hebdo | | ⏳ |
-| P6 | 26/02/2027 | hebdo | | ⏳ |
-| P7 | 05/03/2027 | hebdo | | ⏳ |
-| P8 | 12/03/2027 | hebdo | Pack livré avec la version complète (jalon du 15/03) | ⏳ |
-| PX | publication de la liste officielle (date à confirmer, vers mi-mars) | exceptionnel | Retrait des non-qualifiés, statut « officiellement qualifié » | ⏳ |
-| P9 | 19/03/2027 | hebdo | | ⏳ |
-| P10 | 26/03/2027 | hebdo | | ⏳ |
-| P11 | 02/04/2027 | hebdo | | ⏳ |
-| P12 | 09/04/2027 | hebdo | | ⏳ |
-| P13 | 16/04/2027 | hebdo | **Dernier pack avant le premier tour (18/04)** | ⏳ |
-| P14 | 19/04/2027 | second tour | Deux candidats qualifiés, mode second tour activé | ⏳ |
-| P15 | 26/04/2027 | hebdo | Ajustements avant le second tour (02/05) | ⏳ |
-| PF | 03/05/2027 | final | Pack archivé, fin de la maintenance | ⏳ |
+|N°|Date|Type|Contenu attendu|État|
+|-|-|-|-|-|
+|P0|12/11/2026|démo|Candidats fictifs (actuel)|✅|
+|P1|15/01/2027|mensuel|Premier pack réel : candidats déclarés ou pressentis, 15 thèmes, 120 mesures minimum|⏳|
+|P2|29/01/2027|mensuel|Compléments, corrections|⏳|
+|P3|05/02/2027|hebdo||⏳|
+|P4|12/02/2027|hebdo||⏳|
+|P5|19/02/2027|hebdo||⏳|
+|P6|26/02/2027|hebdo||⏳|
+|P7|05/03/2027|hebdo||⏳|
+|P8|12/03/2027|hebdo|Pack livré avec la version complète (jalon du 15/03)|⏳|
+|PX|publication de la liste officielle (date à confirmer, vers mi-mars)|exceptionnel|Retrait des non-qualifiés, statut « officiellement qualifié »|⏳|
+|P9|19/03/2027|hebdo||⏳|
+|P10|26/03/2027|hebdo||⏳|
+|P11|02/04/2027|hebdo||⏳|
+|P12|09/04/2027|hebdo||⏳|
+|P13|16/04/2027|hebdo|**Dernier pack avant le premier tour (18/04)**|⏳|
+|P14|19/04/2027|second tour|Deux candidats qualifiés, mode second tour activé|⏳|
+|P15|26/04/2027|hebdo|Ajustements avant le second tour (02/05)|⏳|
+|PF|03/05/2027|final|Pack archivé, fin de la maintenance|⏳|
 
 Le **jeudi précédent**, le développeur lance la collecte (étapes 1 à 3). Le **vendredi**, il fait la relecture et la publication (étapes 4 à 6).
 
----
+\---
 
-## 3. Réaliser un pack : pas à pas
+## 3\. Réaliser un pack : pas à pas
 
 > Les commandes `maj.py` sont disponibles. L'étape 3 (extraction) reste manuelle, dans le mode Édition de l'application ; exportez ensuite le pack (JSON) et copiez-le dans `data/donnees.json` avant l'étape 5.
 
 ### Après le premier tour — activer le mode second tour
-- [ ] Dans Édition › Candidats, section « Mode second tour » : choisir les deux qualifiés, cocher « Activer ».
-- [ ] Exporter le pack, le copier dans `data/donnees.json`, puis publier (pack P14 du 19/04/2027).
+
+* \[ ] Dans Édition › Candidats, section « Mode second tour » : choisir les deux qualifiés, cocher « Activer ».
+* \[ ] Exporter le pack, le copier dans `data/donnees.json`, puis publier (pack P14 du 19/04/2027).
 
 ### Étape 1 — Veille des candidats (30 min)
-- [ ] Consulter les annonces de candidature, de retrait et de ralliement de la semaine.
-- [ ] À partir de mars : consulter les publications du Conseil constitutionnel (parrainages, puis liste officielle).
-- [ ] Mettre à jour la liste : ajouter ou retirer des candidats, changer le `statut`, renseigner `site_officiel` et `pages_programme`.
-- Commande : `python outils/maj.py candidats`
+
+* \[ ] Consulter les annonces de candidature, de retrait et de ralliement de la semaine.
+* \[ ] À partir de mars : consulter les publications du Conseil constitutionnel (parrainages, puis liste officielle).
+* \[ ] Mettre à jour la liste : ajouter ou retirer des candidats, changer le `statut`, renseigner `site\_officiel` et `pages\_programme`.
+* Commande : `python outils/maj.py candidats`
 
 ### Étape 2 — Collecte des sources (1 à 2 h)
-- [ ] Pour chaque candidat, ouvrir son **site officiel** et repérer les pages programme, les pages thématiques et les PDF.
-- [ ] Archiver chaque page et chaque PDF dans `data/sources/AAAA-MM-JJ/<candidat>/`, en notant l'URL et la date de consultation.
-- [ ] Compléter avec la presse ou les interviews si le site officiel est muet sur une mesure.
-- Commande : `python outils/maj.py collecter` (elle archive les pages et signale celles qui ont changé depuis la collecte précédente)
-- Hermès peut être sollicité pour cette recherche. Ses résultats sont toujours à vérifier.
+
+* \[ ] Pour chaque candidat, ouvrir son **site officiel** et repérer les pages programme, les pages thématiques et les PDF.
+* \[ ] Archiver chaque page et chaque PDF dans `data/sources/AAAA-MM-JJ/<candidat>/`, en notant l'URL et la date de consultation.
+* \[ ] Compléter avec la presse ou les interviews si le site officiel est muet sur une mesure.
+* Commande : `python outils/maj.py collecter` (elle archive les pages et signale celles qui ont changé depuis la collecte précédente)
+* Hermès peut être sollicité pour cette recherche. Ses résultats sont toujours à vérifier.
 
 ### Étape 3 — Extraction (2 à 4 h)
-- [ ] Commencer par les pages signalées comme modifiées.
-- [ ] Pour chaque proposition repérée, la rattacher à une mesure existante, ou créer une nouvelle mesure formulée de façon **neutre**, sans nom de candidat.
-- [ ] Noter la position (+1, +0,5, 0 ou −1), la source (`source_url`, `source_type`, `source_date`) et une citation courte.
-- [ ] Une source qui n'est ni le site officiel ni le programme doit être marquée `a_confirmer: true`.
-- Résultat : `brouillon.json`
+
+* \[ ] Commencer par les pages signalées comme modifiées.
+* \[ ] Pour chaque proposition repérée, la rattacher à une mesure existante, ou créer une nouvelle mesure formulée de façon **neutre**, sans nom de candidat.
+* \[ ] Noter la position (+1, +0,5, 0 ou −1), la source (`source\_url`, `source\_type`, `source\_date`) et une citation courte.
+* \[ ] Une source qui n'est ni le site officiel ni le programme doit être marquée `a\_confirmer: true`.
+* Résultat : `brouillon.json`
 
 ### Étape 4 — Relecture humaine (obligatoire)
-- [ ] Relire **chaque** position modifiée ou ajoutée, en ouvrant la source.
-- [ ] Vérifier la neutralité des intitulés de mesures.
-- [ ] Vérifier l'équilibre : même effort de recherche pour chaque candidat.
+
+* \[ ] Relire **chaque** position modifiée ou ajoutée, en ouvrant la source.
+* \[ ] Vérifier la neutralité des intitulés de mesures.
+* \[ ] Vérifier l'équilibre : même effort de recherche pour chaque candidat.
 
 ### Étape 5 — Contrôle
+
 ```bash
 python outils/valider.py
 ```
-- [ ] Aucune ERREUR.
-- [ ] Les alertes (couverture faible, thème trop pauvre) sont expliquées ou corrigées.
-- [ ] `node tests/score.test.js` passe.
+
+* \[ ] Aucune ERREUR.
+* \[ ] Les alertes (couverture faible, thème trop pauvre) sont expliquées ou corrigées.
+* \[ ] `node tests/score.test.js` passe.
 
 ### Étape 6 — Publication
+
 ```bash
 python outils/maj.py publier --version AAAA.MM.JJ
 ```
-- [ ] La commande valide le pack, fixe la version et la date, retire les marques « modifié localement », rédige le `journal` à partir des différences avec le pack précédent (ou utilisez `--journal "texte"`), puis génère `data/donnees.js`.
-- [ ] Elle écrit `dist/donnees-AAAA-MM-JJ.json` et son fichier `.sha256`, et affiche la **ligne à copier dans le registre** (§4).
-- [ ] Pour comparer deux packs à tout moment : `python outils/maj.py diff ancien.json nouveau.json`.
-- [ ] Construire le ZIP de l'application : `python outils/paquet.py` (écrit `dist/pour-qui-voter-<version>.zip` et son `.sha256`).
-- [ ] Vérifier l'archive : `node tests/hors_ligne.mjs` (ouverture par double-clic, aucune requête réseau).
-- [ ] Publier le pack, son empreinte et le ZIP sur la page de démonstration et sur le dépôt.
-- [ ] Commit : `git commit -m "Pack PN du JJ/MM/AAAA"` puis `git tag pack-AAAA-MM-JJ`.
-- [ ] Mettre à jour le §2 (état ✅) et le §4 (registre).
 
----
+* \[ ] La commande valide le pack, fixe la version et la date, retire les marques « modifié localement », rédige le `journal` à partir des différences avec le pack précédent (ou utilisez `--journal "texte"`), puis génère `data/donnees.js`.
+* \[ ] Elle écrit `dist/donnees-AAAA-MM-JJ.json` et son fichier `.sha256`, et affiche la **ligne à copier dans le registre** (§4).
+* \[ ] Pour comparer deux packs à tout moment : `python outils/maj.py diff ancien.json nouveau.json`.
+* \[ ] Construire le ZIP de l'application : `python outils/paquet.py` (écrit `dist/pour-qui-voter-<version>.zip` et son `.sha256`).
+* \[ ] Vérifier l'archive : `node tests/hors\_ligne.mjs` (ouverture par double-clic, aucune requête réseau).
+* \[ ] Publier le pack, son empreinte et le ZIP sur la page de démonstration et sur le dépôt.
+* \[ ] Commit : `git commit -m "Pack PN du JJ/MM/AAAA"` puis `git tag pack-AAAA-MM-JJ`.
+* \[ ] Mettre à jour le §2 (état ✅) et le §4 (registre).
 
-## 4. Registre des packs publiés
+\---
 
-| N° | Version | Date | Candidats | Mesures | Positions | SHA-256 (16 premiers caractères) | Principales modifications |
-|---|---|---|---|---|---|---|---|
-| P0 | 2026.11.12-demo | 12/11/2026 | 4 (fictifs) | 20 | 80 | `8a0762515f617e00` | Jeu de démonstration (republié avec `maj.py publier`) |
+## 4\. Registre des packs publiés
 
----
+|N°|Version|Date|Candidats|Mesures|Positions|SHA-256 (16 premiers caractères)|Principales modifications|
+|-|-|-|-|-|-|-|-|
+|P0|2026.11.12-demo|12/11/2026|4 (fictifs)|20|80|`8a0762515f617e00`|Jeu de démonstration (republié avec `maj.py publier`)|
 
-## 5. Journal du projet
+\---
 
-| Date | Événement | Commit |
-|---|---|---|
-| 12/11/2026 | Cahier des charges rédigé et validé : installation locale, données issues des sites officiels, démo en ligne secondaire, gouvernance des packs, dates des deux tours. | — |
-| 12/11/2026 | **Lots 1 et 2** : format des données, validateur, jeu de démonstration (candidats fictifs), parcours électeur, calcul du score testé, interface « bulletin de vote ». | `913fc2f` |
-| 12/11/2026 | Notice du développeur créée (suivi des lots, échéancier des packs, procédure). | `86d2bbc` |
-| 12/11/2026 | Dépôt GitHub privé créé (PatrickDarbeau/pour-qui-voter) ; adresse e-mail des commits remplacée par l'adresse anonyme GitHub (historique réécrit). | `752caa2` |
-| 12/11/2026 | Résultats groupés par thème ; en-tête civique avec messages contre l'abstention. | `51e6f9d` |
-| 12/11/2026 | Couleur propre à chaque thème ; correction de la politique de sécurité qui bloquait les barres de score. | `c033da7` |
-| 12/11/2026 | **Lot 3** : mode Édition (thèmes, mesures, candidats, matrice des positions sourcées, import/export JSON et CSV, sauvegarde et restauration). | `609cd5b` |
-| 12/11/2026 | Kit de campagne de promotion (YouTube, LinkedIn, X, Substack, autres canaux). | `29b4cdb` |
-| 12/11/2026 | Édition › Mesures : sections dépliables par thème, filtre, ajout direct dans un thème. | `ee3b7c6` |
-| 12/11/2026 | Thèmes prioritaires : pastille « ✓ Prioritaire » à la place de la croix. | `624df42` |
-| 12/11/2026 | Page Méthode réécrite en langage simple, avec exemple chiffré. | `145d27c` |
-| 12/11/2026 | Accueil : boutons Poursuivre, Voir mes résultats, Recommencer à zéro. | `81854de` |
-| 12/11/2026 | Page Aide (questions fréquentes) et bulles d'aide au survol. | `c9959af` |
-| 12/11/2026 | Fenêtre d'avertissement au démarrage (outil non officiel, aide à la décision). | `1d4e926` |
-| 12/11/2026 | **Lot 4** : radar et tableau coloré par thème, mise en page PDF, lien de partage avec avertissement. | `068f716` |
-| 12/11/2026 | PDF testé avec un vrai rendu Chrome et corrigé (4 pages) ; script `tests/pdf.mjs` et exemple. | `c16d4fe` |
-| 12/11/2026 | Usage pédagogique et adaptation à d'autres élections (avertissement et Aide). | `d431e53` |
-| 12/11/2026 | Page Aide : boutons Retour et Continuer le questionnaire. | `dabf007` |
-| 12/11/2026 | Note sur les dons rédigée ; **mise en place reportée** (voir §7). | `c722160` |
-| 12/11/2026 | Notice : décisions reportées et points à vérifier (§7). | `0377175` |
-| 12/11/2026 | **Lot 5** : `outils/maj.py` (candidats, collecter, diff, publier) ; import de pack avec aperçu des changements, empreinte SHA-256, contrôle de version et choix pour les modifications locales. Pack de démo republié. | `9d51ff6` |
-| 12/11/2026 | **Lot 6** : mode second tour (réglage dans Édition › Candidats), mode démo en ligne (bandeau, édition désactivée), accessibilité (lien d'évitement, titres de page, barres de progression), archive ZIP avec lanceurs, test hors ligne (13 contrôles) et tests Python (11), workflow GitHub Pages manuel. | `0566b4f` |
-| 12/11/2026 | Règle adoptée : le journal est mis à jour après chaque lot ou mise à jour, dans le même commit. | — |
-| 12/11/2026 | Page Méthode, §2 : rappel que thèmes prioritaires et mesures essentielles sont facultatifs. | `a90bb84` |
-| 12/11/2026 | Page Méthode : boutons en bas de page (Retour, Voir mes résultats, Continuer le questionnaire), communs avec l'Aide. | `6c7b3ae` |
-| 12/11/2026 | Accueil : « ? » rouge sur le bulletin animé qui tombe dans l'urne. | `5e9f0e3` |
-| 12/11/2026 | Accueil, étape 3 : « détail des accords et désaccords avec les candidats ». | `4266ce4` |
-| 12/11/2026 | Aide : nouvelle question « Et pour le second tour ? » (pack du 19/04, réponses conservées, activation manuelle). | `1e4ff84` |
-| 12/11/2026 | Fiche candidat : boutons « ← Tous les candidats » et « Voir mes résultats » en bas de page. | `e1e89c8` |
-| — | **Prochaine étape : lot 7** — contenu réel : base de mesures, candidats et sites officiels. Premier pack réel le 15/01/2027. | |
+## 5\. Journal du projet
 
----
+|Date|Événement|Commit|
+|-|-|-|
+|12/11/2026|Cahier des charges rédigé et validé : installation locale, données issues des sites officiels, démo en ligne secondaire, gouvernance des packs, dates des deux tours.|—|
+|12/11/2026|**Lots 1 et 2** : format des données, validateur, jeu de démonstration (candidats fictifs), parcours électeur, calcul du score testé, interface « bulletin de vote ».|`913fc2f`|
+|12/11/2026|Notice du développeur créée (suivi des lots, échéancier des packs, procédure).|`86d2bbc`|
+|12/11/2026|Dépôt GitHub privé créé (PatrickDarbeau/pour-qui-voter) ; adresse e-mail des commits remplacée par l'adresse anonyme GitHub (historique réécrit).|`752caa2`|
+|12/11/2026|Résultats groupés par thème ; en-tête civique avec messages contre l'abstention.|`51e6f9d`|
+|12/11/2026|Couleur propre à chaque thème ; correction de la politique de sécurité qui bloquait les barres de score.|`c033da7`|
+|12/11/2026|**Lot 3** : mode Édition (thèmes, mesures, candidats, matrice des positions sourcées, import/export JSON et CSV, sauvegarde et restauration).|`609cd5b`|
+|12/11/2026|Kit de campagne de promotion (YouTube, LinkedIn, X, Substack, autres canaux).|`29b4cdb`|
+|12/11/2026|Édition › Mesures : sections dépliables par thème, filtre, ajout direct dans un thème.|`ee3b7c6`|
+|12/11/2026|Thèmes prioritaires : pastille « ✓ Prioritaire » à la place de la croix.|`624df42`|
+|12/11/2026|Page Méthode réécrite en langage simple, avec exemple chiffré.|`145d27c`|
+|12/11/2026|Accueil : boutons Poursuivre, Voir mes résultats, Recommencer à zéro.|`81854de`|
+|12/11/2026|Page Aide (questions fréquentes) et bulles d'aide au survol.|`c9959af`|
+|12/11/2026|Fenêtre d'avertissement au démarrage (outil non officiel, aide à la décision).|`1d4e926`|
+|12/11/2026|**Lot 4** : radar et tableau coloré par thème, mise en page PDF, lien de partage avec avertissement.|`068f716`|
+|12/11/2026|PDF testé avec un vrai rendu Chrome et corrigé (4 pages) ; script `tests/pdf.mjs` et exemple.|`c16d4fe`|
+|12/11/2026|Usage pédagogique et adaptation à d'autres élections (avertissement et Aide).|`d431e53`|
+|12/11/2026|Page Aide : boutons Retour et Continuer le questionnaire.|`dabf007`|
+|12/11/2026|Note sur les dons rédigée ; **mise en place reportée** (voir §7).|`c722160`|
+|12/11/2026|Notice : décisions reportées et points à vérifier (§7).|`0377175`|
+|12/11/2026|**Lot 5** : `outils/maj.py` (candidats, collecter, diff, publier) ; import de pack avec aperçu des changements, empreinte SHA-256, contrôle de version et choix pour les modifications locales. Pack de démo republié.|`9d51ff6`|
+|12/11/2026|**Lot 6** : mode second tour (réglage dans Édition › Candidats), mode démo en ligne (bandeau, édition désactivée), accessibilité (lien d'évitement, titres de page, barres de progression), archive ZIP avec lanceurs, test hors ligne (13 contrôles) et tests Python (11), workflow GitHub Pages manuel.|`0566b4f`|
+|12/11/2026|Règle adoptée : le journal est mis à jour après chaque lot ou mise à jour, dans le même commit.|—|
+|12/11/2026|Page Méthode, §2 : rappel que thèmes prioritaires et mesures essentielles sont facultatifs.|`a90bb84`|
+|12/11/2026|Page Méthode : boutons en bas de page (Retour, Voir mes résultats, Continuer le questionnaire), communs avec l'Aide.|`6c7b3ae`|
+|12/11/2026|Accueil : « ? » rouge sur le bulletin animé qui tombe dans l'urne.|`5e9f0e3`|
+|12/11/2026|Accueil, étape 3 : « détail des accords et désaccords avec les candidats ».|`4266ce4`|
+|12/11/2026|Aide : nouvelle question « Et pour le second tour ? » (pack du 19/04, réponses conservées, activation manuelle).|`1e4ff84`|
+|12/11/2026|Fiche candidat : boutons « ← Tous les candidats » et « Voir mes résultats » en bas de page.|`e1e89c8`|
+|—|**Prochaine étape : lot 7** — contenu réel : base de mesures, candidats et sites officiels. Premier pack réel le 15/01/2027.||
 
-## 6. Points de vigilance
-- **Neutralité** : aucune mesure ne doit être formulée à l'avantage d'un candidat. En cas de doute, faire relire par une seconde personne.
-- **Signalements d'erreur** (F40) : les traiter avant le pack suivant et les noter dans le journal.
-- **Dates clés** : liste officielle des candidats (mars), premier tour le 18/04/2027, second tour le 02/05/2027.
-- **Ne jamais** intégrer de réponses d'utilisateurs aux packs ou aux sources.
+\---
 
----
+## 6\. Points de vigilance
 
-## 7. Décisions reportées et points à vérifier
+* **Neutralité** : aucune mesure ne doit être formulée à l'avantage d'un candidat. En cas de doute, faire relire par une seconde personne.
+* **Signalements d'erreur** (F40) : les traiter avant le pack suivant et les noter dans le journal.
+* **Dates clés** : liste officielle des candidats (mars), premier tour le 18/04/2027, second tour le 02/05/2027.
+* **Ne jamais** intégrer de réponses d'utilisateurs aux packs ou aux sources.
 
-| Sujet | État | À faire avant de lancer | Référence |
-|---|---|---|---|
-| **Dons** | Reporté (décision du 12/11/2026) | ☐ Vérifier les frais réels de chaque plateforme retenue<br>☐ Vérifier le régime fiscal des dons reçus par un particulier (impots.gouv.fr)<br>☐ Vérifier l'absence de risque au regard du droit électoral ; en cas de doute, demander un avis à la CNCCFP<br>☐ Choisir les plateformes, créer les comptes, transmettre les liens | [DONS.md](DONS.md) |
-| **Dépôt public** | Prévu avec le lot 6 (vers le 08/01/2027) | ☐ Choisir une licence (code et données)<br>☐ Vérifier qu'aucun fichier personnel n'est présent | — |
-| **Dates légales de la campagne** | À vérifier | ☐ Date limite d'inscription sur les listes électorales 2027<br>☐ Début exact de la réserve électorale | [CAMPAGNE.md](promotion/CAMPAGNE.md) |
+\---
+
+## 7\. Décisions reportées et points à vérifier
+
+|Sujet|État|À faire avant de lancer|Référence|
+|-|-|-|-|
+|**Dons**|Reporté (décision du 12/11/2026)|☐ Vérifier les frais réels de chaque plateforme retenue<br>☐ Vérifier le régime fiscal des dons reçus par un particulier (impots.gouv.fr)<br>☐ Vérifier l'absence de risque au regard du droit électoral ; en cas de doute, demander un avis à la CNCCFP<br>☐ Choisir les plateformes, créer les comptes, transmettre les liens|[DONS.md](DONS.md)|
+|**Dépôt public**|Prévu avec le lot 6 (vers le 08/01/2027)|☐ Choisir une licence (code et données)<br>☐ Vérifier qu'aucun fichier personnel n'est présent|—|
+|**Dates légales de la campagne**|À vérifier|☐ Date limite d'inscription sur les listes électorales 2027<br>☐ Début exact de la réserve électorale|[CAMPAGNE.md](promotion/CAMPAGNE.md)|
+
+
+
