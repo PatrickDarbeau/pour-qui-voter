@@ -15,7 +15,7 @@ Les règles du projet se trouvent dans le [cahier des charges](../CAHIER_DES_CHA
 | L2 | Parcours électeur, calcul du score, interface « bulletin de vote » | 12/11/2026 | ✅ | `913fc2f` — reste à vérifier l'ouverture par double-clic |
 | L3 | Mode Édition : CRUD, matrice mesures × candidats, import/export | 27/11/2026 | ✅ | voir journal (12/11/2026) |
 | L4 | Résultats détaillés (graphique par thème), export PDF, lien de partage | 04/12/2026 | ✅ | radar + carte de chaleur, impression, partage |
-| L5 | `outils/maj.py`, import/export de packs (F29 à F40) | 18/12/2026 | ⏳ | |
+| L5 | `outils/maj.py`, import/export de packs (F29 à F40) | 18/12/2026 | ✅ | `maj.py` candidats/collecter/diff/publier ; import avec aperçu, empreinte, fusion |
 | L6 | Accessibilité, tests, paquet ZIP, démo en ligne, mode second tour | 08/01/2027 | ⏳ | |
 | L7 | Recherche et saisie des données réelles, puis packs réguliers | dès le 11/01/2027 | ⏳ | avec Hermès pour la recherche |
 | — | **Jalon : version complète publiée** | **15/03/2027** | ⏳ | impératif |
@@ -56,7 +56,7 @@ Le **jeudi précédent**, le développeur lance la collecte (étapes 1 à 3). Le
 
 ## 3. Réaliser un pack : pas à pas
 
-> Les commandes `maj.py` seront disponibles à la fin du lot 5. D'ici là, les étapes 1 à 3 se font à la main, et l'étape 4 dans `data/donnees.json`, puis dans le mode Édition une fois le lot 3 livré.
+> Les commandes `maj.py` sont disponibles. L'étape 3 (extraction) reste manuelle, dans le mode Édition de l'application ; exportez ensuite le pack (JSON) et copiez-le dans `data/donnees.json` avant l'étape 5.
 
 ### Étape 1 — Veille des candidats (30 min)
 - [ ] Consulter les annonces de candidature, de retrait et de ralliement de la semaine.
@@ -93,10 +93,11 @@ python outils/valider.py
 
 ### Étape 6 — Publication
 ```bash
-python outils/valider.py --publier
+python outils/maj.py publier --version AAAA.MM.JJ
 ```
-- [ ] Renseigner dans `donnees.json` : `version` (au format `AAAA.MM.JJ`), `date`, `demo: false`, et le `journal` des changements.
-- [ ] Copier le pack sous `donnees-AAAA-MM-JJ.json` et noter son **empreinte SHA-256**, affichée par le validateur.
+- [ ] La commande valide le pack, fixe la version et la date, retire les marques « modifié localement », rédige le `journal` à partir des différences avec le pack précédent (ou utilisez `--journal "texte"`), puis génère `data/donnees.js`.
+- [ ] Elle écrit `dist/donnees-AAAA-MM-JJ.json` et son fichier `.sha256`, et affiche la **ligne à copier dans le registre** (§4).
+- [ ] Pour comparer deux packs à tout moment : `python outils/maj.py diff ancien.json nouveau.json`.
 - [ ] Construire le ZIP de l'application (commande prévue au lot 6).
 - [ ] Publier le pack, son empreinte et le ZIP sur la page de démonstration et sur le dépôt.
 - [ ] Commit : `git commit -m "Pack PN du JJ/MM/AAAA"` puis `git tag pack-AAAA-MM-JJ`.
@@ -108,7 +109,7 @@ python outils/valider.py --publier
 
 | N° | Version | Date | Candidats | Mesures | Positions | SHA-256 (16 premiers caractères) | Principales modifications |
 |---|---|---|---|---|---|---|---|
-| P0 | 2026.11.12-demo | 12/11/2026 | 4 (fictifs) | 20 | 80 | `5b12cbbaaaffa620` | Jeu de démonstration |
+| P0 | 2026.11.12-demo | 12/11/2026 | 4 (fictifs) | 20 | 80 | `8a0762515f617e00` | Jeu de démonstration (republié avec `maj.py publier`) |
 
 ---
 
@@ -136,7 +137,8 @@ python outils/valider.py --publier
 | 12/11/2026 | Page Aide : boutons Retour et Continuer le questionnaire. | `dabf007` |
 | 12/11/2026 | Note sur les dons rédigée ; **mise en place reportée** (voir §7). | `c722160` |
 | 12/11/2026 | Notice : décisions reportées et points à vérifier (§7). | `0377175` |
-| — | **Prochaine étape : lot 5** (outil `maj.py`, import/export de packs), échéance 18/12/2026. | |
+| 12/11/2026 | **Lot 5** : `outils/maj.py` (candidats, collecter, diff, publier) ; import de pack avec aperçu des changements, empreinte SHA-256, contrôle de version et choix pour les modifications locales. Pack de démo republié. | voir git |
+| — | **Prochaine étape : lot 6** (accessibilité, tests, paquet ZIP, démo en ligne, mode second tour), échéance 08/01/2027. | |
 
 ---
 

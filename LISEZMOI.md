@@ -10,6 +10,7 @@ Décompressez l'archive, puis ouvrez `index.html` dans votre navigateur avec un 
 |---|---|
 | `python outils/demo.py` | Régénère le jeu de démonstration (candidats fictifs) |
 | `python outils/valider.py --publier` | Contrôle `data/donnees.json` et génère `data/donnees.js` |
+| `python outils/maj.py candidats` · `collecter` · `diff A B` · `publier --version AAAA.MM.JJ` | Mise à jour des données (voir la notice du développeur) |
 | `node tests/score.test.js` | Lance les tests du calcul de concordance |
 | `python -m http.server 8765` | Lance un serveur local (facultatif) |
 | `node tests/pdf.mjs docs/exemples/resultats-exemple.pdf` | Génère un PDF des résultats (serveur local lancé) pour contrôler l'impression |

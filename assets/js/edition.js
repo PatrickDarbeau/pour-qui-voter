@@ -226,6 +226,7 @@
   function vueFichiers() {
     const sauv = lire(CLE_SAUV);
     const local = donneesActives();
+    if (enAttente) return vueImport();
     return `
       <section class="carte"><h3>Exporter</h3>
         <p class="doux">Enregistrez vos données dans un fichier pour les conserver, les partager ou les proposer au mainteneur.</p>
@@ -234,7 +235,8 @@
           <button class="btn secondaire" data-ed="export-csv">Exporter les positions (CSV)</button>
         </div></section>
       <section class="carte"><h3>Importer un pack</h3>
-        <p class="doux">Remplace les données actuelles. Une sauvegarde est faite automatiquement avant l'import.</p>
+        <p class="doux">Choisissez un fichier <code>donnees-AAAA-MM-JJ.json</code>. Avant tout remplacement, vous verrez
+          les changements, l'empreinte du fichier et le sort de vos modifications locales. Une sauvegarde est faite automatiquement.</p>
         <input type="file" accept=".json,application/json" data-ed-fichier>
       </section>
       <section class="carte"><h3>Revenir en arrière</h3>
@@ -371,16 +373,157 @@
     const inp = e.target.closest("[data-ed-fichier]");
     if (!inp || !inp.files[0]) return;
     const r = new FileReader();
-    r.onload = () => {
+    const nomFichier = inp.files[0].name;
+    r.onload = async () => {
       let pack;
       try { pack = JSON.parse(r.result); } catch (_) { alert("Fichier illisible : ce n'est pas un JSON valide."); return; }
       const err = verifierPack(pack);
-      if (err.length) { alert("Pack refusé :\n- " + err.join("\n- ")); return; }
-      if (!confirm(`Importer le pack ${pack.version || "?"} (${pack.candidats.length} candidats, ${pack.mesures.length} mesures) ?`)) return;
-      ecrire(CLE_SAUV, donneesActives() || window.DONNEES);
-      W = pack; ecrire(CLE, W); modifie = true; selection = null; rafraichir();
+      if (err.length) { alert("Pack refusé (F34) :\n- " + err.join("\n- ")); return; }
+      enAttente = preparerImport(pack, await empreinte(r.result), nomFichier);
+      rafraichir();
     };
     r.readAsText(inp.files[0], "utf-8");
+  });
+
+  // ---------- Import d'un pack : aperçu, version, empreinte, fusion (F30, F33 à F37) ----------
+  let enAttente = null;
+
+  async function empreinte(texte) {
+    try {
+      const h = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(texte));
+      return [...new Uint8Array(h)].map((b) => b.toString(16).padStart(2, "0")).join("");
+    } catch (_) { return null; } // crypto.subtle indisponible dans ce contexte
+  }
+
+  const CLES = {
+    themes: (x) => x.id, mesures: (x) => x.id, candidats: (x) => x.id,
+    positions: (x) => x.candidat + "|" + x.mesure,
+  };
+  const LIB = { themes: "Thème", mesures: "Mesure", candidats: "Candidat", positions: "Position" };
+  const egal = (a, b) => {
+    const net = (o) => JSON.stringify(Object.keys(o).filter((k) => k !== "modif_local").sort().map((k) => [k, o[k]]));
+    return net(a) === net(b);
+  };
+
+  function libelle(type, x, ref) {
+    if (type === "positions") {
+      const c = ref.candidats.find((y) => y.id === x.candidat);
+      const m = ref.mesures.find((y) => y.id === x.mesure);
+      return `${c ? NOM_ITEM.candidats(c) : x.candidat} / ${m ? m.intitule : x.mesure}`;
+    }
+    return NOM_ITEM[type](x);
+  }
+
+  function preparerImport(pack, sha, nomFichier) {
+    const actuel = donneesActives() || window.DONNEES;
+    const changements = [];
+    const conflits = [];
+    for (const type of Object.keys(CLES)) {
+      const k = CLES[type];
+      const a = new Map(actuel[type].map((x) => [k(x), x]));
+      const n = new Map(pack[type].map((x) => [k(x), x]));
+      for (const [cle, x] of n) {
+        if (!a.has(cle)) changements.push(["ajout", `${LIB[type]} ajouté(e) : ${libelle(type, x, pack)}`]);
+        else if (!egal(a.get(cle), x)) {
+          const av = a.get(cle);
+          const detail = type === "positions" ? ` : ${av.valeur} → ${x.valeur}` : "";
+          changements.push(["modif", `${LIB[type]} modifié(e) : ${libelle(type, x, pack)}${detail}`]);
+        }
+      }
+      for (const [cle, x] of a) if (!n.has(cle)) changements.push(["retrait", `${LIB[type]} retiré(e) : ${libelle(type, x, actuel)}`]);
+      // Modifications locales (F36, F37) qui seraient perdues
+      for (const [cle, x] of a) {
+        if (!x.modif_local) continue;
+        if (n.has(cle) && egal(n.get(cle), x)) continue; // le pack contient déjà la même chose
+        conflits.push({ type, cle, local: x, officiel: n.get(cle) || null, libelle: libelle(type, x, actuel) });
+      }
+    }
+    const versionActuelle = actuel.version || "";
+    return {
+      pack, sha, nomFichier, changements, conflits,
+      choix: Object.fromEntries(conflits.map((c) => [c.type + ":" + c.cle, "local"])),
+      plusAncien: (pack.version || "") < versionActuelle, versionActuelle,
+    };
+  }
+
+  function vueImport() {
+    const p = enAttente;
+    const icone = { ajout: "＋", modif: "✎", retrait: "−" };
+    const MAX = 60;
+    const liste = p.changements.slice(0, MAX).map(([t, txt]) => `<li class="chg-${t}"><span>${icone[t]}</span> ${esc(txt)}</li>`).join("");
+    const nb = (t) => p.changements.filter((c) => c[0] === t).length;
+    const conflits = p.conflits.map((c) => {
+      const id = c.type + ":" + c.cle;
+      const r = (v, txt) => `<label><input type="radio" name="${esc(id)}" value="${v}" data-ed-choix="${esc(id)}" ${p.choix[id] === v ? "checked" : ""}> ${txt}</label>`;
+      return `<tr><td>${esc(LIB[c.type])} : ${esc(c.libelle)}${c.officiel ? "" : ' <span class="badge">ajout local</span>'}</td>
+        <td class="ed-choix">${r("local", "Garder ma version")} ${r("officiel", c.officiel ? "Prendre la version du pack" : "Supprimer")}</td></tr>`;
+    }).join("");
+    return `<section class="carte import">
+      <h3>Aperçu de l'import</h3>
+      <table class="import-infos"><tbody>
+        <tr><th>Fichier</th><td>${esc(p.nomFichier)}</td></tr>
+        <tr><th>Version</th><td>${esc(p.pack.version || "?")} du ${esc(p.pack.date || "?")}
+          ${p.pack.origine === "officiel" ? '<span class="badge">pack officiel</span>' : '<span class="badge">pack local</span>'}
+          ${p.pack.demo ? '<span class="badge">démonstration</span>' : ""}</td></tr>
+        <tr><th>Contenu</th><td>${p.pack.candidats.length} candidats, ${p.pack.mesures.length} mesures, ${p.pack.positions.length} positions</td></tr>
+        <tr><th>Empreinte SHA-256</th><td><code class="sha">${p.sha ? esc(p.sha) : "indisponible dans ce navigateur"}</code><br>
+          <small class="doux">Comparez-la avec l'empreinte publiée à côté du pack : si elles sont identiques, le fichier n'a pas été modifié.</small></td></tr>
+      </tbody></table>
+      ${p.plusAncien ? `<p class="alerte">⚠️ Ce pack (${esc(p.pack.version)}) est <strong>plus ancien</strong> que vos données actuelles (${esc(p.versionActuelle)}).
+        <label><input type="checkbox" data-ed-forcer> Je veux quand même l'importer</label></p>` : ""}
+      <h4>Changements par rapport à vos données (${p.changements.length})</h4>
+      <p class="doux">＋ ${nb("ajout")} ajout(s) · ✎ ${nb("modif")} modification(s) · − ${nb("retrait")} retrait(s)</p>
+      ${p.changements.length ? `<ul class="changements">${liste}</ul>${p.changements.length > MAX ? `<p class="doux">… et ${p.changements.length - MAX} autre(s).</p>` : ""}` : "<p>Aucun changement : vos données sont déjà identiques.</p>"}
+      ${p.conflits.length ? `<h4>Vos modifications locales (${p.conflits.length})</h4>
+        <p class="doux">Ces éléments ont été modifiés ou ajoutés sur cet ordinateur. Choisissez pour chacun.</p>
+        <p><button class="lien" data-ed="choix-tous" data-v="local">Tout garder</button> · <button class="lien" data-ed="choix-tous" data-v="officiel">Tout prendre du pack</button></p>
+        <table class="ed-table"><tbody>${conflits}</tbody></table>` : ""}
+      <div class="actions">
+        <button class="btn secondaire" data-ed="import-annuler">Annuler</button>
+        <button class="btn" data-ed="import-valider">Importer (sauvegarde automatique)</button>
+      </div></section>`;
+  }
+
+  function appliquerImport() {
+    const p = enAttente;
+    if (p.plusAncien && !document.querySelector("[data-ed-forcer]")?.checked) {
+      alert("Ce pack est plus ancien que vos données : cochez la case pour confirmer l'import.");
+      return;
+    }
+    const final = copie(p.pack);
+    let gardes = 0;
+    for (const c of p.conflits) {
+      if (p.choix[c.type + ":" + c.cle] !== "local") continue;
+      const k = CLES[c.type];
+      const i = final[c.type].findIndex((x) => k(x) === c.cle);
+      const local = Object.assign(copie(c.local), { modif_local: true });
+      if (i >= 0) final[c.type][i] = local; else final[c.type].push(local);
+      gardes++;
+    }
+    // Une position gardée doit toujours pointer vers un candidat et une mesure existants
+    const ids = (l) => new Set(l.map((x) => x.id));
+    const cs = ids(final.candidats), ms = ids(final.mesures);
+    final.positions = final.positions.filter((x) => cs.has(x.candidat) && ms.has(x.mesure));
+    if (gardes) final.origine = "local";
+    ecrire(CLE_SAUV, donneesActives() || window.DONNEES);
+    W = final; ecrire(CLE, W); modifie = true; selection = null; enAttente = null;
+    rafraichir();
+    alert(`Pack ${p.pack.version || ""} importé${gardes ? ` (${gardes} modification(s) locale(s) conservée(s))` : ""}. Une sauvegarde des données précédentes est disponible.`);
+  }
+
+  document.addEventListener("change", (e) => {
+    const r = e.target.closest("[data-ed-choix]");
+    if (r && enAttente) enAttente.choix[r.dataset.edChoix] = r.value;
+  });
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-ed]");
+    if (!b || !enAttente) return;
+    if (b.dataset.ed === "import-annuler") { enAttente = null; rafraichir(); }
+    else if (b.dataset.ed === "import-valider") appliquerImport();
+    else if (b.dataset.ed === "choix-tous") {
+      Object.keys(enAttente.choix).forEach((k) => (enAttente.choix[k] = b.dataset.v));
+      rafraichir();
+    }
   });
 
   window.Edition = { donneesActives, afficher, modifie: () => modifie, nbModifs };
