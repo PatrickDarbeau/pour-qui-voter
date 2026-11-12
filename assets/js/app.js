@@ -116,7 +116,10 @@
           L'outil calcule votre concordance avec chaque candidat.</p>
         </div>
         <svg class="urne" viewBox="0 0 200 200" role="img" aria-label="Urne transparente">
-          <rect class="fente-bulletin" x="72" y="20" width="56" height="40" rx="2" fill="var(--carte)" stroke="currentColor" stroke-width="3"/>
+          <g class="fente-bulletin">
+            <rect x="72" y="20" width="56" height="40" rx="2" fill="var(--carte)" stroke="currentColor" stroke-width="3"/>
+            <text x="100" y="41" text-anchor="middle" dominant-baseline="central" class="urne-question">?</text>
+          </g>
           <rect x="30" y="70" width="140" height="18" rx="3" fill="var(--papier-2)" stroke="currentColor" stroke-width="3"/>
           <rect x="70" y="76" width="60" height="5" rx="2" fill="currentColor"/>
           <rect x="38" y="88" width="124" height="96" rx="4" fill="color-mix(in srgb, var(--bleu) 8%, transparent)" stroke="currentColor" stroke-width="3"/>
