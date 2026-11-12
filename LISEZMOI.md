@@ -13,4 +13,5 @@ Décompressez l'archive, puis ouvrez `index.html` dans votre navigateur avec un 
 | `node tests/score.test.js` | Lance les tests du calcul de concordance |
 | `python -m http.server 8765` | Lance un serveur local (facultatif) |
 
-Le cahier des charges complet se trouve dans [CAHIER_DES_CHARGES.md](CAHIER_DES_CHARGES.md).
+Le cahier des charges complet se trouve dans [CAHIER_DES_CHARGES.md](CAHIER_DES_CHARGES.md) (la liste des lots est au §10).
+Le suivi des lots, l'échéancier des packs et la procédure de mise à jour sont dans [docs/NOTICE_DEVELOPPEUR.md](docs/NOTICE_DEVELOPPEUR.md).

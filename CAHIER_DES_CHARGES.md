@@ -251,6 +251,8 @@ Le modèle est **mixte** : le développeur maintient la base de référence, et 
 
 ## 10. Planning indicatif
 
+Le suivi détaillé (état des lots, dates des packs) est tenu dans [docs/NOTICE_DEVELOPPEUR.md](docs/NOTICE_DEVELOPPEUR.md).
+
 | Lot | Contenu | Durée |
 |---|---|---|
 | L1 | Format `donnees.json`, validateur, jeu de données de démo | 1 sem. |
