@@ -1,6 +1,14 @@
-"""Génère un pack de données de démonstration (candidats FICTIFS) dans data/donnees.json.
+"""Génère le pack de démonstration (candidats FICTIFS) : data/demo/donnees-demo.json.
 
-Usage : python outils/demo.py
+Ce pack est conservé à part des données réelles (data/donnees.json). Il sert :
+  - aux présentations et à la démo en ligne (workflow « Démo en ligne », choix « demo ») ;
+  - aux essais et à l'usage pédagogique : il est fourni dans l'archive ZIP (exemples/)
+    et s'importe dans l'application (Édition > Import / export).
+
+Usage :
+    python outils/demo.py              (re)génère data/demo/donnees-demo.json
+    python outils/demo.py --installer  copie en plus le pack de démo dans data/donnees.json
+                                       (remplace les données réelles : à n'utiliser que pour tester)
 """
 import json
 from datetime import date
@@ -105,9 +113,17 @@ def main():
         "candidats": candidats, "positions": positions,
         "journal": ["Création du jeu de démonstration."],
     }
-    sortie = RACINE / "data" / "donnees.json"
-    sortie.write_text(json.dumps(pack, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Écrit : {sortie}")
+    texte = json.dumps(pack, ensure_ascii=False, indent=2)
+    sortie = RACINE / "data" / "demo" / "donnees-demo.json"
+    sortie.parent.mkdir(parents=True, exist_ok=True)
+    sortie.write_text(texte, encoding="utf-8")
+    print(f"Pack de démonstration : {sortie}")
+    if "--installer" in sys.argv:
+        (RACINE / "data" / "donnees.json").write_text(texte, encoding="utf-8")
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import valider
+        valider.main(["--publier"])
+        print("⚠ Le pack de démonstration remplace maintenant data/donnees.json.")
 
 
 if __name__ == "__main__":

@@ -456,6 +456,10 @@
           <li>Dans <strong>Import / export</strong>, exportez le pack (JSON) et distribuez-le aux élèves, qui l'importent sur leur poste.</li>
         </ol>
         <p class="doux">Comme rien n'est envoyé sur internet, l'outil peut être utilisé avec des élèves sans collecte de données personnelles.</p>`)}
+      ${q("Puis-je essayer avec des candidats fictifs ?", `<p>Oui. Un <strong>pack de démonstration</strong> avec des candidats fictifs est fourni
+        dans l'archive téléchargée (dossier <code>exemples</code>, fichier <code>donnees-demo.json</code>).
+        Importez-le dans <a href="#/edition/fichiers">Édition › Import / export</a> pour une présentation, une formation ou un usage en classe.
+        Pour revenir ensuite aux données réelles : <strong>Revenir au pack embarqué</strong>.</p>`)}
       ${q("J'ai trouvé une erreur, que faire ?", `<p>Notez la mesure, le candidat et la source correcte, puis signalez-la au mainteneur
         (ticket sur le dépôt GitHub du projet). Elle sera corrigée dans le pack suivant.</p>`)}
 

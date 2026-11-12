@@ -50,6 +50,13 @@ Avant d'importer, vous pouvez vérifier que le fichier n'a pas été modifié :
 l'empreinte SHA-256 affichée par l'application doit être identique à celle
 publiée à côté du pack.
 
+DONNÉES DE DÉMONSTRATION
+------------------------
+Le fichier « exemples/donnees-demo.json » contient un jeu de données avec des
+candidats FICTIFS, pour découvrir l'outil, faire une présentation ou préparer
+un usage en classe. Pour l'utiliser : Édition > Import / export > Importer un
+pack. Pour revenir aux données réelles : « Revenir au pack embarqué ».
+
 LICENCES
 --------
 Code : Licence publique de l'Union européenne EUPL 1.2 (fichier LICENCE).
@@ -97,6 +104,9 @@ def main():
     with zipfile.ZipFile(sortie, "w", zipfile.ZIP_DEFLATED) as z:
         for f in FICHIERS:
             z.write(RACINE / f, f"{DOSSIER}/{f}")
+        demo = RACINE / "data" / "demo" / "donnees-demo.json"
+        if demo.exists():
+            z.write(demo, f"{DOSSIER}/exemples/donnees-demo.json")
         for d in DOSSIERS:
             for f in sorted((RACINE / d).rglob("*")):
                 if f.is_file():

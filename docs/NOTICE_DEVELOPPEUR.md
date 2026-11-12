@@ -58,6 +58,12 @@ Le **jeudi précédent**, le développeur lance la collecte (étapes 1 à 3). Le
 
 > Les commandes `maj.py` sont disponibles. L'étape 3 (extraction) reste manuelle, dans le mode Édition de l'application ; exportez ensuite le pack (JSON) et copiez-le dans `data/donnees.json` avant l'étape 5.
 
+### Pack de démonstration (candidats fictifs)
+- Il est conservé à part : `data/demo/donnees-demo.json`. Les données réelles, dans `data/donnees.json`, peuvent évoluer sans le toucher.
+- Pour le régénérer : `python outils/demo.py`. L'option `--installer` le copie aussi dans `data/donnees.json`, pour des tests seulement.
+- Il est fourni dans l'archive ZIP (`exemples/donnees-demo.json`) et s'importe dans l'application.
+- Pour la démo en ligne : workflow « Démo en ligne », choix `demo` (candidats fictifs) ou `reelles`.
+
 ### Après le premier tour — activer le mode second tour
 
 * \[ ] Dans Édition › Candidats, section « Mode second tour » : choisir les deux qualifiés, cocher « Activer ».

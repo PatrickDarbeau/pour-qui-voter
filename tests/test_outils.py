@@ -55,6 +55,15 @@ class TestValider(unittest.TestCase):
         self.assertEqual(erreurs, [])
 
 
+class TestPackDemo(unittest.TestCase):
+    def test_pack_demo_conserve_et_valide(self):
+        demo = json.loads((RACINE / "data" / "demo" / "donnees-demo.json").read_text(encoding="utf-8"))
+        self.assertTrue(demo.get("demo"))
+        self.assertTrue(all(c.get("statut") == "fictif" for c in demo["candidats"]))
+        erreurs, _ = valider.valider(demo)
+        self.assertEqual(erreurs, [])
+
+
 class TestDiff(unittest.TestCase):
     def test_aucune_difference(self):
         self.assertEqual(maj.diff_packs(PACK, copy.deepcopy(PACK)), [])
