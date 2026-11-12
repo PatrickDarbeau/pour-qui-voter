@@ -56,6 +56,8 @@ Avec 8 à 10 mesures par thème, le catalogue comptera **136 à 170 mesures**. C
 Méthode détaillée, limites et améliorations possibles : [methode_choix_mesures.md](methode_choix_mesures.md).
 Bilan chiffré, mis à jour à chaque modification : [bilan_catalogue.md](bilan_catalogue.md).
 
+> **À faire plus tard** : ajouter des contrepoints aux thèmes déséquilibrés (Travail, Solidarités, Éducation, Numérique, puis Retraites et Institutions). Voir la notice §7.
+
 - **Neutre** : aucun nom de candidat ou de parti, aucun adjectif qui juge (« injuste », « courageux »…).
 - **Concrète et vérifiable** : « Porter le SMIC à 1 600 € net », plutôt que « Améliorer les salaires ».
 - **Une seule idée par mesure**.
