@@ -22,9 +22,21 @@
   let filtreTheme = "";  // filtre de l'onglet Mesures
   const ouverts = new Set(); // sections de thèmes dépliées
 
+  // Démo en ligne : édition d'essai, candidats VERROUILLÉS (liste, fiches et second tour du pack)
+  const VERROU = !!window.EN_LIGNE;
+
+  function verrouiller(d) {
+    if (!VERROU || !d) return d;
+    const ref = window.DONNEES;
+    d.candidats = copie(ref.candidats);
+    d.second_tour = ref.second_tour ? copie(ref.second_tour) : undefined;
+    const ids = new Set(d.candidats.map((c) => c.id));
+    d.positions = d.positions.filter((p) => ids.has(p.candidat));
+    return d;
+  }
   function donneesActives() {
     const d = lire(CLE);
-    return d && Array.isArray(d.themes) && Array.isArray(d.positions) ? d : null;
+    return d && Array.isArray(d.themes) && Array.isArray(d.positions) ? verrouiller(d) : null;
   }
   function travail() {
     if (!W) W = copie(donneesActives() || window.DONNEES);
@@ -138,8 +150,8 @@
       return `<tr>
         <td>${esc(NOM_ITEM[type](x))}${x.modif_local ? ' <span class="badge">modifié</span>' : ""}${x.actif === false ? ' <span class="badge">inactive</span>' : ""}</td>
         <td class="doux">${esc(info)}</td>
-        <td class="ed-actions"><button class="lien" data-ed="modifier" data-ed-type="${type}" data-ed-id="${esc(x.id)}">Modifier</button>
-          <button class="lien ko" data-ed="supprimer" data-ed-type="${type}" data-ed-id="${esc(x.id)}">Supprimer</button></td></tr>`;
+        <td class="ed-actions">${VERROU && type === "candidats" ? '<span class="doux">🔒 verrouillé</span>' : `<button class="lien" data-ed="modifier" data-ed-type="${type}" data-ed-id="${esc(x.id)}">Modifier</button>
+          <button class="lien ko" data-ed="supprimer" data-ed-type="${type}" data-ed-id="${esc(x.id)}">Supprimer</button>`}</td></tr>`;
     };
 
     // Mesures : une section déroulante par thème, avec filtre
@@ -171,6 +183,12 @@
 
     // Candidats : réglage du mode second tour (pack, CDC §9 ter)
     let t2 = "";
+    if (type === "candidats" && VERROU) {
+      return `<p class="carte ed-verrou">🔒 <strong>Candidats verrouillés dans la démo en ligne.</strong>
+        Vous pouvez consulter la liste ci-dessous, et modifier thèmes, mesures et positions pour essayer l'outil.
+        Pour gérer les candidats, téléchargez l'application.</p>
+        <table class="ed-table"><tbody>${liste.map(ligne).join("")}</tbody></table>`;
+    }
     if (type === "candidats") {
       const st = W.second_tour || { actif: false, qualifies: [] };
       const sel = (i) => `<select data-ed-t2="${i}"><option value="">— choisir —</option>${W.candidats.map((c) =>
@@ -248,14 +266,16 @@
           <button class="btn" data-ed="export-json">Exporter le pack (JSON)</button>
           <button class="btn secondaire" data-ed="export-csv">Exporter les positions (CSV)</button>
         </div></section>
+      ${VERROU ? `<section class="carte ed-verrou"><h3>Importer un pack</h3>
+        <p>🔒 Indisponible dans la démo en ligne. Téléchargez l'application pour importer des packs de données.</p></section>` : `
       <section class="carte"><h3>Importer un pack</h3>
         <p class="doux">Choisissez un fichier <code>donnees-AAAA-MM-JJ.json</code>. Avant tout remplacement, vous verrez
           les changements, l'empreinte du fichier et le sort de vos modifications locales. Une sauvegarde est faite automatiquement.</p>
         <input type="file" accept=".json,application/json" data-ed-fichier>
-      </section>
+      </section>`}
       <section class="carte"><h3>Revenir en arrière</h3>
         <div class="actions" style="justify-content:flex-start">
-          <button class="btn secondaire" data-ed="restaurer" ${sauv ? "" : "disabled"}>Restaurer la sauvegarde${sauv ? ` (${esc(sauv.version)})` : ""}</button>
+          ${VERROU ? "" : `<button class="btn secondaire" data-ed="restaurer" ${sauv ? "" : "disabled"}>Restaurer la sauvegarde${sauv ? ` (${esc(sauv.version)})` : ""}</button>`}
           <button class="btn secondaire" data-ed="reinitialiser" ${local ? "" : "disabled"}>Revenir au pack embarqué (${esc(window.DONNEES.version)})</button>
         </div></section>`;
   }
@@ -263,9 +283,11 @@
   function afficher(app, onglet) {
     travail();
     onglet = onglet || "mesures";
-    const etat = donneesActives()
+    const etat = (VERROU ? `<p class="bandeau-ed ed-verrou">🧪 <strong>Mode essai (démo en ligne).</strong> Vous pouvez modifier thèmes, mesures et positions
+        pour découvrir l'outil ; vos essais restent dans ce navigateur. Les candidats sont verrouillés. Pour revenir aux données d'origine :
+        Import / export › Revenir au pack embarqué.</p>` : "") + (donneesActives()
       ? `<p class="bandeau-ed">Données modifiées localement — ${nbModifs()} élément(s) modifié(s).</p>`
-      : `<p class="bandeau-ed doux">Données du pack ${esc(W.version)}. Toute modification sera enregistrée dans ce navigateur.</p>`;
+      : `<p class="bandeau-ed doux">Données du pack ${esc(W.version)}. Toute modification sera enregistrée dans ce navigateur.</p>`);
     let corps;
     if (onglet === "positions") corps = vuePositions();
     else if (onglet === "fichiers") corps = vueFichiers();
@@ -312,6 +334,8 @@
     const b = e.target.closest("[data-ed]");
     if (!b || !document.getElementById("app").contains(b)) return;
     const act = b.dataset.ed, type = b.dataset.edType, id = b.dataset.edId;
+    // Verrou de la démo en ligne : aucune action sur les candidats, pas d'import ni de restauration
+    if (VERROU && (type === "candidats" || act === "restaurer")) return;
     if (act === "modifier") selection = { type, id };
     else if (act === "ajouter") {
       const n = { id: nouvelId(type.slice(0, 1)) };
@@ -381,7 +405,7 @@
   }, true);
   document.addEventListener("change", (e) => {
     if (e.target.matches("[data-ed-filtre]")) { filtreTheme = e.target.value; rafraichir(); return; }
-    if (e.target.matches("[data-ed-t2]")) {
+    if (e.target.matches("[data-ed-t2]") && !VERROU) {
       const st = W.second_tour || (W.second_tour = { actif: false, qualifies: ["", ""] });
       const k = e.target.dataset.edT2;
       if (k === "actif") st.actif = e.target.checked; else st.qualifies[Number(k)] = e.target.value;

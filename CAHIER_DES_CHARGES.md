@@ -123,7 +123,7 @@ La mise en ligne est secondaire. Elle sert à présenter l'outil et à inviter �
 
 - **Contenu** : exactement les mêmes fichiers statiques que le ZIP, déposés sur un hébergement statique gratuit (GitHub Pages, Netlify, ou un hébergement mutualisé).
 - **Bandeau permanent** : « Version de démonstration — pour une confidentialité totale, téléchargez l'application et utilisez-la sur votre ordinateur », avec un bouton de téléchargement du ZIP.
-- **Mode Édition désactivé** en ligne : la consultation et le questionnaire restent accessibles.
+- **Mode Édition en essai** en ligne : le visiteur peut modifier thèmes, mesures et positions pour découvrir l'outil ; ses essais restent dans son navigateur. **La liste et les fiches des candidats sont verrouillées**, l'import de packs est désactivé.
 - **Confidentialité identique** : le calcul se fait dans le navigateur. Il n'y a ni formulaire envoyé, ni analytics, ni cookie, et aucune réponse ne transite par le serveur.
 - **Lien de partage** (F17) : il est désactivé par défaut en ligne, car il encode les réponses dans l'URL. On peut le réactiver seulement après un avertissement explicite.
 - **Données** : la démonstration peut utiliser le jeu réel ou un jeu fictif. Un indicateur « Données de démonstration » s'affiche si les candidats sont fictifs.

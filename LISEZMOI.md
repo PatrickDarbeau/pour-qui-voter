@@ -23,7 +23,7 @@ Le suivi des lots, l'échéancier des packs et la procédure de mise à jour son
 
 ## Démo en ligne
 La démo se publie sur GitHub Pages avec le workflow manuel **« Démo en ligne »** (onglet *Actions*), une fois le dépôt rendu public.
-En démo en ligne, un bandeau invite à télécharger l'application et le mode Édition est désactivé.
+En démo en ligne, un bandeau invite à télécharger l'application. Le mode Édition fonctionne en **essai** : thèmes, mesures et positions sont modifiables dans le navigateur du visiteur, mais **les candidats sont verrouillés** et l'import de packs est désactivé.
 Pour tester ce mode en local : ajoutez `?demo` à l'adresse (ex. `http://localhost:8765/?demo`).
 Les liens de téléchargement se règlent dans `assets/js/config.js`.
 

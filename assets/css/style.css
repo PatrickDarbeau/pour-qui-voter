@@ -403,10 +403,10 @@ a.carte.elimine { opacity: .5; filter: grayscale(.7); }
   background: var(--papier); color: var(--encre); padding: .25rem .8rem; border-radius: 4px;
   font-weight: 700; text-decoration: none; white-space: nowrap;
 }
-.en-ligne .entete nav a[href="#/edition"] { display: none; }
 
 /* ---------- Accessibilité (lot 6) ---------- */
 .evitement { position: absolute; left: -9999px; top: 0; z-index: 100; background: var(--encre); color: var(--papier); padding: .6rem 1rem; }
 .evitement:focus { left: 8px; top: 8px; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .urne-question { font: 800 30px var(--serif); fill: var(--rouge); }
+.ed-verrou { border-left: 4px solid var(--etoile); }

@@ -4,13 +4,12 @@
 (function () {
   "use strict";
 
-  // Démo en ligne (CDC §6 bis) : servie par un hébergeur web, hors poste local.
-  // « ?demo » dans l'adresse permet de tester ce mode en local.
-  const EN_LIGNE = (/^https?:$/.test(location.protocol) && !/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname))
-    || /[?&]demo\b/.test(location.search);
+  // Démo en ligne (CDC §6 bis) : détectée dans config.js
+  const EN_LIGNE = !!window.EN_LIGNE;
   const CONFIG = window.CONFIG || {};
-  // Données modifiées localement (mode Édition, F27) prioritaires sur le pack embarqué — sauf en démo en ligne
-  const D = (!EN_LIGNE && window.Edition && window.Edition.donneesActives()) || window.DONNEES;
+  // Données modifiées localement (mode Édition, F27) prioritaires sur le pack embarqué.
+  // En démo en ligne, edition.js garantit que les candidats restent ceux du pack (verrouillés).
+  const D = (window.Edition && window.Edition.donneesActives()) || window.DONNEES;
   if (EN_LIGNE) document.documentElement.classList.add("en-ligne");
   const app = document.getElementById("app");
   const CLE = "pqv.reponses.v1";
@@ -98,7 +97,7 @@
       const demo = document.createElement("div");
       demo.className = "bandeau-demo";
       demo.innerHTML = `<strong>Version de démonstration en ligne.</strong>
-        Pour une confidentialité totale, téléchargez l'application et utilisez-la sur votre ordinateur, même sans internet.
+        Pour une confidentialité totale et l'édition complète des données, téléchargez l'application et utilisez-la sur votre ordinateur, même sans internet.
         ${CONFIG.telechargement ? `<a class="btn-mini" href="${esc(CONFIG.telechargement)}" target="_blank" rel="noopener noreferrer">⬇ Télécharger</a>` : ""}`;
       b.before(demo);
     }
@@ -456,6 +455,11 @@
           <li>Dans <strong>Import / export</strong>, exportez le pack (JSON) et distribuez-le aux élèves, qui l'importent sur leur poste.</li>
         </ol>
         <p class="doux">Comme rien n'est envoyé sur internet, l'outil peut être utilisé avec des élèves sans collecte de données personnelles.</p>`)}
+      ${q("Que puis-je modifier dans la démo en ligne ?", `<p>Dans la version en ligne, le mode <a href="#/edition">Édition</a> fonctionne en <strong>essai</strong> :
+        vous pouvez modifier les thèmes, les mesures et les positions pour découvrir l'outil. Vos essais restent dans votre navigateur.</p>
+        <p><strong>La liste et les fiches des candidats sont verrouillées</strong>, et l'import de packs est désactivé.
+        Pour revenir aux données d'origine : Édition › Import / export › <strong>Revenir au pack embarqué</strong>.
+        Pour tout modifier, téléchargez l'application.</p>`)}
       ${q("Puis-je essayer avec des candidats fictifs ?", `<p>Oui. Un <strong>pack de démonstration</strong> avec des candidats fictifs est fourni
         dans l'archive téléchargée (dossier <code>exemples</code>, fichier <code>donnees-demo.json</code>).
         Importez-le dans <a href="#/edition/fichiers">Édition › Import / export</a> pour une présentation, une formation ou un usage en classe.
@@ -552,16 +556,6 @@
   // ---------- Routage ----------
   function rendre() {
     const [, route, param] = (location.hash || "#/").split("/");
-    if (route === "edition" && EN_LIGNE) {
-      app.innerHTML = `<span class="surtitre">Mode Édition</span><h1>Indisponible dans la démo en ligne</h1>
-        <p>La modification des données se fait uniquement dans la version téléchargée de l'application, installée sur votre ordinateur.</p>
-        <div class="actions">
-          <a class="btn secondaire" href="#/">Retour à l'accueil</a>
-          ${CONFIG.telechargement ? `<a class="btn" href="${esc(CONFIG.telechargement)}" target="_blank" rel="noopener noreferrer">⬇ Télécharger l'application</a>` : ""}
-        </div>`;
-      annoncerPage();
-      return;
-    }
     if (route === "edition" && window.Edition) {
       window.Edition.afficher(app, param);
       annoncerPage();
@@ -569,7 +563,7 @@
       return;
     }
     // En quittant le mode Édition après des modifications, on recharge pour les prendre en compte
-    if (!EN_LIGNE && window.Edition && window.Edition.modifie()) { location.reload(); return; }
+    if (window.Edition && window.Edition.modifie()) { location.reload(); return; }
     const vues = {
       "": vueAccueil, priorites: vuePriorites, questionnaire: () => vueQuestionnaire(param),
       resultats: () => vueResultats(param), candidats: vueCandidats, candidat: () => vueCandidat(param), methode: vueMethode, aide: vueAide, mentions: vueMentions, partage: () => vuePartage(param),

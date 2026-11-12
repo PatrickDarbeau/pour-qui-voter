@@ -105,6 +105,25 @@ try {
   ok(await js("document.querySelector('main h1').textContent") === "Mentions légales", "Page Mentions légales (licences, responsabilité, confidentialité)");
   ok(await js("document.querySelector('.pied').textContent.includes('EUPL')"), "Licences indiquées dans le pied de page");
 
+  // Démo en ligne simulée (?demo) : édition d'essai, candidats verrouillés
+  await js(`(() => {
+    const d = JSON.parse(localStorage.getItem("pqv.donnees.v1") || JSON.stringify(DONNEES));
+    d.candidats.push({ id: "intrus", nom: "Candidat ajouté", parti: "?" });
+    localStorage.setItem("pqv.donnees.v1", JSON.stringify(d));
+  })()`);
+  await cmd("Page.navigate", { url: URL_APP + "?demo#/candidats" });
+  await pause(1500);
+  await js("document.getElementById('avertissement').open && document.getElementById('avertissement').close()");
+  ok(await js("!!document.querySelector('.bandeau-demo')"), "Démo en ligne : bandeau de téléchargement");
+  ok(await js("document.querySelectorAll('main a.carte').length === DONNEES.candidats.length"), "Démo en ligne : candidat ajouté localement ignoré (liste verrouillée)");
+  await aller("#/edition/candidats");
+  ok(await js("!!document.querySelector('.ed-verrou') && !document.querySelector('[data-ed=modifier]') && !document.querySelector('[data-ed=ajouter]')"),
+    "Démo en ligne : candidats non modifiables dans l'édition");
+  await aller("#/edition/mesures");
+  ok(await js("document.querySelectorAll('[data-ed=modifier]').length > 0"), "Démo en ligne : mesures modifiables (mode essai)");
+  await aller("#/edition/fichiers");
+  ok(await js("!document.querySelector('[data-ed-fichier]')"), "Démo en ligne : import de packs désactivé");
+
   // Aucune requête réseau
   const externes = requetes.filter((u) => !u.startsWith("file:") && !u.startsWith("data:") && !u.startsWith("blob:"));
   ok(externes.length === 0, `Aucune requête réseau (${requetes.length} chargements locaux${externes.length ? ` ; externes : ${externes.join(", ")}` : ""})`);
