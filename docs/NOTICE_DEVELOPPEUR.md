@@ -169,6 +169,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |12/11/2026|Note sur les licences et la responsabilité ([LICENCES.md](LICENCES.md)) ; décision en attente (§7).|`9411627`|
 |12/11/2026|Licences adoptées : **EUPL 1.2** (code) et **CC BY-SA 4.0** (données). Fichiers LICENCE, LICENCE-DONNEES, MENTIONS-LEGALES.md ; page « Mentions légales » et lien en pied de page ; champ `licence` dans les packs ; licences incluses dans l'archive ZIP ; test hors ligne étendu (15 contrôles).|`23bd0d1`|
 |12/11/2026|Pack de démonstration (candidats fictifs) conservé à part dans `data/demo/donnees-demo.json` ; fourni dans l'archive (`exemples/`) ; choix « demo » ou « réelles » pour la démo en ligne ; question dans l'Aide ; test dédié.|`5211fcb`|
+|12/11/2026|Démo en ligne : mode Édition en **essai** (thèmes, mesures, positions modifiables dans le navigateur du visiteur), **candidats verrouillés** (liste, fiches, second tour), import de packs désactivé ; CDC §6 bis, LISEZMOI et Aide mis à jour ; test hors ligne étendu (20 contrôles).|`2f836b2`|
 |—|**Prochaine étape : lot 7** — contenu réel : base de mesures, candidats et sites officiels. Premier pack réel le 15/01/2027.||
 
 \---
