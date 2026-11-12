@@ -29,12 +29,19 @@
       "nom": "Glucksmann",
       "parti": "Place publique",
       "couleur": "#d95f02",
-      "biographie": "Député européen, cofondateur de Place publique. Candidature annoncée le 23 août 2026 ; participant à la primaire sociale-démocrate d'octobre 2026.",
+      "biographie": "Député européen, cofondateur de Place publique. Candidature annoncée le 23 août 2026 ; désigné par la primaire sociale-démocrate du 11 octobre 2026 (66,17 % des voix).",
       "slogan": null,
       "photo": null,
-      "site_officiel": "https://place-publique.eu",
+      "site_officiel": "https://glucks2027.fr",
       "pages_programme": [
-        "https://place-publique.eu/pages/69jA2SKIG5udlNX7wI3dmc/le-projet"
+        "https://glucks2027.fr/revolution-ecologique/",
+        "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+        "https://place-publique.eu/pages/69jA2SKIG5udlNX7wI3dmc/le-projet",
+        "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+        "https://place-publique.eu/pages/59EfFYTpFlj2lJhQ92PXsy/les-combats",
+        "https://place-publique.eu/posts/2fgDdljEIy36rgxBjRyiQZ/raphael-glucksmann-sa-lettre-aux-francais",
+        "https://place-publique.eu/posts/5hZ1DizFpQdRh9GXoUHhGJ/les-5-prochains-mois-nous-les-vivrons-a-credit",
+        "https://place-publique.eu/posts/5alHI42mxxIp7GNFA9ImFX/franchises-medicales-s-lecornu-envoie-la-facture-du-deficit-aux-malades"
       ],
       "programme_url": null,
       "statut": "declare",
@@ -45,8 +52,7 @@
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
-        "Résultat de la primaire sociale-démocrate du 11/10/2026",
-        "Site de campagne propre au candidat"
+        "Programme complet (le plan « Révolution écologique » est présenté comme la première partie)"
       ]
     },
     {

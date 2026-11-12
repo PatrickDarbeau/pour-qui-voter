@@ -2,6 +2,506 @@
   "statut": "brouillon à relire",
   "positions": [
     {
+      "candidat": "glucksmann",
+      "mesure": "eco1",
+      "valeur": 0.5,
+      "source_url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Notre contribution exceptionnelle pour l'investissement climatique sur les plus hauts patrimoines […] rapportera 50 milliards d'euros",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "eco7",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "L'absence de conditionnement des aides publiques aux entreprises",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "trav1",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Augmenter le SMIC à 1600 euros net dans les deux ans qui suivent notre accession au pouvoir",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "trav4",
+      "valeur": -1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Abroger la réforme Macron de l'assurance chômage, injuste et inefficace",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "trav5",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Abroger la réforme Macron de l'assurance chômage, injuste et inefficace",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "trav7",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Intégrer davantage les représentants des salariés dans les conseils d'administration des entreprises, dès 100 salariés",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "trav9",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Travailler à limiter les écarts de salaires dans une même entreprise",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "retr1",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La réforme de 2023 […] est injuste. Elle doit être abrogée. Mais cette abrogation n'est pas un horizon en soi",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "retr2",
+      "valeur": -1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La réforme de 2023 […] est injuste. Elle doit être abrogée",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "retr4",
+      "valeur": -1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La réforme de 2023 […] est injuste. Elle doit être abrogée",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "san9",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/posts/5alHI42mxxIp7GNFA9ImFX/franchises-medicales-s-lecornu-envoie-la-facture-du-deficit-aux-malades",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Place publique s'oppose avec force à ce type de mesures [hausse des franchises médicales]",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "edu2",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Revaloriser le salaire de tous les enseignants de manière continue et planifiée sur 5 ans",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "edu4",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Repenser en profondeur Parcoursup à travers une concertation",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "cult6",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Supprimer la part individuelle du pass Culture au profit du financement d'artistes intervenant en milieu scolaire",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "cult7",
+      "valeur": -1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Supprimer la part individuelle du pass Culture",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "cult9",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Renforcer le statut des artistes-auteurs par une loi garantissant continuité de revenus et droits sociaux adaptés",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "ecl1",
+      "valeur": -1,
+      "source_url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Le mix s'appuiera sur un déploiement massif des énergies renouvelables et la pérennisation de l'énergie nucléaire",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "ecl10",
+      "valeur": 1,
+      "source_url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Plus que doubler la production d'énergie renouvelable d'ici 2035",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "ecl3",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Étendre l'interdiction des vols intérieurs avec alternative ferroviaire viable",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "ecl4",
+      "valeur": 1,
+      "source_url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Dès les 100 premiers jours, nous mettrons fin aux exonérations fiscales sur le carburant pour les vols intérieurs",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "agri1",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Interdisant les pesticides les plus néfastes, glyphosate, néonicotinoïdes",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "agri2",
+      "valeur": -1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Interdisant les pesticides les plus néfastes, glyphosate, néonicotinoïdes",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "agri3",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Garantir le revenu des agriculteurs par la mise en place de prix planchers rémunérateurs",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "agri4",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "S'opposer aux traités comme le Mercosur",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "agri5",
+      "valeur": -1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "S'opposer aux traités comme le Mercosur",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "agri6",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Faire de la cantine le lieu d'accès universel à une alimentation saine, locale et bio",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "agri8",
+      "valeur": -1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Refuser les méga-bassines au profit de solutions locales réfléchies avec les agriculteurs",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "agri9",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Refuser les méga-bassines",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "log1",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Encadrer les loyers dans les zones en grande tension",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "log2",
+      "valeur": -1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Encadrer les loyers dans les zones en grande tension",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "log3",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Accélérer la construction de logements sociaux en réhaussant les objectifs nationaux annuels",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "om4",
+      "valeur": -1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Flécher une part des revenus de l'octroi de mer vers des projets d'investissements locaux",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "om5",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Flécher une part des revenus de l'octroi de mer vers des projets d'investissements locaux",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "om1",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Plafonner les prix des biens de première nécessité et des produits essentiels",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "num1",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Interdire les réseaux sociaux pour les moins de 15 ans",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "num6",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Une hausse ciblée de la taxe GAFAM",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "num7",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Un plan national d'investissement dans les infrastructures algorithmiques d'intérêt général : logiciels libres",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "sec7",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Faire renaître une police de proximité moderne, ancrée localement",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "sec8",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Organiser une convention citoyenne sur la politique vis-à-vis des drogues, notamment la question de la légalisation du cannabis",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "jus2",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Déployer massivement la justice restaurative et les travaux d'intérêt général (TIG)",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "imm4",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Faciliter les démarches de régularisation des travailleurs sans papiers",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "imm5",
+      "valeur": -1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Faciliter les démarches de régularisation des travailleurs sans papiers",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "imm9",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Mettre fin au système de la politique du chiffre sur les OQTF, et appliquer celles délivrées",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "eu1",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Prendre la tête de l'effort commun pour construire une puissance européenne digne de ce nom",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "eu2",
+      "valeur": -1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Construire une puissance européenne digne de ce nom",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "eu7",
+      "valeur": -1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Recréer un rite de passage républicain et universel autour de la majorité pour remplacer le service militaire",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "ins1",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Instaurer un droit d'initiative citoyenne, permettant de déclencher […] des référendums à l'échelle locale et nationale",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "ins2",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Instaurer immédiatement la proportionnelle",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "ins10",
+      "valeur": 0.5,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Agir contre le pantouflage",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "glucksmann",
+      "mesure": "ins12",
+      "valeur": 1,
+      "source_url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Instaurer la motion de censure « constructive » […] ce qui permettra de mettre fin au 49.3",
+      "a_confirmer": false
+    },
+    {
       "candidat": "lisnard",
       "mesure": "eco5",
       "valeur": 1,
