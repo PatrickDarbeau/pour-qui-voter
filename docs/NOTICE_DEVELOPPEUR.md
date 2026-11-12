@@ -149,6 +149,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 | 12/11/2026 | Page Méthode : boutons en bas de page (Retour, Voir mes résultats, Continuer le questionnaire), communs avec l'Aide. | `6c7b3ae` |
 | 12/11/2026 | Accueil : « ? » rouge sur le bulletin animé qui tombe dans l'urne. | `5e9f0e3` |
 | 12/11/2026 | Accueil, étape 3 : « détail des accords et désaccords avec les candidats ». | `4266ce4` |
+| 12/11/2026 | Aide : nouvelle question « Et pour le second tour ? » (pack du 19/04, réponses conservées, activation manuelle). | `1e4ff84` |
 | — | **Prochaine étape : lot 7** — contenu réel : base de mesures, candidats et sites officiels. Premier pack réel le 15/01/2027. | |
 
 ---
