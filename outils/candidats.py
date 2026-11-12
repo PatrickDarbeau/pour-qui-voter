@@ -80,7 +80,7 @@ CANDIDATS = [
     {
         "id": "retailleau", "prenom": "Bruno", "nom": "Retailleau", "parti": "Les Républicains",
         "biographie": "Président des Républicains, ancien ministre de l'Intérieur. Candidature annoncée le 12 février 2026 ; désigné par son parti en avril 2026.",
-        "pages_programme": ["https://republicains.fr/nos-propositions/"],
+        "pages_programme": ["https://republicains.fr/nos-propositions/", "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf", "https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf", "https://republicains.fr/wp-content/uploads/2026/03/LR_Agriculture.pdf", "https://republicains.fr/wp-content/uploads/2026/05/LR_Electricite_vFF070626.pdf", "https://republicains.fr/wp-content/uploads/2026/05/LR_Famille_vFinale.pdf", "https://republicains.fr/wp-content/uploads/2026/05/LR_Logement.pdf", "https://republicains.fr/wp-content/uploads/2026/07/LR_IA.pdf", "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf"],
         "slogan": None,
         "site_officiel": "https://republicains.fr", "site_type": "parti",
         "sources": ["https://www.publicsenat.fr/actualites/politique/je-suis-pret-bruno-retailleau-se-declare-candidat-a-lelection-presidentielle-2027",

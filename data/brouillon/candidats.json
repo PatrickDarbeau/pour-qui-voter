@@ -200,7 +200,15 @@
       "photo": null,
       "site_officiel": "https://republicains.fr",
       "pages_programme": [
-        "https://republicains.fr/nos-propositions/"
+        "https://republicains.fr/nos-propositions/",
+        "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+        "https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf",
+        "https://republicains.fr/wp-content/uploads/2026/03/LR_Agriculture.pdf",
+        "https://republicains.fr/wp-content/uploads/2026/05/LR_Electricite_vFF070626.pdf",
+        "https://republicains.fr/wp-content/uploads/2026/05/LR_Famille_vFinale.pdf",
+        "https://republicains.fr/wp-content/uploads/2026/05/LR_Logement.pdf",
+        "https://republicains.fr/wp-content/uploads/2026/07/LR_IA.pdf",
+        "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf"
       ],
       "programme_url": null,
       "statut": "declare",

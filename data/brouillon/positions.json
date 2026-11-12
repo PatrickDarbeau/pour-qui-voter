@@ -1560,6 +1560,286 @@
       "source_date": "2026-11-12",
       "citation": "Abolir les procédures de « votes forcés » du Parlement comme l'article 49.3",
       "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "eco5",
+      "valeur": 1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Cotisation sur la valeur ajoutée des entreprises (CVAE) : suppression définitive",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "trav2",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "« Travaillez moins et vous vivrez mieux » : telle est la fausse promesse faite aux Français",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "trav3",
+      "valeur": 0.5,
+      "source_url": "https://republicains.fr/nos-propositions/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Refonder le code du travail sur 50 principes, rendre le reste à la négociation collective",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "trav4",
+      "valeur": 1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Elle réduit la durée maximale d'indemnisation, adapte les droits en fonction de la conjoncture",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "trav5",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Réformer l'assurance chômage, en resserrant les conditions d'indemnisation",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "trav8",
+      "valeur": 1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Au-delà [de 1 623 heures], les heures travaillées sont exonérées de cotisations sociales, salariales comme patronales",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "retr5",
+      "valeur": 1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Notre proposition de créer un étage de retraite par capitalisation pour tous",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "retr6",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Créer un étage de retraite par capitalisation pour tous",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "soli4",
+      "valeur": 0.5,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Si elle s'investit dans une formation ou une recherche active d'emploi, justifiant d'au moins quinze heures d'activité hebdomadaires, son RIA est complété",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "edu2",
+      "valeur": 0.5,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "135 euros nets de plus par mois en début de carrière, jusqu'à 300 euros en milieu",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "edu4",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Rétablir l'évaluation qui dit la vérité et la sélection au mérite",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "edu5",
+      "valeur": 1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Rétablir l'évaluation qui dit la vérité et la sélection au mérite",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "ecl1",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/nos-propositions/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Inscrire le parc nucléaire dans une trajectoire « 80 ans »",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "ecl2",
+      "valeur": 1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Electricite_vFF070626.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Nous confirmerons la commande de huit EPR2 supplémentaires dès les deux premières années du mandat",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "ecl9",
+      "valeur": 0.5,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Nous mettrons fin aux soutiens publics aux nouvelles capacités solaires et éoliennes et reporterons les projets déjà autorisés",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "ecl10",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Nous mettrons fin aux soutiens publics aux nouvelles capacités solaires et éoliennes",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "agri1",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/03/LR_Agriculture.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Même marché, même règles : interdiction des sur-transpositions",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "agri2",
+      "valeur": 1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/03/LR_Agriculture.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Aligner nos règles sur l'Europe, pas au-delà",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "agri4",
+      "valeur": 0.5,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "La France portera au niveau européen l'imposition systématique de clauses de réciprocité dans tous les accords commerciaux",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "agri8",
+      "valeur": 1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Déclaration des retenues d'eau agricoles comme étant d'Intérêt général majeur",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "agri9",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Déclaration des retenues d'eau agricoles comme étant d'Intérêt général majeur",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "log1",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Logement.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Nous supprimerons l'encadrement des loyers",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "log2",
+      "valeur": 1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Logement.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Nous supprimerons l'encadrement des loyers",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "log4",
+      "valeur": 0.5,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Logement.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Les quotas aveugles de la loi SRU, imposés depuis Paris, laisseront place à des contrats fondés sur les besoins réels des territoires",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "log5",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Logement.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Les quotas aveugles de la loi SRU […] laisseront place à des contrats",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "num4",
+      "valeur": -1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/07/LR_IA.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Refuser a priori ces technologies quand nos voisins les utilisent, c'est a[ccepter un retard]",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "num5",
+      "valeur": 0.5,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/07/LR_IA.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Garanties […] interdiction de la reconnaissance faciale en temps réel dans l'espace public à des fins de surveillance de masse",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "retailleau",
+      "mesure": "num9",
+      "valeur": 1,
+      "source_url": "https://republicains.fr/wp-content/uploads/2026/07/LR_IA.pdf",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Héberger les données sensibles (État, santé, secteurs vitaux) en Europe, à la norme SecNumCloud",
+      "a_confirmer": false
     }
   ]
 }

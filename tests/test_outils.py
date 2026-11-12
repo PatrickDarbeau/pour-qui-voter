@@ -96,6 +96,15 @@ class TestPositions(unittest.TestCase):
             self.assertTrue(src.startswith("https://www.unenouvelleenergie.fr/"), mid)
             self.assertTrue(cit, mid)
 
+    def test_positions_retailleau_valides(self):
+        import catalogue, positions_retailleau
+        ids = {m[0] for m in catalogue.M}
+        for mid, (v, src, cit, conf) in positions_retailleau.P.items():
+            self.assertIn(mid, ids)
+            self.assertIn(v, (-1, 0, 0.5, 1))
+            self.assertTrue(src.startswith("https://republicains.fr/"), mid)
+            self.assertTrue(cit, mid)
+
 
 class TestDiff(unittest.TestCase):
     def test_aucune_difference(self):
