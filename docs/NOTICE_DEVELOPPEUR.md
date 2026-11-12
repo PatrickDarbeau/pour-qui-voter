@@ -142,8 +142,9 @@ python outils/maj.py publier --version AAAA.MM.JJ
 | 12/11/2026 | Page Aide : boutons Retour et Continuer le questionnaire. | `dabf007` |
 | 12/11/2026 | Note sur les dons rédigée ; **mise en place reportée** (voir §7). | `c722160` |
 | 12/11/2026 | Notice : décisions reportées et points à vérifier (§7). | `0377175` |
-| 12/11/2026 | **Lot 5** : `outils/maj.py` (candidats, collecter, diff, publier) ; import de pack avec aperçu des changements, empreinte SHA-256, contrôle de version et choix pour les modifications locales. Pack de démo republié. | voir git |
-| 12/11/2026 | **Lot 6** : mode second tour (réglage dans Édition › Candidats), mode démo en ligne (bandeau, édition désactivée), accessibilité (lien d'évitement, titres de page, barres de progression), archive ZIP avec lanceurs, test hors ligne (13 contrôles) et tests Python (11), workflow GitHub Pages manuel. | voir git |
+| 12/11/2026 | **Lot 5** : `outils/maj.py` (candidats, collecter, diff, publier) ; import de pack avec aperçu des changements, empreinte SHA-256, contrôle de version et choix pour les modifications locales. Pack de démo republié. | `9d51ff6` |
+| 12/11/2026 | **Lot 6** : mode second tour (réglage dans Édition › Candidats), mode démo en ligne (bandeau, édition désactivée), accessibilité (lien d'évitement, titres de page, barres de progression), archive ZIP avec lanceurs, test hors ligne (13 contrôles) et tests Python (11), workflow GitHub Pages manuel. | `0566b4f` |
+| 12/11/2026 | Règle adoptée : le journal est mis à jour après chaque lot ou mise à jour, dans le même commit. | — |
 | — | **Prochaine étape : lot 7** — contenu réel : base de mesures, candidats et sites officiels. Premier pack réel le 15/01/2027. | |
 
 ---
