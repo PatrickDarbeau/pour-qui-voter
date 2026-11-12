@@ -160,7 +160,7 @@
           <div class="choix" role="group" aria-label="Votre avis">
             ${b("oui", 1, "Je soutiens")}${b("non", -1, "Je m'oppose")}${b("neutre", 0, "Indifférent")}
             <button class="etoile" data-etoile="${esc(m.id)}" aria-pressed="${!!r.essentielle}"
-              ${r.avis ? "" : "disabled"} title="Mesure essentielle (compte triple)">★ Essentielle</button>
+              ${r.avis ? "" : "disabled"} aria-label="Mesure essentielle (compte triple)">★ Essentielle</button>
           </div>
         </article>`;
     }).join("");
@@ -173,7 +173,7 @@
       ${cartes}
       <div class="actions">
         <a class="btn secondaire" href="${prec}">Précédent</a>
-        <button class="lien" data-action="effacer" title="Effacer toutes vos réponses">↺ Recommencer à zéro</button>
+        <button class="lien" data-action="effacer">↺ Recommencer à zéro</button>
         <a class="btn" href="${suiv}">${i < themes.length - 1 ? "Thème suivant" : "Voir les résultats"}</a>
       </div>`;
   }
@@ -333,6 +333,72 @@
       <p class="doux">Ce résultat est un éclairage, pas une consigne de vote. Il ne remplace pas la lecture des programmes.</p>`;
   }
 
+  function vueAide() {
+    const q = (titre, corps) => `<details class="carte faq"><summary>${titre}</summary>${corps}</details>`;
+    return `
+      <span class="surtitre">Aide</span>
+      <h1>Questions fréquentes</h1>
+      <p class="chapo">Astuce : survolez un bouton avec la souris (ou touchez-le longuement) pour afficher une bulle d'aide.</p>
+
+      <h2>Utiliser le comparateur</h2>
+      ${q("Comment ça marche, en bref ?", `<ol class="liste">
+        <li>Choisissez éventuellement vos <strong>thèmes prioritaires</strong> : ils comptent double.</li>
+        <li>Pour chaque mesure, cliquez sur <strong>Je soutiens</strong>, <strong>Je m'oppose</strong> ou <strong>Indifférent</strong>.
+          Ajoutez l'étoile <strong>★ Essentielle</strong> aux mesures qui comptent le plus (×3).</li>
+        <li>Consultez vos <strong>résultats</strong> : le classement des candidats et le détail par thème.</li></ol>`)}
+      ${q("Dois-je répondre à toutes les mesures ?", `<p>Non. Vous pouvez passer des mesures ou des thèmes entiers.
+        Seules les mesures où vous avez dit « Je soutiens » ou « Je m'oppose » comptent. Plus vous répondez, plus le résultat est fiable.</p>`)}
+      ${q("Comment reprendre plus tard ?", `<p>Vos réponses sont gardées dans ce navigateur. Revenez sur l'<a href="#/">accueil</a> et cliquez sur
+        <strong>▶ Poursuivre</strong> : vous reprendrez au premier thème non terminé.</p>`)}
+      ${q("Comment tout recommencer ?", `<p>Sur l'<a href="#/">accueil</a> ou en bas du questionnaire, cliquez sur <strong>↺ Recommencer à zéro</strong>.
+        Toutes vos réponses et vos thèmes prioritaires sont effacés.</p>`)}
+      ${q("Comment lire mes résultats ?", `<ul class="liste">
+        <li><strong>Le pourcentage</strong> : 100 % = d'accord sur tout, 50 % = autant d'accords que de désaccords, 0 % = en désaccord sur tout.</li>
+        <li><strong>La couverture</strong> : la part de vos mesures sur lesquelles le candidat a une position connue. Faible couverture = prudence.</li>
+        <li><strong>Ex æquo</strong> : moins de ${Score.SEUIL_EX_AEQUO} points d'écart, la différence n'est pas significative.</li>
+        <li>Cliquez sur <strong>Détail</strong> pour voir accords, désaccords et mesures sans position, classés par thème, avec leurs sources.</li></ul>
+        <p>Le calcul complet est expliqué dans la page <a href="#/methode">Méthode</a>.</p>`)}
+      ${q("Comment imprimer ou enregistrer mes résultats en PDF ?", `<p>Sur la page de résultats, cliquez sur <strong>Imprimer / PDF</strong>,
+        puis choisissez « Enregistrer au format PDF » comme imprimante.</p>`)}
+
+      <h2>Vie privée</h2>
+      ${q("Mes réponses sont-elles envoyées quelque part ?", `<p><strong>Non.</strong> Tout le calcul se fait dans votre navigateur.
+        Aucune réponse n'est envoyée sur internet : pas de compte, pas de cookie, pas de statistiques.
+        Vos réponses sont seulement enregistrées dans ce navigateur pour que vous puissiez reprendre plus tard.</p>`)}
+      ${q("Comment effacer toute trace sur cet ordinateur ?", `<p>Cliquez sur <strong>↺ Recommencer à zéro</strong>.
+        Pour effacer aussi les données modifiées dans le mode Édition, utilisez <strong>Revenir au pack embarqué</strong> (voir plus bas).
+        Vous pouvez aussi effacer les données du site dans les réglages de votre navigateur.</p>`)}
+      ${q("Puis-je l'utiliser sans internet ?", `<p>Oui. Téléchargez l'archive ZIP, décompressez-la, puis double-cliquez sur <code>index.html</code>.
+        Seuls les liens « source » vers les sites des candidats demandent une connexion.</p>`)}
+
+      <h2>Données et mode Édition</h2>
+      ${q("D'où viennent les positions des candidats ?", `<p>En priorité du site officiel et du programme de chaque candidat.
+        Chaque position a un lien « source ». Une position tirée seulement de la presse est marquée « à confirmer ».</p>`)}
+      ${q("Les données sont-elles à jour ?", `<p>La date des données est indiquée en bas de l'accueil. Un bandeau vous prévient si elles sont anciennes.
+        Les mises à jour sont publiées sous forme de <strong>packs</strong> : un par mois jusqu'en janvier 2027, puis un par semaine jusqu'au scrutin.</p>`)}
+      ${q("Comment installer une mise à jour (un pack) ?", `<ol class="liste">
+        <li>Téléchargez le fichier <code>donnees-AAAA-MM-JJ.json</code>.</li>
+        <li>Ouvrez <a href="#/edition/fichiers">Édition</a>, onglet <strong>Import / export</strong>.</li>
+        <li>Dans « Importer un pack », choisissez le fichier, puis confirmez. Une sauvegarde de vos données actuelles est faite automatiquement.</li></ol>`)}
+      ${q("Comment revenir aux données d'origine ?", `<p>Ouvrez <a href="#/edition/fichiers">Édition</a>, onglet <strong>Import / export</strong>,
+        puis cliquez sur <strong>Revenir au pack embarqué</strong>. Toutes les modifications locales sont abandonnées
+        (une sauvegarde est conservée : <strong>Restaurer la sauvegarde</strong> permet d'annuler).</p>`)}
+      ${q("Comment corriger une position ou ajouter une mesure ?", `<p>Ouvrez <a href="#/edition/positions">Édition</a>, onglet <strong>Positions</strong>,
+        puis cliquez sur la case du candidat et de la mesure. Indiquez la position et sa source, puis enregistrez.
+        Pour ajouter une mesure : onglet <strong>Mesures</strong>, bouton <strong>+ Ajouter ici</strong> dans le thème voulu.
+        Les éléments modifiés portent la mention « modifié ».</p>`)}
+      ${q("Comment sauvegarder ou partager mes modifications ?", `<p>Dans <a href="#/edition/fichiers">Édition › Import / export</a>,
+        cliquez sur <strong>Exporter le pack (JSON)</strong>. Pour un tableau lisible dans Excel, utilisez <strong>Exporter les positions (CSV)</strong>.</p>`)}
+      ${q("J'ai trouvé une erreur, que faire ?", `<p>Notez la mesure, le candidat et la source correcte, puis signalez-la au mainteneur
+        (ticket sur le dépôt GitHub du projet). Elle sera corrigée dans le pack suivant.</p>`)}
+
+      <h2>Voter</h2>
+      ${q("Quand a lieu l'élection ?", `<p>Premier tour le <strong>dimanche 18 avril 2027</strong>, second tour le <strong>dimanche 2 mai 2027</strong>.</p>`)}
+      ${q("Comment vérifier mon inscription ou donner procuration ?", `<p>Inscription :
+        <a href="https://www.service-public.fr/particuliers/vosdroits/R16396" target="_blank" rel="noopener noreferrer">service-public.fr</a>.
+        Procuration : <a href="https://www.maprocuration.gouv.fr" target="_blank" rel="noopener noreferrer">maprocuration.gouv.fr</a>.</p>`)}`;
+  }
+
   // ---------- Routage ----------
   function rendre() {
     const [, route, param] = (location.hash || "#/").split("/");
@@ -345,7 +411,7 @@
     if (window.Edition && window.Edition.modifie()) { location.reload(); return; }
     const vues = {
       "": vueAccueil, priorites: vuePriorites, questionnaire: () => vueQuestionnaire(param),
-      resultats: vueResultats, candidats: vueCandidats, candidat: () => vueCandidat(param), methode: vueMethode,
+      resultats: vueResultats, candidats: vueCandidats, candidat: () => vueCandidat(param), methode: vueMethode, aide: vueAide,
     };
     app.innerHTML = (vues[route] || vueAccueil)();
     window.scrollTo(0, 0);

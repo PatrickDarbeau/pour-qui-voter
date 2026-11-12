@@ -308,3 +308,18 @@ table.methode th, table.methode td { text-align: center; }
 table.methode td:first-child, table.methode tbody th { text-align: left; }
 table.methode small { color: var(--doux); }
 .carte:has(> table.methode) { overflow-x: auto; }
+
+/* ---------- Aide ---------- */
+.bulle-aide {
+  position: fixed; z-index: 50; max-width: 280px; pointer-events: none;
+  background: var(--encre); color: var(--papier); font: 500 .85rem/1.4 var(--sans);
+  padding: .5rem .7rem; border-radius: 6px; box-shadow: 0 6px 20px rgba(0,0,0,.3);
+  animation: bulle .15s ease-out;
+}
+@keyframes bulle { from { opacity: 0; transform: translateY(-3px); } }
+.faq { padding: 0; }
+.faq > summary { padding: .9rem 1.2rem; font-weight: 600; cursor: pointer; color: var(--encre); margin: 0; }
+.faq > summary::marker { color: var(--rouge); }
+.faq[open] > summary { border-bottom: 1px dashed var(--bord); }
+.faq > :not(summary) { margin: .8rem 1.2rem; }
+code { font-family: var(--mono); font-size: .9em; background: var(--papier-2); padding: .05rem .3rem; border-radius: 3px; }
