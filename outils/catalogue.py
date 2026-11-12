@@ -249,9 +249,38 @@ def main():
                 lignes.append(f"| {mid} | {it} | {d} | {o or ''} | {org} |")
         lignes.append("")
     (RACINE / "docs" / "catalogue_mesures.md").write_text("\n".join(lignes), encoding="utf-8")
+    ecrire_bilan(par_theme, origines)
     print(f"{len(M)} mesures, {len(THEMES)} thèmes — {dict(origines)}")
     print("Par thème :", dict(par_theme))
-    print(f"Écrit : {sortie} et docs/catalogue_mesures.md")
+    print(f"Écrit : {sortie}, docs/catalogue_mesures.md et docs/bilan_catalogue.md")
+
+
+def ecrire_bilan(par_theme, origines):
+    """Bilan chiffré du catalogue, régénéré à chaque exécution (donc à chaque modification)."""
+    from datetime import datetime
+    paires = {t: sum(1 for m in M if m[1] == t and m[4]) // 2 for t, *_ in THEMES}
+    seules = {t: sum(1 for m in M if m[1] == t and not m[4]) for t, *_ in THEMES}
+    org_theme = {t: Counter(m[5] for m in M if m[1] == t) for t, *_ in THEMES}
+    hors_cible = [n for t, n, *_ in THEMES if not 8 <= par_theme[t] <= 10]
+    sans_paire = [n for t, n, *_ in THEMES if paires[t] == 0]
+    L = ["# Bilan du catalogue des mesures", "",
+         f"*Mis à jour automatiquement le {datetime.now().strftime('%d/%m/%Y à %H:%M')} par `python outils/catalogue.py`.*",
+         "*À chaque modification du catalogue (`outils/catalogue.py`), relancer la commande : ce bilan est régénéré.*", "",
+         f"**{sum(par_theme.values())} mesures** réparties sur **{len(THEMES)} thèmes** "
+         f"(cible : 8 à 10 par thème, soit {8 * len(THEMES)} à {10 * len(THEMES)}).", "",
+         "| Thème | Mesures | Paires opposées ↔ | Sans contrepoint | Démo | Contrepoints | Nouvelles |",
+         "|---|---:|---:|---:|---:|---:|---:|"]
+    for t, n, i, _ in THEMES:
+        o = org_theme[t]
+        L.append(f"| {i} {n} | {par_theme[t]} | {paires[t]} | {seules[t]} | {o['demo']} | {o['contrepoint']} | {o['nouveau']} |")
+    L.append(f"| **Total** | **{sum(par_theme.values())}** | **{sum(paires.values())}** | **{sum(seules.values())}** | "
+             f"**{origines['demo']}** | **{origines['contrepoint']}** | **{origines['nouveau']}** |")
+    L += ["", "## Points d'attention", ""]
+    L.append(f"- Thèmes hors de la cible de 8 à 10 mesures : {', '.join(hors_cible) if hors_cible else 'aucun'}.")
+    L.append(f"- Thèmes sans aucune paire de mesures opposées : {', '.join(sans_paire) if sans_paire else 'aucun'}.")
+    L.append("- Statut : **brouillon à relire** (neutralité, faits cités, confrontation aux programmes réels).")
+    L += ["", "Détail des mesures : [catalogue_mesures.md](catalogue_mesures.md) · Méthode : [methode_choix_mesures.md](methode_choix_mesures.md)", ""]
+    (RACINE / "docs" / "bilan_catalogue.md").write_text("\n".join(L), encoding="utf-8")
 
 
 if __name__ == "__main__":
