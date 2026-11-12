@@ -118,6 +118,7 @@ python outils/valider.py --publier
 |---|---|
 | 12/11/2026 | Cahier des charges validé. Lots 1 et 2 réalisés (`913fc2f`). Notice créée. |
 | 12/11/2026 | Lot 3 (mode Édition) réalisé : thèmes, mesures, candidats, matrice des positions avec sources, import/export JSON et CSV, sauvegarde et restauration. |
+| 12/11/2026 | Lot 4 réalisé (graphiques, PDF, partage). Note sur les dons rédigée ; mise en place reportée (voir §7). |
 
 ---
 
@@ -126,3 +127,13 @@ python outils/valider.py --publier
 - **Signalements d'erreur** (F40) : les traiter avant le pack suivant et les noter dans le journal.
 - **Dates clés** : liste officielle des candidats (mars), premier tour le 18/04/2027, second tour le 02/05/2027.
 - **Ne jamais** intégrer de réponses d'utilisateurs aux packs ou aux sources.
+
+---
+
+## 7. Décisions reportées et points à vérifier
+
+| Sujet | État | À faire avant de lancer | Référence |
+|---|---|---|---|
+| **Dons** | Reporté (décision du 12/11/2026) | ☐ Vérifier les frais réels de chaque plateforme retenue<br>☐ Vérifier le régime fiscal des dons reçus par un particulier (impots.gouv.fr)<br>☐ Vérifier l'absence de risque au regard du droit électoral ; en cas de doute, demander un avis à la CNCCFP<br>☐ Choisir les plateformes, créer les comptes, transmettre les liens | [DONS.md](DONS.md) |
+| **Dépôt public** | Prévu avec le lot 6 (vers le 08/01/2027) | ☐ Choisir une licence (code et données)<br>☐ Vérifier qu'aucun fichier personnel n'est présent | — |
+| **Dates légales de la campagne** | À vérifier | ☐ Date limite d'inscription sur les listes électorales 2027<br>☐ Début exact de la réserve électorale | [CAMPAGNE.md](promotion/CAMPAGNE.md) |
