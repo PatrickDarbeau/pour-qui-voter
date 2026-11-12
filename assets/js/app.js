@@ -420,7 +420,13 @@
       ${q("Quand a lieu l'élection ?", `<p>Premier tour le <strong>dimanche 18 avril 2027</strong>, second tour le <strong>dimanche 2 mai 2027</strong>.</p>`)}
       ${q("Comment vérifier mon inscription ou donner procuration ?", `<p>Inscription :
         <a href="https://www.service-public.fr/particuliers/vosdroits/R16396" target="_blank" rel="noopener noreferrer">service-public.fr</a>.
-        Procuration : <a href="https://www.maprocuration.gouv.fr" target="_blank" rel="noopener noreferrer">maprocuration.gouv.fr</a>.</p>`)}`;
+        Procuration : <a href="https://www.maprocuration.gouv.fr" target="_blank" rel="noopener noreferrer">maprocuration.gouv.fr</a>.</p>`)}
+      <div class="actions">
+        <button class="btn secondaire" data-action="retour">← Retour</button>
+        ${nbRepondues()
+          ? `<a class="btn" href="#/questionnaire/${esc((themes.find((t) => !themeFait(t.id)) || themes[0]).id)}">▶ Continuer le questionnaire</a>`
+          : `<a class="btn" href="#/priorites">▶ Commencer le questionnaire</a>`}
+      </div>`;
   }
 
   // ---------- Routage ----------
@@ -470,6 +476,9 @@
       etats.forEach(([d]) => (d.open = !!d.closest(".premier") || d.classList.contains("carte")));
       window.print();
       etats.forEach(([d, o]) => (d.open = o));
+    } else if (el.dataset.action === "retour") {
+      // Revient à la page précédente de l'application, sinon à l'accueil
+      location.hash = pagePrecedente && !pagePrecedente.startsWith("#/aide") ? pagePrecedente : "#/";
     } else if (el.dataset.action === "partager") {
       afficherPartage();
     } else if (el.dataset.action === "copier-partage") {
@@ -606,7 +615,12 @@
     if (!masque) ouvrir();
   }
 
-  window.addEventListener("hashchange", rendre);
+  let pagePrecedente = null; // pour le bouton « Retour » de la page d'aide
+  window.addEventListener("hashchange", (e) => {
+    const ancien = "#" + (e.oldURL.split("#")[1] || "/");
+    if (!ancien.startsWith("#/aide")) pagePrecedente = ancien;
+    rendre();
+  });
   avertissement();
   messagesCiviques();
   bandeau();
