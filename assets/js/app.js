@@ -4,7 +4,8 @@
 (function () {
   "use strict";
 
-  const D = window.DONNEES;
+  // Données modifiées localement (mode Édition, F27) prioritaires sur le pack embarqué
+  const D = (window.Edition && window.Edition.donneesActives()) || window.DONNEES;
   const app = document.getElementById("app");
   const CLE = "pqv.reponses.v1";
 
@@ -117,7 +118,7 @@
         ${n ? `<a class="btn secondaire" href="#/resultats">Voir mes résultats (${n} réponses)</a>` : ""}
       </div>
       <p class="doux" style="margin-top:2rem">Données : version ${esc(D.version)} du ${new Date(D.date).toLocaleDateString("fr-FR")}
-        — origine : ${D.origine === "officiel" ? "pack officiel" : "données modifiées localement"}.</p>`;
+        — origine : ${D.origine === "officiel" ? "pack officiel" : `données modifiées localement (${window.Edition ? window.Edition.nbModifs() : "?"} éléments)`}.</p>`;
   }
 
   function vuePriorites() {
@@ -278,6 +279,13 @@
   // ---------- Routage ----------
   function rendre() {
     const [, route, param] = (location.hash || "#/").split("/");
+    if (route === "edition" && window.Edition) {
+      window.Edition.afficher(app, param);
+      window.scrollTo(0, 0);
+      return;
+    }
+    // En quittant le mode Édition après des modifications, on recharge pour les prendre en compte
+    if (window.Edition && window.Edition.modifie()) { location.reload(); return; }
     const vues = {
       "": vueAccueil, priorites: vuePriorites, questionnaire: () => vueQuestionnaire(param),
       resultats: vueResultats, candidats: vueCandidats, candidat: () => vueCandidat(param), methode: vueMethode,

@@ -13,7 +13,7 @@ Les règles du projet se trouvent dans le [cahier des charges](../CAHIER_DES_CHA
 |---|---|---|---|---|
 | L1 | Format `donnees.json`, validateur, jeu de démonstration | 12/11/2026 | ✅ | `913fc2f` |
 | L2 | Parcours électeur, calcul du score, interface « bulletin de vote » | 12/11/2026 | ✅ | `913fc2f` — reste à vérifier l'ouverture par double-clic |
-| L3 | Mode Édition : CRUD, matrice mesures × candidats, import/export | 27/11/2026 | ⏳ | |
+| L3 | Mode Édition : CRUD, matrice mesures × candidats, import/export | 27/11/2026 | ✅ | voir journal (12/11/2026) |
 | L4 | Résultats détaillés (graphique par thème), export PDF, lien de partage | 04/12/2026 | ⏳ | |
 | L5 | `outils/maj.py`, import/export de packs (F29 à F40) | 18/12/2026 | ⏳ | |
 | L6 | Accessibilité, tests, paquet ZIP, démo en ligne, mode second tour | 08/01/2027 | ⏳ | |
@@ -117,6 +117,7 @@ python outils/valider.py --publier
 | Date | Événement |
 |---|---|
 | 12/11/2026 | Cahier des charges validé. Lots 1 et 2 réalisés (`913fc2f`). Notice créée. |
+| 12/11/2026 | Lot 3 (mode Édition) réalisé : thèmes, mesures, candidats, matrice des positions avec sources, import/export JSON et CSV, sauvegarde et restauration. |
 
 ---
 
