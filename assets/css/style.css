@@ -413,3 +413,10 @@ a.carte.elimine { opacity: .5; filter: grayscale(.7); }
 
 /* Candidats dont les positions ne sont pas encore saisies */
 .en-attente { border-left: 4px solid #b9a36a; }
+
+/* Consigne d'étape (1 priorités, 2 questionnaire, 3 résultats) */
+.consigne { display: flex; align-items: center; gap: .7rem; margin: .2rem 0 1rem; padding: .6rem .9rem;
+  border-radius: 10px; background: color-mix(in srgb, currentColor 6%, transparent); font-weight: 600; }
+.consigne .etape { flex: none; display: inline-grid; place-items: center; width: 1.9rem; height: 1.9rem;
+  border-radius: 50%; background: #1f3a8a; color: #fff; font-weight: 700; }
+@media print { .consigne { display: none; } }

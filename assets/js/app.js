@@ -165,12 +165,17 @@
         — origine : ${D.origine === "officiel" ? "pack officiel" : `données modifiées localement (${window.Edition ? pluriel(window.Edition.nbModifs(), "élément") : "?"})`}.</p>`;
   }
 
+  // Consigne numérotée en tête des trois étapes du parcours
+  const consigne = (n, texte) => `<p class="consigne"><span class="etape" aria-hidden="true">${n}</span>
+    <span><span class="sr-only">Étape ${n} : </span>${esc(texte)}</span></p>`;
+
   function vuePriorites() {
     const tuiles = themes.map((t) => `
       <button class="tuile th" ${thStyle(t)} data-theme="${esc(t.id)}" aria-pressed="${etat.prioritaires.includes(t.id)}">
         <span class="ico" aria-hidden="true">${esc(t.icone)}</span>${esc(t.nom)}
       </button>`).join("");
     return `
+      ${consigne(1, "Choisissez vos thèmes prioritaires (facultatif)")}
       <h1>Quels thèmes comptent le plus pour vous&nbsp;?</h1>
       <p class="doux">Les thèmes choisis comptent double dans le calcul. Vous pouvez n'en choisir aucun.</p>
       <div class="grille">${tuiles}</div>
@@ -204,6 +209,7 @@
     const suiv = i < themes.length - 1 ? `#/questionnaire/${themes[i + 1].id}` : "#/resultats";
     return `
       <div class="progression" role="progressbar" aria-label="Progression du questionnaire" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}"><span style="width:${pct}%"></span></div>
+      ${consigne(2, "Donnez votre avis sur chaque mesure ; marquez d'une ★ celles qui vous sont essentielles")}
       <nav class="onglets" aria-label="Thèmes">${onglets}</nav>
       <h1 class="th titre-theme" ${thStyle(t)}>${esc(t.icone)} ${esc(t.nom)}</h1>
       ${cartes}
@@ -276,6 +282,7 @@
         Résultats du ${new Date().toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
         · données ${esc(D.version)} · ${nbMesures} mesures · outil non officiel, aide à la décision
       </div>
+      ${consigne(3, "Découvrez le classement et le détail des accords et désaccords avec les candidats, sources à l'appui")}
       ${bandeauT2}${blocAttente}
       <div class="podium">
         <div>

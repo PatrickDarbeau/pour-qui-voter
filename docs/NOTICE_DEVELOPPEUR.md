@@ -190,6 +190,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |12/11/2026|Lot 7, étape 5 : **positions d'Édouard Philippe** en brouillon ([positions_philippe.md](positions_philippe.md)) — 46 mesures sur 158, sourcées dans le programme de son site de campagne edouardphilippe.fr (15 thèmes, mis à jour le 12/11/2026). Fiche : site de campagne au lieu du site d'Horizons.|`db2a762`|
 |12/11/2026|**Pack de test** installé dans l'application (`outils/assembler.py --installer`) : 158 mesures, 5 candidats (Glucksmann, Lisnard, Mélenchon, Philippe, Retailleau), 296 positions ; version `2026.11.12-test`, marqué « brouillon » (bandeau « données provisoires »). Alerte ajoutée si les réponses enregistrées ou des données locales ne correspondent plus au pack. Tous les tests passent. Saisie des 5 autres candidats en pause.|`a1ab527`|
 |13/11/2026|Lot 7 : outil `comparer.py` (analyse comparative) + **note d'enseignements n°1** (`docs/enseignements/`) ; pack de test à **10 candidats** — les 5 sans positions (Attal, Le Pen, Riner, Roussel, Zemmour) sont hors classement et signalés « positions non encore saisies »|7198626|
+|13/11/2026|Interface : consignes numérotées en tête du parcours — 1 thèmes prioritaires (facultatif), 2 avis et ★ essentielles, 3 classement et détail sourcé|à venir|
 |—|**Prochaine étape : lot 7** — tests utilisateur du pack de test ; reprise ensuite des positions (Roussel, Zemmour ; Attal, Le Pen, Riner dès publication de leur programme). Premier pack réel le 15/01/2027.||
 
 \---
