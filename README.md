@@ -5,6 +5,14 @@
 > The application itself is in French, since it is meant for French voters. This page is for developers and contributors.
 > A French version of this page is available in [LISEZMOI.md](LISEZMOI.md).
 
+![Home page of the application](docs/captures/accueil.png)
+
+| Questionnaire | Candidates |
+|---|---|
+| ![Questionnaire: give your opinion on each measure](docs/captures/questionnaire.png) | ![List of candidates with portraits](docs/captures/candidats.png) |
+
+*Screenshots of the test pack (13 November 2026).*
+
 ## How it works
 
 1. **Choose your priority themes** (optional): measures in these themes count twice.
