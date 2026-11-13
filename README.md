@@ -121,7 +121,7 @@ Requirements for the tools and tests: Python 3.10+ (with Pillow for portraits), 
 
 ## Online demo
 
-A demo can be published on GitHub Pages with the manual **"Démo en ligne"** workflow (*Actions* tab) once the repository is public. In the online demo, a banner invites visitors to download the app; the edit mode works as a sandbox (changes stay in the visitor's browser), candidates are locked and pack import is disabled. To try this mode locally, add `?demo` to the URL (e.g. `http://localhost:8765/?demo`). Download links are set in [`assets/js/config.js`](assets/js/config.js).
+A demo can be published on GitHub Pages with the manual **"Démo en ligne"** workflow (*Actions* tab). In the online demo, a banner invites visitors to download the app; the edit mode works as a sandbox (changes stay in the visitor's browser), candidates are locked and pack import is disabled. To try this mode locally, add `?demo` to the URL (e.g. `http://localhost:8765/?demo`). Download links are set in [`assets/js/config.js`](assets/js/config.js).
 
 ## Documentation
 
