@@ -266,6 +266,8 @@ a.carte:hover { transform: translateX(4px); }
 button.lien { background: none; border: 0; color: var(--bleu); cursor: pointer; font: inherit; text-decoration: underline; padding: .2rem .4rem; }
 button.lien.ko { color: var(--non); }
 button:disabled { opacity: .45; cursor: not-allowed; }
+.ed-defil-haut { overflow-x: auto; overflow-y: hidden; height: 16px; margin-bottom: 2px; }
+.ed-defil-haut > div { height: 1px; }
 .ed-matrice { overflow: auto; max-height: 70vh; border: 1px solid var(--bord); border-radius: 4px; background: var(--carte); }
 .ed-matrice table { border-collapse: separate; border-spacing: 0; font-size: .88rem; }
 .ed-matrice thead th { position: sticky; top: 0; background: var(--papier-2); z-index: 2; white-space: nowrap; text-align: center; }

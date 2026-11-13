@@ -252,7 +252,7 @@
         </form>`;
       }
     }
-    return `${detail}<div class="ed-matrice"><table><thead><tr><th></th>${entete}</tr></thead><tbody>${corps}</tbody></table></div>`;
+    return `${detail}<div class="ed-defil-haut" aria-hidden="true"><div></div></div><div class="ed-matrice"><table><thead><tr><th></th>${entete}</tr></thead><tbody>${corps}</tbody></table></div>`;
   }
 
   function vueFichiers() {
@@ -294,6 +294,22 @@
     else corps = vueListe(CHAMPS[onglet] ? onglet : "mesures");
     app.innerHTML = `<span class="surtitre">Mode Édition</span><h1>Gérer les données</h1>${etat}${onglets(onglet)}${corps}`;
     app.dataset.edOnglet = onglet;
+    lierDefilement(app);
+  }
+
+  // Ascenseur horizontal au-dessus du tableau des positions, synchronisé avec celui du tableau
+  function lierDefilement(app) {
+    const haut = app.querySelector(".ed-defil-haut"), mat = app.querySelector(".ed-matrice");
+    if (!haut || !mat) return;
+    const ajuster = () => {
+      haut.firstElementChild.style.width = mat.scrollWidth + "px";
+      haut.hidden = mat.scrollWidth <= mat.clientWidth + 1;
+    };
+    ajuster();
+    new ResizeObserver(ajuster).observe(mat);
+    let source = null;
+    haut.addEventListener("scroll", () => { if (source !== mat) { source = haut; mat.scrollLeft = haut.scrollLeft; } source = null; });
+    mat.addEventListener("scroll", () => { if (source !== haut) { source = mat; haut.scrollLeft = mat.scrollLeft; } source = null; });
   }
   const rafraichir = () => afficher(document.getElementById("app"), document.getElementById("app").dataset.edOnglet);
 

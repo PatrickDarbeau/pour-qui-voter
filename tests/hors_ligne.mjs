@@ -103,6 +103,16 @@ try {
   ok(await js("document.querySelectorAll('a.carte.elimine').length") === nbTotal - 2, "Second tour : non-qualifiés grisés");
   await aller("#/edition/positions");
   ok(await js("document.querySelectorAll('.ed-cellule').length > 0"), "Mode Édition disponible en local");
+  ok(await js(`(async () => {
+    const h = document.querySelector('.ed-defil-haut'), m = document.querySelector('.ed-matrice');
+    if (!h || !m) return false;
+    m.style.maxWidth = "320px";                               // force un tableau plus large que son cadre
+    await new Promise((r) => setTimeout(r, 150));
+    if (h.hidden || m.scrollWidth <= m.clientWidth) return false;
+    h.scrollLeft = 99999;
+    await new Promise((r) => setTimeout(r, 150));
+    return m.scrollLeft > 0 && Math.abs(m.scrollLeft - h.scrollLeft) < 2;
+  })()`), "Positions : ascenseur horizontal du haut synchronisé avec le tableau");
 
   // Pages d'information
   await aller("#/mentions");
