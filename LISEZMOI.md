@@ -1,5 +1,6 @@
 # Pour qui voter ? — Présidentielle 2027
-n*English version: [README.md](README.md).*
+
+*English version: [README.md](README.md).*
 
 Ce comparateur confronte vos priorités aux programmes des candidats. Il fonctionne **hors ligne** : aucune de vos réponses ne quitte votre appareil.
 
