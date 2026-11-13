@@ -200,7 +200,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |13/11/2026|**Captures d'écran dans le README** (accueil, questionnaire, candidats), dans docs/captures/|15dc162|
 |13/11/2026|**LISEZMOI.md aligné sur README.md** : version française complète (captures, principes, état, organisation, commandes, contribution, licences)|fcf9681|
 |13/11/2026|**Chapitre « Résultats - Méthode »** dans README.md et LISEZMOI.md : contenu de la page de résultats, calcul du score, exemple chiffré, origine des positions ; capture des résultats prise avec le pack de démonstration (candidats fictifs)|f0d33a9|
-|13/11/2026|**Dépôt GitHub rendu public** à la demande de l'auteur (historique vérifié : adresses noreply seulement, aucun secret) ; README et LISEZMOI ne conditionnent plus la démo en ligne à la publication du dépôt|à venir|
+|13/11/2026|**Dépôt GitHub rendu public** à la demande de l'auteur (historique vérifié : adresses noreply seulement, aucun secret) ; README et LISEZMOI ne conditionnent plus la démo en ligne à la publication du dépôt|651d9c4|
 |—|**Prochaine étape : lot 7** — tests utilisateur du pack de test ; relecture des rapports de veille d'Hermès (18/11, 23/11) puis mise à jour des positions de Le Pen, Zemmour et Riner. Premier pack réel le 15/01/2027.||
 
 \---
