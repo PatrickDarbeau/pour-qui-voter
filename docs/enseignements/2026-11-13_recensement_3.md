@@ -48,5 +48,6 @@ Le Pen est le **premier candidat dont la majorité des positions vient de la pre
 
 ## 5. Suites
 
-- Confier à Hermès, par SSH, la veille du 17/11 (retraites Le Pen) et du 21/11 (Zemmour), et la recherche du site de Riner.
+- **Veille confiée à Hermès par SSH (fait le 13/11)** : consignes [18/11](../hermes/consigne_veille_2026-11-18.md) (retraites de Le Pen, site de Riner) et [23/11](../hermes/consigne_veille_2026-11-23.md) (meeting de Zemmour, site de Riner). Les tâches sont créées en pause (GLM 5.3) et une ligne de crontab de la VM les ajoute à la file GLM à 9 h ces jours-là ; elle s'efface ensuite. Livrables attendus dans `~/workspace/Projets/pour-qui-voter/` sur la VM, à vérifier par Claude avant toute saisie.
+- **Constat** : lors de la recherche du 13/11 par l'interface web, Hermès avait **programmé seul** une revérification pour le 18/11, hors file GLM et sans modèle fixé. Elle a été mise en pause (tâche `a67c43e0fa8c`) et remplacée. Les consignes interdisent désormais à Hermès de créer des tâches.
 - Riner : saisir ses positions dès qu'un programme ou un site est publié.

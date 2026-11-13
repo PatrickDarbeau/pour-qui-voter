@@ -194,7 +194,8 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |13/11/2026|Édition › Positions : ascenseur horizontal en haut du tableau, synchronisé avec celui du bas (masqué si le tableau tient en largeur)|00e5ee4|
 |13/11/2026|Lot 7 : positions d'**Attal** (27, site attalpresident.fr trouvé), **Roussel** (27, plan Jeunesse + cahiers PCF), **Zemmour** (15, priorités) — 8 candidats, 365 positions ; Le Pen et Riner toujours sans source ; **note d'enseignements n°2**|46dd648|
 |13/11/2026|Lot 7 : recherche **Le Pen / Riner confiée à Hermès** (rapport archivé, citations vérifiées) — site marinelepen.com trouvé, **Le Pen 15 positions** ; Riner sans position (3 pistes de presse seulement) ; 9 candidats, 380 positions ; **note d'enseignements n°3**|766a42d|
-|—|**Prochaine étape : lot 7** — tests utilisateur du pack de test ; reprise ensuite des positions (Roussel, Zemmour ; Attal, Le Pen, Riner dès publication de leur programme). Premier pack réel le 15/01/2027.||
+|13/11/2026|Lot 7 : **veille programmée chez Hermès par SSH** (file GLM) — consignes dans `docs/hermes/` : 18/11 (réforme des retraites de Le Pen, site de Riner), 23/11 (meeting de Zemmour à Toulon, site de Riner) ; ajout automatique à la file à 9 h ces jours-là ; tâche créée seule par Hermès depuis l'interface web mise en pause|à venir|
+|—|**Prochaine étape : lot 7** — tests utilisateur du pack de test ; relecture des rapports de veille d'Hermès (18/11, 23/11) puis mise à jour des positions de Le Pen, Zemmour et Riner. Premier pack réel le 15/01/2027.||
 
 \---
 
