@@ -1,6 +1,6 @@
 """Analyse comparative des programmes à partir des positions saisies (lot 7).
 
-Usage : python outils/comparer.py
+Usage : python outils/comparer.py [suffixe]   (ex. « 2 » → AAAA-MM-JJ_analyse_comparative_2.md)
 Sortie : docs/enseignements/AAAA-MM-JJ_analyse_comparative.md (chiffres bruts, sans commentaire politique)
 
 Contenu : couverture par candidat et par thème, proximité entre candidats, mesures clivantes,
@@ -95,7 +95,7 @@ def main():
     for t, n, i, _ in themes:
         if par_t[t]:
             L.append(f"- **{i} {n}** ({len(par_t[t])}) : " + " ; ".join(par_t[t]))
-    sortie = RACINE / "docs" / "enseignements" / f"{date.today().isoformat()}_analyse_comparative.md"
+    sortie = RACINE / "docs" / "enseignements" / f"{date.today().isoformat()}_analyse_comparative{'_' + sys.argv[1] if len(sys.argv) > 1 else ''}.md"
     sortie.parent.mkdir(parents=True, exist_ok=True)
     sortie.write_text("\n".join(L) + "\n", encoding="utf-8")
     print(f"Clivantes {len(clivantes)}, consensuelles {len(consens)}, orphelines {len(orphelines)} → {sortie}")

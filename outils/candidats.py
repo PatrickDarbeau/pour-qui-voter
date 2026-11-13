@@ -25,10 +25,11 @@ CANDIDATS = [
     {
         "id": "attal", "prenom": "Gabriel", "nom": "Attal", "parti": "Renaissance",
         "biographie": "Ancien Premier ministre (2024). Secrétaire général de Renaissance. Candidature annoncée le 22 mai 2026.",
-        "slogan": None,
-        "site_officiel": "https://parti-renaissance.fr", "site_type": "parti",
-        "sources": ["https://lcp.fr/actualites/presidentielle-2027-gabriel-attal-officialise-sa-candidature-436721"],
-        "a_verifier": ["Site de campagne 2027 (gabrielattal.fr est son site des législatives 2024) et programme (non trouvés au 12/11/2026)"],
+        "slogan": "La force d'agir",
+        "site_officiel": "https://attalpresident.fr", "site_type": "campagne",
+        "sources": ["https://lcp.fr/actualites/presidentielle-2027-gabriel-attal-officialise-sa-candidature-436721",
+                    "https://attalpresident.fr/mentions-legales"],
+        "a_verifier": ["Site de campagne attalpresident.fr trouvé le 13/11/2026 (édité par Renaissance) : programme publié mesure par mesure"],
     },
     {
         "id": "glucksmann", "prenom": "Raphaël", "nom": "Glucksmann", "parti": "Place publique",

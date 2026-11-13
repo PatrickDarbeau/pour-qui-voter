@@ -123,6 +123,33 @@ class TestPositions(unittest.TestCase):
             self.assertTrue(src.startswith("https://www.edouardphilippe.fr/programme/"), mid)
             self.assertTrue(cit, mid)
 
+    def test_positions_roussel_valides(self):
+        import catalogue, positions_roussel
+        ids = {m[0] for m in catalogue.M}
+        for mid, (v, src, cit, conf) in positions_roussel.P.items():
+            self.assertIn(mid, ids)
+            self.assertIn(v, (-1, 0, 0.5, 1))
+            self.assertTrue(src.startswith(("https://www.fabienroussel2027.fr", "https://assets.nationbuilder.com/pcf/")), mid)
+            self.assertTrue(cit, mid)
+
+    def test_positions_attal_valides(self):
+        import catalogue, positions_attal
+        ids = {m[0] for m in catalogue.M}
+        for mid, (v, src, cit, conf) in positions_attal.P.items():
+            self.assertIn(mid, ids)
+            self.assertIn(v, (-1, 0, 0.5, 1))
+            self.assertTrue(src.startswith("https://attalpresident.fr/programme"), mid)
+            self.assertTrue(cit, mid)
+
+    def test_positions_zemmour_valides(self):
+        import catalogue, positions_zemmour
+        ids = {m[0] for m in catalogue.M}
+        for mid, (v, src, cit, conf) in positions_zemmour.P.items():
+            self.assertIn(mid, ids)
+            self.assertIn(v, (-1, 0, 0.5, 1))
+            self.assertTrue(src.startswith("https://www.ericzemmour.fr/"), mid)
+            self.assertTrue(cit, mid)
+
 
 class TestDiff(unittest.TestCase):
     def test_aucune_difference(self):
