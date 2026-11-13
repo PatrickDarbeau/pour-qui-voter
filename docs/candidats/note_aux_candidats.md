@@ -3,7 +3,7 @@
 **Objet** : faire figurer l'intégralité de vos positions dans le comparateur « Pour qui voter ? »
 **Date** : novembre 2026
 
-> Champs à compléter par l'éditeur avant envoi : `[ADRESSE_CONTACT_EDITEUR]`, `[DATE_LIMITE]`, `[SIGNATURE]`.
+> Champs à compléter par l'éditeur avant envoi : `[ADRESSE_CONTACT_EDITEUR]`, `[SIGNATURE]`.
 
 ---
 
@@ -58,7 +58,7 @@ Ces règles s'appliquent de la même façon à tous les candidats.
 
 ## 4. Calendrier
 
-- Premier jeu de données réelles : **15 janvier 2027**. Pour y figurer, merci d'envoyer vos documents **avant le `[DATE_LIMITE]`**.
+- Premier jeu de données réelles : **15 janvier 2027**. Pour y figurer, merci d'envoyer vos documents **avant le 5 janvier 2027**.
 - Les données sont ensuite mises à jour régulièrement jusqu'au scrutin ; un envoi plus tardif est pris en compte dans la mise à jour suivante.
 
 ## 5. Envoi
