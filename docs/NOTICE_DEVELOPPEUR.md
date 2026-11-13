@@ -215,6 +215,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |14/11/2026|**Note aux candidats** (docs/candidats/note_aux_candidats.md) : invitation à transmettre le programme et à répondre aux 158 mesures, règles de prise en compte identiques pour tous ; questionnaire de réponse généré par outils/questionnaire.py (CSV + liste par thème) ; champs à compléter avant envoi : contact, date limite, signature|fe4587a|
 |14/11/2026|**Note aux candidats** : date limite d'envoi fixée au 5 janvier 2027 (pour figurer dans le pack du 15 janvier)|453f6ce|
 |14/11/2026|**Recherche des positions confiée à Hermès** pour les six candidats ajoutés (consigne docs/hermes/consigne_positions_2026-11-14.md, une tâche par candidat, file GLM, flux pqv) ; publication de la préversion test.3 suspendue jusqu'à la saisie des positions|4a29cbf|
+|14/11/2026|**Veille hebdomadaire d'Hermès** : crontab de la VM (samedi 07:00, première exécution le 21/11/2026) lançant docs/hermes/pqv_hebdo.sh, qui crée une tâche en pause par candidat de candidats_hebdo.txt et l'ajoute à la file GLM ; consigne docs/hermes/consigne_positions_hebdo.md (livrable daté, comparaison avec le relevé précédent) ; à modifier uniquement à la demande de l'éditeur|à venir|
 |—|**Prochaine étape : lot 7** — tests utilisateur du pack de test ; relecture des rapports de veille d'Hermès (18/11, 23/11) puis mise à jour des positions de Le Pen, Zemmour et Riner. Premier pack réel le 15/01/2027.||
 
 \---

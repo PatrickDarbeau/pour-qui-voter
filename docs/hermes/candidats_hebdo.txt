@@ -1,0 +1,9 @@
+# Candidats suivis par la veille hebdomadaire d'Hermès (un identifiant par ligne, comme dans outils/candidats.py).
+# Liste fixée le 14/11/2026 : les six candidats ajoutés le 13/11/2026, sans positions.
+# À modifier uniquement à la demande de l'éditeur.
+arthaud
+asselineau
+dupont_aignan
+philippot
+ruffin
+tondelier
