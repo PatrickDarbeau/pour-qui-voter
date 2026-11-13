@@ -204,7 +204,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |13/11/2026|**Première version publiée** (préversion v2026.11.13-test) : workflow « Version » (.github/workflows/release.yml) qui, à l'envoi d'une étiquette v<version du pack>, contrôle les données, construit l'archive ZIP et publie la release (préversion si « -test » ou « -demo ») avec le texte de docs/versions/<étiquette>.md ; liens de téléchargement vers /releases (la page /releases/latest ignore les préversions)|e6d4961|
 |13/11/2026|**Démo en ligne publiée** sur GitHub Pages (source « GitHub Actions » activée ; workflow « Démo en ligne » lancé avec le pack de démonstration, candidats fictifs) : https://patrickdarbeau.github.io/pour-qui-voter/ ; adresse ajoutée au README et au LISEZMOI|fdcaba2|
 |13/11/2026|**Lien vers le recensement des candidats** (docs/recensement_candidats.md) dans la section Documentation du README et du LISEZMOI|314121d|
-|13/11/2026|**Recensement** : Christine Lagarde ajoutée aux pressentis (§D), absente de R27 et de Candidator, sources de presse Le Monde (06/11) et franceinfo (08/11)|à venir|
+|13/11/2026|**Recensement** : Christine Lagarde ajoutée aux pressentis (§D), absente de R27 et de Candidator, sources de presse Le Monde (06/11) et franceinfo (08/11)|a977071|
 |—|**Prochaine étape : lot 7** — tests utilisateur du pack de test ; relecture des rapports de veille d'Hermès (18/11, 23/11) puis mise à jour des positions de Le Pen, Zemmour et Riner. Premier pack réel le 15/01/2027.||
 
 \---
