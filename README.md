@@ -73,7 +73,8 @@ The method is explained in plain French in the app (*Méthode* page) and impleme
 - **Offline**: a static single-page application opened directly from `index.html` (`file://`). A strict Content Security Policy (`connect-src 'none'`) blocks every network request; an automated test checks it.
 - **Neutrality**: measures are worded neutrally, every candidate position is quoted and sourced, and positions that are inferred or come from the press are marked "to be confirmed". Candidates whose positions have not been collected yet are listed but not ranked.
 - **Transparency**: data and code are open; each data update is recorded in a changelog, and a dated "lessons learned" note follows every data collection ([`docs/enseignements/`](docs/enseignements/)).
-- **Reusable**: an *Édition* (edit) mode lets anyone replace themes, measures and candidates, for example for a school election.
+- **Modifiable and customisable**: in *Édition* mode, anyone can add, edit or delete themes (name, icon, colour, order), measures, candidates (colour, portrait, profile) and positions, directly in the browser, with no code and no server. Changes are saved on the device and flagged as local; the data can be exported (JSON pack, positions as CSV) and re-imported, with a preview of the changes, a fingerprint check and an automatic backup before anything is replaced. In the online demo, editing is a sandbox and candidates are locked.
+- **Reusable**: the same tool can serve other elections by replacing all its content, for example a school or parent-representative election.
 
 ## Status
 

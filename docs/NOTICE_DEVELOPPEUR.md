@@ -206,6 +206,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |13/11/2026|**Lien vers le recensement des candidats** (docs/recensement_candidats.md) dans la section Documentation du README et du LISEZMOI|314121d|
 |13/11/2026|**Recensement** : Christine Lagarde ajoutée aux pressentis (§D), absente de R27 et de Candidator, sources de presse Le Monde (06/11) et franceinfo (08/11)|a977071|
 |13/11/2026|**README et LISEZMOI** : captures du radar (trois candidats les plus proches) et de la carte de chaleur (tous les candidats, thème par thème), rendu impression/PDF, pack de démonstration|bce3cff|
+|13/11/2026|**README et LISEZMOI** : principe « Modifiable et personnalisable » (mode Édition : ajout, modification, suppression, export/import avec aperçu et sauvegarde) ; « Réutilisable » recentré sur les autres élections|à venir|
 |—|**Prochaine étape : lot 7** — tests utilisateur du pack de test ; relecture des rapports de veille d'Hermès (18/11, 23/11) puis mise à jour des positions de Le Pen, Zemmour et Riner. Premier pack réel le 15/01/2027.||
 
 \---

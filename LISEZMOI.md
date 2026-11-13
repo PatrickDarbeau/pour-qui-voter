@@ -73,7 +73,8 @@ La méthode est expliquée simplement dans l'application (page *Méthode*), prog
 - **Hors ligne** : une application monopage statique, ouverte directement depuis `index.html` (`file://`). Une politique de sécurité du contenu stricte (`connect-src 'none'`) bloque toute requête réseau ; un test automatique le vérifie.
 - **Neutralité** : les mesures sont formulées de façon neutre, chaque position de candidat est citée et sourcée, et les positions déduites ou issues de la presse sont marquées « à confirmer ». Les candidats dont les positions n'ont pas encore été recueillies sont listés mais pas classés.
 - **Transparence** : données et code sont ouverts ; chaque mise à jour des données est consignée dans un journal, et une note d'enseignements datée suit chaque recensement ([`docs/enseignements/`](docs/enseignements/)).
-- **Réutilisable** : un mode *Édition* permet à chacun de remplacer thèmes, mesures et candidats, par exemple pour une élection de délégués de classe.
+- **Modifiable et personnalisable** : en mode *Édition*, chacun peut ajouter, modifier ou supprimer thèmes (nom, icône, couleur, ordre), mesures, candidats (couleur, portrait, fiche) et positions, directement dans le navigateur, sans code ni serveur. Les modifications sont enregistrées sur l'appareil et signalées comme locales ; les données s'exportent (pack JSON, positions en CSV) et se réimportent, avec un aperçu des changements, le contrôle de l'empreinte et une sauvegarde automatique avant tout remplacement. Dans la démo en ligne, l'édition fonctionne en bac à sable et les candidats sont verrouillés.
+- **Réutilisable** : le même outil peut servir à d'autres élections en remplaçant tout son contenu, par exemple l'élection des délégués de classe ou des représentants des parents d'élèves.
 
 ## État du projet
 
