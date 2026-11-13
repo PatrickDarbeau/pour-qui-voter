@@ -209,7 +209,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |13/11/2026|**README et LISEZMOI** : principe « Modifiable et personnalisable » (mode Édition : ajout, modification, suppression, export/import avec aperçu et sauvegarde) ; « Réutilisable » recentré sur les autres élections|f6a404b|
 |13/11/2026|**Favicon** : urne stylisée reprenant le logo (fond bleu, bulletin rouge) en SVG, PNG 32 px et icône 180 px pour l'écran d'accueil des téléphones (assets/img/favicon*) ; déclaré dans index.html, compatible avec la CSP (img-src 'self') ; test hors ligne : 59 chargements locaux, aucune requête réseau|8fc2e6f|
 |13/11/2026|**Démo en ligne redéployée** avec le favicon. Incident : l'exécution n° 2, lancée avec la valeur par défaut « reelles », a publié quelques minutes le pack de test (candidats réels, positions en brouillon) ; corrigé par l'exécution n° 3 avec le pack de démonstration (vérifié : 4 candidats fictifs, bandeaux de démo, favicon, console sans erreur)|b0bd994|
-|13/11/2026|**Workflow « Démo en ligne »** : valeur par défaut passée à « demo » (candidats fictifs) pour éviter de publier par mégarde les données réelles non validées ; « reelles » doit être choisi explicitement|à venir|
+|13/11/2026|**Workflow « Démo en ligne »** : valeur par défaut passée à « demo » (candidats fictifs) pour éviter de publier par mégarde les données réelles non validées ; « reelles » doit être choisi explicitement|b71fd6f|
 |—|**Prochaine étape : lot 7** — tests utilisateur du pack de test ; relecture des rapports de veille d'Hermès (18/11, 23/11) puis mise à jour des positions de Le Pen, Zemmour et Riner. Premier pack réel le 15/01/2027.||
 
 \---
