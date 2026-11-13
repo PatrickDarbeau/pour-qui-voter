@@ -1,0 +1,46 @@
+# Publication d'une version (release) avec l'archive ZIP destinée aux utilisateurs (CDC F24, F25).
+# Déclenchement : envoi d'une étiquette « v<version du pack> », par exemple :
+#   git tag -a v2026.11.13-test -m "Pack de test du 13/11/2026" && git push origin v2026.11.13-test
+# Une étiquette contenant « -test » ou « -demo » donne une préversion (pre-release).
+# Le texte de la version est lu dans docs/versions/<étiquette>.md s'il existe.
+name: Version
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Contrôler les données et le calcul
+        run: |
+          python outils/valider.py
+          node tests/score.test.js
+      - name: Vérifier que l'étiquette correspond au pack installé
+        run: |
+          VERSION=$(python -c "import json; print(json.load(open('data/donnees.json', encoding='utf-8'))['version'])")
+          test "v$VERSION" = "$GITHUB_REF_NAME" || { echo "Étiquette $GITHUB_REF_NAME ≠ pack v$VERSION"; exit 1; }
+      - name: Construire l'archive
+        run: python outils/paquet.py
+      - name: Publier la version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          ZIP="dist/pour-qui-voter-$VERSION.zip"
+          NOTES="docs/versions/$GITHUB_REF_NAME.md"
+          OPTIONS=()
+          case "$GITHUB_REF_NAME" in *-test*|*-demo*) OPTIONS+=(--prerelease) ;; esac
+          if [ -f "$NOTES" ]; then OPTIONS+=(--notes-file "$NOTES"); else OPTIONS+=(--generate-notes); fi
+          gh release create "$GITHUB_REF_NAME" "$ZIP" "$ZIP.sha256" --title "Pour qui voter ? $VERSION" "${OPTIONS[@]}"

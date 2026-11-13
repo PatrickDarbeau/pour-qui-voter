@@ -79,7 +79,7 @@ Les données actuelles (`data/donnees.json`, version `2026.11.13-test`) forment 
 
 ## Prise en main
 
-**Utilisateurs** : téléchargez l'archive ZIP depuis la page [Releases](https://github.com/PatrickDarbeau/pour-qui-voter/releases/latest), décompressez-la et double-cliquez sur `index.html`. Il n'y a rien à installer.
+**Utilisateurs** : téléchargez l'archive ZIP depuis la page [Releases](https://github.com/PatrickDarbeau/pour-qui-voter/releases), décompressez-la et double-cliquez sur `index.html`. Il n'y a rien à installer.
 
 **Développeurs** : clonez le dépôt et ouvrez `index.html` dans un navigateur, ou servez-le en local :
 

@@ -79,7 +79,7 @@ The current data (`data/donnees.json`, version `2026.11.13-test`) is a **test pa
 
 ## Quick start
 
-**Users**: download the ZIP archive from the [Releases](https://github.com/PatrickDarbeau/pour-qui-voter/releases/latest) page, unzip it and double-click `index.html`. Nothing to install.
+**Users**: download the ZIP archive from the [Releases](https://github.com/PatrickDarbeau/pour-qui-voter/releases) page, unzip it and double-click `index.html`. Nothing to install.
 
 **Developers**: clone the repository and open `index.html` in a browser, or serve it locally:
 
