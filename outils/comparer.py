@@ -26,6 +26,7 @@ def main():
     cands = json.loads((br / "candidats.json").read_text(encoding="utf-8"))["candidats"]
     pos = json.loads((br / "positions.json").read_text(encoding="utf-8"))["positions"]
     nom = {c["id"]: f"{c['prenom']} {c['nom']}" for c in cands}
+    court = {c["id"]: c["nom"] for c in cands}
     P = defaultdict(dict)  # candidat -> mesure -> valeur
     conf = Counter()
     for p in pos:
@@ -33,7 +34,7 @@ def main():
             P[p["candidat"]][p["mesure"]] = p["valeur"]
         if p.get("a_confirmer"):
             conf[p["candidat"]] += 1
-    saisis = sorted(P, key=lambda c: nom[c].split()[-1])
+    saisis = sorted(P, key=lambda c: court[c])
     attente = [c["id"] for c in cands if c["id"] not in P]
     mes = {m[0]: m for m in catalogue.M}
     themes = catalogue.THEMES
@@ -51,7 +52,7 @@ def main():
         v = Counter(P[c].values())
         L.append(f"| {nom[c]} | {len(P[c])} | {len(P[c]) / n_mes:.0%} | {v[1]} | {v[0.5]} | {v[-1]} | {conf[c]} |")
     L += ["", "### Couverture par thème (nombre de mesures sur lesquelles le candidat se prononce)", "",
-          "| Thème | Mesures | " + " | ".join(nom[c].split()[-1] for c in saisis) + " |",
+          "| Thème | Mesures | " + " | ".join(court[c] for c in saisis) + " |",
           "|---|---:|" + "---:|" * len(saisis)]
     for t, n, i, _ in themes:
         ids = [m for m in mes if mes[m][1] == t]
@@ -61,7 +62,7 @@ def main():
     L += ["", "## 2. Proximité entre candidats", "",
           "Taux d'accord sur les mesures où **les deux** candidats se prononcent (même sens = accord). "
           "Entre parenthèses : nombre de mesures communes. Un faible nombre de mesures communes rend le taux peu significatif.", "",
-          "| | " + " | ".join(nom[c].split()[-1] for c in saisis) + " |", "|---|" + "---|" * len(saisis)]
+          "| | " + " | ".join(court[c] for c in saisis) + " |", "|---|" + "---|" * len(saisis)]
     for a in saisis:
         ligne = []
         for b in saisis:
@@ -71,14 +72,14 @@ def main():
             com = [m for m in P[a] if m in P[b]]
             acc = sum(1 for m in com if (P[a][m] > 0) == (P[b][m] > 0))
             ligne.append(f"{acc / len(com):.0%} ({len(com)})" if com else "· (0)")
-        L.append(f"| **{nom[a].split()[-1]}** | " + " | ".join(ligne) + " |")
+        L.append(f"| **{court[a]}** | " + " | ".join(ligne) + " |")
 
     # 3. Mesures clivantes / consensuelles / orphelines
     expr = {m: {c: P[c][m] for c in saisis if m in P[c]} for m in mes}
     clivantes = [(m, e) for m, e in expr.items() if any(v > 0 for v in e.values()) and any(v < 0 for v in e.values())]
     consens = [(m, e) for m, e in expr.items() if len(e) >= 3 and (all(v > 0 for v in e.values()) or all(v < 0 for v in e.values()))]
     orphelines = [m for m, e in expr.items() if not e]
-    fmt = lambda e: ", ".join(f"{nom[c].split()[-1]} {'+' if v > 0 else '−'}" for c, v in e.items())
+    fmt = lambda e: ", ".join(f"{court[c]} {'+' if v > 0 else '−'}" for c, v in e.items())
     L += ["", f"## 3. Mesures clivantes ({len(clivantes)})", "", "Au moins un candidat pour et un candidat contre.", "",
           "| Thème | Mesure | Positions |", "|---|---|---|"]
     for m, e in sorted(clivantes, key=lambda x: (-len(x[1]), x[0])):

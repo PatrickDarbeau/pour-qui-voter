@@ -141,6 +141,17 @@ class TestPositions(unittest.TestCase):
             self.assertTrue(src.startswith("https://attalpresident.fr/programme"), mid)
             self.assertTrue(cit, mid)
 
+    def test_positions_lepen_valides(self):
+        import catalogue, positions_lepen
+        ids = {m[0] for m in catalogue.M}
+        for mid, (v, src, cit, conf) in positions_lepen.P.items():
+            self.assertIn(mid, ids)
+            self.assertIn(v, (-1, 0, 0.5, 1))
+            self.assertTrue(src.startswith(("https://rassemblementnational.fr/", "https://www.franceinfo.fr/", "https://www.lemonde.fr/")), mid)
+            self.assertTrue(cit, mid)
+            if not src.startswith("https://rassemblementnational.fr/"):
+                self.assertTrue(conf, f"{mid} : source de presse → « à confirmer »")
+
     def test_positions_zemmour_valides(self):
         import catalogue, positions_zemmour
         ids = {m[0] for m in catalogue.M}

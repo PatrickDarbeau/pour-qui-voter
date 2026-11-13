@@ -2,3 +2,6 @@ data/sources/*/
 __pycache__/
 *.zip
 dist/
+
+# Sortie du test d'impression (tests/pdf.mjs)
+/resultats.pdf

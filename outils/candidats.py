@@ -45,10 +45,10 @@ CANDIDATS = [
         "id": "lepen", "prenom": "Marine", "nom": "Le Pen", "parti": "Rassemblement national",
         "biographie": "Députée, ancienne présidente du Rassemblement national, candidate en 2012, 2017 et 2022. Candidature annoncée le 7 juillet 2026, après sa condamnation en appel ; pourvoi en cassation en cours.",
         "slogan": None,
-        "site_officiel": "https://rassemblementnational.fr", "site_type": "parti",
+        "site_officiel": "https://marinelepen.com", "site_type": "campagne",
         "sources": ["https://www.publicsenat.fr/actualites/politique/presidentielle-marine-le-pen-est-candidate-et-se-pourvoit-en-cassation",
                     "https://www.leclubdesjuristes.com/en-bref/marine-le-pen-candidate-a-la-presidentielle-de-2027-malgre-sa-condamnation-en-appel-16843/"],
-        "a_verifier": ["Site de campagne et programme 2027 (non trouvés ; le site du RN bloque la collecte automatique)", "Mandat actuel (députée) à confirmer", "Issue du pourvoi en cassation (éligibilité)", "Candidature éventuelle de Jordan Bardella", "Site de campagne propre à la candidate"],
+        "a_verifier": ["Site de campagne marinelepen.com trouvé le 13/11/2026 (par Hermès) : aucun programme publié ; réforme des retraites détaillée annoncée pour le 17/11/2026"],
     },
     {
         "id": "lisnard", "prenom": "David", "nom": "Lisnard", "parti": "Nouvelle Énergie",
@@ -94,7 +94,7 @@ CANDIDATS = [
         "slogan": "La France qu'on veut",
         "site_officiel": None, "site_type": None,
         "sources": ["https://lcp.fr/actualites/le-judoka-teddy-riner-annonce-sa-candidature-a-l-election-presidentielle-de-2027-444920"],
-        "a_verifier": ["Site de campagne « La France qu'on veut » annoncé par la presse, adresse non trouvée au 12/11/2026", "Programme (annoncé, non publié)"],
+        "a_verifier": ["Site « La France qu'on veut » : adresse probable riner2027.fr (adresse de contact du candidat), hors service le 13/11/2026 ; seules trois pistes de programme rapportées par la presse (09/11/2026)"],
     },
     {
         "id": "roussel", "prenom": "Fabien", "nom": "Roussel", "parti": "Parti communiste français",

@@ -10,7 +10,8 @@ import { pathToFileURL } from "node:url";
 import assert from "node:assert";
 
 const CHROME = process.env.CHROME || "C:/Program Files/Google/Chrome/Application/chrome.exe";
-const PORT = 9334;
+// Port aléatoire : un Chrome resté ouvert d'un passage précédent ne doit pas être réutilisé
+const PORT = 9400 + Math.floor(Math.random() * 500);
 const pause = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // 1. Extraction de la dernière archive

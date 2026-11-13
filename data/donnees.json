@@ -1622,7 +1622,7 @@
       "biographie": "Députée, ancienne présidente du Rassemblement national, candidate en 2012, 2017 et 2022. Candidature annoncée le 7 juillet 2026, après sa condamnation en appel ; pourvoi en cassation en cours.",
       "slogan": null,
       "photo": null,
-      "site_officiel": "https://rassemblementnational.fr",
+      "site_officiel": "https://marinelepen.com",
       "pages_programme": [],
       "programme_url": null,
       "statut": "declare",
@@ -1633,11 +1633,7 @@
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
-        "Site de campagne et programme 2027 (non trouvés ; le site du RN bloque la collecte automatique)",
-        "Mandat actuel (députée) à confirmer",
-        "Issue du pourvoi en cassation (éligibilité)",
-        "Candidature éventuelle de Jordan Bardella",
-        "Site de campagne propre à la candidate"
+        "Site de campagne marinelepen.com trouvé le 13/11/2026 (par Hermès) : aucun programme publié ; réforme des retraites détaillée annoncée pour le 17/11/2026"
       ]
     },
     {
@@ -1837,8 +1833,7 @@
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
-        "Site de campagne « La France qu'on veut » annoncé par la presse, adresse non trouvée au 12/11/2026",
-        "Programme (annoncé, non publié)"
+        "Site « La France qu'on veut » : adresse probable riner2027.fr (adresse de contact du candidat), hors service le 13/11/2026 ; seules trois pistes de programme rapportées par la presse (09/11/2026)"
       ]
     },
     {
@@ -2663,6 +2658,156 @@
       "source_date": "2026-11-12",
       "citation": "Instaurer la motion de censure « constructive » […] ce qui permettra de mettre fin au 49.3",
       "a_confirmer": false
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "soli3",
+      "valeur": 1,
+      "source_url": "https://rassemblementnational.fr/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pour la réduction de la TVA de 20% à 5,5% sur l'énergie",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "ins1",
+      "valeur": 1,
+      "source_url": "https://rassemblementnational.fr/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pour le RIC le référendum initiative citoyenne",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "ecl2",
+      "valeur": 1,
+      "source_url": "https://rassemblementnational.fr/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pour investir dans le nucléaire",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "ecl1",
+      "valeur": -1,
+      "source_url": "https://rassemblementnational.fr/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pour investir dans le nucléaire",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "retr3",
+      "valeur": 0.5,
+      "source_url": "https://rassemblementnational.fr/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pour la retraite à 60 ans pour ceux qui commencent à travailler tôt",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "retr1",
+      "valeur": 1,
+      "source_url": "https://www.franceinfo.fr/elections/presidentielle/marine-le-pen-presentera-de-maniere-extremement-precise-sa-reforme-des-retraites-le-17-novembre_8237821.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "L'objectif sera « d'augmenter le taux d'activité » pour ramener l'âge de départ à 62 voire 60 ans",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "retr2",
+      "valeur": -1,
+      "source_url": "https://www.franceinfo.fr/elections/presidentielle/marine-le-pen-presentera-de-maniere-extremement-precise-sa-reforme-des-retraites-le-17-novembre_8237821.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Ramener l'âge de départ à 62 voire 60 ans",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "retr4",
+      "valeur": -1,
+      "source_url": "https://www.franceinfo.fr/elections/presidentielle/marine-le-pen-presentera-de-maniere-extremement-precise-sa-reforme-des-retraites-le-17-novembre_8237821.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Ramener l'âge de départ à 62 voire 60 ans",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "retr5",
+      "valeur": 1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Elle a également annoncé « la création d'un véritable pilier de capitalisation »",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "retr6",
+      "valeur": -1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "« La création d'un véritable pilier de capitalisation »",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "imm7",
+      "valeur": 1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "« Reprise en main de [la] politique migratoire et l'instauration de la priorité nationale »",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "imm8",
+      "valeur": -1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "L'instauration de la priorité nationale",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "om4",
+      "valeur": 1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Appelé à mettre fin à l'octroi de mer",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "om5",
+      "valeur": -1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Appelé à mettre fin à l'octroi de mer",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "eco2",
+      "valeur": -1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Remplacer l'impôt sur la fortune immobilière (IFI) par un « impôt sur la fortune financière »",
+      "a_confirmer": true
     },
     {
       "candidat": "lisnard",
@@ -5546,6 +5691,6 @@
     }
   ],
   "journal": [
-    "Pack de test : 158 mesures, 10 candidats dont 8 avec positions en brouillon à relire ; positions non encore saisies : Le Pen, Riner."
+    "Pack de test : 158 mesures, 10 candidats dont 9 avec positions en brouillon à relire ; positions non encore saisies : Riner."
   ]
 }

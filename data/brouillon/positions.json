@@ -772,6 +772,156 @@
       "a_confirmer": false
     },
     {
+      "candidat": "lepen",
+      "mesure": "soli3",
+      "valeur": 1,
+      "source_url": "https://rassemblementnational.fr/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pour la réduction de la TVA de 20% à 5,5% sur l'énergie",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "ins1",
+      "valeur": 1,
+      "source_url": "https://rassemblementnational.fr/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pour le RIC le référendum initiative citoyenne",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "ecl2",
+      "valeur": 1,
+      "source_url": "https://rassemblementnational.fr/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pour investir dans le nucléaire",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "ecl1",
+      "valeur": -1,
+      "source_url": "https://rassemblementnational.fr/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pour investir dans le nucléaire",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "retr3",
+      "valeur": 0.5,
+      "source_url": "https://rassemblementnational.fr/",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Pour la retraite à 60 ans pour ceux qui commencent à travailler tôt",
+      "a_confirmer": false
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "retr1",
+      "valeur": 1,
+      "source_url": "https://www.franceinfo.fr/elections/presidentielle/marine-le-pen-presentera-de-maniere-extremement-precise-sa-reforme-des-retraites-le-17-novembre_8237821.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "L'objectif sera « d'augmenter le taux d'activité » pour ramener l'âge de départ à 62 voire 60 ans",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "retr2",
+      "valeur": -1,
+      "source_url": "https://www.franceinfo.fr/elections/presidentielle/marine-le-pen-presentera-de-maniere-extremement-precise-sa-reforme-des-retraites-le-17-novembre_8237821.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Ramener l'âge de départ à 62 voire 60 ans",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "retr4",
+      "valeur": -1,
+      "source_url": "https://www.franceinfo.fr/elections/presidentielle/marine-le-pen-presentera-de-maniere-extremement-precise-sa-reforme-des-retraites-le-17-novembre_8237821.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Ramener l'âge de départ à 62 voire 60 ans",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "retr5",
+      "valeur": 1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Elle a également annoncé « la création d'un véritable pilier de capitalisation »",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "retr6",
+      "valeur": -1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "« La création d'un véritable pilier de capitalisation »",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "imm7",
+      "valeur": 1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "« Reprise en main de [la] politique migratoire et l'instauration de la priorité nationale »",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "imm8",
+      "valeur": -1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "L'instauration de la priorité nationale",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "om4",
+      "valeur": 1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Appelé à mettre fin à l'octroi de mer",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "om5",
+      "valeur": -1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Appelé à mettre fin à l'octroi de mer",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "lepen",
+      "mesure": "eco2",
+      "valeur": -1,
+      "source_url": "https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html",
+      "source_type": "site_officiel",
+      "source_date": "2026-11-12",
+      "citation": "Remplacer l'impôt sur la fortune immobilière (IFI) par un « impôt sur la fortune financière »",
+      "a_confirmer": true
+    },
+    {
       "candidat": "lisnard",
       "mesure": "eco5",
       "valeur": 1,

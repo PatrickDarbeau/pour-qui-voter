@@ -9,7 +9,7 @@ import { join } from "node:path";
 const CHROME = process.env.CHROME || "C:/Program Files/Google/Chrome/Application/chrome.exe";
 const SORTIE = process.argv[2] || "resultats.pdf";
 const BASE = "http://localhost:8765/";
-const PORT = 9333;
+const PORT = 9900 + Math.floor(Math.random() * 90);
 const pause = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const profil = mkdtempSync(join(tmpdir(), "pqv-pdf-"));

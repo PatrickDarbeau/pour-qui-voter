@@ -228,7 +228,7 @@
     const { nbMesures, resultats, enAttente } = Score.calculer(D, etat.reponses, etat.prioritaires, restreint ? T2 : null);
     const blocAttente = enAttente.length ? `<p class="carte en-attente">⏳ <strong>Positions non encore saisies</strong> — ${enAttente
       .map((c) => `<a href="#/candidat/${esc(c.id)}">${esc(nomComplet(c))}</a>`).join(", ")} :
-      ${enAttente.length > 1 ? "ces candidats ne sont pas classés" : "ce candidat n'est pas classé"} tant que leurs positions n'ont pas été relevées.</p>` : "";
+      ${enAttente.length > 1 ? "ces candidats ne sont pas classés tant que leurs positions n'ont pas été relevées" : "ce candidat n'est pas classé tant que ses positions n'ont pas été relevées"}.</p>` : "";
     const bandeauT2 = T2 ? `<p class="carte t2">🗳 <strong>Second tour</strong> —
       ${restreint
         ? `comparaison limitée aux deux candidats qualifiés. <a href="#/resultats/tous">Voir aussi tous les candidats du premier tour</a>`
