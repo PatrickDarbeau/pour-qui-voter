@@ -35,6 +35,16 @@
 - Candidates whose positions have not been collected yet are **listed apart, not ranked**. In second-round mode, the comparison is limited to the two qualified candidates (with a link to see all first-round candidates).
 - The results can be **printed or saved as PDF**, and shared with a link that contains the answers (nothing is sent anywhere).
 
+**Profile by theme: radar chart of the three closest candidates**
+
+![Radar chart of the three closest candidates](docs/captures/radar.png)
+
+**All candidates, theme by theme: heat map of agreement (%)**
+
+![Heat map of all candidates, theme by theme](docs/captures/chaleur.png)
+
+*Charts as rendered in the printed / PDF results (demonstration pack, fictional candidates). Green: close to your choices; red: far; grey: neutral or no position.*
+
 ### How the score is computed
 
 1. **Each measure earns or costs points.** Your opinion (for = +1, against = −1) is multiplied by the candidate's position (supports = +1, partly supports = +½, no position = 0, opposes = −1). Measures you marked *Indifférent* are left out.

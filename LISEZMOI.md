@@ -35,6 +35,16 @@
 - Les candidats dont les positions n'ont pas encore été relevées sont **listés à part, sans être classés**. En mode second tour, la comparaison est limitée aux deux qualifiés (avec un lien pour voir tous les candidats du premier tour).
 - Les résultats peuvent être **imprimés ou enregistrés en PDF**, et partagés par un lien qui contient les réponses (rien n'est envoyé nulle part).
 
+**Profil par thème : radar des trois candidats les plus proches**
+
+![Radar des trois candidats les plus proches](docs/captures/radar.png)
+
+**Tous les candidats, thème par thème : carte de chaleur de la concordance (%)**
+
+![Carte de chaleur de tous les candidats, thème par thème](docs/captures/chaleur.png)
+
+*Graphiques tels qu'ils apparaissent dans les résultats imprimés / PDF (pack de démonstration, candidats fictifs). Vert : proche de vos choix ; rouge : éloigné ; gris : neutre ou sans position.*
+
 ### Comment le score est calculé
 
 1. **Chaque mesure rapporte ou fait perdre des points.** Votre avis (pour = +1, contre = −1) est multiplié par la position du candidat (soutient = +1, soutient en partie = +½, ne se prononce pas = 0, s'oppose = −1). Les mesures marquées *Indifférent* ne comptent pas.
