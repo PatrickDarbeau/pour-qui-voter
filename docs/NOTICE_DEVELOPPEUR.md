@@ -198,6 +198,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |13/11/2026|Lot 7 : **couleurs des candidats** relevées dans le mode Édition et mises par défaut (choix de l'éditeur : tendance politique, remplace la palette neutre) ; **fiches complétées depuis Wikipédia** (date et lieu de naissance, âge calculé, formation, profession, lien vers l'article) ; **portraits libres** de Wikimedia Commons recadrés en 3:4 (`outils/portraits.py`, crédits sous chaque photo et dans les mentions légales) ; fiche au format uniforme (photo, identité, parcours, positions) et vignettes dans la liste|5d49d88|
 |13/11/2026|**README.md en anglais** pour GitHub (présentation, principes, état, commandes, licences) ; lien croisé avec LISEZMOI.md|7b7f6ef|
 |13/11/2026|**Captures d'écran dans le README** (accueil, questionnaire, candidats), dans docs/captures/|15dc162|
+|13/11/2026|**LISEZMOI.md aligné sur README.md** : version française complète (captures, principes, état, organisation, commandes, contribution, licences)|à venir|
 |—|**Prochaine étape : lot 7** — tests utilisateur du pack de test ; relecture des rapports de veille d'Hermès (18/11, 23/11) puis mise à jour des positions de Le Pen, Zemmour et Riner. Premier pack réel le 15/01/2027.||
 
 \---

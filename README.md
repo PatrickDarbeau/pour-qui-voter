@@ -3,7 +3,7 @@
 **Pour qui voter ?** ("Who should I vote for?") is a free, neutral and **offline** voting advice tool for the 2027 French presidential election. It compares your opinions on concrete policy measures with the programmes of the candidates, and explains the result with sources.
 
 > The application itself is in French, since it is meant for French voters. This page is for developers and contributors.
-> A French version of this page is available in [LISEZMOI.md](LISEZMOI.md).
+> *Version française : [LISEZMOI.md](LISEZMOI.md).*
 
 ![Home page of the application](docs/captures/accueil.png)
 
