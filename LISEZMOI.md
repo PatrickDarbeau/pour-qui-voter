@@ -121,6 +121,8 @@ Prérequis pour les outils et les tests : Python 3.10+ (avec Pillow pour les por
 
 ## Démo en ligne
 
+**Essayer en ligne : <https://patrickdarbeau.github.io/pour-qui-voter/>** (pack de démonstration, quatre candidats fictifs).
+
 Une démo peut être publiée sur GitHub Pages avec le workflow manuel **« Démo en ligne »** (onglet *Actions*). En démo en ligne, un bandeau invite à télécharger l'application ; le mode Édition fonctionne en bac à sable (les modifications restent dans le navigateur du visiteur), les candidats sont verrouillés et l'import de packs est désactivé. Pour tester ce mode en local, ajoutez `?demo` à l'adresse (ex. `http://localhost:8765/?demo`). Les liens de téléchargement se règlent dans [`assets/js/config.js`](assets/js/config.js).
 
 ## Documentation
