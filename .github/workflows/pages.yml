@@ -2,6 +2,7 @@
 # Déclenchement MANUEL uniquement (onglet Actions > « Démo en ligne » > Run workflow),
 # car GitHub Pages n'est gratuit que pour un dépôt public.
 # Seuls les fichiers de l'application sont publiés (pas les outils, tests, sources ni docs).
+# Valeur par défaut : « demo » (candidats fictifs) tant que les données réelles ne sont pas validées ; choisir « reelles » explicitement.
 name: Démo en ligne
 
 on:
@@ -10,8 +11,8 @@ on:
       donnees:
         description: "Données publiées : réelles (data/donnees.json) ou démonstration (candidats fictifs)"
         type: choice
-        options: [reelles, demo]
-        default: reelles
+        options: [demo, reelles]
+        default: demo
 
 permissions:
   contents: read
