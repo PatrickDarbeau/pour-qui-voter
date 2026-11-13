@@ -83,9 +83,9 @@ Classés par ordre alphabétique. Le parti est celui qu'indiquent les sources.
 | François Hollande | — | déclaré | pressenti |
 | Jean Lassalle | déclaré | retiré | sous condition |
 
-## D. Pressentis, sans candidature annoncée (R27)
+## D. Pressentis, sans candidature annoncée (R27, sauf mention contraire)
 
-Jean-Noël Barrot (MoDem), Aurore Bergé (Renaissance), Thierry Breton (divers droite), Bruno Le Maire (Renaissance), Matthieu Pigasse (sans étiquette), Sandrine Rousseau (Les Écologistes ; « retirée » selon CA), Manuel Valls (Renaissance), Dominique de Villepin (La France humaniste ; « retiré » selon CA), Philippe de Villiers (droite souverainiste).
+Jean-Noël Barrot (MoDem), Aurore Bergé (Renaissance), Thierry Breton (divers droite), Christine Lagarde (sans étiquette ; présidente de la Banque centrale européenne, ancienne ministre de l'Économie ; absente de R27, hypothèse évoquée par la presse : [Le Monde, 06/11/2026](https://www.lemonde.fr/politique/article/2026/11/06/presidentielle-2027-l-hypothese-d-une-candidature-de-christine-lagarde-questionne-a-droite-et-au-sein-du-bloc-central_6807815_823448.html), [franceinfo, 08/11/2026](https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-christine-lagarde-tentee-par-l-elysee_8273705.html) ; ajout du 13/11/2026), Bruno Le Maire (Renaissance), Matthieu Pigasse (sans étiquette), Sandrine Rousseau (Les Écologistes ; « retirée » selon CA), Manuel Valls (Renaissance), Dominique de Villepin (La France humaniste ; « retiré » selon CA), Philippe de Villiers (droite souverainiste).
 
 ## E. Retirés ou éliminés (pour mémoire)
 
