@@ -1563,10 +1563,22 @@
       "prenom": "Gabriel",
       "nom": "Attal",
       "parti": "Renaissance",
-      "couleur": "#1b9e77",
+      "couleur": "#0c5a43",
       "biographie": "Ancien Premier ministre (2024). Secrétaire général de Renaissance. Candidature annoncée le 22 mai 2026.",
       "slogan": "La force d'agir",
-      "photo": null,
+      "date_naissance": "1989-03-16",
+      "lieu_naissance": "Clamart (Hauts-de-Seine)",
+      "formation": "Sciences Po Paris (master en affaires publiques, 2013)",
+      "profession": "Conseiller en cabinet ministériel (2012-2017)",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Gabriel_Attal",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/attal.jpg",
+      "photo_credit": {
+        "auteur": "Ismail Aissoub (2025)",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Gabriel_Attal_2025_(close_crop).jpg"
+      },
       "site_officiel": "https://attalpresident.fr",
       "pages_programme": [],
       "programme_url": null,
@@ -1574,7 +1586,8 @@
       "derniere_collecte": "2026-11-12",
       "sources_profil": [
         "https://lcp.fr/actualites/presidentielle-2027-gabriel-attal-officialise-sa-candidature-436721",
-        "https://attalpresident.fr/mentions-legales"
+        "https://attalpresident.fr/mentions-legales",
+        "https://fr.wikipedia.org/wiki/Gabriel_Attal"
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
@@ -1586,10 +1599,22 @@
       "prenom": "Raphaël",
       "nom": "Glucksmann",
       "parti": "Place publique",
-      "couleur": "#d95f02",
+      "couleur": "#f38e86",
       "biographie": "Député européen, cofondateur de Place publique. Candidature annoncée le 23 août 2026 ; désigné par la primaire sociale-démocrate du 11 octobre 2026 (66,17 % des voix).",
       "slogan": null,
-      "photo": null,
+      "date_naissance": "1979-10-15",
+      "lieu_naissance": "Boulogne-Billancourt (Hauts-de-Seine)",
+      "formation": "Sciences Po Paris",
+      "profession": "Réalisateur de documentaires ; journaliste ; essayiste",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Raphaël_Glucksmann",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/glucksmann.jpg",
+      "photo_credit": {
+        "auteur": "© Union européenne 2024 – Source : Parlement européen",
+        "licence": "Réutilisation autorisée avec mention de la source (Parlement européen)",
+        "licence_url": "https://www.europarl.europa.eu/legal-notice/",
+        "source": "https://commons.wikimedia.org/wiki/File:1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg"
+      },
       "site_officiel": "https://glucks2027.fr",
       "pages_programme": [
         "https://glucks2027.fr/revolution-ecologique/",
@@ -1606,7 +1631,8 @@
       "derniere_collecte": "2026-11-12",
       "sources_profil": [
         "https://lcp.fr/actualites/gagner-en-2027-raphael-glucksmann-lance-sa-campagne-et-veut-ramener-la-gauche-au-pouvoir",
-        "https://es.euronews.com/2026/08/23/presidencial-francesa-2027-raphael-glucksmann-entra-en-liza"
+        "https://es.euronews.com/2026/08/23/presidencial-francesa-2027-raphael-glucksmann-entra-en-liza",
+        "https://fr.wikipedia.org/wiki/Raphaël_Glucksmann"
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
@@ -1618,10 +1644,22 @@
       "prenom": "Marine",
       "nom": "Le Pen",
       "parti": "Rassemblement national",
-      "couleur": "#7570b3",
+      "couleur": "#605aba",
       "biographie": "Députée, ancienne présidente du Rassemblement national, candidate en 2012, 2017 et 2022. Candidature annoncée le 7 juillet 2026, après sa condamnation en appel ; pourvoi en cassation en cours.",
       "slogan": null,
-      "photo": null,
+      "date_naissance": "1968-08-05",
+      "lieu_naissance": "Neuilly-sur-Seine (Hauts-de-Seine)",
+      "formation": "Université Panthéon-Assas (droit)",
+      "profession": "Avocate",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Marine_Le_Pen",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/lepen.jpg",
+      "photo_credit": {
+        "auteur": "Vox España (2025)",
+        "licence": "CC0 (domaine public)",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Marine_Le_Pen_2025_(cropped).jpg"
+      },
       "site_officiel": "https://marinelepen.com",
       "pages_programme": [],
       "programme_url": null,
@@ -1629,7 +1667,8 @@
       "derniere_collecte": "2026-11-12",
       "sources_profil": [
         "https://www.publicsenat.fr/actualites/politique/presidentielle-marine-le-pen-est-candidate-et-se-pourvoit-en-cassation",
-        "https://www.leclubdesjuristes.com/en-bref/marine-le-pen-candidate-a-la-presidentielle-de-2027-malgre-sa-condamnation-en-appel-16843/"
+        "https://www.leclubdesjuristes.com/en-bref/marine-le-pen-candidate-a-la-presidentielle-de-2027-malgre-sa-condamnation-en-appel-16843/",
+        "https://fr.wikipedia.org/wiki/Marine_Le_Pen"
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
@@ -1641,10 +1680,22 @@
       "prenom": "David",
       "nom": "Lisnard",
       "parti": "Nouvelle Énergie",
-      "couleur": "#e7298a",
+      "couleur": "#bf2ce8",
       "biographie": "Maire de Cannes. A quitté Les Républicains pour se présenter sous l'étiquette de son mouvement, Nouvelle Énergie.",
       "slogan": null,
-      "photo": null,
+      "date_naissance": "1969-02-02",
+      "lieu_naissance": "Limoges (Haute-Vienne)",
+      "formation": "Sciences Po Bordeaux (1992) ; université Paris-Panthéon-Assas (droit public)",
+      "profession": "Journaliste pigiste ; commerçant",
+      "wikipedia": "https://fr.wikipedia.org/wiki/David_Lisnard",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/lisnard.jpg",
+      "photo_credit": {
+        "auteur": "Grégor Sauvagère (2026)",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:David_Lisnard_en_2026.jpg"
+      },
       "site_officiel": "https://www.unenouvelleenergie.fr",
       "pages_programme": [
         "https://www.unenouvelleenergie.fr/notre-programme/",
@@ -1661,7 +1712,8 @@
       "statut": "declare",
       "derniere_collecte": "2026-11-12",
       "sources_profil": [
-        "https://lcp.fr/actualites/je-suis-candidat-david-lisnard-quitte-lr-et-relance-le-debat-sur-une-primaire-a-droite"
+        "https://lcp.fr/actualites/je-suis-candidat-david-lisnard-quitte-lr-et-relance-le-debat-sur-une-primaire-a-droite",
+        "https://fr.wikipedia.org/wiki/David_Lisnard"
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
@@ -1673,10 +1725,22 @@
       "prenom": "Jean-Luc",
       "nom": "Mélenchon",
       "parti": "La France insoumise",
-      "couleur": "#66a61e",
+      "couleur": "#c9131c",
       "biographie": "Fondateur de La France insoumise, ancien député et ancien ministre, candidat en 2012, 2017 et 2022. Programme : « L'Avenir en commun » (nouvelle version 2026).",
       "slogan": null,
-      "photo": null,
+      "date_naissance": "1951-08-19",
+      "lieu_naissance": "Tanger (Maroc)",
+      "formation": "Université de Franche-Comté",
+      "profession": "Professeur de français ; journaliste",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Jean-Luc_Mélenchon",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/melenchon.jpg",
+      "photo_credit": {
+        "auteur": "jlm2017.fr (2026)",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Jean_Luc_Mélenchon_en_mai_2026-_55261894422_(cropped).jpg"
+      },
       "site_officiel": "https://melenchon2027.fr",
       "pages_programme": [
         "https://melenchon2027.fr/programme/livre/",
@@ -1720,7 +1784,8 @@
       "derniere_collecte": "2026-11-12",
       "sources_profil": [
         "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
-        "https://melenchon2027.fr/"
+        "https://melenchon2027.fr/",
+        "https://fr.wikipedia.org/wiki/Jean-Luc_Mélenchon"
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": []
@@ -1730,10 +1795,22 @@
       "prenom": "Édouard",
       "nom": "Philippe",
       "parti": "Horizons",
-      "couleur": "#e6ab02",
+      "couleur": "#02dfe3",
       "biographie": "Ancien Premier ministre (2017-2020), maire du Havre, président d'Horizons. Candidat déclaré depuis septembre 2024.",
       "slogan": null,
-      "photo": null,
+      "date_naissance": "1970-11-28",
+      "lieu_naissance": "Rouen (Seine-Maritime)",
+      "formation": "Sciences Po Paris ; École nationale d'administration (ENA)",
+      "profession": "Haut fonctionnaire (Conseil d'État) ; avocat",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Édouard_Philippe",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/philippe.jpg",
+      "photo_credit": {
+        "auteur": "Wasasaq8 (2024)",
+        "licence": "CC0 (domaine public)",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Edouard_Philippe_3x4_crop.jpg"
+      },
       "site_officiel": "https://www.edouardphilippe.fr",
       "pages_programme": [
         "https://www.edouardphilippe.fr/programme",
@@ -1758,7 +1835,8 @@
       "statut": "declare",
       "derniere_collecte": "2026-11-12",
       "sources_profil": [
-        "https://connexionfrance.com/news/former-french-pm-edouard-philippe-announces-presidential-candidacy/676922"
+        "https://connexionfrance.com/news/former-french-pm-edouard-philippe-announces-presidential-candidacy/676922",
+        "https://fr.wikipedia.org/wiki/Édouard_Philippe"
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": []
@@ -1768,10 +1846,22 @@
       "prenom": "Bruno",
       "nom": "Retailleau",
       "parti": "Les Républicains",
-      "couleur": "#a6761d",
+      "couleur": "#0d69af",
       "biographie": "Président des Républicains, ancien ministre de l'Intérieur. Candidature annoncée le 12 février 2026 ; désigné par son parti en avril 2026.",
       "slogan": null,
-      "photo": null,
+      "date_naissance": "1960-11-20",
+      "lieu_naissance": "Cholet (Maine-et-Loire)",
+      "formation": "Sciences Po Paris ; Nantes Université",
+      "profession": "Dirigeant de société",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Bruno_Retailleau",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/retailleau.jpg",
+      "photo_credit": {
+        "auteur": "Anthonymontardyfr (2025)",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l'Intérieur_français_(cropped).jpg"
+      },
       "site_officiel": "https://republicains.fr",
       "pages_programme": [
         "https://republicains.fr/nos-propositions/",
@@ -1807,7 +1897,8 @@
       "derniere_collecte": "2026-11-12",
       "sources_profil": [
         "https://www.publicsenat.fr/actualites/politique/je-suis-pret-bruno-retailleau-se-declare-candidat-a-lelection-presidentielle-2027",
-        "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+        "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+        "https://fr.wikipedia.org/wiki/Bruno_Retailleau"
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
@@ -1819,17 +1910,30 @@
       "prenom": "Teddy",
       "nom": "Riner",
       "parti": "Sans étiquette",
-      "couleur": "#1f78b4",
+      "couleur": "#0074c2",
       "biographie": "Judoka, quintuple champion olympique. Candidature annoncée le 9 novembre 2026, sans étiquette (« ni de droite, ni de gauche »).",
       "slogan": "La France qu'on veut",
-      "photo": null,
+      "date_naissance": "1989-04-07",
+      "lieu_naissance": "Pointe-à-Pitre (Guadeloupe)",
+      "formation": "INSEP ; Sciences Po (certificat pour sportifs de haut niveau, 2011-2015)",
+      "profession": "Judoka",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Teddy_Riner",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/riner.jpg",
+      "photo_credit": {
+        "auteur": "Georges Biard (2016)",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Teddy_Riner_Cannes_2016.jpg"
+      },
       "site_officiel": null,
       "pages_programme": [],
       "programme_url": null,
       "statut": "declare",
       "derniere_collecte": null,
       "sources_profil": [
-        "https://lcp.fr/actualites/le-judoka-teddy-riner-annonce-sa-candidature-a-l-election-presidentielle-de-2027-444920"
+        "https://lcp.fr/actualites/le-judoka-teddy-riner-annonce-sa-candidature-a-l-election-presidentielle-de-2027-444920",
+        "https://fr.wikipedia.org/wiki/Teddy_Riner"
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
@@ -1841,10 +1945,22 @@
       "prenom": "Fabien",
       "nom": "Roussel",
       "parti": "Parti communiste français",
-      "couleur": "#b15928",
+      "couleur": "#f32b2b",
       "biographie": "Secrétaire national du Parti communiste français, candidat en 2022. Candidature validée par les adhérents et officialisée en septembre 2026.",
       "slogan": null,
-      "photo": null,
+      "date_naissance": "1969-04-16",
+      "lieu_naissance": "Béthune (Pas-de-Calais)",
+      "formation": "CFPJ (journaliste reporter d'images)",
+      "profession": "Journaliste",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fabien_Roussel",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/roussel.jpg",
+      "photo_credit": {
+        "auteur": "Zouhair Nakara (2018)",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Roussel_Fabien_1.jpg"
+      },
       "site_officiel": "https://www.fabienroussel2027.fr",
       "pages_programme": [
         "https://www.fabienroussel2027.fr/materiel"
@@ -1854,7 +1970,8 @@
       "derniere_collecte": "2026-11-12",
       "sources_profil": [
         "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389",
-        "https://www.fabienroussel2027.fr"
+        "https://www.fabienroussel2027.fr",
+        "https://fr.wikipedia.org/wiki/Fabien_Roussel"
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
@@ -1869,7 +1986,19 @@
       "couleur": "#6a3d9a",
       "biographie": "Président de Reconquête, candidat en 2022. Candidature confirmée à l'automne 2026.",
       "slogan": null,
-      "photo": null,
+      "date_naissance": "1958-08-31",
+      "lieu_naissance": "Montreuil (Seine)",
+      "formation": "Sciences Po Paris",
+      "profession": "Journaliste ; écrivain ; essayiste",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Éric_Zemmour",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/zemmour.jpg",
+      "photo_credit": {
+        "auteur": "Anh De France (2022)",
+        "licence": "CC0 (domaine public)",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Portrait_d'Éric_Zemmour,_avril_2022.jpg"
+      },
       "site_officiel": "https://www.ericzemmour.fr",
       "pages_programme": [
         "https://www.ericzemmour.fr/priorites"
@@ -1879,7 +2008,8 @@
       "derniere_collecte": "2026-11-12",
       "sources_profil": [
         "https://lcp.fr/actualites/presidentielle-2027-eric-zemmour-officialise-sa-candidature-441871",
-        "https://fr.euronews.com/2026/11/10/eric-zemmour-annonce-sa-candidature-a-la-presidentielle"
+        "https://fr.euronews.com/2026/11/10/eric-zemmour-annonce-sa-candidature-a-la-presidentielle",
+        "https://fr.wikipedia.org/wiki/Éric_Zemmour"
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [

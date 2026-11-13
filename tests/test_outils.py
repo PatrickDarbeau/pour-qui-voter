@@ -193,5 +193,37 @@ class TestCollecte(unittest.TestCase):
         self.assertTrue(maj.nom_fichier("https://a.fr/sante/", "text/html").endswith(".html"))
 
 
+class TestFichesCandidats(unittest.TestCase):
+    """Fiches uniformes : couleur, naissance, formation, profession, portrait libre et sources."""
+
+    def test_champs_uniformes(self):
+        import candidats
+        import portraits
+        racine = Path(__file__).resolve().parent.parent
+        ids = {c["id"] for c in candidats.CANDIDATS}
+        self.assertEqual(set(candidats.COULEURS), ids)
+        self.assertEqual(set(candidats.PROFILS), ids)
+        self.assertEqual(set(portraits.PORTRAITS), ids)
+        for cid in ids:
+            self.assertRegex(candidats.COULEURS[cid], r"^#[0-9a-f]{6}$")
+            pr = candidats.PROFILS[cid]
+            self.assertRegex(pr["naissance"][0], r"^\d{4}-\d{2}-\d{2}$")
+            self.assertRegex(pr["naissance"][1], r"^[^()]+ \([^()]+\)$", "lieu : « Ville (département ou pays) »")
+            self.assertTrue(pr["formation"] and pr["profession"])
+            self.assertTrue(pr["wikipedia"].startswith("https://fr.wikipedia.org/wiki/"))
+            ph = portraits.PORTRAITS[cid]
+            self.assertTrue(ph["page"].startswith("https://commons.wikimedia.org/wiki/File:"))
+            self.assertTrue(ph["auteur"] and ph["licence"] and ph["licence_url"].startswith("https://"))
+            img = racine / "assets" / "img" / "candidats" / f"{cid}.jpg"
+            self.assertTrue(img.exists(), f"portrait manquant : {img}")
+            self.assertEqual(img.read_bytes()[:2], bytes([0xFF, 0xD8]), "JPEG attendu")
+
+    def test_recadrage_3_4(self):
+        from PIL import Image
+        import portraits
+        for taille in ((960, 1440), (1200, 800), (300, 400)):
+            self.assertEqual(portraits.recadrer(Image.new("RGB", taille)).size, portraits.TAILLE)
+
+
 if __name__ == "__main__":
     unittest.main()

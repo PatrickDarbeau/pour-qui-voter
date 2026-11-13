@@ -71,6 +71,9 @@
     candidats: [
       ["prenom", "Prénom", "texte"], ["nom", "Nom", "texte", true], ["parti", "Parti / mouvement", "texte"],
       ["statut", "Statut", "statut"], ["couleur", "Couleur", "couleur"], ["slogan", "Slogan", "texte"],
+      ["date_naissance", "Date de naissance", "date"], ["lieu_naissance", "Lieu de naissance", "texte"],
+      ["formation", "Formation", "texte"], ["profession", "Profession", "texte"],
+      ["photo", "Photo (chemin, ex. assets/img/candidats/id.jpg)", "texte"], ["wikipedia", "Article Wikipédia", "url"],
       ["biographie", "Biographie", "zone"], ["site_officiel", "Site officiel", "url"],
       ["pages_programme", "Pages programme (une URL par ligne)", "lignes"],
       ["programme_url", "Programme PDF", "url"], ["derniere_collecte", "Dernière collecte", "date"],

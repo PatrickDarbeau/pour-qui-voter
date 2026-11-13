@@ -422,3 +422,26 @@ a.carte.elimine { opacity: .5; filter: grayscale(.7); }
 .consigne .etape { flex: none; display: inline-grid; place-items: center; width: 1.9rem; height: 1.9rem;
   border-radius: 50%; background: #1f3a8a; color: #fff; font-weight: 700; }
 @media print { .consigne { display: none; } }
+
+/* ---------- Fiches candidats : format uniforme (photo 3:4, identité) ---------- */
+a.carte.ligne-candidat { display: flex; align-items: center; gap: .9rem; }
+.ligne-texte { flex: 1; min-width: 0; }
+.vignette { flex: none; width: 48px; height: 64px; object-fit: cover; border-radius: 4px; border: 1px solid var(--bord); background: var(--papier-2); }
+.sans-photo { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; color: var(--doux); }
+.fiche-tete { display: grid; grid-template-columns: 150px 1fr; gap: 1.2rem 1.5rem; align-items: start; border-top: 6px solid var(--c, var(--bleu)); }
+.fiche-tete h1 { margin-top: 0; }
+.fiche-photo { margin: 0; }
+.portrait { display: block; width: 150px; height: 200px; object-fit: cover; border-radius: 6px; border: 1px solid var(--bord); background: var(--papier-2); font-size: 2.5rem; }
+.fiche-photo figcaption { font-size: .72rem; line-height: 1.3; color: var(--doux); margin-top: .35rem; overflow-wrap: anywhere; }
+.fiche-parti { margin: .2rem 0 .8rem; }
+.identite { display: grid; grid-template-columns: max-content 1fr; gap: .35rem 1rem; margin: 0; }
+.identite dt { font-weight: 700; color: var(--doux); }
+.identite dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 560px) {
+  .fiche-tete { grid-template-columns: 1fr; }
+  .fiche-photo { display: flex; gap: .8rem; align-items: end; }
+  .portrait { width: 105px; height: 140px; }
+  .identite { grid-template-columns: 1fr; gap: 0 0; }
+  .identite dd { margin-bottom: .4rem; }
+}
+@media print { .fiche-tete { break-inside: avoid; } .vignette { display: none; } }

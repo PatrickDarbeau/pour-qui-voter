@@ -5,11 +5,16 @@ Source de vérité des fiches : modifier ce fichier, puis lancer
 qui régénère data/brouillon/candidats.json et docs/fiches_candidats.md.
 
 Règles : faits vérifiables uniquement, formulation neutre, chaque information sourcée.
-Couleurs : palette neutre (pas de couleurs partisanes, CDC §5 « neutralité »).
+Couleurs : choisies par l'éditeur le 13/11/2026 pour refléter la tendance politique de chaque candidat
+(décision qui remplace la palette neutre initiale).
+Profils (naissance, formation, profession) : extraits de Wikipédia en français (article cité dans les sources) ;
+portraits : Wikimedia Commons, licences libres, crédits affichés sur la fiche (voir outils/portraits.py).
 Liste retenue : docs/candidatures_probables.txt (10 candidats, validée le 12/11/2026).
 """
 import json
 import sys
+
+from portraits import PORTRAITS
 from datetime import date
 from pathlib import Path
 
@@ -18,8 +23,48 @@ if hasattr(sys.stdout, "reconfigure"):
 RACINE = Path(__file__).resolve().parent.parent
 CONSULTE = "2026-11-12"
 
-# Palette neutre, attribuée dans l'ordre alphabétique
-PALETTE = ["#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02", "#a6761d", "#1f78b4", "#b15928", "#6a3d9a"]
+# Couleurs relevées dans le mode Édition le 13/11/2026 (choix de l'éditeur : tendance politique)
+COULEURS = {
+    "attal": "#0c5a43", "glucksmann": "#f38e86", "lepen": "#605aba", "lisnard": "#bf2ce8", "melenchon": "#c9131c",
+    "philippe": "#02dfe3", "retailleau": "#0d69af", "riner": "#0074c2", "roussel": "#f32b2b", "zemmour": "#6a3d9a",
+}
+
+WIKI = "https://fr.wikipedia.org/wiki/"
+WIKI_CONSULTE = "2026-11-13"
+# Profils extraits de Wikipédia (infobox et sections « Études » / « Formation » / « Carrière ») — format uniforme :
+#   naissance : (date ISO, « Ville (département ou pays) ») ; formation et profession : courtes, éléments séparés par « ; »
+PROFILS = {
+    "attal": {"wikipedia": WIKI + "Gabriel_Attal", "naissance": ("1989-03-16", "Clamart (Hauts-de-Seine)"),
+              "formation": "Sciences Po Paris (master en affaires publiques, 2013)",
+              "profession": "Conseiller en cabinet ministériel (2012-2017)"},
+    "glucksmann": {"wikipedia": WIKI + "Raphaël_Glucksmann", "naissance": ("1979-10-15", "Boulogne-Billancourt (Hauts-de-Seine)"),
+                   "formation": "Sciences Po Paris",
+                   "profession": "Réalisateur de documentaires ; journaliste ; essayiste"},
+    "lepen": {"wikipedia": WIKI + "Marine_Le_Pen", "naissance": ("1968-08-05", "Neuilly-sur-Seine (Hauts-de-Seine)"),
+              "formation": "Université Panthéon-Assas (droit)",
+              "profession": "Avocate"},
+    "lisnard": {"wikipedia": WIKI + "David_Lisnard", "naissance": ("1969-02-02", "Limoges (Haute-Vienne)"),
+                "formation": "Sciences Po Bordeaux (1992) ; université Paris-Panthéon-Assas (droit public)",
+                "profession": "Journaliste pigiste ; commerçant"},
+    "melenchon": {"wikipedia": WIKI + "Jean-Luc_Mélenchon", "naissance": ("1951-08-19", "Tanger (Maroc)"),
+                  "formation": "Université de Franche-Comté",
+                  "profession": "Professeur de français ; journaliste"},
+    "philippe": {"wikipedia": WIKI + "Édouard_Philippe", "naissance": ("1970-11-28", "Rouen (Seine-Maritime)"),
+                 "formation": "Sciences Po Paris ; École nationale d'administration (ENA)",
+                 "profession": "Haut fonctionnaire (Conseil d'État) ; avocat"},
+    "retailleau": {"wikipedia": WIKI + "Bruno_Retailleau", "naissance": ("1960-11-20", "Cholet (Maine-et-Loire)"),
+                   "formation": "Sciences Po Paris ; Nantes Université",
+                   "profession": "Dirigeant de société"},
+    "riner": {"wikipedia": WIKI + "Teddy_Riner", "naissance": ("1989-04-07", "Pointe-à-Pitre (Guadeloupe)"),
+              "formation": "INSEP ; Sciences Po (certificat pour sportifs de haut niveau, 2011-2015)",
+              "profession": "Judoka"},
+    "roussel": {"wikipedia": WIKI + "Fabien_Roussel", "naissance": ("1969-04-16", "Béthune (Pas-de-Calais)"),
+                "formation": "CFPJ (journaliste reporter d'images)",
+                "profession": "Journaliste"},
+    "zemmour": {"wikipedia": WIKI + "Éric_Zemmour", "naissance": ("1958-08-31", "Montreuil (Seine)"),
+                "formation": "Sciences Po Paris",
+                "profession": "Journaliste ; écrivain ; essayiste"},
+}
 
 CANDIDATS = [
     {
@@ -128,13 +173,20 @@ def main():
     if sortie.exists():
         anciens = {x["id"]: x for x in json.loads(sortie.read_text(encoding="utf-8")).get("candidats", [])}
     fiches = []
-    for k, c in enumerate(sorted(CANDIDATS, key=lambda x: x["nom"])):
+    assert set(COULEURS) == set(PROFILS) == set(PORTRAITS) == set(ids), "couleur, profil ou portrait manquant"
+    for c in sorted(CANDIDATS, key=lambda x: x["nom"]):
+        pr, ph = PROFILS[c["id"]], PORTRAITS[c["id"]]
         fiches.append({
             "id": c["id"], "prenom": c["prenom"], "nom": c["nom"], "parti": c["parti"],
-            "couleur": PALETTE[k % len(PALETTE)], "biographie": c["biographie"], "slogan": c["slogan"],
-            "photo": None, "site_officiel": c["site_officiel"],
+            "couleur": COULEURS[c["id"]], "biographie": c["biographie"], "slogan": c["slogan"],
+            "date_naissance": pr["naissance"][0], "lieu_naissance": pr["naissance"][1],
+            "formation": pr["formation"], "profession": pr["profession"],
+            "wikipedia": pr["wikipedia"], "wikipedia_consulte": WIKI_CONSULTE,
+            "photo": f"assets/img/candidats/{c['id']}.jpg",
+            "photo_credit": {"auteur": ph["auteur"], "licence": ph["licence"], "licence_url": ph["licence_url"], "source": ph["page"]},
+            "site_officiel": c["site_officiel"],
             "pages_programme": c.get("pages_programme", []), "programme_url": None, "statut": "declare",
-            "derniere_collecte": anciens.get(c["id"], {}).get("derniere_collecte"), "sources_profil": c["sources"], "consulte_le": CONSULTE,
+            "derniere_collecte": anciens.get(c["id"], {}).get("derniere_collecte"), "sources_profil": c["sources"] + [pr["wikipedia"]], "consulte_le": CONSULTE,
             "a_verifier": c["a_verifier"],
         })
     sortie = RACINE / "data" / "brouillon" / "candidats.json"
@@ -144,17 +196,24 @@ def main():
     L = ["# Fiches de profil des candidats — brouillon à relire (lot 7, étape 3)", "",
          f"*Généré par `python outils/candidats.py` le {date.today().strftime('%d/%m/%Y')}. Sources consultées le {CONSULTE}. "
          "Liste retenue : `docs/candidatures_probables.txt`.*", "",
-         f"**{len(fiches)} candidats.** Biographies limitées à des faits vérifiables et sourcés ; couleurs neutres (pas de couleurs partisanes).", "",
-         "| Candidat | Parti | Biographie | Site | Points à vérifier |", "|---|---|---|---|---|"]
+         f"**{len(fiches)} candidats.** Biographies limitées à des faits vérifiables et sourcés ; couleurs choisies par l'éditeur (tendance politique). "
+         f"Naissance, formation et profession : Wikipédia, consulté le {WIKI_CONSULTE}.", "",
+         "| Candidat | Parti | Naissance | Formation | Profession | Biographie | Site | Points à vérifier |", "|---|---|---|---|---|---|---|---|"]
     for f in fiches:
         c = next(x for x in CANDIDATS if x["id"] == f["id"])
         site = f"[{c['site_type']}]({f['site_officiel']})" if f["site_officiel"] else "—"
-        L.append(f"| **{f['prenom']} {f['nom']}** | {f['parti']} | {f['biographie']}"
+        j = date.fromisoformat(f["date_naissance"])
+        L.append(f"| **{f['prenom']} {f['nom']}** | {f['parti']} | {j.strftime('%d/%m/%Y')}, {f['lieu_naissance']} "
+                 f"| {f['formation']} | {f['profession']} | {f['biographie']}"
                  + (f" Slogan : « {f['slogan']} »." if f["slogan"] else "")
                  + f" | {site} | {'<br>'.join('☐ ' + v for v in f['a_verifier']) or '—'} |")
     L += ["", "## Sources des fiches", ""]
     for f in fiches:
         L.append(f"- **{f['prenom']} {f['nom']}** : " + " · ".join(f"<{u}>" for u in f["sources_profil"]))
+    L += ["", "## Portraits (Wikimedia Commons)", "", "| Candidat | Auteur | Licence | Fichier |", "|---|---|---|---|"]
+    for f in fiches:
+        pc = f["photo_credit"]
+        L.append(f"| {f['prenom']} {f['nom']} | {pc['auteur']} | [{pc['licence']}]({pc['licence_url']}) | <{pc['source']}> |")
     L += ["", "Type de site : *campagne* = site de campagne du candidat ; *parti* ou *mouvement* = site de sa formation, "
           "en attendant un site de campagne. Tous les sites ont été vérifiés accessibles le 12/11/2026.", ""]
     (RACINE / "docs" / "fiches_candidats.md").write_text("\n".join(L), encoding="utf-8")

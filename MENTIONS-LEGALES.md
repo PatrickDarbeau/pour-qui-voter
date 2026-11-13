@@ -37,3 +37,5 @@ La version téléchargée de l'application n'est hébergée nulle part : elle fo
 - **Données** (mesures, positions, fiches) : **Creative Commons BY-SA 4.0** (fichier `LICENCE-DONNEES`). Réutilisation libre en citant « Pour qui voter ? » et en partageant dans les mêmes conditions.
 - Les courtes citations extraites des programmes et sites des candidats restent la propriété de leurs auteurs ; elles sont reproduites au titre du droit de courte citation, avec indication de la source.
 - Les noms des candidats et des partis sont utilisés à des fins d'information uniquement.
+- **Portraits des candidats** : photographies issues de Wikimedia Commons, sous licence libre (CC0, CC BY, CC BY-SA) ou réutilisables avec mention de la source (Parlement européen). Elles ont été recadrées au format 3:4. L'auteur, la licence et le lien vers le fichier d'origine sont indiqués sous chaque photo, sur la fiche du candidat. Le détail figure dans `docs/fiches_candidats.md`.
+- **Naissance, formation et profession** des candidats : informations extraites de Wikipédia en français (texte sous licence CC BY-SA 4.0), avec un lien vers l'article sur chaque fiche.

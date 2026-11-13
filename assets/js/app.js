@@ -32,6 +32,20 @@
     ? D.second_tour.qualifies : null;
   const mesuresDuTheme = (t) => mesuresActives.filter((m) => m.theme === t);
   const nomComplet = (c) => `${c.prenom || ""} ${c.nom}`.trim();
+  const NON_RENSEIGNE = '<span class="doux">non renseigné</span>';
+  // « 16 mars 1989 (37 ans) à Clamart (Hauts-de-Seine) » — âge calculé à la date de consultation
+  function naissance(c) {
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(c.date_naissance || "");
+    if (!m) return "";
+    const j = new Date(+m[1], +m[2] - 1, +m[3]), auj = new Date();
+    const age = auj.getFullYear() - j.getFullYear() - (auj < new Date(auj.getFullYear(), j.getMonth(), j.getDate()) ? 1 : 0);
+    return `${j.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })} (${age} ans)${c.lieu_naissance ? ` à ${c.lieu_naissance}` : ""}`;
+  }
+  const lienExterne = (url, texte) => `<a href="${esc(url)}" rel="noopener noreferrer" target="_blank">${esc(texte)}</a>`;
+  function portrait(c, classe) {
+    return c.photo ? `<img class="${classe}" src="${esc(c.photo)}" alt="Portrait de ${esc(nomComplet(c))}" width="150" height="200">`
+      : `<span class="${classe} sans-photo" aria-hidden="true">${esc((c.prenom || "")[0] || "")}${esc((c.nom || "")[0] || "")}</span>`;
+  }
   // Couleur propre à chaque thème (validée pour éviter toute injection CSS)
   const thStyle = (t) => (t && /^#[0-9a-f]{3,8}$/i.test(t.couleur || "") ? `style="--c:${t.couleur}"` : "");
   const pct = (v) => (v === null || v === undefined ? "—" : v.toLocaleString("fr-FR") + " %");
@@ -314,12 +328,15 @@
     return `<h1>Les candidats</h1>${T2 ? '<p class="doux">Second tour : les deux candidats qualifiés sont en tête ; les autres sont grisés.</p>' : ""}` + ordre.map((c) => {
       const elimine = T2 && !T2.includes(c.id);
       const attente = !D.positions.some((p) => p.candidat === c.id && p.valeur !== 0);
-      return `<a class="carte bulletin ${elimine ? "elimine" : ""}" href="#/candidat/${esc(c.id)}">
-        <strong><span class="pastille" style="background:${couleurBarre(c)}"></span>${esc(nomComplet(c))}</strong>
-        <span class="doux">— ${esc(c.parti)}</span>
-        ${T2 ? (elimine ? '<span class="badge">Non qualifié</span>' : '<span class="badge qualifie">Qualifié au second tour</span>') : ""}
-        ${attente ? '<span class="badge">Positions non encore saisies</span>' : ""}
-        <br><em>${esc(c.slogan || "")}</em>
+      return `<a class="carte bulletin ligne-candidat ${elimine ? "elimine" : ""}" href="#/candidat/${esc(c.id)}">
+        ${portrait(c, "vignette")}
+        <span class="ligne-texte">
+          <strong><span class="pastille" style="background:${couleurBarre(c)}"></span>${esc(nomComplet(c))}</strong>
+          <span class="doux">— ${esc(c.parti)}</span>
+          ${T2 ? (elimine ? '<span class="badge">Non qualifié</span>' : '<span class="badge qualifie">Qualifié au second tour</span>') : ""}
+          ${attente ? '<span class="badge">Positions non encore saisies</span>' : ""}
+          <br><em>${c.slogan ? esc(c.slogan) : "&nbsp;"}</em>
+        </span>
       </a>`;
     }).join("");
   }
@@ -339,11 +356,30 @@
       }).join("")}</tbody></table>`).join("");
     return `
       <p><a href="#/candidats">← Tous les candidats</a></p>
-      <h1><span class="pastille" style="background:${couleurBarre(c)}"></span>${esc(nomComplet(c))}</h1>
-      <p><strong>${esc(c.parti)}</strong>${c.slogan ? ` — « ${esc(c.slogan)} »` : ""}</p>
-      <p>${esc(c.biographie || "")}</p>
+      <section class="carte fiche-tete" style="--c:${couleurBarre(c)}">
+        <figure class="fiche-photo">
+          ${portrait(c, "portrait")}
+          ${c.photo_credit ? `<figcaption>Photo : ${esc(c.photo_credit.auteur)}${c.photo_credit.licence ? ` — ${c.photo_credit.licence_url
+            ? lienExterne(c.photo_credit.licence_url, c.photo_credit.licence) : esc(c.photo_credit.licence)}` : ""}${c.photo_credit.source
+            ? ` — ${lienExterne(c.photo_credit.source, "Wikimedia Commons")}` : ""}</figcaption>` : ""}
+        </figure>
+        <div class="fiche-identite">
+          <h1><span class="pastille" style="background:${couleurBarre(c)}"></span>${esc(nomComplet(c))}</h1>
+          <p class="fiche-parti"><strong>${esc(c.parti || "")}</strong>${c.slogan ? ` — « ${esc(c.slogan)} »` : ""}</p>
+          <dl class="identite">
+            <dt>Naissance</dt><dd>${esc(naissance(c)) || NON_RENSEIGNE}</dd>
+            <dt>Formation</dt><dd>${esc(c.formation) || NON_RENSEIGNE}</dd>
+            <dt>Profession</dt><dd>${esc(c.profession) || NON_RENSEIGNE}</dd>
+            <dt>Site officiel</dt><dd>${c.site_officiel ? lienExterne(c.site_officiel, c.site_officiel.replace(/^https?:\/\/(www\.)?/, "")) : NON_RENSEIGNE}</dd>
+          </dl>
+        </div>
+      </section>
+      <h2>Parcours</h2>
+      <p>${esc(c.biographie || "") || NON_RENSEIGNE}</p>
+      ${c.wikipedia ? `<p class="doux sources-profil"><small>Naissance, formation et profession : ${lienExterne(c.wikipedia, "Wikipédia")}${c.wikipedia_consulte
+        ? `, consulté le ${new Date(c.wikipedia_consulte).toLocaleDateString("fr-FR")}` : ""}.</small></p>` : ""}
       ${Object.values(pos).some((p) => p.valeur !== 0) ? "" : `<p class="carte en-attente">⏳ Les positions de ce candidat n’ont pas encore été relevées : il n’est pas classé dans les résultats.</p>`}
-      ${c.site_officiel ? `<p>Site officiel : <a href="${esc(c.site_officiel)}" rel="noopener noreferrer" target="_blank">${esc(c.site_officiel)}</a></p>` : ""}
+      <h2>Positions par thème</h2>
       ${sections}
       <div class="actions">
         <a class="btn secondaire" href="#/candidats">← Tous les candidats</a>
@@ -552,6 +588,8 @@
         <li><strong>Données</strong> (mesures, positions, fiches) : <strong>Creative Commons BY-SA 4.0</strong> (fichier <code>LICENCE-DONNEES</code>).
           Réutilisation libre en citant « Pour qui voter ? » et en partageant dans les mêmes conditions.</li>
         <li>Les courtes citations des programmes restent la propriété de leurs auteurs et sont reproduites au titre du droit de courte citation, avec leur source.</li>
+        <li><strong>Portraits</strong> : photographies de Wikimedia Commons sous licence libre, ou réutilisables avec mention de la source ; auteur et licence sous chaque photo.
+          <strong>Naissance, formation, profession</strong> : Wikipédia (CC BY-SA 4.0), avec un lien vers l'article sur chaque fiche.</li>
       </ul>
       <p class="doux">Code source : ${lien(CONFIG.depot)} · Données : version ${esc(D.version)}${D.licence ? ` (${esc(D.licence)})` : ""}</p>
       ${boutonsBasDePage()}`;
