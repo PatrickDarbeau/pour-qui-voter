@@ -19,7 +19,43 @@
 2. **Give your opinion on each measure** (for / against / indifferent) and mark the ones that are essential to you with a ★ (they count three times).
 3. **See the ranking** of candidates, with the details of agreements and disagreements, each backed by a link to the source (the candidate's campaign site first, then the party site, then reputable press, flagged as such).
 
-The scoring method is fully documented in the app (*Méthode* page) and implemented in [`assets/js/score.js`](assets/js/score.js).
+## Results and method
+
+![Results page (demo pack, fictional candidates)](docs/captures/resultats.png)
+
+*Results page shown with the demonstration pack: the candidates are fictional.*
+
+### What the results page shows
+
+- **The ranking** of candidates by agreement rate (0 to 100 %), with a bar in the candidate's colour. The first one is marked *Vote préférentiel* (closest to your choices).
+- **Coverage** for each candidate: the share of your measures on which the candidate has a known position. A low coverage means the score rests on few elements.
+- **Ties** (*Ex æquo*): candidates less than 2 points behind the first one are flagged, because the difference is not significant.
+- **The detail** for each candidate: agreements, disagreements and measures without a known position, grouped by theme, each with a link to its source; plus the score theme by theme.
+- **Your profile by theme**: a radar chart of the three closest candidates and a heat map of all candidates, theme by theme.
+- Candidates whose positions have not been collected yet are **listed apart, not ranked**. In second-round mode, the comparison is limited to the two qualified candidates (with a link to see all first-round candidates).
+- The results can be **printed or saved as PDF**, and shared with a link that contains the answers (nothing is sent anywhere).
+
+### How the score is computed
+
+1. **Each measure earns or costs points.** Your opinion (for = +1, against = −1) is multiplied by the candidate's position (supports = +1, partly supports = +½, no position = 0, opposes = −1). Measures you marked *Indifférent* are left out.
+
+   | Your opinion | Supports | Partly supports | No position | Opposes |
+   |---|---|---|---|---|
+   | For | +1 | +½ | 0 | −1 |
+   | Against | −1 | −½ | 0 | +1 |
+
+2. **What matters to you weighs more.** A measure in a priority theme counts ×2, a measure marked ★ essential counts ×3, and both combine (×6). Without these choices, every measure has weight 1.
+3. **The total becomes a percentage.** The weighted sum, which ranges from −(sum of weights) to +(sum of weights), is mapped to 0–100 %:
+
+   `score = (Σ weight × opinion × position ÷ Σ weight + 1) ÷ 2 × 100`
+
+   100 % means agreement on everything, 50 % as many agreements as disagreements (or no known position), 0 % disagreement on everything.
+
+**Example**: three measures, health is a priority theme. "Recruit care workers" (health, ★): for / supports, weight 2 × 3 = 6, +6 points. "Raise the minimum wage": for / partly supports, weight 1, +0.5. "Tax kerosene": against / supports, weight 1, −1. Total +5.5 out of a maximum of 8, so (5.5 + 8) ÷ 16 × 100 = **84.4 %**.
+
+**Where positions come from**: first the candidate's official site and programme, then the party site, then reputable press. Every position comes with its source; a position taken only from the press or an interview is marked *à confirmer* (to be confirmed). The result is a guide, not a voting instruction.
+
+The method is explained in plain French in the app (*Méthode* page) and implemented in [`assets/js/score.js`](assets/js/score.js), tested by [`tests/score.test.js`](tests/score.test.js).
 
 ## Key principles
 

@@ -19,7 +19,43 @@
 2. **Donnez votre avis sur chaque mesure** (je soutiens / je m'oppose / indifférent) et marquez d'une ★ celles qui vous sont essentielles (elles comptent triple).
 3. **Découvrez le classement** des candidats, avec le détail des accords et désaccords, chacun appuyé d'un lien vers la source (d'abord le site de campagne du candidat, puis le site du parti, puis la presse de référence, signalée comme telle).
 
-La méthode de calcul est entièrement décrite dans l'application (page *Méthode*) et programmée dans [`assets/js/score.js`](assets/js/score.js).
+## Résultats - Méthode
+
+![Page de résultats (pack de démonstration, candidats fictifs)](docs/captures/resultats.png)
+
+*Page de résultats affichée avec le pack de démonstration : les candidats sont fictifs.*
+
+### Ce que montre la page de résultats
+
+- **Le classement** des candidats selon leur taux de concordance (de 0 à 100 %), avec une barre à la couleur du candidat. Le premier porte la mention *Vote préférentiel* (le plus proche de vos choix).
+- **La couverture** de chaque candidat : la part de vos mesures sur lesquelles il a une position connue. Une couverture faible signifie que le score repose sur peu d'éléments.
+- **Les ex æquo** : les candidats à moins de 2 points du premier sont signalés, car l'écart n'est pas significatif.
+- **Le détail** pour chaque candidat : accords, désaccords et mesures sans position connue, regroupés par thème, chacun avec le lien vers sa source ; ainsi que le score thème par thème.
+- **Votre profil par thème** : un radar des trois candidats les plus proches et une carte de chaleur de tous les candidats, thème par thème.
+- Les candidats dont les positions n'ont pas encore été relevées sont **listés à part, sans être classés**. En mode second tour, la comparaison est limitée aux deux qualifiés (avec un lien pour voir tous les candidats du premier tour).
+- Les résultats peuvent être **imprimés ou enregistrés en PDF**, et partagés par un lien qui contient les réponses (rien n'est envoyé nulle part).
+
+### Comment le score est calculé
+
+1. **Chaque mesure rapporte ou fait perdre des points.** Votre avis (pour = +1, contre = −1) est multiplié par la position du candidat (soutient = +1, soutient en partie = +½, ne se prononce pas = 0, s'oppose = −1). Les mesures marquées *Indifférent* ne comptent pas.
+
+   | Votre avis | Soutient | Soutient en partie | Ne se prononce pas | S'oppose |
+   |---|---|---|---|---|
+   | Je soutiens | +1 | +½ | 0 | −1 |
+   | Je m'oppose | −1 | −½ | 0 | +1 |
+
+2. **Ce qui compte pour vous pèse plus lourd.** Une mesure d'un thème prioritaire compte ×2, une mesure marquée ★ essentielle compte ×3, et les deux se cumulent (×6). Sans ces choix, chaque mesure a le poids 1.
+3. **Le total devient un pourcentage.** La somme pondérée, comprise entre −(somme des poids) et +(somme des poids), est ramenée sur l'échelle 0–100 % :
+
+   `score = (Σ poids × avis × position ÷ Σ poids + 1) ÷ 2 × 100`
+
+   100 % : accord sur tout ; 50 % : autant d'accords que de désaccords (ou aucune position connue) ; 0 % : désaccord sur tout.
+
+**Exemple** : trois mesures, la santé est un thème prioritaire. « Recruter des soignants » (santé, ★) : pour / soutient, poids 2 × 3 = 6, +6 points. « Augmenter le SMIC » : pour / soutient en partie, poids 1, +0,5. « Taxer le kérosène » : contre / soutient, poids 1, −1. Total +5,5 sur un maximum de 8, soit (5,5 + 8) ÷ 16 × 100 = **84,4 %**.
+
+**Origine des positions** : d'abord le site officiel et le programme du candidat, puis le site du parti, puis la presse de référence. Chaque position est accompagnée de sa source ; une position tirée seulement de la presse ou d'une interview est marquée « à confirmer ». Le résultat est un éclairage, pas une consigne de vote.
+
+La méthode est expliquée simplement dans l'application (page *Méthode*), programmée dans [`assets/js/score.js`](assets/js/score.js) et testée par [`tests/score.test.js`](tests/score.test.js).
 
 ## Principes
 
