@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "version": "2026.11.13-test.2",
+  "version": "2026.11.13-test.3",
   "date": "2026-11-13",
   "origine": "officiel",
   "demo": false,
@@ -1559,6 +1559,79 @@
   ],
   "candidats": [
     {
+      "id": "arthaud",
+      "prenom": "Nathalie",
+      "nom": "Arthaud",
+      "parti": "Lutte ouvrière",
+      "couleur": "#8b0a14",
+      "biographie": "Porte-parole de Lutte ouvrière. Candidate à l'élection présidentielle en 2012, 2017 et 2022 ; 2027 est sa quatrième candidature.",
+      "slogan": null,
+      "date_naissance": "1970-02-23",
+      "lieu_naissance": "Peyrins (Drôme)",
+      "formation": "Classes préparatoires (lycée du Parc, Lyon) ; agrégation d'économie et de gestion",
+      "profession": "Professeure d'économie et de gestion en lycée",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Nathalie_Arthaud",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/arthaud.jpg",
+      "photo_credit": {
+        "auteur": "Kokluts (2024)",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Nathalie_Arthaud_(LO)_19-05-2024.jpg"
+      },
+      "site_officiel": "https://www.nathalie-arthaud.info",
+      "pages_programme": [],
+      "programme_url": null,
+      "statut": "declare",
+      "derniere_collecte": null,
+      "sources_profil": [
+        "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+        "https://www.nathalie-arthaud.info",
+        "https://fr.wikipedia.org/wiki/Nathalie_Arthaud"
+      ],
+      "consulte_le": "2026-11-12",
+      "a_verifier": [
+        "Positions non encore relevées (candidat ajouté le 13/11/2026) : listé, non classé"
+      ]
+    },
+    {
+      "id": "asselineau",
+      "prenom": "François",
+      "nom": "Asselineau",
+      "parti": "Union populaire républicaine",
+      "couleur": "#057c85",
+      "biographie": "Président de l'Union populaire républicaine (UPR). Candidat en 2017 ; candidature empêchée en 2012 et 2022 faute de parrainages suffisants.",
+      "slogan": null,
+      "date_naissance": "1957-09-14",
+      "lieu_naissance": "Paris (Seine)",
+      "formation": "HEC Paris (1980) ; École nationale d'administration (ENA, 1985)",
+      "profession": "Inspecteur général des finances",
+      "wikipedia": "https://fr.wikipedia.org/wiki/François_Asselineau",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/asselineau.jpg",
+      "photo_credit": {
+        "auteur": "Union populaire républicaine (2014)",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:François_ASSELINEAU.jpg"
+      },
+      "site_officiel": "https://www.upr.fr",
+      "pages_programme": [],
+      "programme_url": null,
+      "statut": "declare",
+      "derniere_collecte": null,
+      "sources_profil": [
+        "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+        "https://www.upr.fr",
+        "https://fr.wikipedia.org/wiki/François_Asselineau"
+      ],
+      "consulte_le": "2026-11-12",
+      "a_verifier": [
+        "Positions non encore relevées (candidat ajouté le 13/11/2026) : listé, non classé",
+        "Site de campagne asselineau2027.fr réservé mais vide le 13/11/2026"
+      ]
+    },
+    {
       "id": "attal",
       "prenom": "Gabriel",
       "nom": "Attal",
@@ -1592,6 +1665,42 @@
       "consulte_le": "2026-11-12",
       "a_verifier": [
         "Site de campagne attalpresident.fr trouvé le 13/11/2026 (édité par Renaissance) : programme publié mesure par mesure"
+      ]
+    },
+    {
+      "id": "dupont_aignan",
+      "prenom": "Nicolas",
+      "nom": "Dupont-Aignan",
+      "parti": "Debout la France",
+      "couleur": "#1f2f6b",
+      "biographie": "Président de Debout la France et maire de Yerres. Député de l'Essonne jusqu'en 2024. Candidat en 2012, 2017 et 2022 ; 2027 est sa quatrième candidature.",
+      "slogan": null,
+      "date_naissance": "1961-03-07",
+      "lieu_naissance": "Paris 15e (Seine)",
+      "formation": "Sciences Po Paris ; université Paris-Dauphine ; École nationale d'administration (ENA)",
+      "profession": "Administrateur civil",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/dupont_aignan.jpg",
+      "photo_credit": {
+        "auteur": "Debout la France (2019)",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Nicolas_Dupont-Aignan,_homme_politique_français.jpg"
+      },
+      "site_officiel": "https://www.debout-la-france.fr",
+      "pages_programme": [],
+      "programme_url": null,
+      "statut": "declare",
+      "derniere_collecte": null,
+      "sources_profil": [
+        "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+        "https://www.debout-la-france.fr",
+        "https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan"
+      ],
+      "consulte_le": "2026-11-12",
+      "a_verifier": [
+        "Positions non encore relevées (candidat ajouté le 13/11/2026) : listé, non classé"
       ]
     },
     {
@@ -1842,6 +1951,42 @@
       "a_verifier": []
     },
     {
+      "id": "philippot",
+      "prenom": "Florian",
+      "nom": "Philippot",
+      "parti": "Les Patriotes",
+      "couleur": "#5a6b7d",
+      "biographie": "Président des Patriotes, parti fondé en 2017 après son départ du Front national. Ancien député européen. Candidature empêchée en 2022 faute de parrainages suffisants.",
+      "slogan": null,
+      "date_naissance": "1981-10-24",
+      "lieu_naissance": "Croix (Nord)",
+      "formation": "HEC Paris ; université Paris-Dauphine ; École nationale d'administration (ENA)",
+      "profession": "Inspecteur de l'administration",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Florian_Philippot",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/philippot.jpg",
+      "photo_credit": {
+        "auteur": "Thomas Bresson (2022)",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:2022-04-16_16-49-26_MAM-Paris_02.jpg"
+      },
+      "site_officiel": "https://les-patriotes.fr",
+      "pages_programme": [],
+      "programme_url": null,
+      "statut": "declare",
+      "derniere_collecte": null,
+      "sources_profil": [
+        "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+        "https://les-patriotes.fr",
+        "https://fr.wikipedia.org/wiki/Florian_Philippot"
+      ],
+      "consulte_le": "2026-11-12",
+      "a_verifier": [
+        "Positions non encore relevées (candidat ajouté le 13/11/2026) : listé, non classé"
+      ]
+    },
+    {
       "id": "retailleau",
       "prenom": "Bruno",
       "nom": "Retailleau",
@@ -1976,6 +2121,79 @@
       "consulte_le": "2026-11-12",
       "a_verifier": [
         "Programme détaillé (le site présente un manifeste, « VIVRE ! »)"
+      ]
+    },
+    {
+      "id": "ruffin",
+      "prenom": "François",
+      "nom": "Ruffin",
+      "parti": "Debout !",
+      "couleur": "#e4572e",
+      "biographie": "Député de la Somme depuis 2017, fondateur du journal Fakir. A quitté le groupe La France insoumise en 2024. Candidat en son nom après l'échec de son initiative de primaire unitaire à gauche.",
+      "slogan": null,
+      "date_naissance": "1975-10-18",
+      "lieu_naissance": "Calais (Pas-de-Calais)",
+      "formation": "Centre de formation des journalistes (CFJ) ; université de Picardie",
+      "profession": "Journaliste ; documentariste ; essayiste",
+      "wikipedia": "https://fr.wikipedia.org/wiki/François_Ruffin",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/ruffin.jpg",
+      "photo_credit": {
+        "auteur": "Thinkerview (2022)",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:François_Ruffin_(cropped).jpg"
+      },
+      "site_officiel": "https://debout.fr",
+      "pages_programme": [],
+      "programme_url": null,
+      "statut": "declare",
+      "derniere_collecte": null,
+      "sources_profil": [
+        "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+        "https://debout.fr",
+        "https://fr.wikipedia.org/wiki/François_Ruffin"
+      ],
+      "consulte_le": "2026-11-12",
+      "a_verifier": [
+        "Positions non encore relevées (candidat ajouté le 13/11/2026) : listé, non classé",
+        "Site de campagne : debout.fr (mouvement) ; francoisruffin.fr est son site de député"
+      ]
+    },
+    {
+      "id": "tondelier",
+      "prenom": "Marine",
+      "nom": "Tondelier",
+      "parti": "Les Écologistes",
+      "couleur": "#2e9e44",
+      "biographie": "Secrétaire nationale des Écologistes depuis 2022, conseillère régionale des Hauts-de-France et conseillère municipale d'Hénin-Beaumont. Candidature annoncée en octobre 2025.",
+      "slogan": null,
+      "date_naissance": "1986-08-23",
+      "lieu_naissance": "Bois-Bernard (Pas-de-Calais)",
+      "formation": "Sciences Po Lille ; master en gestion des établissements de santé",
+      "profession": "Collaboratrice parlementaire (2011-2017) ; déléguée générale d'Atmo France (2017-2022)",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Marine_Tondelier",
+      "wikipedia_consulte": "2026-11-13",
+      "photo": "assets/img/candidats/tondelier.jpg",
+      "photo_credit": {
+        "auteur": "Selbymay (2023)",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Huma2023MarineTondelier_(cropped).jpg"
+      },
+      "site_officiel": "https://marinetondelier.fr",
+      "pages_programme": [],
+      "programme_url": null,
+      "statut": "declare",
+      "derniere_collecte": null,
+      "sources_profil": [
+        "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+        "https://marinetondelier.fr",
+        "https://fr.wikipedia.org/wiki/Marine_Tondelier"
+      ],
+      "consulte_le": "2026-11-12",
+      "a_verifier": [
+        "Positions non encore relevées (candidat ajouté le 13/11/2026) : listé, non classé"
       ]
     },
     {
@@ -5821,6 +6039,6 @@
     }
   ],
   "journal": [
-    "Pack de test : 158 mesures, 10 candidats dont 9 avec positions en brouillon à relire ; positions non encore saisies : Riner."
+    "Pack de test : 158 mesures, 16 candidats dont 9 avec positions en brouillon à relire ; positions non encore saisies : Arthaud, Asselineau, Dupont-Aignan, Philippot, Riner, Ruffin, Tondelier."
   ]
 }

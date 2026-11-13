@@ -5,7 +5,7 @@ Télécharge chaque portrait (vignette Commons de 960 px), le recadre au format 
 (cadrage haut : tête et épaules) et l'enregistre en 300 × 400 px dans assets/img/candidats/<id>.jpg.
 
 Le crédit (auteur, licence, page du fichier) est repris dans la fiche par outils/candidats.py
-et affiché sous la photo dans l'application. Fichiers choisis le 13/11/2026 : portrait de face ou de trois quarts,
+et affiché sous la photo dans l'application. Fichiers choisis le 13/11/2026 (portrait de l'infobox Wikipédia pour les six candidats ajoutés le même jour) : portrait de face ou de trois quarts,
 le plus récent disponible sous licence libre.
 """
 import io
@@ -34,9 +34,16 @@ def _p(fichier, vignette, auteur, licence, haut=0.0):
 T = "https://upload.wikimedia.org/wikipedia/commons/thumb/"
 U = "https://upload.wikimedia.org/wikipedia/commons/"
 PORTRAITS = {
+    "arthaud": _p("Nathalie_Arthaud_(LO)_19-05-2024.jpg",
+                  U + "6/6b/Nathalie_Arthaud_%28LO%29_19-05-2024.jpg", "Kokluts (2024)", CC_BYSA4),
+    "asselineau": _p("François_ASSELINEAU.jpg",
+                     T + "b/b4/Fran%C3%A7ois_ASSELINEAU.jpg/960px-Fran%C3%A7ois_ASSELINEAU.jpg",
+                     "Union populaire républicaine (2014)", CC_BYSA4),
     "attal": _p("Gabriel_Attal_2025_(close_crop).jpg",
                 T + "c/c4/Gabriel_Attal_2025_%28close_crop%29.jpg/960px-Gabriel_Attal_2025_%28close_crop%29.jpg",
                 "Ismail Aissoub (2025)", CC_BY4),
+    "dupont_aignan": _p("Nicolas_Dupont-Aignan,_homme_politique_français.jpg",
+                        U + "1/13/Nicolas_Dupont-Aignan%2C_homme_politique_fran%C3%A7ais.jpg", "Debout la France (2019)", CC_BYSA4),
     "glucksmann": _p("1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg",
                      T + "1/1f/1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg/960px-1720448398743_20240708_GLUCKSMANN_Raphael_FR_006.jpg",
                      "© Union européenne 2024 – Source : Parlement européen",
@@ -50,6 +57,9 @@ PORTRAITS = {
     "melenchon": _p("Jean_Luc_Mélenchon_en_mai_2026-_55261894422_(cropped).jpg",
                     U + "3/3e/Jean_Luc_M%C3%A9lenchon_en_mai_2026-_55261894422_%28cropped%29.jpg",
                     "jlm2017.fr (2026)", CC_BY4),
+    "philippot": _p("2022-04-16_16-49-26_MAM-Paris_02.jpg",
+                    T + "5/5c/2022-04-16_16-49-26_MAM-Paris_02.jpg/960px-2022-04-16_16-49-26_MAM-Paris_02.jpg",
+                    "Thomas Bresson (2022)", CC_BY4),
     "philippe": _p("Edouard_Philippe_3x4_crop.jpg", U + "a/a3/Edouard_Philippe_3x4_crop.jpg", "Wasasaq8 (2024)", CC0),
     "retailleau": _p("Bruno_Retailleau_-_Ministre_de_l'Intérieur_français_(cropped).jpg",
                      T + "6/61/Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_%28cropped%29.jpg/"
@@ -57,6 +67,8 @@ PORTRAITS = {
                      "Anthonymontardyfr (2025)", CC_BY4),
     "riner": _p("Teddy_Riner_Cannes_2016.jpg", U + "7/7f/Teddy_Riner_Cannes_2016.jpg", "Georges Biard (2016)", CC_BYSA3),
     "roussel": _p("Roussel_Fabien_1.jpg", U + "a/ae/Roussel_Fabien_1.jpg", "Zouhair Nakara (2018)", CC_BYSA4),
+    "ruffin": _p("François_Ruffin_(cropped).jpg", U + "2/2f/Fran%C3%A7ois_Ruffin_%28cropped%29.jpg", "Thinkerview (2022)", CC_BYSA4),
+    "tondelier": _p("Huma2023MarineTondelier_(cropped).jpg", U + "6/60/Huma2023MarineTondelier_%28cropped%29.jpg", "Selbymay (2023)", CC_BY4),
     "zemmour": _p("Portrait_d'Éric_Zemmour,_avril_2022.jpg",
                   T + "8/8c/Portrait_d%27%C3%89ric_Zemmour%2C_avril_2022.jpg/960px-Portrait_d%27%C3%89ric_Zemmour%2C_avril_2022.jpg",
                   "Anh De France (2022)", CC0),

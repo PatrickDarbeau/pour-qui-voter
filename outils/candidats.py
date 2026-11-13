@@ -9,7 +9,9 @@ Couleurs : choisies par l'éditeur le 13/11/2026 pour refléter la tendance poli
 (décision qui remplace la palette neutre initiale).
 Profils (naissance, formation, profession) : extraits de Wikipédia en français (article cité dans les sources) ;
 portraits : Wikimedia Commons, licences libres, crédits affichés sur la fiche (voir outils/portraits.py).
-Liste retenue : docs/candidatures_probables.txt (10 candidats, validée le 12/11/2026).
+Liste retenue : docs/candidatures_probables.txt (10 candidats, validée le 12/11/2026), complétée le 13/11/2026
+par docs/candidatures_serieuses.txt (+ François Asselineau, Nicolas Dupont-Aignan, Florian Philippot, François Ruffin,
+Marine Tondelier) et Nathalie Arthaud, à la demande de l'éditeur. Couleurs de ces six candidats : proposées le 13/11/2026, à valider.
 """
 import json
 import sys
@@ -27,6 +29,9 @@ CONSULTE = "2026-11-12"
 COULEURS = {
     "attal": "#0c5a43", "glucksmann": "#f38e86", "lepen": "#605aba", "lisnard": "#bf2ce8", "melenchon": "#c9131c",
     "philippe": "#02dfe3", "retailleau": "#0d69af", "riner": "#0074c2", "roussel": "#f32b2b", "zemmour": "#6a3d9a",
+    # Ajouts du 13/11/2026 (proposition, à valider par l'éditeur)
+    "arthaud": "#8b0a14", "asselineau": "#057c85", "dupont_aignan": "#1f2f6b", "philippot": "#5a6b7d",
+    "ruffin": "#e4572e", "tondelier": "#2e9e44",
 }
 
 WIKI = "https://fr.wikipedia.org/wiki/"
@@ -34,6 +39,24 @@ WIKI_CONSULTE = "2026-11-13"
 # Profils extraits de Wikipédia (infobox et sections « Études » / « Formation » / « Carrière ») — format uniforme :
 #   naissance : (date ISO, « Ville (département ou pays) ») ; formation et profession : courtes, éléments séparés par « ; »
 PROFILS = {
+    "arthaud": {"wikipedia": WIKI + "Nathalie_Arthaud", "naissance": ("1970-02-23", "Peyrins (Drôme)"),
+                "formation": "Classes préparatoires (lycée du Parc, Lyon) ; agrégation d'économie et de gestion",
+                "profession": "Professeure d'économie et de gestion en lycée"},
+    "asselineau": {"wikipedia": WIKI + "François_Asselineau", "naissance": ("1957-09-14", "Paris (Seine)"),
+                   "formation": "HEC Paris (1980) ; École nationale d'administration (ENA, 1985)",
+                   "profession": "Inspecteur général des finances"},
+    "dupont_aignan": {"wikipedia": WIKI + "Nicolas_Dupont-Aignan", "naissance": ("1961-03-07", "Paris 15e (Seine)"),
+                      "formation": "Sciences Po Paris ; université Paris-Dauphine ; École nationale d'administration (ENA)",
+                      "profession": "Administrateur civil"},
+    "philippot": {"wikipedia": WIKI + "Florian_Philippot", "naissance": ("1981-10-24", "Croix (Nord)"),
+                  "formation": "HEC Paris ; université Paris-Dauphine ; École nationale d'administration (ENA)",
+                  "profession": "Inspecteur de l'administration"},
+    "ruffin": {"wikipedia": WIKI + "François_Ruffin", "naissance": ("1975-10-18", "Calais (Pas-de-Calais)"),
+               "formation": "Centre de formation des journalistes (CFJ) ; université de Picardie",
+               "profession": "Journaliste ; documentariste ; essayiste"},
+    "tondelier": {"wikipedia": WIKI + "Marine_Tondelier", "naissance": ("1986-08-23", "Bois-Bernard (Pas-de-Calais)"),
+                  "formation": "Sciences Po Lille ; master en gestion des établissements de santé",
+                  "profession": "Collaboratrice parlementaire (2011-2017) ; déléguée générale d'Atmo France (2017-2022)"},
     "attal": {"wikipedia": WIKI + "Gabriel_Attal", "naissance": ("1989-03-16", "Clamart (Hauts-de-Seine)"),
               "formation": "Sciences Po Paris (master en affaires publiques, 2013)",
               "profession": "Conseiller en cabinet ministériel (2012-2017)"},
@@ -66,7 +89,57 @@ PROFILS = {
                 "profession": "Journaliste ; écrivain ; essayiste"},
 }
 
+FI = "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+VERIF_POS = "Positions non encore relevées (candidat ajouté le 13/11/2026) : listé, non classé"
 CANDIDATS = [
+    {
+        "id": "arthaud", "prenom": "Nathalie", "nom": "Arthaud", "parti": "Lutte ouvrière",
+        "biographie": "Porte-parole de Lutte ouvrière. Candidate à l'élection présidentielle en 2012, 2017 et 2022 ; 2027 est sa quatrième candidature.",
+        "slogan": None,
+        "site_officiel": "https://www.nathalie-arthaud.info", "site_type": "campagne",
+        "sources": [FI, "https://www.nathalie-arthaud.info"],
+        "a_verifier": [VERIF_POS],
+    },
+    {
+        "id": "asselineau", "prenom": "François", "nom": "Asselineau", "parti": "Union populaire républicaine",
+        "biographie": "Président de l'Union populaire républicaine (UPR). Candidat en 2017 ; candidature empêchée en 2012 et 2022 faute de parrainages suffisants.",
+        "slogan": None,
+        "site_officiel": "https://www.upr.fr", "site_type": "parti",
+        "sources": [FI, "https://www.upr.fr"],
+        "a_verifier": [VERIF_POS, "Site de campagne asselineau2027.fr réservé mais vide le 13/11/2026"],
+    },
+    {
+        "id": "dupont_aignan", "prenom": "Nicolas", "nom": "Dupont-Aignan", "parti": "Debout la France",
+        "biographie": "Président de Debout la France et maire de Yerres. Député de l'Essonne jusqu'en 2024. Candidat en 2012, 2017 et 2022 ; 2027 est sa quatrième candidature.",
+        "slogan": None,
+        "site_officiel": "https://www.debout-la-france.fr", "site_type": "parti",
+        "sources": [FI, "https://www.debout-la-france.fr"],
+        "a_verifier": [VERIF_POS],
+    },
+    {
+        "id": "philippot", "prenom": "Florian", "nom": "Philippot", "parti": "Les Patriotes",
+        "biographie": "Président des Patriotes, parti fondé en 2017 après son départ du Front national. Ancien député européen. Candidature empêchée en 2022 faute de parrainages suffisants.",
+        "slogan": None,
+        "site_officiel": "https://les-patriotes.fr", "site_type": "parti",
+        "sources": [FI, "https://les-patriotes.fr"],
+        "a_verifier": [VERIF_POS],
+    },
+    {
+        "id": "ruffin", "prenom": "François", "nom": "Ruffin", "parti": "Debout !",
+        "biographie": "Député de la Somme depuis 2017, fondateur du journal Fakir. A quitté le groupe La France insoumise en 2024. Candidat en son nom après l'échec de son initiative de primaire unitaire à gauche.",
+        "slogan": None,
+        "site_officiel": "https://debout.fr", "site_type": "mouvement",
+        "sources": [FI, "https://debout.fr"],
+        "a_verifier": [VERIF_POS, "Site de campagne : debout.fr (mouvement) ; francoisruffin.fr est son site de député"],
+    },
+    {
+        "id": "tondelier", "prenom": "Marine", "nom": "Tondelier", "parti": "Les Écologistes",
+        "biographie": "Secrétaire nationale des Écologistes depuis 2022, conseillère régionale des Hauts-de-France et conseillère municipale d'Hénin-Beaumont. Candidature annoncée en octobre 2025.",
+        "slogan": None,
+        "site_officiel": "https://marinetondelier.fr", "site_type": "campagne",
+        "sources": [FI, "https://marinetondelier.fr"],
+        "a_verifier": [VERIF_POS],
+    },
     {
         "id": "attal", "prenom": "Gabriel", "nom": "Attal", "parti": "Renaissance",
         "biographie": "Ancien Premier ministre (2024). Secrétaire général de Renaissance. Candidature annoncée le 22 mai 2026.",
@@ -195,7 +268,7 @@ def main():
 
     L = ["# Fiches de profil des candidats — brouillon à relire (lot 7, étape 3)", "",
          f"*Généré par `python outils/candidats.py` le {date.today().strftime('%d/%m/%Y')}. Sources consultées le {CONSULTE}. "
-         "Liste retenue : `docs/candidatures_probables.txt`.*", "",
+         "Listes retenues : `docs/candidatures_probables.txt`, complétée par `docs/candidatures_serieuses.txt` et Nathalie Arthaud.*", "",
          f"**{len(fiches)} candidats.** Biographies limitées à des faits vérifiables et sourcés ; couleurs choisies par l'éditeur (tendance politique). "
          f"Naissance, formation et profession : Wikipédia, consulté le {WIKI_CONSULTE}.", "",
          "| Candidat | Parti | Naissance | Formation | Profession | Biographie | Site | Points à vérifier |", "|---|---|---|---|---|---|---|---|"]

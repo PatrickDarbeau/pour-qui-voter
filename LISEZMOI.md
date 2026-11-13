@@ -82,11 +82,11 @@ La méthode est expliquée simplement dans l'application (page *Méthode*), prog
 |---|---|
 | Application | Fonctionnellement complète (questionnaire, résultats, fiches candidats, impression/PDF, lien de partage, mode Édition, mode second tour) |
 | Catalogue de mesures | 158 mesures réparties en 17 thèmes |
-| Candidats | 10 candidats probables, avec fiche (naissance, formation, profession d'après Wikipédia ; portraits sous licence libre issus de Wikimedia Commons) |
-| Positions | 380 positions **en brouillon** pour 9 candidats, en cours de relecture humaine |
+| Candidats | 16 candidats, avec fiche (naissance, formation, profession d'après Wikipédia ; portraits sous licence libre issus de Wikimedia Commons) |
+| Positions | 380 positions **en brouillon** pour 9 candidats, en cours de relecture humaine ; les 7 autres sont listés mais pas encore classés |
 | Premier pack public | Prévu le 15 janvier 2027 |
 
-Les données actuelles (`data/donnees.json`, version `2026.11.13-test`) forment un **pack de test** : ne vous en servez pas pour décider de votre vote.
+Les données actuelles (`data/donnees.json`, version `2026.11.13-test.3`) forment un **pack de test** : ne vous en servez pas pour décider de votre vote.
 
 ## Prise en main
 

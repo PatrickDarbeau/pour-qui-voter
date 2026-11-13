@@ -5,7 +5,7 @@ Entrées : data/brouillon/catalogue.json, candidats.json, positions.json
 Sortie  : data/brouillon/pack_test.json
 
 Usage :
-    python outils/assembler.py               assemble le pack de test avec les 10 candidats
+    python outils/assembler.py               assemble le pack de test avec tous les candidats retenus
                                              (ceux sans positions sont affichés « non encore saisis », hors classement)
     python outils/assembler.py --installer   l'installe aussi dans data/donnees.json + donnees.js
                                              (le pack de démo reste dans data/demo/)
