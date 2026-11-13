@@ -13,7 +13,7 @@ GitHub, Inc. — 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-U
 La version téléchargée de l'application n'est hébergée nulle part : elle fonctionne sur votre ordinateur.
 
 ## Statut de l'outil
-« Pour qui voter ? » **n'est pas un outil officiel**. Il n'est lié ni à l'État, ni à une administration, ni à un candidat, ni à un parti. Il n'accepte aucun financement de candidats, de partis ou de structures liées à une campagne.
+« Pour qui voter  ? » **n'est pas un outil officiel**. Il n'est lié ni à l'État, ni à une administration, ni à un candidat, ni à un parti. Il n'accepte aucun financement de candidats, de partis ou de structures liées à une campagne.
 
 ## Limitation de responsabilité
 - L'outil est une **aide à la réflexion**, fournie à titre purement informatif. Le résultat **n'est pas une consigne de vote** et ne remplace pas la lecture des programmes officiels des candidats.
