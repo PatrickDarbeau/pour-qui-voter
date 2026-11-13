@@ -9,6 +9,7 @@ Usage :
                                              (ceux sans positions sont affichés « non encore saisis », hors classement)
     python outils/assembler.py --installer   l'installe aussi dans data/donnees.json + donnees.js
                                              (le pack de démo reste dans data/demo/)
+    python outils/assembler.py --installer --version 2026.11.13-test.2   numéro de version imposé
 Le pack est marqué « brouillon » : l'application affiche alors un bandeau « données provisoires ».
 """
 import json
@@ -29,13 +30,15 @@ def lire(nom):
 
 
 def main():
+    # --version AAAA.MM.JJ-test.N : numéro imposé (plusieurs préversions le même jour) ; sinon date du jour + « -test »
+    version = sys.argv[sys.argv.index("--version") + 1] if "--version" in sys.argv else date.today().strftime("%Y.%m.%d") + "-test"
     cat, cands, pos = lire("catalogue.json"), lire("candidats.json")["candidats"], lire("positions.json")["positions"]
     avec_positions = {p["candidat"] for p in pos}
     candidats = cands
     attente = [c["nom"] for c in cands if c["id"] not in avec_positions]
     pack = {
         "format": 1,
-        "version": date.today().strftime("%Y.%m.%d") + "-test",
+        "version": version,
         "date": date.today().isoformat(),
         "origine": "officiel",
         "demo": False,
