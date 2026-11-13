@@ -122,6 +122,7 @@ Prérequis pour les outils et les tests : Python 3.10+ (avec Pillow pour les por
 | `python outils/assembler.py --installer` | Assemble le pack de test et l'installe dans `data/` |
 | `python outils/valider.py --publier` | Contrôle `data/donnees.json` et génère `data/donnees.js` |
 | `python outils/comparer.py` | Rédige une analyse comparative (couverture, proximités, mesures clivantes et consensuelles) |
+| `python outils/questionnaire.py` | Génère le questionnaire de réponse des candidats (CSV) et la liste des mesures par thème, à partir du catalogue installé |
 | `python outils/maj.py candidats` · `collecter` · `diff A B` · `publier --version AAAA.MM.JJ` | Mise à jour des données (voir la notice du développeur) |
 | `python outils/demo.py` | Régénère le pack de démonstration |
 | `python outils/paquet.py` | Construit l'archive ZIP pour les utilisateurs dans `dist/` |
@@ -143,6 +144,7 @@ Une démo peut être publiée sur GitHub Pages avec le workflow manuel **« Dém
 - [Notes d'enseignements](docs/enseignements/README.md) après chaque recensement
 - [Recensement des candidats](docs/recensement_candidats.md) : candidats déclarés, pressentis et retirés, recoupés entre plusieurs sources
 - [Fiches des candidats et sources](docs/fiches_candidats.md)
+- [Note aux candidats](docs/candidats/note_aux_candidats.md) : comment les équipes de campagne peuvent transmettre leur programme et répondre aux 158 mesures, avec le [questionnaire de réponse](docs/candidats/questionnaire_mesures.csv)
 
 ## Contribuer
 

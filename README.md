@@ -122,6 +122,7 @@ Requirements for the tools and tests: Python 3.10+ (with Pillow for portraits), 
 | `python outils/assembler.py --installer` | Assembles the test pack and installs it in `data/` |
 | `python outils/valider.py --publier` | Validates `data/donnees.json` and generates `data/donnees.js` |
 | `python outils/comparer.py` | Writes a comparative analysis (coverage, proximity, divisive and consensus measures) |
+| `python outils/questionnaire.py` | Generates the reply questionnaire for candidates (CSV) and the list of measures by theme, from the installed catalogue |
 | `python outils/maj.py candidats` · `collecter` · `diff A B` · `publier --version YYYY.MM.DD` | Data update workflow (see the developer notice) |
 | `python outils/demo.py` | Regenerates the demonstration pack |
 | `python outils/paquet.py` | Builds the user ZIP archive in `dist/` |
@@ -143,6 +144,7 @@ A demo can be published on GitHub Pages with the manual **"Démo en ligne"** wor
 - [Lessons-learned notes](docs/enseignements/README.md) after each data collection
 - [Census of candidates](docs/recensement_candidats.md) (in French): declared, presumed and withdrawn candidates, cross-checked across several sources
 - [Candidate profiles and sources](docs/fiches_candidats.md)
+- [Note to candidates](docs/candidats/note_aux_candidats.md) (in French): how campaigns can send their programme and answer the 158 measures, with the [reply questionnaire](docs/candidats/questionnaire_mesures.csv)
 
 ## Contributing
 

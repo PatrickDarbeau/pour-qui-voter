@@ -212,6 +212,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |13/11/2026|**Workflow « Démo en ligne »** : valeur par défaut passée à « demo » (candidats fictifs) pour éviter de publier par mégarde les données réelles non validées ; « reelles » doit être choisi explicitement|b71fd6f|
 |13/11/2026|**Préversion v2026.11.13-test.2** (favicon ; données inchangées) ; option --version de outils/assembler.py pour publier plusieurs préversions le même jour|0b6eda0|
 |13/11/2026|**Six candidats ajoutés** (Arthaud, Asselineau, Dupont-Aignan, Philippot, Ruffin, Tondelier) : fiches au format uniforme (Wikipédia, franceinfo), portraits libres (Commons), couleurs proposées à valider, sans positions (listés, non classés) ; pack 2026.11.13-test.3 (16 candidats) ; note d'enseignements n°4 et analyse comparative n°4 ; notes de la préversion test.3 prêtes|579d74f|
+|14/11/2026|**Note aux candidats** (docs/candidats/note_aux_candidats.md) : invitation à transmettre le programme et à répondre aux 158 mesures, règles de prise en compte identiques pour tous ; questionnaire de réponse généré par outils/questionnaire.py (CSV + liste par thème) ; champs à compléter avant envoi : contact, date limite, signature|à venir|
 |—|**Prochaine étape : lot 7** — tests utilisateur du pack de test ; relecture des rapports de veille d'Hermès (18/11, 23/11) puis mise à jour des positions de Le Pen, Zemmour et Riner. Premier pack réel le 15/01/2027.||
 
 \---
