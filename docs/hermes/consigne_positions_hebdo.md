@@ -1,6 +1,6 @@
 # Consigne Hermès — veille hebdomadaire des programmes et positions
 
-*Relance automatique chaque semaine (script `pqv_hebdo.sh`, crontab de la VM). Candidats traités : fichier `candidats_hebdo.txt`. Modifier ces fichiers uniquement à la demande de l'éditeur.*
+*Relance automatique chaque semaine (script `pqv_hebdo.sh`, crontab de la VM). Candidats traités : `candidats_hebdo.txt` (chaque semaine) et `candidats_rotation.txt` (un groupe par semaine, mode « complément »). Modifier ces fichiers uniquement à la demande de l'éditeur.*
 
 Projet « Pour qui voter ? » : comparateur **neutre** des programmes de l'élection présidentielle française de 2027.
 Dossier de travail : `/home/patrick/workspace/Projets/pour-qui-voter/`.
@@ -12,6 +12,14 @@ Chaque tâche traite **un seul candidat** et porte une **date de relevé** (AAAA
 Le comparateur demande à l'électeur son avis sur **158 mesures** réparties en 17 thèmes. Pour chaque candidat, il faut savoir s'il **soutient**, **soutient en partie** ou **s'oppose à** chaque mesure, preuve à l'appui. Les candidats suivis chaque semaine sont ceux dont les positions sont absentes ou incomplètes ; un candidat sans position est affiché « positions non encore saisies » et n'est pas classé.
 
 La liste des mesures se trouve dans le fichier `mesures_par_theme.md` du dossier de travail (référence de la mesure, intitulé, précision, mesure opposée). **La lire en entier avant de commencer.**
+
+## Deux modes, indiqués dans le message de lancement
+
+- **Mode « relevé »** (candidats sans positions ou presque) : relever toutes les positions, comme décrit ci-dessous.
+- **Mode « complément »** (candidats déjà saisis) : lire d'abord la section du candidat dans `positions_actuelles.md` (positions déjà saisies dans le comparateur, avec leur source). Ne pas les recopier. Chercher en priorité :
+  1. les mesures **non encore couvertes** pour lesquelles une source permet maintenant de conclure ;
+  2. une **source officielle** (campagne ou parti) pour les positions marquées « à confirmer » ;
+  3. toute position saisie que la source **contredit** ou que le candidat a **modifiée** (citer la nouvelle source).
 
 ## Travail demandé (pour le candidat de la tâche)
 
@@ -56,6 +64,21 @@ La liste des mesures se trouve dans le fichier `mesures_par_theme.md` du dossier
 - Site de campagne : `https://marinetondelier.fr` (engagements pour 2027).
 - Parti : `https://lesecologistes.fr` (projet, motions, programme 2027).
 
+### riner — Teddy Riner (sans étiquette, « La France qu'on veut »)
+- Site de campagne annoncé : `https://riner2027.fr` (erreur 530 le 13/11/2026 ; contact `contact@riner2027.fr` affiché sur son compte Instagram vérifié). Tester `https://riner2027.fr` et `https://www.riner2027.fr` ; s'ils répondent, vérifier les mentions légales.
+- À défaut : entretiens et déclarations rapportés par la presse reconnue (signalés comme presse). Domaine parqué exclu : `teddyriner2027.fr`.
+
+### Candidats en mode « complément » (déjà saisis : voir `positions_actuelles.md`)
+- **attal** — Gabriel Attal (Renaissance) : `https://attalpresident.fr/programme`.
+- **glucksmann** — Raphaël Glucksmann (Place publique) : `https://glucks2027.fr`, `https://place-publique.eu`.
+- **lepen** — Marine Le Pen (Rassemblement national) : `https://marinelepen.com`, `https://rassemblementnational.fr`. Écarter le programme de 2022 et le site `mlafrance.fr`.
+- **lisnard** — David Lisnard (Nouvelle Énergie) : `https://www.unenouvelleenergie.fr/notre-programme/`.
+- **melenchon** — Jean-Luc Mélenchon (La France insoumise) : `https://melenchon2027.fr/programme/livre/`.
+- **philippe** — Édouard Philippe (Horizons) : `https://www.edouardphilippe.fr/programme`.
+- **retailleau** — Bruno Retailleau (Les Républicains) : `https://republicains.fr/nos-propositions/`.
+- **roussel** — Fabien Roussel (Parti communiste français) : `https://www.fabienroussel2027.fr`.
+- **zemmour** — Éric Zemmour (Reconquête) : `https://www.ericzemmour.fr/priorites`.
+
 ## Livrable (un fichier par candidat, dans le dossier de travail)
 
 Nom du fichier : `<date du relevé>_positions-<candidat>.md`, par exemple `2026-11-21_positions-ruffin.md` (tirets à la place des « _ » du nom du candidat).
@@ -64,7 +87,7 @@ Nom du fichier : `<date du relevé>_positions-<candidat>.md`, par exemple `2026-
 1. **Résumé** de 5 lignes au plus : sources trouvées, existence d'un programme complet, nombre de positions relevées.
 2. **Sources** : `| URL | Nature (campagne / parti / presse) | Date | Contenu |`.
 3. **Positions** : `| Réf. mesure | Intitulé (abrégé) | Valeur (1 / 0.5 / -1) | Citation exacte | URL (et page) | Date | Nature | Déduite (oui/non) |`, dans l'ordre des thèmes de `mesures_par_theme.md`.
-4. **Changements depuis le relevé précédent** (ou « premier relevé »).
+4. **Changements depuis le relevé précédent** (ou « premier relevé ») ; en mode « complément », séparer : positions nouvelles, sources officielles trouvées pour des positions « à confirmer », positions contredites ou modifiées.
 5. **Propositions hors catalogue** : `| Thème | Proposition | Citation exacte | URL |`.
 6. **Adresses essayées sans résultat et points de vigilance.**
 

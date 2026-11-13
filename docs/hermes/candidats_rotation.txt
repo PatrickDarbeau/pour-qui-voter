@@ -1,0 +1,13 @@
+# Candidats repris À TOUR DE RÔLE pour compléter leurs positions (« identifiant groupe »).
+# Un groupe par semaine : groupe 1 la semaine du 21/11/2026, groupe 2 la suivante, groupe 3 ensuite, puis on recommence.
+# Chaque candidat revient donc toutes les trois semaines. Groupes formés le 14/11/2026, les moins couverts d'abord.
+# À modifier uniquement à la demande de l'éditeur.
+lepen 1
+zemmour 1
+attal 1
+roussel 2
+retailleau 2
+lisnard 2
+philippe 3
+glucksmann 3
+melenchon 3
