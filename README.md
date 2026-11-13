@@ -130,6 +130,7 @@ A demo can be published on GitHub Pages with the manual **"Démo en ligne"** wor
 - [Specifications](CAHIER_DES_CHARGES.md) (in French; work packages in §10)
 - [Developer notice](docs/NOTICE_DEVELOPPEUR.md): work packages, data release schedule, update procedure and changelog (§5)
 - [Lessons-learned notes](docs/enseignements/README.md) after each data collection
+- [Census of candidates](docs/recensement_candidats.md) (in French): declared, presumed and withdrawn candidates, cross-checked across several sources
 - [Candidate profiles and sources](docs/fiches_candidats.md)
 
 ## Contributing

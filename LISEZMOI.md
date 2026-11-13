@@ -130,6 +130,7 @@ Une démo peut être publiée sur GitHub Pages avec le workflow manuel **« Dém
 - [Cahier des charges](CAHIER_DES_CHARGES.md) (liste des lots au §10)
 - [Notice du développeur](docs/NOTICE_DEVELOPPEUR.md) : lots, échéancier des packs, procédure de mise à jour et journal (§5)
 - [Notes d'enseignements](docs/enseignements/README.md) après chaque recensement
+- [Recensement des candidats](docs/recensement_candidats.md) : candidats déclarés, pressentis et retirés, recoupés entre plusieurs sources
 - [Fiches des candidats et sources](docs/fiches_candidats.md)
 
 ## Contribuer
