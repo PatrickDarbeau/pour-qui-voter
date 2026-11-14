@@ -90,7 +90,7 @@ PROFILS = {
 }
 
 FI = "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
-VERIF_POS = "Positions non encore relevées (candidat ajouté le 13/11/2026) : listé, non classé"
+VERIF_POS = "Positions relevées le 14/11/2026 par Hermès, citations vérifiées à la source ; brouillon à relire"
 CANDIDATS = [
     {
         "id": "arthaud", "prenom": "Nathalie", "nom": "Arthaud", "parti": "Lutte ouvrière",

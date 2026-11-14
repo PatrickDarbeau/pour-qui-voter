@@ -29,21 +29,24 @@ def main():
             mod = importlib.import_module(f"positions_{c['id']}")
         except ModuleNotFoundError:
             continue
-        P = mod.P
+        # Tuple (valeur, url, citation, à confirmer[, type de source]) ; DATE_SOURCE propre au module si définie
+        P = {k: (t + ("site_officiel",))[:5] for k, t in mod.P.items()}
+        date_c = getattr(mod, "DATE_SOURCE", DATE_SOURCE)
         inconnues = set(P) - set(mesures)
         assert not inconnues, f"{c['id']} : mesures inconnues {inconnues}"
-        for mid, (v, src, cit, conf) in P.items():
+        for mid, (v, src, cit, conf, typ) in P.items():
             assert v in (-1, 0, 0.5, 1), (c["id"], mid, v)
             toutes.append({"candidat": c["id"], "mesure": mid, "valeur": v, "source_url": src,
-                           "source_type": "site_officiel", "source_date": DATE_SOURCE,
+                           "source_type": typ, "source_date": date_c,
                            "citation": cit, "a_confirmer": conf})
+        P = {k: t[:4] for k, t in P.items()}
         n = Counter(v for v, *_ in P.values())
         bilan.append((c, len(P), n, sum(1 for *_, conf in P.values() if conf)))
 
         # Fiche de relecture par candidat
         L = [f"# Positions de {c['prenom']} {c['nom']} — brouillon à relire", "",
              f"*Générée par `python outils/positions.py` depuis `outils/positions_{c['id']}.py`. "
-             f"Sources consultées le {DATE_SOURCE}.*", "",
+             f"Sources consultées le {date_c}.*", "",
              f"**{len(P)} positions renseignées sur {len(mesures)} mesures** "
              f"({n[1]} soutient, {n[0.5]} en partie, {n[-1]} s'oppose) ; "
              f"les {len(mesures) - len(P)} autres valent « ne se prononce pas » (aucun passage trouvé). "

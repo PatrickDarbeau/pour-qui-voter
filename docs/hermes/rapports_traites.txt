@@ -1,3 +1,9 @@
 # Suite donnée aux rapports d'Hermès — tenu à la main par Claude (repris dans journal_suivi.md).
 # Format : livrable | date | suite donnée (citations vérifiées, positions saisies, rejet motivé…)
 2026-11-13_sources-lepen-riner.md | 13/11/2026 | citations vérifiées ; 15 positions de Marine Le Pen saisies ; Riner : aucune position (presse seulement) — note n°3
+2026-11-14_positions-arthaud.md | 14/11/2026 | 33 citations vérifiées à la source ; 31 positions saisies (Mercosur agri4/agri5 retirées : renvoi dos à dos, pas une position) — note n°5
+2026-11-14_positions-asselineau.md | 14/11/2026 | 23 citations vérifiées ; 23 positions saisies — note n°5
+2026-11-14_positions-dupont-aignan.md | 14/11/2026 | 85 positions saisies ; 4 écartées (eco10, san7 : citation introuvable ; retr1, retr4 : Le Monde payant, non vérifiable) — note n°5
+2026-11-14_positions-philippot.md | 14/11/2026 | 67 citations vérifiées ; 67 positions saisies — note n°5
+2026-11-14_positions-ruffin.md | 14/11/2026 | 56 positions saisies (7 déductions reprenant le passage d'une mesure voisine, à confirmer) ; agri2 écartée (aucune citation) — note n°5
+2026-11-14_positions-tondelier.md | 14/11/2026 | 131 citations vérifiées ; 131 positions saisies (relance après échec de la 1re tâche) — note n°5
