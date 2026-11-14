@@ -1,6 +1,6 @@
 # Journal de suivi de la veille d'Hermès
 
-*Généré par `python outils/hermes_rapports.py` le 14/11/2026 à 00:27. Ne pas modifier à la main : la colonne « Suite donnée » se tient dans `rapports_traites.txt`.*
+*Généré par `python outils/hermes_rapports.py` le 14/11/2026 à 05:24. Ne pas modifier à la main : la colonne « Suite donnée » se tient dans `rapports_traites.txt`.*
 
 Statuts : ✅ livré sur la VM · ⏳ en cours · 🕒 en file d'attente GLM · ⚠️ terminé sans livrable (à relancer) · ❓ tâche absente de la file. « Rapatrié » : copie présente dans `docs/hermes/rapports/`.
 
@@ -8,12 +8,12 @@ Statuts : ✅ livré sur la VM · ⏳ en cours · 🕒 en file d'attente GLM · 
 
 | Semaine du | Candidat | Mode | Tâche | Statut chez Hermès | Livrable | Rapatrié | Suite donnée |
 |---|---|---|---|---|---|---|---|
-| 2026-11-14 | arthaud | relevé | `50bc66beb2f7` | ⏳ en cours | `2026-11-14_positions-arthaud.md` | non | — |
-| 2026-11-14 | asselineau | relevé | `526df27b9342` | 🕒 en file (1ʳᵉ) | `2026-11-14_positions-asselineau.md` | non | — |
-| 2026-11-14 | dupont_aignan | relevé | `ffea624618ca` | 🕒 en file (2ᵉ) | `2026-11-14_positions-dupont-aignan.md` | non | — |
-| 2026-11-14 | philippot | relevé | `17320d580083` | 🕒 en file (3ᵉ) | `2026-11-14_positions-philippot.md` | non | — |
-| 2026-11-14 | ruffin | relevé | `ba1886b6f2ab` | 🕒 en file (4ᵉ) | `2026-11-14_positions-ruffin.md` | non | — |
-| 2026-11-14 | tondelier | relevé | `f3eec234c734` | 🕒 en file (5ᵉ) | `2026-11-14_positions-tondelier.md` | non | — |
+| 2026-11-14 | arthaud | relevé | `50bc66beb2f7` | ✅ livré le 14/11 00:38 (24 Ko) | `2026-11-14_positions-arthaud.md` | oui | — |
+| 2026-11-14 | asselineau | relevé | `526df27b9342` | ✅ livré le 14/11 01:03 (18 Ko) | `2026-11-14_positions-asselineau.md` | oui | — |
+| 2026-11-14 | dupont_aignan | relevé | `ffea624618ca` | ✅ livré le 14/11 01:36 (35 Ko) | `2026-11-14_positions-dupont-aignan.md` | oui | — |
+| 2026-11-14 | philippot | relevé | `17320d580083` | ✅ livré le 14/11 02:01 (31 Ko) | `2026-11-14_positions-philippot.md` | oui | — |
+| 2026-11-14 | ruffin | relevé | `ba1886b6f2ab` | ✅ livré le 14/11 02:32 (31 Ko) | `2026-11-14_positions-ruffin.md` | oui | — |
+| 2026-11-14 | tondelier | relevé | `f3eec234c734` | ⚠️ terminé (error) le 14/11 03:10, **sans livrable** | `2026-11-14_positions-tondelier.md` | non | — |
 
 ## Veilles ponctuelles
 
