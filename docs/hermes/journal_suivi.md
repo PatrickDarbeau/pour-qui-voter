@@ -1,6 +1,6 @@
 # Journal de suivi de la veille d'Hermès
 
-*Généré par `python outils/hermes_rapports.py` le 14/11/2026 à 05:24. Ne pas modifier à la main : la colonne « Suite donnée » se tient dans `rapports_traites.txt`.*
+*Généré par `python outils/hermes_rapports.py` le 14/11/2026 à 07:02. Ne pas modifier à la main : la colonne « Suite donnée » se tient dans `rapports_traites.txt`.*
 
 Statuts : ✅ livré sur la VM · ⏳ en cours · 🕒 en file d'attente GLM · ⚠️ terminé sans livrable (à relancer) · ❓ tâche absente de la file. « Rapatrié » : copie présente dans `docs/hermes/rapports/`.
 
@@ -13,7 +13,9 @@ Statuts : ✅ livré sur la VM · ⏳ en cours · 🕒 en file d'attente GLM · 
 | 2026-11-14 | dupont_aignan | relevé | `ffea624618ca` | ✅ livré le 14/11 01:36 (35 Ko) | `2026-11-14_positions-dupont-aignan.md` | oui | — |
 | 2026-11-14 | philippot | relevé | `17320d580083` | ✅ livré le 14/11 02:01 (31 Ko) | `2026-11-14_positions-philippot.md` | oui | — |
 | 2026-11-14 | ruffin | relevé | `ba1886b6f2ab` | ✅ livré le 14/11 02:32 (31 Ko) | `2026-11-14_positions-ruffin.md` | oui | — |
-| 2026-11-14 | tondelier | relevé | `f3eec234c734` | ⚠️ terminé (error) le 14/11 03:10, **sans livrable** | `2026-11-14_positions-tondelier.md` | non | — |
+| 2026-11-14 | tondelier | relevé | `feede97b8b6d` | ✅ livré le 14/11 06:08 (43 Ko) | `2026-11-14_positions-tondelier.md` | oui | — |
+| 2026-11-14 | riner | relevé | `63481aa99c2c` | 🕒 en file (1ʳᵉ) | `2026-11-14_positions-riner.md` | non | — |
+| 2026-11-07 | tondelier | relevé | `f3eec234c734` | ✅ livré le 14/11 06:08 (43 Ko) | `2026-11-14_positions-tondelier.md` | oui | — |
 
 ## Veilles ponctuelles
 
