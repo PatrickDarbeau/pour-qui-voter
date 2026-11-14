@@ -99,7 +99,17 @@ Cette confiance n'est pas aveugle : elle est **limitée** par ces garde-fous et 
 - **Les données restent des brouillons** jusqu'à la relecture humaine. L'application l'affiche par un bandeau « données provisoires ».
 - **Tout est public** : code, données, consignes données à Hermès, rapports bruts d'Hermès (`docs/hermes/rapports/`), notes d'erreurs et de limites.
 
-## 6. Limites de cette méthode
+## 6. Position de l'éditeur sur les questions éthiques
+
+Utiliser l'intelligence artificielle pour un outil d'aide au vote pose des questions éthiques et philosophiques. La réponse relève du **jugement personnel** et de l'expérience de chacun. Ces questions ne sont pas plus grandes que celles que posent les médias dits d'opinion, qui sélectionnent, hiérarchisent et commentent l'information.
+
+Publier un tel outil relève de la **liberté d'opinion et d'expression**, garantie par la Déclaration des droits de l'homme et du citoyen de 1789. Son article 10 dispose que nul ne doit être inquiété pour ses opinions, et son article 11 fait de la libre communication des pensées et des opinions « un des droits les plus précieux de l'Homme ».
+
+À la différence d'un média d'opinion, ce comparateur ne défend aucune ligne : c'est pourquoi ses choix sont publics, documentés et contestables.
+
+Chacun reste libre d'utiliser ce comparateur ou non, d'en contester les choix et d'en construire sa propre version : le code et les données sont ouverts et modifiables.
+
+## 7. Limites de cette méthode
 
 - **Les IA peuvent se tromper avec assurance.** Les vérifications réduisent ce risque sans l'annuler : une citation exacte peut être mal interprétée.
 - **La neutralité ne se décrète pas.** Le catalogue reflète des choix, ceux du développeur et les propositions de Claude. Une relecture par des personnes de sensibilités différentes est prévue avant le premier pack réel, le 15/01/2027.
