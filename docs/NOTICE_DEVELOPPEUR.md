@@ -233,6 +233,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |14/11/2026|Note de transparence : « rien de ce qu'Hermès produit n'est saisi sans un minimum de vérification » (formulation de l'éditeur)|8e14649|
 |14/11/2026|Note de transparence : partie 6 « Position de l'éditeur sur les questions éthiques » (jugement personnel, comparaison avec les médias d'opinion, liberté d'opinion et d'expression, DDHC art. 10 et 11, absence de ligne défendue)|ca12c83|
 |14/11/2026|FAQ : question « Comment cet outil est-il fabriqué ? Quelle place pour l'intelligence artificielle ? », avec un lien vers la note de transparence (methode_developpement.md)|0a57c6d|
+|14/11/2026|**Kit de campagne mis à jour** (docs/promotion/CAMPAGNE.md) : liens réels (démo, téléchargement, dépôt, note de transparence, note aux candidats), règles « transparence sur l'IA » et « préversions », arguments « modifiable » et « choix assumés », calendrier complété (fondations faites, envoi de la note aux candidats avant le 5/01/2027, appel aux relecteurs), mention de l'IA dans la vidéo, LinkedIn, X, Substack et le courriel aux enseignants, captures disponibles|à venir|
 |—|**Prochaine étape : lot 7** — tests utilisateur du pack de test ; relecture des rapports de veille d'Hermès (18/11, 23/11) puis mise à jour des positions de Le Pen, Zemmour et Riner. Premier pack réel le 15/01/2027.||
 
 \---
