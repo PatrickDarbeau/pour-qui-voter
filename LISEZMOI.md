@@ -67,6 +67,33 @@
 
 La méthode est expliquée simplement dans l'application (page *Méthode*), programmée dans [`assets/js/score.js`](assets/js/score.js) et testée par [`tests/score.test.js`](tests/score.test.js).
 
+## Le choix des mesures
+
+### Comment les mesures ont été choisies
+
+Le questionnaire compte **158 mesures réparties en 17 thèmes**. Elles ont été rédigées en novembre 2026, avant la publication des programmes de 2027, en partant d'une question posée pour chaque thème : *sur quoi les partis et les candidats s'opposent-ils régulièrement ?* La réponse s'appuie sur le débat public récent (programmes de 2022, élections de 2024, réformes et controverses).
+
+Règles suivies :
+
+- **formulation neutre** : aucun nom de parti ou de candidat, aucun adjectif qui juge ;
+- **une seule idée par mesure**, concrète, avec un chiffre quand c'est possible ;
+- **les deux options de chaque débat clivant** : la mesure et son contrepoint (option opposée ou statu quo), pour que chaque candidat, quel que soit son bord, trouve des mesures qu'il soutient et d'autres qu'il rejette ;
+- **quelques mesures consensuelles**, qui mesurent les priorités plutôt que les clivages.
+
+### Part de subjectivité et limites
+
+Le catalogue est le résultat de choix : il n'est pas neutre « par construction ». Ces choix sont expliqués et peuvent être discutés.
+
+- **Le choix des débats** : d'autres sujets auraient pu être retenus, et certaines propositions phares de 2027 manquent encore (elles sont repérées à chaque relevé et ajoutées avec leur contrepoint).
+- **Les seuils chiffrés** : quand un candidat propose un autre montant que celui de la mesure, sa position est une interprétation (« soutient en partie »).
+- **La formulation** : une mesure qui paraît neutre à son auteur peut ne pas l'être pour un lecteur d'une autre sensibilité.
+- **Un questionnaire ne résume pas un programme** : il ne dit rien de la cohérence d'un projet, de sa crédibilité ni de la personnalité des candidats.
+- **Une couverture inégale** : certains candidats n'ont publié qu'une partie de leur programme ; leur score repose alors sur peu de mesures (voir la *couverture*).
+
+**Le catalogue évolue pendant la campagne** : des mesures sont ajoutées, reformulées ou retirées. Chaque changement est tracé dans le journal du pack. Vous pouvez aussi proposer une mesure ou signaler une formulation orientée en ouvrant un [ticket](https://github.com/PatrickDarbeau/pour-qui-voter/issues), ou construire votre propre catalogue dans le mode *Édition*.
+
+Pour aller plus loin : [méthode de choix des mesures](docs/methode_choix_mesures.md), [note de réflexion du 14/11/2026](docs/reflexion_catalogue_2026-11-14.md) et [catalogue complet](docs/catalogue_mesures.md).
+
 ## Principes
 
 - **Confidentialité dès la conception** : ni compte, ni serveur, ni mesure d'audience. Vos réponses ne quittent jamais votre appareil (elles sont conservées uniquement dans le `localStorage` de votre navigateur).
@@ -144,6 +171,7 @@ Une démo peut être publiée sur GitHub Pages avec le workflow manuel **« Dém
 - [Notes d'enseignements](docs/enseignements/README.md) après chaque recensement
 - [Recensement des candidats](docs/recensement_candidats.md) : candidats déclarés, pressentis et retirés, recoupés entre plusieurs sources
 - [Fiches des candidats et sources](docs/fiches_candidats.md)
+- [Méthode de choix des mesures](docs/methode_choix_mesures.md) et [note de réflexion sur le catalogue](docs/reflexion_catalogue_2026-11-14.md)
 - [Note aux candidats](docs/candidats/note_aux_candidats.md) : comment les équipes de campagne peuvent transmettre leur programme et répondre aux 158 mesures, avec le [questionnaire de réponse](docs/candidats/questionnaire_mesures.csv)
 
 ## Contribuer

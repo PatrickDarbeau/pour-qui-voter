@@ -489,9 +489,29 @@
       ${q("Puis-je l'utiliser sans internet ?", `<p>Oui. Téléchargez l'archive ZIP, décompressez-la, puis double-cliquez sur <code>index.html</code>.
         Seuls les liens « source » vers les sites des candidats demandent une connexion.</p>`)}
 
+      <h2>Les mesures</h2>
+      ${q("Comment les mesures ont-elles été choisies ?", `<p>Le questionnaire compte ${mesuresActives.length} mesures réparties en ${themes.length} thèmes.
+        Pour chaque thème, une question : <em>sur quoi les partis et les candidats s'opposent-ils régulièrement ?</em>
+        Chaque mesure est formulée de façon neutre (aucun nom de parti, aucun adjectif qui juge), porte une seule idée concrète
+        et, quand le débat est clivant, est accompagnée de son contrepoint (l'option opposée ou le statu quo).</p>
+        <p>Ce choix comporte une part de subjectivité : d'autres débats auraient pu être retenus, et un questionnaire ne résume pas un programme.
+        Le catalogue évolue pendant la campagne ; chaque changement est indiqué dans le journal du pack.</p>`)}
+      ${q("Pourquoi telle proposition n'y figure-t-elle pas ?", `<p>Les mesures ont été rédigées avant la publication des programmes de 2027.
+        Les propositions marquantes des candidats sont repérées à chaque mise à jour et ajoutées avec leur contrepoint,
+        de préférence quand plusieurs candidats en débattent.</p>
+        <p>Vous pouvez proposer une mesure ou signaler une formulation que vous jugez orientée : ${lienExterne(CONFIG.signalement, "tickets du dépôt du projet")}.
+        Vous pouvez aussi ajouter vos propres mesures dans le mode <a href="#/edition">Édition</a> (elles restent sur votre appareil).</p>`)}
+      ${q("Que veulent dire « soutient en partie » et « à confirmer » ?", `<ul class="liste">
+        <li><strong>Soutient en partie</strong> : le candidat va dans le sens de la mesure, mais avec une version atténuée, une condition,
+          une étape, ou un autre montant que celui indiqué. Elle compte pour moitié dans le score.</li>
+        <li><strong>À confirmer</strong> : la position est tirée de la presse ou d'une interview, ou bien elle est déduite d'un principe général
+          du candidat, sans que la mesure soit citée explicitement. Elle compte dans le score, mais mérite d'être vérifiée à la source.</li>
+        <li><strong>Ne se prononce pas</strong> : aucune source ne permet de conclure. La mesure ne rapporte ni ne coûte de points :
+          elle rapproche le score de 50 %. La <em>couverture</em> indique la part de vos mesures où le candidat a une position connue.</li></ul>`)}
+
       <h2>Données et mode Édition</h2>
       ${q("D'où viennent les positions des candidats ?", `<p>En priorité du site officiel et du programme de chaque candidat.
-        Chaque position a un lien « source ». Une position tirée seulement de la presse est marquée « à confirmer ».</p>`)}
+        Chaque position a un lien « source ». Une position tirée seulement de la presse, ou déduite d'un principe général, est marquée « à confirmer ».</p>`)}
       ${q("Les données sont-elles à jour ?", `<p>La date des données est indiquée en bas de l'accueil. Un bandeau vous prévient si elles sont anciennes.
         Les mises à jour sont publiées sous forme de <strong>packs</strong> : un par mois jusqu'en janvier 2027, puis un par semaine jusqu'au scrutin.</p>`)}
       ${q("Comment installer une mise à jour (un pack) ?", `<ol class="liste">

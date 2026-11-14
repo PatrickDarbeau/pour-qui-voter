@@ -67,6 +67,33 @@
 
 The method is explained in plain French in the app (*Méthode* page) and implemented in [`assets/js/score.js`](assets/js/score.js), tested by [`tests/score.test.js`](tests/score.test.js).
 
+## Choice of measures
+
+### How the measures were chosen
+
+The questionnaire has **158 measures in 17 themes**. They were written in November 2026, before the 2027 programmes were published, starting from one question for each theme: *what do French parties and candidates regularly disagree about?* The answer draws on the recent public debate (2022 programmes, 2024 elections, recent reforms and controversies).
+
+Rules followed:
+
+- **neutral wording**: no party or candidate name, no judgemental adjective;
+- **one idea per measure**, concrete, with a figure when possible;
+- **both sides of each divisive debate**: the measure and its counterpoint (the opposite option or the status quo), so that every candidate, whatever their side, finds measures they support and others they reject;
+- **a few consensus measures**, which reflect priorities rather than divides.
+
+### Subjectivity and limits
+
+The catalogue is the result of choices: it is not neutral "by design". These choices are explained and open to discussion.
+
+- **Choice of debates**: other topics could have been chosen, and some flagship 2027 proposals are still missing (they are spotted at each data collection and added with their counterpoint).
+- **Figures**: when a candidate proposes a different amount from the one in the measure, their position is an interpretation ("partly supports").
+- **Wording**: a measure that looks neutral to its author may not to a reader from another political background.
+- **A questionnaire does not sum up a programme**: it says nothing about a project's consistency or credibility, or about the candidates themselves.
+- **Uneven coverage**: some candidates have published only part of their programme; their score then rests on few measures (see *coverage*).
+
+**The catalogue changes during the campaign**: measures are added, reworded or removed. Every change is logged in the data pack changelog. You can also suggest a measure or report a biased wording by opening an [issue](https://github.com/PatrickDarbeau/pour-qui-voter/issues), or build your own catalogue in *Édition* mode.
+
+Further reading (in French): [how the measures were chosen](docs/methode_choix_mesures.md), [review note of 14 November 2026](docs/reflexion_catalogue_2026-11-14.md) and [full catalogue](docs/catalogue_mesures.md).
+
 ## Key principles
 
 - **Privacy by design**: no account, no server, no analytics. Your answers never leave your device (they are stored only in your browser's `localStorage`).
@@ -144,6 +171,7 @@ A demo can be published on GitHub Pages with the manual **"Démo en ligne"** wor
 - [Lessons-learned notes](docs/enseignements/README.md) after each data collection
 - [Census of candidates](docs/recensement_candidats.md) (in French): declared, presumed and withdrawn candidates, cross-checked across several sources
 - [Candidate profiles and sources](docs/fiches_candidats.md)
+- [How the measures were chosen](docs/methode_choix_mesures.md) and [catalogue review note](docs/reflexion_catalogue_2026-11-14.md) (in French)
 - [Note to candidates](docs/candidats/note_aux_candidats.md) (in French): how campaigns can send their programme and answer the 158 measures, with the [reply questionnaire](docs/candidats/questionnaire_mesures.csv)
 
 ## Contributing
