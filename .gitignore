@@ -5,3 +5,6 @@ dist/
 
 # Sortie du test d'impression (tests/pdf.mjs)
 /resultats.pdf
+
+# Documents privés (audit de sécurité…) : jamais publiés
+prive/
