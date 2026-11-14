@@ -213,6 +213,42 @@
       "origine": "nouveau"
     },
     {
+      "id": "eco11",
+      "theme": "eco",
+      "intitule": "Créer un impôt minimal sur les très hauts patrimoines (« taxe Zucman »)",
+      "description": "Par exemple 2 % par an au-delà de 100 millions d'euros de patrimoine.",
+      "opposee_a": "eco12",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "eco12",
+      "theme": "eco",
+      "intitule": "Ne pas créer d'impôt spécifique sur les très hauts patrimoines",
+      "description": "Crainte d'un départ des capitaux et des entreprises.",
+      "opposee_a": "eco11",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "eco13",
+      "theme": "eco",
+      "intitule": "Réserver une part de la commande publique aux produits fabriqués en France (« Buy French Act »)",
+      "description": "Préférence nationale dans les achats de l'État et des collectivités.",
+      "opposee_a": "eco14",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "eco14",
+      "theme": "eco",
+      "intitule": "Laisser la commande publique ouverte à toutes les entreprises européennes",
+      "description": "Règles actuelles de concurrence de l'Union européenne.",
+      "opposee_a": "eco13",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
       "id": "trav1",
       "theme": "trav",
       "intitule": "Augmenter le SMIC de 10 %",
@@ -789,6 +825,24 @@
       "origine": "nouveau"
     },
     {
+      "id": "ecl11",
+      "theme": "ecol",
+      "intitule": "Revenir sur la fin de la vente des voitures thermiques neuves prévue en 2035",
+      "description": "Remise en cause de l'objectif fixé par l'Union européenne.",
+      "opposee_a": "ecl12",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "ecl12",
+      "theme": "ecol",
+      "intitule": "Maintenir la fin de la vente des voitures thermiques neuves en 2035",
+      "description": "Objectif fixé par l'Union européenne en 2023.",
+      "opposee_a": "ecl11",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
       "id": "agri1",
       "theme": "agri",
       "intitule": "Interdire le glyphosate en France",
@@ -1194,6 +1248,24 @@
       "origine": "nouveau"
     },
     {
+      "id": "sec10",
+      "theme": "secu",
+      "intitule": "Dépénaliser l'usage personnel de toutes les drogues",
+      "description": "L'usage traité comme une question de santé publique.",
+      "opposee_a": "sec11",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "sec11",
+      "theme": "secu",
+      "intitule": "Maintenir l'usage de drogues comme un délit",
+      "description": "Statu quo (amende forfaitaire délictuelle possible).",
+      "opposee_a": "sec10",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
       "id": "jus1",
       "theme": "just",
       "intitule": "Instaurer des peines planchers",
@@ -1437,6 +1509,24 @@
       "origine": "nouveau"
     },
     {
+      "id": "eu10",
+      "theme": "euro",
+      "intitule": "Sortir de la zone euro et revenir à une monnaie nationale",
+      "description": "Retour au franc, conversion de la dette en monnaie nationale.",
+      "opposee_a": "eu11",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "eu11",
+      "theme": "euro",
+      "intitule": "Rester dans la zone euro",
+      "description": "Statu quo monétaire.",
+      "opposee_a": "eu10",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
       "id": "ins1",
       "theme": "inst",
       "intitule": "Instaurer le référendum d'initiative citoyenne (RIC)",
@@ -1543,6 +1633,42 @@
       "opposee_a": null,
       "actif": true,
       "origine": "nouveau"
+    },
+    {
+      "id": "ins13",
+      "theme": "inst",
+      "intitule": "Supprimer le Sénat",
+      "description": "Parlement réduit à l'Assemblée nationale.",
+      "opposee_a": "ins14",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "ins14",
+      "theme": "inst",
+      "intitule": "Conserver le Sénat",
+      "description": "Parlement à deux chambres.",
+      "opposee_a": "ins13",
+      "actif": true,
+      "origine": "contrepoint"
+    },
+    {
+      "id": "ins15",
+      "theme": "inst",
+      "intitule": "Changer de Constitution pour fonder une VIe République",
+      "description": "Nouvelle Constitution, par exemple rédigée par une assemblée constituante puis soumise à référendum.",
+      "opposee_a": "ins16",
+      "actif": true,
+      "origine": "nouveau"
+    },
+    {
+      "id": "ins16",
+      "theme": "inst",
+      "intitule": "Conserver la Constitution de la Ve République, en la révisant si nécessaire",
+      "description": "Statu quo institutionnel depuis 1958.",
+      "opposee_a": "ins15",
+      "actif": true,
+      "origine": "contrepoint"
     }
   ]
 }

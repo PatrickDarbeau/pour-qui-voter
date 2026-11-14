@@ -30,7 +30,7 @@ Un candidat dont aucune position n'a pu être relevée est **listé, mais pas cl
 Pour que **l'intégralité de vos positions** figure dans le comparateur, et non seulement celles que nous avons pu relever, nous vous invitons à adresser à l'éditeur :
 
 1. **Un exemplaire de votre programme** : document PDF ou lien stable vers la page officielle qui le publie.
-2. **Le questionnaire de réponse rempli**, qui reprend les **158 mesures** (17 thèmes) retenues dans le comparateur :
+2. **Le questionnaire de réponse rempli**, qui reprend les **172 mesures** (17 thèmes) retenues dans le comparateur :
    - à remplir : [questionnaire_mesures.csv](questionnaire_mesures.csv) (tableur, une ligne par mesure) ;
    - à consulter ou imprimer : [mesures_par_theme.md](mesures_par_theme.md).
 

@@ -52,6 +52,10 @@ M = [
     ("eco8", "eco", "Simplifier les aides aux entreprises sans leur ajouter de conditions", "Moins de démarches, mêmes critères d'attribution.", "eco7", "contrepoint"),
     ("eco9", "eco", "Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat", "Priorité à la réduction du déficit.", "eco10", "nouveau"),
     ("eco10", "eco", "Augmenter l'investissement public, même au prix d'un déficit plus élevé", "Priorité à la relance et à la transition.", "eco9", "nouveau"),
+    ("eco11", "eco", "Créer un impôt minimal sur les très hauts patrimoines (« taxe Zucman »)", "Par exemple 2 % par an au-delà de 100 millions d'euros de patrimoine.", "eco12", "nouveau"),
+    ("eco12", "eco", "Ne pas créer d'impôt spécifique sur les très hauts patrimoines", "Crainte d'un départ des capitaux et des entreprises.", "eco11", "contrepoint"),
+    ("eco13", "eco", "Réserver une part de la commande publique aux produits fabriqués en France (« Buy French Act »)", "Préférence nationale dans les achats de l'État et des collectivités.", "eco14", "nouveau"),
+    ("eco14", "eco", "Laisser la commande publique ouverte à toutes les entreprises européennes", "Règles actuelles de concurrence de l'Union européenne.", "eco13", "contrepoint"),
     # ---- Travail et emploi
     ("trav1", "trav", "Augmenter le SMIC de 10 %", "Revalorisation exceptionnelle du salaire minimum.", None, "demo"),
     ("trav2", "trav", "Réduire la durée légale du travail à 32 heures par semaine", "Semaine de quatre jours, sans baisse de salaire.", "trav3", "nouveau"),
@@ -123,6 +127,8 @@ M = [
     ("ecl8", "ecol", "Maintenir l'ouverture à la concurrence des fournisseurs d'électricité", "Statu quo.", "ecl7", "contrepoint"),
     ("ecl9", "ecol", "Instaurer un moratoire sur les nouvelles éoliennes", "Arrêt des nouveaux projets.", "ecl10", "nouveau"),
     ("ecl10", "ecol", "Accélérer le développement de l'éolien et du solaire", "Objectifs et procédures accélérées.", "ecl9", "nouveau"),
+    ("ecl11", "ecol", "Revenir sur la fin de la vente des voitures thermiques neuves prévue en 2035", "Remise en cause de l'objectif fixé par l'Union européenne.", "ecl12", "nouveau"),
+    ("ecl12", "ecol", "Maintenir la fin de la vente des voitures thermiques neuves en 2035", "Objectif fixé par l'Union européenne en 2023.", "ecl11", "contrepoint"),
     # ---- Agriculture et alimentation
     ("agri1", "agri", "Interdire le glyphosate en France", "Sortie de l'herbicide.", "agri2", "nouveau"),
     ("agri2", "agri", "Aligner les règles françaises sur les pesticides sur celles de l'Union européenne", "Fin des interdictions plus strictes qu'en Europe.", "agri1", "nouveau"),
@@ -173,6 +179,8 @@ M = [
     ("sec7", "secu", "Recréer une police de proximité", "Policiers affectés durablement à un quartier.", None, "nouveau"),
     ("sec8", "secu", "Légaliser le cannabis avec une production et une vente encadrées par l'État", "Fin de la prohibition.", "sec9", "nouveau"),
     ("sec9", "secu", "Durcir les sanctions contre la consommation de stupéfiants", "Amendes et peines alourdies.", "sec8", "nouveau"),
+    ("sec10", "secu", "Dépénaliser l'usage personnel de toutes les drogues", "L'usage traité comme une question de santé publique.", "sec11", "nouveau"),
+    ("sec11", "secu", "Maintenir l'usage de drogues comme un délit", "Statu quo (amende forfaitaire délictuelle possible).", "sec10", "contrepoint"),
     # ---- Justice
     ("jus1", "just", "Instaurer des peines planchers", "Peines minimales pour les récidivistes.", "jus2", "demo"),
     ("jus2", "just", "Développer les peines alternatives à la prison", "Travaux d'intérêt général, bracelet électronique.", "jus1", "demo"),
@@ -203,6 +211,8 @@ M = [
     ("eu7", "euro", "Rétablir un service militaire obligatoire", "Pour les jeunes d'une classe d'âge.", None, "nouveau"),
     ("eu8", "euro", "Maintenir ou augmenter l'aide militaire à l'Ukraine", "Livraisons d'armes et soutien financier.", "eu9", "nouveau"),
     ("eu9", "euro", "Cesser les livraisons d'armes à l'Ukraine et privilégier la négociation", "Priorité à la diplomatie.", "eu8", "nouveau"),
+    ("eu10", "euro", "Sortir de la zone euro et revenir à une monnaie nationale", "Retour au franc, conversion de la dette en monnaie nationale.", "eu11", "nouveau"),
+    ("eu11", "euro", "Rester dans la zone euro", "Statu quo monétaire.", "eu10", "contrepoint"),
     # ---- Institutions et démocratie
     ("ins1", "inst", "Instaurer le référendum d'initiative citoyenne (RIC)", "Référendum déclenché par pétition.", None, "demo"),
     ("ins2", "inst", "Introduire une dose de proportionnelle aux élections législatives", "Modification du mode de scrutin.", None, "demo"),
@@ -216,6 +226,10 @@ M = [
     ("ins10", "inst", "Interdire aux hauts fonctionnaires de rejoindre une entreprise qu'ils ont contrôlée (« pantouflage »)", "Prévention des conflits d'intérêts.", "ins11", "nouveau"),
     ("ins11", "inst", "Encadrer le pantouflage par un délai et un avis déontologique, sans l'interdire", "Statu quo renforcé.", "ins10", "contrepoint"),
     ("ins12", "inst", "Supprimer l'article 49.3 de la Constitution", "Fin de l'adoption d'un texte sans vote.", None, "nouveau"),
+    ("ins13", "inst", "Supprimer le Sénat", "Parlement réduit à l'Assemblée nationale.", "ins14", "nouveau"),
+    ("ins14", "inst", "Conserver le Sénat", "Parlement à deux chambres.", "ins13", "contrepoint"),
+    ("ins15", "inst", "Changer de Constitution pour fonder une VIe République", "Nouvelle Constitution, par exemple rédigée par une assemblée constituante puis soumise à référendum.", "ins16", "nouveau"),
+    ("ins16", "inst", "Conserver la Constitution de la Ve République, en la révisant si nécessaire", "Statu quo institutionnel depuis 1958.", "ins15", "contrepoint"),
 ]
 
 

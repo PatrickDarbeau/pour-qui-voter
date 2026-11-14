@@ -88,7 +88,7 @@ La relecture de neutralité par au moins deux personnes de sensibilités différ
 
 | # | Proposition | Effet attendu |
 |---|---|---|
-| A1 | Ajouter **environ 8 paires** pour les débats absents (§3.2), chacune avec son contrepoint | Couvrir les propositions phares de tous les bords ; environ 174 mesures |
+| A1 | ✅ *Appliqué le 14/11/2026 : 7 paires ([propositions_A1_paires.md](propositions_A1_paires.md)), sans la peine de mort, avec une paire VIe République.* Ajouter **environ 8 paires** pour les débats absents (§3.2), chacune avec son contrepoint | Couvrir les propositions phares de tous les bords ; environ 174 mesures |
 | A2 | **Remplacer les seuils rigides** par l'objectif, avec le chiffre en description (ex. « Augmenter nettement le SMIC », description : « au moins +10 % ») et écrire la règle : montant inférieur = « en partie », montant supérieur = « soutient » | Correspondance moins arbitraire, résultat plus juste pour les candidats qui chiffrent autrement |
 | A3 | **Garder les mesures orphelines jusqu'au 15/01**, puis les retirer ou les fusionner si elles le restent | Ne pas retirer trop tôt un sujet que les programmes n'ont pas encore abordé |
 | A4 | **Plafonner à 10 mesures par thème** (12 pour Institutions), en compensant les ajouts par des retraits | Éviter qu'un thème pèse plus qu'un autre par simple nombre de mesures |

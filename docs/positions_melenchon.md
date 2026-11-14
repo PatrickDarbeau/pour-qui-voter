@@ -2,7 +2,7 @@
 
 *Générée par `python outils/positions.py` depuis `outils/positions_melenchon.py`. Sources consultées le 2026-11-12.*
 
-**111 positions renseignées sur 158 mesures** (61 soutient, 10 en partie, 40 s'oppose) ; les 47 autres valent « ne se prononce pas » (aucun passage trouvé). 10 position(s) marquée(s) « à confirmer » ⚠.
+**111 positions renseignées sur 172 mesures** (61 soutient, 10 en partie, 40 s'oppose) ; les 61 autres valent « ne se prononce pas » (aucun passage trouvé). 10 position(s) marquée(s) « à confirmer » ⚠.
 
 ## 💶 Économie et fiscalité
 
@@ -18,6 +18,10 @@
 | Simplifier les aides aux entreprises sans leur ajouter de conditions | **S'oppose** | « Pas d'arrosage d'aides publiques sans contreparties écologiques et sociales » ([source](https://melenchon2027.fr/programme/livre/introduction)) |
 | Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat | **S'oppose** | « La suspension pour tous des règles budgétaires des 3 % de déficit » ([source](https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1)) |
 | Augmenter l'investissement public, même au prix d'un déficit plus élevé | **Soutient** | « D'immenses investissements productifs sont nécessaires […] la droite brandit la dette pour justifier son inaction » ([source](https://melenchon2027.fr/programme/decouvrir/)) |
+| Créer un impôt minimal sur les très hauts patrimoines (« taxe Zucman ») | · | — |
+| Ne pas créer d'impôt spécifique sur les très hauts patrimoines | · | — |
+| Réserver une part de la commande publique aux produits fabriqués en France (« Buy French Act ») | · | — |
+| Laisser la commande publique ouverte à toutes les entreprises européennes | · | — |
 
 ## 👷 Travail et emploi
 
@@ -117,6 +121,8 @@
 | Maintenir l'ouverture à la concurrence des fournisseurs d'électricité | **S'oppose** ⚠ | « Créer un pôle public de l'énergie […] en renationalisant Engie » ([source](https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3)) |
 | Instaurer un moratoire sur les nouvelles éoliennes | **S'oppose** | « Déployer l'éolien en mer […] pour atteindre au moins 45 gigawatts » ([source](https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre5)) |
 | Accélérer le développement de l'éolien et du solaire | **Soutient** | « Organiser le 100 % d'énergies renouvelables » ([source](https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3)) |
+| Revenir sur la fin de la vente des voitures thermiques neuves prévue en 2035 | · | — |
+| Maintenir la fin de la vente des voitures thermiques neuves en 2035 | · | — |
 
 ## 🚜 Agriculture et alimentation
 
@@ -187,6 +193,8 @@
 | Recréer une police de proximité | **Soutient** | « Rétablir la police de proximité comme pilier du service public » ([source](https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2)) |
 | Légaliser le cannabis avec une production et une vente encadrées par l'État | **Soutient** | « Légaliser et encadrer par un monopole d'État la consommation, la production et la vente de cannabis » ([source](https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4)) |
 | Durcir les sanctions contre la consommation de stupéfiants | **S'oppose** | « Légaliser et encadrer par un monopole d'État […] le cannabis » ([source](https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4)) |
+| Dépénaliser l'usage personnel de toutes les drogues | · | — |
+| Maintenir l'usage de drogues comme un délit | · | — |
 
 ## ⚖️ Justice
 
@@ -229,6 +237,8 @@
 | Rétablir un service militaire obligatoire | · | — |
 | Maintenir ou augmenter l'aide militaire à l'Ukraine | · | — |
 | Cesser les livraisons d'armes à l'Ukraine et privilégier la négociation | · | — |
+| Sortir de la zone euro et revenir à une monnaie nationale | · | — |
+| Rester dans la zone euro | · | — |
 
 ## 🏛️ Institutions et démocratie
 
@@ -246,3 +256,7 @@
 | Interdire aux hauts fonctionnaires de rejoindre une entreprise qu'ils ont contrôlée (« pantouflage ») | **Soutient** | « Interdire le pantouflage » ([source](https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1)) |
 | Encadrer le pantouflage par un délai et un avis déontologique, sans l'interdire | **S'oppose** | « Interdire le pantouflage » ([source](https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1)) |
 | Supprimer l'article 49.3 de la Constitution | **Soutient** | « Abolir les procédures de « votes forcés » du Parlement comme l'article 49.3 » ([source](https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1)) |
+| Supprimer le Sénat | · | — |
+| Conserver le Sénat | · | — |
+| Changer de Constitution pour fonder une VIe République | · | — |
+| Conserver la Constitution de la Ve République, en la révisant si nécessaire | · | — |

@@ -2,7 +2,7 @@
 
 *Générée par `python outils/positions.py` depuis `outils/positions_ruffin.py`. Sources consultées le 2026-11-14.*
 
-**56 positions renseignées sur 158 mesures** (20 soutient, 18 en partie, 18 s'oppose) ; les 102 autres valent « ne se prononce pas » (aucun passage trouvé). 22 position(s) marquée(s) « à confirmer » ⚠.
+**56 positions renseignées sur 172 mesures** (20 soutient, 18 en partie, 18 s'oppose) ; les 116 autres valent « ne se prononce pas » (aucun passage trouvé). 22 position(s) marquée(s) « à confirmer » ⚠.
 
 ## 💶 Économie et fiscalité
 
@@ -18,6 +18,10 @@
 | Simplifier les aides aux entreprises sans leur ajouter de conditions | **S'oppose** ⚠ | « Celui qui touche l'argent public garde les emplois, investit dans les usines, forme les salariés, respecte les sous-traitants. Sinon, il rembourse. » ([source](https://nouspresident.fr/pour-proteger-notre-industrie-relocaliser-100-produits-strategiques/)) |
 | Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat | · | — |
 | Augmenter l'investissement public, même au prix d'un déficit plus élevé | · | — |
+| Créer un impôt minimal sur les très hauts patrimoines (« taxe Zucman ») | · | — |
+| Ne pas créer d'impôt spécifique sur les très hauts patrimoines | · | — |
+| Réserver une part de la commande publique aux produits fabriqués en France (« Buy French Act ») | · | — |
+| Laisser la commande publique ouverte à toutes les entreprises européennes | · | — |
 
 ## 👷 Travail et emploi
 
@@ -117,6 +121,8 @@
 | Maintenir l'ouverture à la concurrence des fournisseurs d'électricité | **S'oppose** ⚠ | « nous reviendrons progressivement à un modèle 100% public de production » ([source](https://nouspresident.fr/travaillisme-ecologique/)) |
 | Instaurer un moratoire sur les nouvelles éoliennes | **S'oppose** ⚠ | « nous poursuivrons le développement de l'énergie éolienne, car elle produit davantage en hiver » ([source](https://nouspresident.fr/travaillisme-ecologique/)) |
 | Accélérer le développement de l'éolien et du solaire | **Soutient en partie** | « nous poursuivrons le développement de l'énergie éolienne, car elle produit davantage en hiver » ([source](https://nouspresident.fr/travaillisme-ecologique/)) |
+| Revenir sur la fin de la vente des voitures thermiques neuves prévue en 2035 | · | — |
+| Maintenir la fin de la vente des voitures thermiques neuves en 2035 | · | — |
 
 ## 🚜 Agriculture et alimentation
 
@@ -187,6 +193,8 @@
 | Recréer une police de proximité | · | — |
 | Légaliser le cannabis avec une production et une vente encadrées par l'État | · | — |
 | Durcir les sanctions contre la consommation de stupéfiants | · | — |
+| Dépénaliser l'usage personnel de toutes les drogues | · | — |
+| Maintenir l'usage de drogues comme un délit | · | — |
 
 ## ⚖️ Justice
 
@@ -229,6 +237,8 @@
 | Rétablir un service militaire obligatoire | · | — |
 | Maintenir ou augmenter l'aide militaire à l'Ukraine | · | — |
 | Cesser les livraisons d'armes à l'Ukraine et privilégier la négociation | · | — |
+| Sortir de la zone euro et revenir à une monnaie nationale | · | — |
+| Rester dans la zone euro | · | — |
 
 ## 🏛️ Institutions et démocratie
 
@@ -246,3 +256,7 @@
 | Interdire aux hauts fonctionnaires de rejoindre une entreprise qu'ils ont contrôlée (« pantouflage ») | **Soutient** | « encadrer strictement le pantouflage et interdire le rétro-pantouflage » ([source](https://nouspresident.fr/separation-argent-etat/)) |
 | Encadrer le pantouflage par un délai et un avis déontologique, sans l'interdire | **S'oppose** ⚠ | « comme l'ont fait les Lituaniens » ([source](https://nouspresident.fr/separation-argent-etat/)) |
 | Supprimer l'article 49.3 de la Constitution | **Soutient en partie** ⚠ | « imposer des réformes à coups de 49.3 contre l'avis unanime des syndicats et de l'immense majorité des Françaises et Français » ([source](https://nouspresident.fr/pour-une-democratie-en-continu-vive-les-etats-generaux/)) |
+| Supprimer le Sénat | · | — |
+| Conserver le Sénat | · | — |
+| Changer de Constitution pour fonder une VIe République | · | — |
+| Conserver la Constitution de la Ve République, en la révisant si nécessaire | · | — |

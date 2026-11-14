@@ -71,7 +71,7 @@ La méthode est expliquée simplement dans l'application (page *Méthode*), prog
 
 ### Comment les mesures ont été choisies
 
-Le questionnaire compte **158 mesures réparties en 17 thèmes**. Elles ont été rédigées en novembre 2026, avant la publication des programmes de 2027, en partant d'une question posée pour chaque thème : *sur quoi les partis et les candidats s'opposent-ils régulièrement ?* La réponse s'appuie sur le débat public récent (programmes de 2022, élections de 2024, réformes et controverses).
+Le questionnaire compte **172 mesures réparties en 17 thèmes**. Elles ont été rédigées en novembre 2026 (14 ajoutées le 14/11 après les premiers relevés de programmes), avant la publication des programmes de 2027, en partant d'une question posée pour chaque thème : *sur quoi les partis et les candidats s'opposent-ils régulièrement ?* La réponse s'appuie sur le débat public récent (programmes de 2022, élections de 2024, réformes et controverses).
 
 Règles suivies :
 
@@ -108,7 +108,7 @@ Pour aller plus loin : [méthode de choix des mesures](docs/methode_choix_mesure
 | Élément | État |
 |---|---|
 | Application | Fonctionnellement complète (questionnaire, résultats, fiches candidats, impression/PDF, lien de partage, mode Édition, mode second tour) |
-| Catalogue de mesures | 158 mesures réparties en 17 thèmes |
+| Catalogue de mesures | 172 mesures réparties en 17 thèmes |
 | Candidats | 16 candidats, avec fiche (naissance, formation, profession d'après Wikipédia ; portraits sous licence libre issus de Wikimedia Commons) |
 | Positions | 775 positions **en brouillon** pour les 16 candidats, en cours de relecture humaine (4 seulement pour Teddy Riner, dont le programme n'est pas encore publié) |
 | Premier pack public | Prévu le 15 janvier 2027 |
@@ -173,7 +173,7 @@ Une démo peut être publiée sur GitHub Pages avec le workflow manuel **« Dém
 - [Fiches des candidats et sources](docs/fiches_candidats.md)
 - [Méthode de choix des mesures](docs/methode_choix_mesures.md) et [note de réflexion sur le catalogue](docs/reflexion_catalogue_2026-11-14.md)
 - [Règles de saisie des positions](docs/regles_saisie_positions.md) : valeurs, mesures chiffrées, renvoi dos à dos, paires opposées, « à confirmer »
-- [Note aux candidats](docs/candidats/note_aux_candidats.md) : comment les équipes de campagne peuvent transmettre leur programme et répondre aux 158 mesures, avec le [questionnaire de réponse](docs/candidats/questionnaire_mesures.csv)
+- [Note aux candidats](docs/candidats/note_aux_candidats.md) : comment les équipes de campagne peuvent transmettre leur programme et répondre aux 172 mesures, avec le [questionnaire de réponse](docs/candidats/questionnaire_mesures.csv)
 
 ## Contribuer
 

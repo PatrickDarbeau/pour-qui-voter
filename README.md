@@ -71,7 +71,7 @@ The method is explained in plain French in the app (*Méthode* page) and impleme
 
 ### How the measures were chosen
 
-The questionnaire has **158 measures in 17 themes**. They were written in November 2026, before the 2027 programmes were published, starting from one question for each theme: *what do French parties and candidates regularly disagree about?* The answer draws on the recent public debate (2022 programmes, 2024 elections, recent reforms and controversies).
+The questionnaire has **172 measures in 17 themes**. They were written in November 2026 (14 added on 14 November after the first programmes were collected), before the 2027 programmes were published, starting from one question for each theme: *what do French parties and candidates regularly disagree about?* The answer draws on the recent public debate (2022 programmes, 2024 elections, recent reforms and controversies).
 
 Rules followed:
 
@@ -108,7 +108,7 @@ Further reading (in French): [how the measures were chosen](docs/methode_choix_m
 | Item | State |
 |---|---|
 | Application | Feature-complete (questionnaire, results, candidate pages, print/PDF, share link, edit mode, second-round mode) |
-| Measure catalogue | 158 measures in 17 themes |
+| Measure catalogue | 172 measures in 17 themes |
 | Candidates | 16 candidates, with profiles (birth, education, profession from Wikipedia; free-licence portraits from Wikimedia Commons) |
 | Positions | 775 **draft** positions for all 16 candidates, under human review (only 4 for Teddy Riner, whose programme is not published yet) |
 | First public data pack | Planned for 15 January 2027 |
@@ -173,7 +173,7 @@ A demo can be published on GitHub Pages with the manual **"Démo en ligne"** wor
 - [Candidate profiles and sources](docs/fiches_candidats.md)
 - [How the measures were chosen](docs/methode_choix_mesures.md) and [catalogue review note](docs/reflexion_catalogue_2026-11-14.md) (in French)
 - [Rules for recording positions](docs/regles_saisie_positions.md) (in French): values, figures, "neither option" stances, opposed pairs, "to be confirmed"
-- [Note to candidates](docs/candidats/note_aux_candidats.md) (in French): how campaigns can send their programme and answer the 158 measures, with the [reply questionnaire](docs/candidats/questionnaire_mesures.csv)
+- [Note to candidates](docs/candidats/note_aux_candidats.md) (in French): how campaigns can send their programme and answer the 172 measures, with the [reply questionnaire](docs/candidats/questionnaire_mesures.csv)
 
 ## Contributing
 

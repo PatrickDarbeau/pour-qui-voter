@@ -2,11 +2,11 @@
 
 *Généré par `python outils/catalogue.py` à partir de `outils/catalogue.py` : modifiez ce dernier, puis relancez.*
 
-**158 mesures, 17 thèmes.** Origine : contrepoint 17, demo 20, nouveau 121 (demo = jeu de démonstration ; contrepoint = ajoutée pour l'équilibre ; nouveau = rédigée pour le catalogue).
+**172 mesures, 17 thèmes.** Origine : contrepoint 24, demo 20, nouveau 128 (demo = jeu de démonstration ; contrepoint = ajoutée pour l'équilibre ; nouveau = rédigée pour le catalogue).
 
 ↔ indique la mesure opposée reliée. Points à vérifier : neutralité, exactitude des faits (statu quo cité), équilibre entre sensibilités.
 
-## 💶 Économie et fiscalité (10)
+## 💶 Économie et fiscalité (14)
 
 | Id | Mesure | Précision | ↔ | Origine |
 |---|---|---|---|---|
@@ -20,6 +20,10 @@
 | eco8 | Simplifier les aides aux entreprises sans leur ajouter de conditions | Moins de démarches, mêmes critères d'attribution. | eco7 | contrepoint |
 | eco9 | Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat | Priorité à la réduction du déficit. | eco10 | nouveau |
 | eco10 | Augmenter l'investissement public, même au prix d'un déficit plus élevé | Priorité à la relance et à la transition. | eco9 | nouveau |
+| eco11 | Créer un impôt minimal sur les très hauts patrimoines (« taxe Zucman ») | Par exemple 2 % par an au-delà de 100 millions d'euros de patrimoine. | eco12 | nouveau |
+| eco12 | Ne pas créer d'impôt spécifique sur les très hauts patrimoines | Crainte d'un départ des capitaux et des entreprises. | eco11 | contrepoint |
+| eco13 | Réserver une part de la commande publique aux produits fabriqués en France (« Buy French Act ») | Préférence nationale dans les achats de l'État et des collectivités. | eco14 | nouveau |
+| eco14 | Laisser la commande publique ouverte à toutes les entreprises européennes | Règles actuelles de concurrence de l'Union européenne. | eco13 | contrepoint |
 
 ## 👷 Travail et emploi (9)
 
@@ -105,7 +109,7 @@
 | cult8 | Rendre gratuite l'entrée des musées nationaux | Pour tous les publics. |  | nouveau |
 | cult9 | Créer un régime de protection sociale propre aux artistes-auteurs | Sur le modèle de l'intermittence. |  | nouveau |
 
-## 🌿 Écologie et énergie (10)
+## 🌿 Écologie et énergie (12)
 
 | Id | Mesure | Précision | ↔ | Origine |
 |---|---|---|---|---|
@@ -119,6 +123,8 @@
 | ecl8 | Maintenir l'ouverture à la concurrence des fournisseurs d'électricité | Statu quo. | ecl7 | contrepoint |
 | ecl9 | Instaurer un moratoire sur les nouvelles éoliennes | Arrêt des nouveaux projets. | ecl10 | nouveau |
 | ecl10 | Accélérer le développement de l'éolien et du solaire | Objectifs et procédures accélérées. | ecl9 | nouveau |
+| ecl11 | Revenir sur la fin de la vente des voitures thermiques neuves prévue en 2035 | Remise en cause de l'objectif fixé par l'Union européenne. | ecl12 | nouveau |
+| ecl12 | Maintenir la fin de la vente des voitures thermiques neuves en 2035 | Objectif fixé par l'Union européenne en 2023. | ecl11 | contrepoint |
 
 ## 🚜 Agriculture et alimentation (9)
 
@@ -176,7 +182,7 @@
 | num8 | Interdire l'usage du téléphone portable au collège et au lycée | Pendant toute la journée scolaire. |  | nouveau |
 | num9 | Héberger les données publiques sensibles uniquement chez des prestataires européens | Cloud souverain. |  | nouveau |
 
-## 🛡️ Sécurité (9)
+## 🛡️ Sécurité (11)
 
 | Id | Mesure | Précision | ↔ | Origine |
 |---|---|---|---|---|
@@ -189,6 +195,8 @@
 | sec7 | Recréer une police de proximité | Policiers affectés durablement à un quartier. |  | nouveau |
 | sec8 | Légaliser le cannabis avec une production et une vente encadrées par l'État | Fin de la prohibition. | sec9 | nouveau |
 | sec9 | Durcir les sanctions contre la consommation de stupéfiants | Amendes et peines alourdies. | sec8 | nouveau |
+| sec10 | Dépénaliser l'usage personnel de toutes les drogues | L'usage traité comme une question de santé publique. | sec11 | nouveau |
+| sec11 | Maintenir l'usage de drogues comme un délit | Statu quo (amende forfaitaire délictuelle possible). | sec10 | contrepoint |
 
 ## ⚖️ Justice (9)
 
@@ -218,7 +226,7 @@
 | imm8 | Maintenir l'égalité d'accès aux prestations pour les étrangers en situation régulière | Statu quo. | imm7 | nouveau |
 | imm9 | Faire exécuter systématiquement les obligations de quitter le territoire (OQTF) | Moyens et accords de retour. |  | nouveau |
 
-## 🇪🇺 Europe et international (9)
+## 🇪🇺 Europe et international (11)
 
 | Id | Mesure | Précision | ↔ | Origine |
 |---|---|---|---|---|
@@ -231,8 +239,10 @@
 | eu7 | Rétablir un service militaire obligatoire | Pour les jeunes d'une classe d'âge. |  | nouveau |
 | eu8 | Maintenir ou augmenter l'aide militaire à l'Ukraine | Livraisons d'armes et soutien financier. | eu9 | nouveau |
 | eu9 | Cesser les livraisons d'armes à l'Ukraine et privilégier la négociation | Priorité à la diplomatie. | eu8 | nouveau |
+| eu10 | Sortir de la zone euro et revenir à une monnaie nationale | Retour au franc, conversion de la dette en monnaie nationale. | eu11 | nouveau |
+| eu11 | Rester dans la zone euro | Statu quo monétaire. | eu10 | contrepoint |
 
-## 🏛️ Institutions et démocratie (12)
+## 🏛️ Institutions et démocratie (16)
 
 | Id | Mesure | Précision | ↔ | Origine |
 |---|---|---|---|---|
@@ -248,3 +258,7 @@
 | ins10 | Interdire aux hauts fonctionnaires de rejoindre une entreprise qu'ils ont contrôlée (« pantouflage ») | Prévention des conflits d'intérêts. | ins11 | nouveau |
 | ins11 | Encadrer le pantouflage par un délai et un avis déontologique, sans l'interdire | Statu quo renforcé. | ins10 | contrepoint |
 | ins12 | Supprimer l'article 49.3 de la Constitution | Fin de l'adoption d'un texte sans vote. |  | nouveau |
+| ins13 | Supprimer le Sénat | Parlement réduit à l'Assemblée nationale. | ins14 | nouveau |
+| ins14 | Conserver le Sénat | Parlement à deux chambres. | ins13 | contrepoint |
+| ins15 | Changer de Constitution pour fonder une VIe République | Nouvelle Constitution, par exemple rédigée par une assemblée constituante puis soumise à référendum. | ins16 | nouveau |
+| ins16 | Conserver la Constitution de la Ve République, en la révisant si nécessaire | Statu quo institutionnel depuis 1958. | ins15 | contrepoint |

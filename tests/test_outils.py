@@ -89,7 +89,9 @@ class TestCatalogue(unittest.TestCase):
         from collections import Counter
         nb = Counter(m[1] for m in catalogue.M)
         self.assertEqual(set(nb), {t[0] for t in catalogue.THEMES})
-        self.assertTrue(all(8 <= v <= 12 for v in nb.values()), nb)
+        # Brouillon : jusqu'à 16 mesures par thème après l'ajout des paires A1 (14/11/2026) ;
+        # le plafond de 10 (12 pour Institutions) s'appliquera au pack réel (bloc A4).
+        self.assertTrue(all(8 <= v <= 16 for v in nb.values()), nb)
 
 
 class TestPositions(unittest.TestCase):

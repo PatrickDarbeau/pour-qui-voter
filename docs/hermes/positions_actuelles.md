@@ -2,7 +2,7 @@
 
 *Généré par `python outils/hermes_envoi.py` le 14/11/2026 (données 2026.11.14-test). Sert au mode « complément » : ne pas recopier ces positions, chercher ce qui manque.*
 
-## arthaud — Nathalie Arthaud (29 positions sur 158 mesures)
+## arthaud — Nathalie Arthaud (29 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -36,7 +36,7 @@
 | trav4 | Réduire la durée d'indemnisation du chômage lorsque le marché de l'emploi est favorable | s'oppose | oui | https://www.lutte-ouvriere.org/medias/document/fichiers/2026/11/Depliant-NA-3nov.pdf |
 | trav6 | Indexer automatiquement les salaires sur l'inflation | soutient |  | https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf |
 
-## asselineau — François Asselineau (23 positions sur 158 mesures)
+## asselineau — François Asselineau (23 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -64,7 +64,7 @@
 | retr7 | Porter le minimum de pension au niveau du SMIC net pour une carrière complète | en partie |  | https://upr.fr/le-frexit |
 | trav1 | Augmenter le SMIC de 10 % | en partie |  | https://upr.fr/le-frexit |
 
-## attal — Gabriel Attal (27 positions sur 158 mesures)
+## attal — Gabriel Attal (27 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -96,7 +96,7 @@
 | trav4 | Réduire la durée d'indemnisation du chômage lorsque le marché de l'emploi est favorable | soutient | oui | https://attalpresident.fr/programme/travail-salaires |
 | trav5 | Allonger la durée d'indemnisation du chômage et annuler les dernières réformes | s'oppose |  | https://attalpresident.fr/programme/travail-salaires |
 
-## dupont_aignan — Nicolas Dupont-Aignan (85 positions sur 158 mesures)
+## dupont_aignan — Nicolas Dupont-Aignan (85 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -186,7 +186,7 @@
 | trav7 | Réserver un tiers des sièges des conseils d'administration aux représentants des salariés | en partie |  | https://www.debout-la-france.fr/wp-content/uploads/2026/11/Economie-2026_11-12_Livret.pdf |
 | trav8 | Supprimer les cotisations salariales sur les heures supplémentaires | soutient |  | https://www.debout-la-france.fr/wp-content/uploads/2026/11/Economie-2026_11-12_Livret.pdf |
 
-## glucksmann — Raphaël Glucksmann (50 positions sur 158 mesures)
+## glucksmann — Raphaël Glucksmann (50 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -241,7 +241,7 @@
 | trav7 | Réserver un tiers des sièges des conseils d'administration aux représentants des salariés | en partie |  | https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf |
 | trav9 | Limiter l'écart entre le salaire le plus bas et le plus haut d'une entreprise à 1 pour 20 | en partie |  | https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf |
 
-## lepen — Marine Le Pen (15 positions sur 158 mesures)
+## lepen — Marine Le Pen (15 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -261,7 +261,7 @@
 | retr6 | Financer les retraites uniquement par répartition, en augmentant les cotisations si nécessaire | s'oppose | oui | https://www.lemonde.fr/politique/article/2026/10/06/presidentielle-2027-marine-le-pen-promet-140-milliards-d-euros-nets-d-economies-d-ici-2032_6788959_823448.html |
 | soli3 | Baisser la TVA sur l'énergie et les produits de première nécessité | soutient |  | https://rassemblementnational.fr/ |
 
-## lisnard — David Lisnard (45 positions sur 158 mesures)
+## lisnard — David Lisnard (45 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -311,7 +311,7 @@
 | trav2 | Réduire la durée légale du travail à 32 heures par semaine | s'oppose | oui | https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/ |
 | trav3 | Permettre aux entreprises de fixer la durée du travail par accord, au-delà de 35 heures | en partie | oui | https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/ |
 
-## melenchon — Jean-Luc Mélenchon (111 positions sur 158 mesures)
+## melenchon — Jean-Luc Mélenchon (111 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -427,7 +427,7 @@
 | trav8 | Supprimer les cotisations salariales sur les heures supplémentaires | s'oppose | oui | https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1 |
 | trav9 | Limiter l'écart entre le salaire le plus bas et le plus haut d'une entreprise à 1 pour 20 | soutient |  | https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2 |
 
-## philippe — Édouard Philippe (46 positions sur 158 mesures)
+## philippe — Édouard Philippe (46 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -478,7 +478,7 @@
 | trav5 | Allonger la durée d'indemnisation du chômage et annuler les dernières réformes | s'oppose |  | https://www.edouardphilippe.fr/programme/travail |
 | trav8 | Supprimer les cotisations salariales sur les heures supplémentaires | soutient |  | https://www.edouardphilippe.fr/programme/travail |
 
-## philippot — Florian Philippot (67 positions sur 158 mesures)
+## philippot — Florian Philippot (67 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -550,7 +550,7 @@
 | trav4 | Réduire la durée d'indemnisation du chômage lorsque le marché de l'emploi est favorable | s'oppose |  | https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf |
 | trav5 | Allonger la durée d'indemnisation du chômage et annuler les dernières réformes | en partie |  | https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf |
 
-## retailleau — Bruno Retailleau (44 positions sur 158 mesures)
+## retailleau — Bruno Retailleau (44 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -599,7 +599,7 @@
 | trav5 | Allonger la durée d'indemnisation du chômage et annuler les dernières réformes | s'oppose |  | https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf |
 | trav8 | Supprimer les cotisations salariales sur les heures supplémentaires | soutient |  | https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf |
 
-## riner — Teddy Riner (4 positions sur 158 mesures)
+## riner — Teddy Riner (4 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -608,7 +608,7 @@
 | retr8 | Réintégrer le port de charges lourdes et les postures pénibles dans le compte pénibilité | en partie | oui | https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html |
 | trav3 | Permettre aux entreprises de fixer la durée du travail par accord, au-delà de 35 heures | en partie | oui | https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html |
 
-## roussel — Fabien Roussel (27 positions sur 158 mesures)
+## roussel — Fabien Roussel (27 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -640,7 +640,7 @@
 | san4 | Rembourser intégralement les soins dentaires et optiques | en partie | oui | https://assets.nationbuilder.com/pcf/pages/36196/attachments/original/1766073347/document_-_cahier_se%CC%81cu_v2.pdf |
 | soli1 | Bloquer les prix des carburants en période de forte inflation | soutient | oui | https://www.fabienroussel2027.fr/materiel |
 
-## ruffin — François Ruffin (56 positions sur 158 mesures)
+## ruffin — François Ruffin (56 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -701,7 +701,7 @@
 | trav7 | Réserver un tiers des sièges des conseils d'administration aux représentants des salariés | soutient |  | https://nouspresident.fr/pour-une-democratie-en-continu-vive-les-etats-generaux/ |
 | trav9 | Limiter l'écart entre le salaire le plus bas et le plus haut d'une entreprise à 1 pour 20 | en partie | oui | https://debout.fr/notre-manifeste/ |
 
-## tondelier — Marine Tondelier (131 positions sur 158 mesures)
+## tondelier — Marine Tondelier (131 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -837,7 +837,7 @@
 | trav8 | Supprimer les cotisations salariales sur les heures supplémentaires | s'oppose |  | https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf |
 | trav9 | Limiter l'écart entre le salaire le plus bas et le plus haut d'une entreprise à 1 pour 20 | en partie |  | https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf |
 
-## zemmour — Éric Zemmour (15 positions sur 158 mesures)
+## zemmour — Éric Zemmour (15 positions sur 172 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|

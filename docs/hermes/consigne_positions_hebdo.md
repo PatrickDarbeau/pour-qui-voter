@@ -9,7 +9,7 @@ Chaque tâche traite **un seul candidat** et porte une **date de relevé** (AAAA
 
 ## Contexte
 
-Le comparateur demande à l'électeur son avis sur **158 mesures** réparties en 17 thèmes. Pour chaque candidat, il faut savoir s'il **soutient**, **soutient en partie** ou **s'oppose à** chaque mesure, preuve à l'appui. Les candidats suivis chaque semaine sont ceux dont les positions sont absentes ou incomplètes ; un candidat sans position est affiché « positions non encore saisies » et n'est pas classé.
+Le comparateur demande à l'électeur son avis sur **172 mesures** réparties en 17 thèmes. **14 mesures ont été ajoutées le 14/11/2026** (eco11 à eco14, ecl11, ecl12, sec10, sec11, eu10, eu11, ins13 à ins16) : pour chaque candidat, quel que soit le mode, chercher en priorité sa position sur ces mesures. Pour chaque candidat, il faut savoir s'il **soutient**, **soutient en partie** ou **s'oppose à** chaque mesure, preuve à l'appui. Les candidats suivis chaque semaine sont ceux dont les positions sont absentes ou incomplètes ; un candidat sans position est affiché « positions non encore saisies » et n'est pas classé.
 
 La liste des mesures se trouve dans le fichier `mesures_par_theme.md` du dossier de travail (référence de la mesure, intitulé, précision, mesure opposée). **La lire en entier avant de commencer.**
 

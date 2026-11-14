@@ -2,7 +2,7 @@
 
 *Générée par `python outils/positions.py` depuis `outils/positions_philippe.py`. Sources consultées le 2026-11-12.*
 
-**46 positions renseignées sur 158 mesures** (19 soutient, 10 en partie, 17 s'oppose) ; les 112 autres valent « ne se prononce pas » (aucun passage trouvé). 10 position(s) marquée(s) « à confirmer » ⚠.
+**46 positions renseignées sur 172 mesures** (19 soutient, 10 en partie, 17 s'oppose) ; les 126 autres valent « ne se prononce pas » (aucun passage trouvé). 10 position(s) marquée(s) « à confirmer » ⚠.
 
 ## 💶 Économie et fiscalité
 
@@ -18,6 +18,10 @@
 | Simplifier les aides aux entreprises sans leur ajouter de conditions | · | — |
 | Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat | **Soutient** | « Ramener le déficit de plus de 5 % à 2 % de la richesse nationale à la fin du mandat » ([source](https://www.edouardphilippe.fr/programme/comptes-publics)) |
 | Augmenter l'investissement public, même au prix d'un déficit plus élevé | **S'oppose** ⚠ | « Une règle inscrite dans la Constitution qui interdira aux parlementaires de creuser le déficit » ([source](https://www.edouardphilippe.fr/programme/comptes-publics)) |
+| Créer un impôt minimal sur les très hauts patrimoines (« taxe Zucman ») | · | — |
+| Ne pas créer d'impôt spécifique sur les très hauts patrimoines | · | — |
+| Réserver une part de la commande publique aux produits fabriqués en France (« Buy French Act ») | · | — |
+| Laisser la commande publique ouverte à toutes les entreprises européennes | · | — |
 
 ## 👷 Travail et emploi
 
@@ -117,6 +121,8 @@
 | Maintenir l'ouverture à la concurrence des fournisseurs d'électricité | · | — |
 | Instaurer un moratoire sur les nouvelles éoliennes | · | — |
 | Accélérer le développement de l'éolien et du solaire | **Soutient en partie** | « Développer les renouvelables là où elles sont efficaces » ([source](https://www.edouardphilippe.fr/programme/energie)) |
+| Revenir sur la fin de la vente des voitures thermiques neuves prévue en 2035 | · | — |
+| Maintenir la fin de la vente des voitures thermiques neuves en 2035 | · | — |
 
 ## 🚜 Agriculture et alimentation
 
@@ -187,6 +193,8 @@
 | Recréer une police de proximité | · | — |
 | Légaliser le cannabis avec une production et une vente encadrées par l'État | **S'oppose** | « Édouard Philippe veut-il punir les consommateurs de drogue ? Oui » ([source](https://www.edouardphilippe.fr/programme/securite)) |
 | Durcir les sanctions contre la consommation de stupéfiants | **Soutient** | « Des amendes réellement payées, au besoin prélevées sur les prestations sociales » ([source](https://www.edouardphilippe.fr/programme/securite)) |
+| Dépénaliser l'usage personnel de toutes les drogues | · | — |
+| Maintenir l'usage de drogues comme un délit | · | — |
 
 ## ⚖️ Justice
 
@@ -229,6 +237,8 @@
 | Rétablir un service militaire obligatoire | **S'oppose** ⚠ | « Édouard Philippe mise d'abord sur l'engagement […] service militaire volontaire de 3 000 à 50 000 places » ([source](https://www.edouardphilippe.fr/programme/defense)) |
 | Maintenir ou augmenter l'aide militaire à l'Ukraine | **Soutient** | « Un soutien plein à l'Ukraine » ([source](https://www.edouardphilippe.fr/programme/defense)) |
 | Cesser les livraisons d'armes à l'Ukraine et privilégier la négociation | · | — |
+| Sortir de la zone euro et revenir à une monnaie nationale | · | — |
+| Rester dans la zone euro | · | — |
 
 ## 🏛️ Institutions et démocratie
 
@@ -246,3 +256,7 @@
 | Interdire aux hauts fonctionnaires de rejoindre une entreprise qu'ils ont contrôlée (« pantouflage ») | · | — |
 | Encadrer le pantouflage par un délai et un avis déontologique, sans l'interdire | · | — |
 | Supprimer l'article 49.3 de la Constitution | · | — |
+| Supprimer le Sénat | · | — |
+| Conserver le Sénat | · | — |
+| Changer de Constitution pour fonder une VIe République | · | — |
+| Conserver la Constitution de la Ve République, en la révisant si nécessaire | · | — |

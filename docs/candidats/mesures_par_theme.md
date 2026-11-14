@@ -1,10 +1,10 @@
 # Mesures retenues dans le comparateur
 
-*Liste générée par `python outils/questionnaire.py` le 14/11/2026 à partir des données version 2026.11.13-test.3 : 158 mesures, 17 thèmes.*
+*Liste générée par `python outils/questionnaire.py` le 14/11/2026 à partir des données version 2026.11.14-test : 172 mesures, 17 thèmes.*
 
 Version à remplir : [questionnaire_mesures.csv](questionnaire_mesures.csv). Pour chaque mesure, indiquer : **soutient / soutient en partie / ne se prononce pas / s'oppose**, avec un extrait du programme et sa source.
 
-## 💶 Économie et fiscalité (10 mesures)
+## 💶 Économie et fiscalité (14 mesures)
 
 | Réf. | Mesure | Précision |
 |---|---|---|
@@ -18,6 +18,10 @@ Version à remplir : [questionnaire_mesures.csv](questionnaire_mesures.csv). Pou
 | eco8 | Simplifier les aides aux entreprises sans leur ajouter de conditions | Moins de démarches, mêmes critères d'attribution. *(mesure opposée : eco7)* |
 | eco9 | Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat | Priorité à la réduction du déficit. *(mesure opposée : eco10)* |
 | eco10 | Augmenter l'investissement public, même au prix d'un déficit plus élevé | Priorité à la relance et à la transition. *(mesure opposée : eco9)* |
+| eco11 | Créer un impôt minimal sur les très hauts patrimoines (« taxe Zucman ») | Par exemple 2 % par an au-delà de 100 millions d'euros de patrimoine. *(mesure opposée : eco12)* |
+| eco12 | Ne pas créer d'impôt spécifique sur les très hauts patrimoines | Crainte d'un départ des capitaux et des entreprises. *(mesure opposée : eco11)* |
+| eco13 | Réserver une part de la commande publique aux produits fabriqués en France (« Buy French Act ») | Préférence nationale dans les achats de l'État et des collectivités. *(mesure opposée : eco14)* |
+| eco14 | Laisser la commande publique ouverte à toutes les entreprises européennes | Règles actuelles de concurrence de l'Union européenne. *(mesure opposée : eco13)* |
 
 ## 👷 Travail et emploi (9 mesures)
 
@@ -103,7 +107,7 @@ Version à remplir : [questionnaire_mesures.csv](questionnaire_mesures.csv). Pou
 | cult8 | Rendre gratuite l'entrée des musées nationaux | Pour tous les publics. |
 | cult9 | Créer un régime de protection sociale propre aux artistes-auteurs | Sur le modèle de l'intermittence. |
 
-## 🌿 Écologie et énergie (10 mesures)
+## 🌿 Écologie et énergie (12 mesures)
 
 | Réf. | Mesure | Précision |
 |---|---|---|
@@ -117,6 +121,8 @@ Version à remplir : [questionnaire_mesures.csv](questionnaire_mesures.csv). Pou
 | ecl8 | Maintenir l'ouverture à la concurrence des fournisseurs d'électricité | Statu quo. *(mesure opposée : ecl7)* |
 | ecl9 | Instaurer un moratoire sur les nouvelles éoliennes | Arrêt des nouveaux projets. *(mesure opposée : ecl10)* |
 | ecl10 | Accélérer le développement de l'éolien et du solaire | Objectifs et procédures accélérées. *(mesure opposée : ecl9)* |
+| ecl11 | Revenir sur la fin de la vente des voitures thermiques neuves prévue en 2035 | Remise en cause de l'objectif fixé par l'Union européenne. *(mesure opposée : ecl12)* |
+| ecl12 | Maintenir la fin de la vente des voitures thermiques neuves en 2035 | Objectif fixé par l'Union européenne en 2023. *(mesure opposée : ecl11)* |
 
 ## 🚜 Agriculture et alimentation (9 mesures)
 
@@ -174,7 +180,7 @@ Version à remplir : [questionnaire_mesures.csv](questionnaire_mesures.csv). Pou
 | num8 | Interdire l'usage du téléphone portable au collège et au lycée | Pendant toute la journée scolaire. |
 | num9 | Héberger les données publiques sensibles uniquement chez des prestataires européens | Cloud souverain. |
 
-## 🛡️ Sécurité (9 mesures)
+## 🛡️ Sécurité (11 mesures)
 
 | Réf. | Mesure | Précision |
 |---|---|---|
@@ -187,6 +193,8 @@ Version à remplir : [questionnaire_mesures.csv](questionnaire_mesures.csv). Pou
 | sec7 | Recréer une police de proximité | Policiers affectés durablement à un quartier. |
 | sec8 | Légaliser le cannabis avec une production et une vente encadrées par l'État | Fin de la prohibition. *(mesure opposée : sec9)* |
 | sec9 | Durcir les sanctions contre la consommation de stupéfiants | Amendes et peines alourdies. *(mesure opposée : sec8)* |
+| sec10 | Dépénaliser l'usage personnel de toutes les drogues | L'usage traité comme une question de santé publique. *(mesure opposée : sec11)* |
+| sec11 | Maintenir l'usage de drogues comme un délit | Statu quo (amende forfaitaire délictuelle possible). *(mesure opposée : sec10)* |
 
 ## ⚖️ Justice (9 mesures)
 
@@ -216,7 +224,7 @@ Version à remplir : [questionnaire_mesures.csv](questionnaire_mesures.csv). Pou
 | imm8 | Maintenir l'égalité d'accès aux prestations pour les étrangers en situation régulière | Statu quo. *(mesure opposée : imm7)* |
 | imm9 | Faire exécuter systématiquement les obligations de quitter le territoire (OQTF) | Moyens et accords de retour. |
 
-## 🇪🇺 Europe et international (9 mesures)
+## 🇪🇺 Europe et international (11 mesures)
 
 | Réf. | Mesure | Précision |
 |---|---|---|
@@ -229,8 +237,10 @@ Version à remplir : [questionnaire_mesures.csv](questionnaire_mesures.csv). Pou
 | eu7 | Rétablir un service militaire obligatoire | Pour les jeunes d'une classe d'âge. |
 | eu8 | Maintenir ou augmenter l'aide militaire à l'Ukraine | Livraisons d'armes et soutien financier. *(mesure opposée : eu9)* |
 | eu9 | Cesser les livraisons d'armes à l'Ukraine et privilégier la négociation | Priorité à la diplomatie. *(mesure opposée : eu8)* |
+| eu10 | Sortir de la zone euro et revenir à une monnaie nationale | Retour au franc, conversion de la dette en monnaie nationale. *(mesure opposée : eu11)* |
+| eu11 | Rester dans la zone euro | Statu quo monétaire. *(mesure opposée : eu10)* |
 
-## 🏛️ Institutions et démocratie (12 mesures)
+## 🏛️ Institutions et démocratie (16 mesures)
 
 | Réf. | Mesure | Précision |
 |---|---|---|
@@ -246,3 +256,7 @@ Version à remplir : [questionnaire_mesures.csv](questionnaire_mesures.csv). Pou
 | ins10 | Interdire aux hauts fonctionnaires de rejoindre une entreprise qu'ils ont contrôlée (« pantouflage ») | Prévention des conflits d'intérêts. *(mesure opposée : ins11)* |
 | ins11 | Encadrer le pantouflage par un délai et un avis déontologique, sans l'interdire | Statu quo renforcé. *(mesure opposée : ins10)* |
 | ins12 | Supprimer l'article 49.3 de la Constitution | Fin de l'adoption d'un texte sans vote. |
+| ins13 | Supprimer le Sénat | Parlement réduit à l'Assemblée nationale. *(mesure opposée : ins14)* |
+| ins14 | Conserver le Sénat | Parlement à deux chambres. *(mesure opposée : ins13)* |
+| ins15 | Changer de Constitution pour fonder une VIe République | Nouvelle Constitution, par exemple rédigée par une assemblée constituante puis soumise à référendum. *(mesure opposée : ins16)* |
+| ins16 | Conserver la Constitution de la Ve République, en la révisant si nécessaire | Statu quo institutionnel depuis 1958. *(mesure opposée : ins15)* |

@@ -9,6 +9,10 @@ eco7;Économie et fiscalité;Conditionner les aides publiques aux entreprises à
 eco8;Économie et fiscalité;Simplifier les aides aux entreprises sans leur ajouter de conditions;Moins de démarches, mêmes critères d'attribution.;eco7;;;;
 eco9;Économie et fiscalité;Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat;Priorité à la réduction du déficit.;eco10;;;;
 eco10;Économie et fiscalité;Augmenter l'investissement public, même au prix d'un déficit plus élevé;Priorité à la relance et à la transition.;eco9;;;;
+eco11;Économie et fiscalité;Créer un impôt minimal sur les très hauts patrimoines (« taxe Zucman »);Par exemple 2 % par an au-delà de 100 millions d'euros de patrimoine.;eco12;;;;
+eco12;Économie et fiscalité;Ne pas créer d'impôt spécifique sur les très hauts patrimoines;Crainte d'un départ des capitaux et des entreprises.;eco11;;;;
+eco13;Économie et fiscalité;Réserver une part de la commande publique aux produits fabriqués en France (« Buy French Act »);Préférence nationale dans les achats de l'État et des collectivités.;eco14;;;;
+eco14;Économie et fiscalité;Laisser la commande publique ouverte à toutes les entreprises européennes;Règles actuelles de concurrence de l'Union européenne.;eco13;;;;
 trav1;Travail et emploi;Augmenter le SMIC de 10 %;Revalorisation exceptionnelle du salaire minimum.;;;;;
 trav2;Travail et emploi;Réduire la durée légale du travail à 32 heures par semaine;Semaine de quatre jours, sans baisse de salaire.;trav3;;;;
 trav3;Travail et emploi;Permettre aux entreprises de fixer la durée du travail par accord, au-delà de 35 heures;Assouplissement de la durée légale.;trav2;;;;
@@ -73,6 +77,8 @@ ecl7;Écologie et énergie;Faire d'EDF une entreprise publique en monopole sur l
 ecl8;Écologie et énergie;Maintenir l'ouverture à la concurrence des fournisseurs d'électricité;Statu quo.;ecl7;;;;
 ecl9;Écologie et énergie;Instaurer un moratoire sur les nouvelles éoliennes;Arrêt des nouveaux projets.;ecl10;;;;
 ecl10;Écologie et énergie;Accélérer le développement de l'éolien et du solaire;Objectifs et procédures accélérées.;ecl9;;;;
+ecl11;Écologie et énergie;Revenir sur la fin de la vente des voitures thermiques neuves prévue en 2035;Remise en cause de l'objectif fixé par l'Union européenne.;ecl12;;;;
+ecl12;Écologie et énergie;Maintenir la fin de la vente des voitures thermiques neuves en 2035;Objectif fixé par l'Union européenne en 2023.;ecl11;;;;
 agri1;Agriculture et alimentation;Interdire le glyphosate en France;Sortie de l'herbicide.;agri2;;;;
 agri2;Agriculture et alimentation;Aligner les règles françaises sur les pesticides sur celles de l'Union européenne;Fin des interdictions plus strictes qu'en Europe.;agri1;;;;
 agri3;Agriculture et alimentation;Garantir aux agriculteurs des prix planchers couvrant leurs coûts de production;Prix minimum fixé par filière.;;;;;
@@ -118,6 +124,8 @@ sec6;Sécurité;Rendre obligatoire le déclenchement de la caméra-piéton lors 
 sec7;Sécurité;Recréer une police de proximité;Policiers affectés durablement à un quartier.;;;;;
 sec8;Sécurité;Légaliser le cannabis avec une production et une vente encadrées par l'État;Fin de la prohibition.;sec9;;;;
 sec9;Sécurité;Durcir les sanctions contre la consommation de stupéfiants;Amendes et peines alourdies.;sec8;;;;
+sec10;Sécurité;Dépénaliser l'usage personnel de toutes les drogues;L'usage traité comme une question de santé publique.;sec11;;;;
+sec11;Sécurité;Maintenir l'usage de drogues comme un délit;Statu quo (amende forfaitaire délictuelle possible).;sec10;;;;
 jus1;Justice;Instaurer des peines planchers;Peines minimales pour les récidivistes.;jus2;;;;
 jus2;Justice;Développer les peines alternatives à la prison;Travaux d'intérêt général, bracelet électronique.;jus1;;;;
 jus3;Justice;Calculer le montant des amendes routières en fonction des revenus;Amendes proportionnelles.;jus4;;;;
@@ -145,6 +153,8 @@ eu6;Europe et international;Porter le budget de la défense à 3 % du PIB;Hausse
 eu7;Europe et international;Rétablir un service militaire obligatoire;Pour les jeunes d'une classe d'âge.;;;;;
 eu8;Europe et international;Maintenir ou augmenter l'aide militaire à l'Ukraine;Livraisons d'armes et soutien financier.;eu9;;;;
 eu9;Europe et international;Cesser les livraisons d'armes à l'Ukraine et privilégier la négociation;Priorité à la diplomatie.;eu8;;;;
+eu10;Europe et international;Sortir de la zone euro et revenir à une monnaie nationale;Retour au franc, conversion de la dette en monnaie nationale.;eu11;;;;
+eu11;Europe et international;Rester dans la zone euro;Statu quo monétaire.;eu10;;;;
 ins1;Institutions et démocratie;Instaurer le référendum d'initiative citoyenne (RIC);Référendum déclenché par pétition.;;;;;
 ins2;Institutions et démocratie;Introduire une dose de proportionnelle aux élections législatives;Modification du mode de scrutin.;;;;;
 ins3;Institutions et démocratie;Prendre en compte le vote blanc, avec annulation de l'élection s'il arrive en tête;Nouvelle élection avec d'autres candidats.;ins4;;;;
@@ -157,3 +167,7 @@ ins9;Institutions et démocratie;Rendre publiques les rémunérations des hauts 
 ins10;Institutions et démocratie;Interdire aux hauts fonctionnaires de rejoindre une entreprise qu'ils ont contrôlée (« pantouflage »);Prévention des conflits d'intérêts.;ins11;;;;
 ins11;Institutions et démocratie;Encadrer le pantouflage par un délai et un avis déontologique, sans l'interdire;Statu quo renforcé.;ins10;;;;
 ins12;Institutions et démocratie;Supprimer l'article 49.3 de la Constitution;Fin de l'adoption d'un texte sans vote.;;;;;
+ins13;Institutions et démocratie;Supprimer le Sénat;Parlement réduit à l'Assemblée nationale.;ins14;;;;
+ins14;Institutions et démocratie;Conserver le Sénat;Parlement à deux chambres.;ins13;;;;
+ins15;Institutions et démocratie;Changer de Constitution pour fonder une VIe République;Nouvelle Constitution, par exemple rédigée par une assemblée constituante puis soumise à référendum.;ins16;;;;
+ins16;Institutions et démocratie;Conserver la Constitution de la Ve République, en la révisant si nécessaire;Statu quo institutionnel depuis 1958.;ins15;;;;

@@ -2,7 +2,7 @@
 
 *Générée par `python outils/positions.py` depuis `outils/positions_philippot.py`. Sources consultées le 2026-11-14.*
 
-**67 positions renseignées sur 158 mesures** (28 soutient, 17 en partie, 22 s'oppose) ; les 91 autres valent « ne se prononce pas » (aucun passage trouvé). 14 position(s) marquée(s) « à confirmer » ⚠.
+**67 positions renseignées sur 172 mesures** (28 soutient, 17 en partie, 22 s'oppose) ; les 105 autres valent « ne se prononce pas » (aucun passage trouvé). 14 position(s) marquée(s) « à confirmer » ⚠.
 
 ## 💶 Économie et fiscalité
 
@@ -18,6 +18,10 @@
 | Simplifier les aides aux entreprises sans leur ajouter de conditions | · | — |
 | Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat | **Soutient en partie** | « une gestion rigoureuse des dépenses de l'Etat accompagnée de la sortie de l'UE et de l'abandon de l'Euro » ([source](https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf)) |
 | Augmenter l'investissement public, même au prix d'un déficit plus élevé | **S'oppose** ⚠ | « Pour réaliser ce redressement sans augmenter le niveau d'imposition déjà record subi par les Français » ([source](https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf)) |
+| Créer un impôt minimal sur les très hauts patrimoines (« taxe Zucman ») | · | — |
+| Ne pas créer d'impôt spécifique sur les très hauts patrimoines | · | — |
+| Réserver une part de la commande publique aux produits fabriqués en France (« Buy French Act ») | · | — |
+| Laisser la commande publique ouverte à toutes les entreprises européennes | · | — |
 
 ## 👷 Travail et emploi
 
@@ -117,6 +121,8 @@
 | Maintenir l'ouverture à la concurrence des fournisseurs d'électricité | **S'oppose** | « la concurrence artificiellement organisée n'a aucunement fait baisser les prix » ([source](https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf)) |
 | Instaurer un moratoire sur les nouvelles éoliennes | **Soutient** | « un moratoire total et définitif sur cette méthode de production d'électricité » ([source](https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf)) |
 | Accélérer le développement de l'éolien et du solaire | **S'oppose** | « En finir avec les éoliennes sur terre et en mer » ([source](https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf)) |
+| Revenir sur la fin de la vente des voitures thermiques neuves prévue en 2035 | · | — |
+| Maintenir la fin de la vente des voitures thermiques neuves en 2035 | · | — |
 
 ## 🚜 Agriculture et alimentation
 
@@ -187,6 +193,8 @@
 | Recréer une police de proximité | **Soutient** | « Recréer une police de proximité visible et permanente » ([source](https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf)) |
 | Légaliser le cannabis avec une production et une vente encadrées par l'État | · | — |
 | Durcir les sanctions contre la consommation de stupéfiants | · | — |
+| Dépénaliser l'usage personnel de toutes les drogues | · | — |
+| Maintenir l'usage de drogues comme un délit | · | — |
 
 ## ⚖️ Justice
 
@@ -229,6 +237,8 @@
 | Rétablir un service militaire obligatoire | · | — |
 | Maintenir ou augmenter l'aide militaire à l'Ukraine | **S'oppose** | « Cesser d'entretenir la guerre en Ukraine » ([source](https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf)) |
 | Cesser les livraisons d'armes à l'Ukraine et privilégier la négociation | **Soutient** | « la France doit retrouver son rôle historique en faveur de la Paix, par le dialogue et la diplomatie » ([source](https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf)) |
+| Sortir de la zone euro et revenir à une monnaie nationale | · | — |
+| Rester dans la zone euro | · | — |
 
 ## 🏛️ Institutions et démocratie
 
@@ -246,3 +256,7 @@
 | Interdire aux hauts fonctionnaires de rejoindre une entreprise qu'ils ont contrôlée (« pantouflage ») | · | — |
 | Encadrer le pantouflage par un délai et un avis déontologique, sans l'interdire | · | — |
 | Supprimer l'article 49.3 de la Constitution | · | — |
+| Supprimer le Sénat | · | — |
+| Conserver le Sénat | · | — |
+| Changer de Constitution pour fonder une VIe République | · | — |
+| Conserver la Constitution de la Ve République, en la révisant si nécessaire | · | — |
