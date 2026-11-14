@@ -172,6 +172,7 @@ A demo can be published on GitHub Pages with the manual **"Démo en ligne"** wor
 - [Census of candidates](docs/recensement_candidats.md) (in French): declared, presumed and withdrawn candidates, cross-checked across several sources
 - [Candidate profiles and sources](docs/fiches_candidats.md)
 - [How the measures were chosen](docs/methode_choix_mesures.md) and [catalogue review note](docs/reflexion_catalogue_2026-11-14.md) (in French)
+- [How this project is made](docs/methode_developpement.md) (in French): development method and the roles of Claude (Opus 5.5), Hermès (GLM 5.3) and the developer
 - [Rules for recording positions](docs/regles_saisie_positions.md) (in French): values, figures, "neither option" stances, opposed pairs, "to be confirmed"
 - [Note to candidates](docs/candidats/note_aux_candidats.md) (in French): how campaigns can send their programme and answer the 172 measures, with the [reply questionnaire](docs/candidats/questionnaire_mesures.csv)
 

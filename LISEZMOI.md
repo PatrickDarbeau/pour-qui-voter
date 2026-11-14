@@ -172,6 +172,7 @@ Une démo peut être publiée sur GitHub Pages avec le workflow manuel **« Dém
 - [Recensement des candidats](docs/recensement_candidats.md) : candidats déclarés, pressentis et retirés, recoupés entre plusieurs sources
 - [Fiches des candidats et sources](docs/fiches_candidats.md)
 - [Méthode de choix des mesures](docs/methode_choix_mesures.md) et [note de réflexion sur le catalogue](docs/reflexion_catalogue_2026-11-14.md)
+- [Comment ce projet est fabriqué](docs/methode_developpement.md) : méthode de développement, rôle de Claude (Opus 5.5), d'Hermès (GLM 5.3) et du développeur
 - [Règles de saisie des positions](docs/regles_saisie_positions.md) : valeurs, mesures chiffrées, renvoi dos à dos, paires opposées, « à confirmer »
 - [Note aux candidats](docs/candidats/note_aux_candidats.md) : comment les équipes de campagne peuvent transmettre leur programme et répondre aux 172 mesures, avec le [questionnaire de réponse](docs/candidats/questionnaire_mesures.csv)
 
