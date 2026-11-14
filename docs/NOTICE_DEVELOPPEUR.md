@@ -231,7 +231,7 @@ python outils/maj.py publier --version AAAA.MM.JJ
 |14/11/2026|**Note de transparence sur la méthode de développement** ([methode_developpement.md](methode_developpement.md)) : rôle de Claude (Opus 5.5), d'Hermès (GLM 5.3) et du développeur, mis en parallèle (apport de l'IA, imagination et arbitrage humains), circulation du travail, garde-fous et limites ; liée depuis le README et le LISEZMOI|3de3be2|
 |14/11/2026|Note de transparence revue à la demande du développeur : limites du contrôle humain (moyens en temps et en effectifs) et confiance assumée, encadrée et révocable envers l'IA ; exemples d'arbitrages retirés|cda3898|
 |14/11/2026|Note de transparence : « rien de ce qu'Hermès produit n'est saisi sans un minimum de vérification » (formulation de l'éditeur)|8e14649|
-|14/11/2026|Note de transparence : partie 6 « Position de l'éditeur sur les questions éthiques » (jugement personnel, comparaison avec les médias d'opinion, liberté d'opinion et d'expression, DDHC art. 10 et 11, absence de ligne défendue)|à venir|
+|14/11/2026|Note de transparence : partie 6 « Position de l'éditeur sur les questions éthiques » (jugement personnel, comparaison avec les médias d'opinion, liberté d'opinion et d'expression, DDHC art. 10 et 11, absence de ligne défendue)|ca12c83|
 |—|**Prochaine étape : lot 7** — tests utilisateur du pack de test ; relecture des rapports de veille d'Hermès (18/11, 23/11) puis mise à jour des positions de Le Pen, Zemmour et Riner. Premier pack réel le 15/01/2027.||
 
 \---
