@@ -10,7 +10,7 @@
 |---|---|---|---|
 | **Nature** | Une personne | Assistant de programmation (Claude Code), qui travaille dans le dossier du projet sur l'ordinateur du développeur | Agent autonome installé sur une machine virtuelle du développeur, piloté par Claude |
 | **Rôle en une phrase** | Il imagine, décide et assume | Il conçoit, écrit, vérifie et coordonne | Il cherche et relève |
-| **Responsabilité** | Totale : contenu publié, neutralité, choix éditoriaux | Qualité technique et exactitude de ce qu'il produit, sous contrôle du développeur | Aucune décision : ses livrables sont des brouillons, tous revérifiés |
+| **Responsabilité** | Totale : contenu publié, neutralité, choix éditoriaux ; mais il ne peut pas tout contrôler lui-même (voir §3) | Qualité technique et exactitude de ce qu'il produit, sous contrôle du développeur | Aucune décision : ses livrables sont des brouillons, tous revérifiés |
 
 ---
 
@@ -20,15 +20,12 @@
 
 - **L'idée et l'intention** : un comparateur gratuit, neutre, **hors ligne**, qui ne collecte aucune donnée, et que chacun peut **modifier**.
 - **Les principes non négociables** : neutralité, transparence des sources, aucune requête réseau, vie privée, licence libre.
-- **Les choix de contenu** : les 17 thèmes, la liste des candidats retenus, l'ajout d'une candidate (Nathalie Arthaud), d'un candidat à la veille hebdomadaire (Teddy Riner), la date limite proposée aux équipes de campagne.
-- **Les arbitrages éditoriaux**, par exemple le 14/11/2026 :
-  - retirer du catalogue la mesure « référendum sur la peine de mort », proposée par Claude ;
-  - la remplacer par une mesure sur une **VIe République** ;
-  - attendre le relevé d'un candidat avant de publier une préversion ;
-  - lancer l'idée de **dédoubler les thèmes** trop chargés.
+- **Les choix de contenu** : les thèmes, la liste des candidats retenus et suivis, la date limite proposée aux équipes de campagne.
+- **Les arbitrages éditoriaux** : il retient, refuse ou remplace les propositions de Claude (mesures, règles, organisation du catalogue).
 - **Les décisions de publication** : rendre le dépôt public, publier une préversion, lancer la démo en ligne. Aucune publication ne se fait sans son accord.
 - **Les questions qui orientent le travail** : « Comment les mesures ont-elles été choisies ? Part de subjectivité ? Limites ? » Ce sont ses questions qui ont conduit à écrire la méthode, les règles de saisie et cette note.
 - **Le contrôle** : il relit, refuse, corrige, et peut à tout moment changer de direction.
+- **Les limites de ce contrôle** : il ne peut pas tout vérifier lui-même. Relire chaque ligne de code, rouvrir chaque source et recontrôler chaque position demanderait des moyens coûteux en temps et en effectifs, hors de portée d'un projet porté par une seule personne. Il accorde donc à l'IA une **confiance assumée**, encadrée par des règles écrites, des vérifications automatiques et une traçabilité complète (voir §3 et §5).
 
 ### Claude (Opus 5.5) — conception, écriture, vérification
 
@@ -61,7 +58,7 @@
 |---|---|---|
 | **Idée** | — | L'idée du comparateur, son public, son esprit (civique, gratuit, hors ligne) |
 | **Principes** | Leur traduction technique (aucune requête réseau, politique de sécurité du contenu, tests hors ligne) | Leur choix : neutralité, vie privée, transparence, liberté de modifier |
-| **Catalogue des mesures** | Un brouillon complet et équilibré, des règles de rédaction, des propositions d'ajouts motivées | Le choix des thèmes, la validation ou le refus de chaque proposition (ex. : peine de mort écartée, VIe République ajoutée) |
+| **Catalogue des mesures** | Un brouillon complet et équilibré, des règles de rédaction, des propositions d'ajouts motivées | Le choix des thèmes, la validation, le refus ou le remplacement de chaque proposition |
 | **Positions des candidats** | La recherche (Hermès), puis la vérification mot pour mot et la saisie (Claude) | Les règles d'arbitrage à appliquer à tous, la relecture finale |
 | **Code et tests** | L'écriture, les tests, la correction des erreurs | Les demandes d'évolution, l'essai en conditions réelles |
 | **Documentation** | La rédaction, en français et en anglais | Les questions qui obligent à expliquer, l'exigence de transparence |
@@ -70,11 +67,21 @@
 
 **En résumé** : l'IA apporte la **capacité de travail**. En trois jours, plus de 160 enregistrements, des milliers de lignes de code et de documentation, et 775 positions vérifiées. Le développeur apporte **l'intention, l'imagination et le jugement**. L'IA ne décide ni de ce qui est juste, ni de ce qui est neutre, ni de ce qui est publié.
 
+### Une confiance assumée, et encadrée
+
+Le développeur arbitre, mais il ne contrôle pas tout dans le détail : un contrôle exhaustif demanderait une équipe et un temps dont le projet ne dispose pas. Il fait donc **confiance à l'IA**, en connaissance de cause, et cette confiance repose sur trois appuis :
+
+- **des règles écrites**, identiques pour tous, que l'IA applique et que chacun peut lire ;
+- **des vérifications automatiques** : citations retrouvées mot pour mot dans leur source, validateur des données, tests ;
+- **une transparence complète** : tout le travail est public et tracé (code, données, consignes, rapports bruts, erreurs), pour que chacun, électeur, équipe de campagne ou journaliste, puisse contrôler à son tour et signaler une erreur.
+
+Cette confiance n'est pas aveugle : elle est **limitée** par ces garde-fous et **révocable** à chaque arbitrage.
+
 ---
 
 ## 4. Comment le travail circule
 
-1. **Le développeur formule une demande**, souvent en une phrase : « Ajoute Teddy Riner », « Explique le choix des mesures », « Soumets-moi les paires avant de les ajouter ».
+1. **Le développeur formule une demande**, souvent en une phrase : « Explique le choix des mesures », « Soumets-moi les paires avant de les ajouter ».
 2. **Claude réalise ou propose.** Quand la demande touche au contenu éditorial, il **soumet d'abord** : propositions de mesures, couleurs des candidats, règles de saisie.
 3. **Si une recherche est nécessaire, Claude rédige une consigne pour Hermès.** La tâche entre dans une file d'attente qui respecte le quota du modèle, puis Hermès dépose son livrable sur sa machine virtuelle.
 4. **Claude rapatrie le livrable**, vérifie chaque citation à sa source et saisit ce qui est vérifié. Il écarte le reste, en le justifiant.
