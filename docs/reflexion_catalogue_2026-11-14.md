@@ -93,6 +93,7 @@ La relecture de neutralité par au moins deux personnes de sensibilités différ
 | A3 | **Garder les mesures orphelines jusqu'au 15/01**, puis les retirer ou les fusionner si elles le restent | Ne pas retirer trop tôt un sujet que les programmes n'ont pas encore abordé |
 | A4 | **Plafonner à 10 mesures par thème** (12 pour Institutions), en compensant les ajouts par des retraits | Éviter qu'un thème pèse plus qu'un autre par simple nombre de mesures |
 | A5 | Revérifier la paire « enseignants +15 % » et les autres unanimités suspectes | Corriger les rattachements trop larges |
+| A6 | *Piste de l'éditeur (14/11/2026), à étudier plus tard* : **dédoubler les thèmes les plus chargés** plutôt que de retirer des mesures. Exemples possibles : Économie → « Fiscalité » et « Économie et industrie » ; Institutions → « Institutions » et « Démocratie et probité » ; Europe et international → « Europe » et « Défense et relations internationales » | Alternative au plafond A4 : garder les débats sans alourdir un thème ; à arbitrer avec l'équilibre du questionnaire (nombre total de thèmes, poids des thèmes prioritaires) |
 
 ### B. Les règles et la méthode
 
