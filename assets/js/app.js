@@ -512,6 +512,12 @@
       <h2>Données et mode Édition</h2>
       ${q("D'où viennent les positions des candidats ?", `<p>En priorité du site officiel et du programme de chaque candidat.
         Chaque position a un lien « source ». Une position tirée seulement de la presse, ou déduite d'un principe général, est marquée « à confirmer ».</p>`)}
+      ${q("Comment cet outil est-il fabriqué ? Quelle place pour l'intelligence artificielle ?", `<p>Le comparateur est développé par une personne,
+        avec l'aide de deux intelligences artificielles : Claude (Anthropic) pour le code, les documents et la vérification des sources,
+        et Hermès (modèle GLM) pour la recherche des programmes. Le développeur imagine, décide et publie ; l'IA propose, écrit et vérifie,
+        dans le cadre de règles écrites et sous une traçabilité complète.</p>
+        <p>Le rôle de chacun, la confiance accordée à l'IA, ses garde-fous et ses limites sont expliqués dans une note de transparence :
+        ${lienExterne(CONFIG.depot + "/blob/main/docs/methode_developpement.md", "Comment ce projet est fabriqué")}.</p>`)}
       ${q("Les données sont-elles à jour ?", `<p>La date des données est indiquée en bas de l'accueil. Un bandeau vous prévient si elles sont anciennes.
         Les mises à jour sont publiées sous forme de <strong>packs</strong> : un par mois jusqu'en janvier 2027, puis un par semaine jusqu'au scrutin.</p>`)}
       ${q("Comment installer une mise à jour (un pack) ?", `<ol class="liste">
