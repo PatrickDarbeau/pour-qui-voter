@@ -25,10 +25,12 @@ La liste des mesures se trouve dans le fichier `mesures_par_theme.md` du dossier
 
 1. **Trouver les sources** : site de campagne 2027, programme (page ou PDF), site du parti ou du mouvement, puis déclarations récentes. Noter pour chaque source son URL, sa nature et sa date. Signaler si un programme complet est publié, annoncé ou absent.
 2. **Relever les positions** : pour chaque mesure de `mesures_par_theme.md` sur laquelle une source permet de conclure, indiquer la position du candidat.
-   - `1` = soutient ; `0.5` = soutient en partie (version atténuée, condition, étape) ; `-1` = s'oppose (ou défend la mesure contraire).
-   - **Ne rien écrire** pour une mesure sur laquelle aucune source ne permet de conclure : l'absence vaut « ne se prononce pas ».
-   - Mesures par paires opposées (colonne « mesure opposée ») : les réponses doivent être cohérentes. Soutenir l'une implique en général de s'opposer à l'autre ; ne l'écrire que si la source le permet.
-   - Une position déduite d'un principe général, sans mention de la mesure, doit être signalée « déduite ».
+   **Règles de saisie (identiques pour tous les candidats, adoptées le 14/11/2026) :**
+   - **R1 Valeurs** : `1` = soutient ; `0.5` = soutient en partie (version atténuée, condition, étape, échéance plus lointaine) ; `-1` = s'oppose (ou défend la mesure contraire). **Ne rien écrire** si aucune source ne permet de conclure : l'absence vaut « ne se prononce pas ». Ne jamais deviner.
+   - **R2 Mesures chiffrées** : même sens et chiffre égal ou plus ambitieux = `1` ; même sens mais chiffre moins ambitieux, fourchette commençant sous le seuil, ou aucun chiffre = `0.5` ; sens contraire = `-1`. Pour comparer un montant à un pourcentage, n'utiliser que des chiffres donnés par une source ; sinon `0.5`, signalée « déduite ».
+   - **R3 Renvoi dos à dos** : si le candidat rejette les deux options d'une paire de mesures opposées (« ni l'un ni l'autre »), ne rien écrire sur aucune des deux ; le signaler dans les points de vigilance.
+   - **R4 Paires opposées** (colonne « mesure opposée ») : jamais `1` sur les deux ; `-1` sur les deux seulement si le candidat défend une troisième option qui exclut les deux (l'expliquer) ; `0.5` sur les deux seulement pour une position intermédiaire explicite. Soutenir l'une n'implique de s'opposer à l'autre que si la source le permet.
+   - **R5 Déduite** : une position déduite d'un principe général, ou reprenant le passage d'une mesure voisine, doit être signalée « déduite » (colonne Déduite = oui). Une position tirée de la presse est signalée comme presse (colonne Nature).
 3. **Changements depuis le relevé précédent** : chercher dans le dossier de travail le fichier le plus récent `*_positions-<candidat>.md` (antérieur à la date du relevé). S'il existe, le lire d'abord et indiquer ce qui est nouveau (source, programme publié, position ajoutée ou modifiée) et ce qui n'est plus valable. Ne pas recopier les positions inchangées sans les avoir revérifiées sur la source.
 4. **Propositions hors catalogue** : lister les propositions importantes du candidat qui ne correspondent à aucune mesure (elles serviront à la révision du catalogue).
 

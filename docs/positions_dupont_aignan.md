@@ -2,7 +2,7 @@
 
 *Générée par `python outils/positions.py` depuis `outils/positions_dupont_aignan.py`. Sources consultées le 2026-11-14.*
 
-**85 positions renseignées sur 158 mesures** (41 soutient, 23 en partie, 21 s'oppose) ; les 73 autres valent « ne se prononce pas » (aucun passage trouvé). 4 position(s) marquée(s) « à confirmer » ⚠.
+**85 positions renseignées sur 158 mesures** (41 soutient, 23 en partie, 21 s'oppose) ; les 73 autres valent « ne se prononce pas » (aucun passage trouvé). 6 position(s) marquée(s) « à confirmer » ⚠.
 
 ## 💶 Économie et fiscalité
 
@@ -151,11 +151,11 @@
 | Mesure | Position | Extrait du programme |
 |---|---|---|
 | Aligner le prix des produits de première nécessité des outre-mer sur celui de l'Hexagone | **Soutient en partie** | « Favoriser la concurrence dans la distribution afin de lutter contre la vie chère. » ([source](https://www.debout-la-france.fr/projet/outre-mer/)) |
-| Permettre aux territoires d'outre-mer qui le demandent une autonomie élargie, validée par référendum local | **Soutient en partie** | « s'il y a un Outre-mer qui veut être indépendant, on fait un référendum, cela ne me choque pas » ([source](https://la1ere.franceinfo.fr/nicolas-dupont-aignan-les-ultramarins-en-ont-ras-le-bol-des-petites-magouilles-politiciennes-dans-la-gestion-de-l-eau-1754289.html)) |
+| Permettre aux territoires d'outre-mer qui le demandent une autonomie élargie, validée par référendum local | **Soutient en partie** ⚠ | « s'il y a un Outre-mer qui veut être indépendant, on fait un référendum, cela ne me choque pas » ([source](https://la1ere.franceinfo.fr/nicolas-dupont-aignan-les-ultramarins-en-ont-ras-le-bol-des-petites-magouilles-politiciennes-dans-la-gestion-de-l-eau-1754289.html)) |
 | Maintenir les statuts actuels des territoires d'outre-mer | · | — |
 | Supprimer l'octroi de mer | · | — |
 | Maintenir l'octroi de mer, ressource des collectivités d'outre-mer | **Soutient en partie** | « Le conserver quand il y a des productions locales. » ([source](https://www.debout-la-france.fr/projet/outre-mer/)) |
-| Lancer un plan d'urgence pour l'accès à l'eau potable outre-mer | **Soutient** | « C'est à l'État de reprendre l'eau potable […] je suis prêt à mettre un milliard d'euros sur la table » ([source](https://la1ere.franceinfo.fr/nicolas-dupont-aignan-les-ultramarins-en-ont-ras-le-bol-des-petites-magouilles-politiciennes-dans-la-gestion-de-l-eau-1754289.html)) |
+| Lancer un plan d'urgence pour l'accès à l'eau potable outre-mer | **Soutient** ⚠ | « C'est à l'État de reprendre l'eau potable […] je suis prêt à mettre un milliard d'euros sur la table » ([source](https://la1ere.franceinfo.fr/nicolas-dupont-aignan-les-ultramarins-en-ont-ras-le-bol-des-petites-magouilles-politiciennes-dans-la-gestion-de-l-eau-1754289.html)) |
 | Supprimer le droit du sol à Mayotte | **Soutient** | « Supprimer le droit du sol via un référendum, tout en maintenant la possibilité de devenir Français par naturalisation. » ([source](https://www.debout-la-france.fr/wp-content/uploads/2026/03/Immigration-et-assimilation-2026_03-03_Livret.pdf)) |
 | Maintenir le droit du sol à Mayotte dans les conditions actuelles | **S'oppose** | « Supprimer le droit du sol via un référendum, tout en maintenant la possibilité de devenir Français par naturalisation. » ([source](https://www.debout-la-france.fr/wp-content/uploads/2026/03/Immigration-et-assimilation-2026_03-03_Livret.pdf)) |
 | Renforcer l'aide aux billets d'avion entre les outre-mer et l'Hexagone | **Soutient** | « Améliorer la continuité territoriale en divisant par deux le prix des billets d'avion » ([source](https://www.debout-la-france.fr/projet/outre-mer/)) |

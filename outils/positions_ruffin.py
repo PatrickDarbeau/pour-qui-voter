@@ -51,7 +51,7 @@ P = {
     'edu4': (0.5, S2, 'il faut remplacer Parcoursup par un système plus juste, plus transparent, et qui traite les jeunes comme des humains', False),
     'edu7': (0.5, S2, "le privé doit atteindre des objectifs de mixité sociale, et perdre son financement public s'il s'y refuse", False),
     'eu1': (-1, S1, "La France doit s'y opposer avec fermeté : la diplomatie et la défense relèvent des États et doivent le rester", False, 'presse'),
-    'eu2': (1, S1, "La Commission dispose déjà d'assez de […]  ", False, 'presse'),
+    'eu2': (1, S1, "La Commission dispose déjà d'assez de « compétences »", False, 'presse'),
     'eu4': (0.5, S1, "Nous avions raison de ne pas vouloir mettre tous nos œufs dans le panier de l'OTAN, raison de maintenir une autonomie stratégique", True, 'presse'),
     'imm4': (1, S0, 'Tous les travailleurs et travailleuses sur notre territoire doivent être régularisés pour ne plus vivre dans la peur du lendemain', False),
     'imm5': (-1, S0, 'Tous les travailleurs et travailleuses sur notre territoire doivent être régularisés pour ne plus vivre dans la peur du lendemain', True),
@@ -74,7 +74,7 @@ P = {
     'retr8': (0.5, S11, 'pour quatre trimestres cotisés dans un métier exposé à la pénibilité, un trimestre supplémentaire de retraite sera accordé', False),
     'soli1': (-1, S6, 'plus ciblée que les réductions à la pompe qui couvrent tous les rouleurs', True),
     'soli2': (1, S6, 'La remise à plat des avantages fiscaux actuels est également plus ciblée que les réductions à la pompe', False),
-    'trav1': (1, S11, 'Des mesures fortes, concrètes, comme le SMIC à 1 600€ ou la retraite à 60 ans', False),
+    'trav1': (0.5, S11, 'Des mesures fortes, concrètes, comme le SMIC à 1 600€ ou la retraite à 60 ans', False),  # R2 (règles de saisie, 14/11/2026)
     'trav3': (-1, S11, 'y compris si les règles négociées sont moins favorables que la loi', True),
     'trav6': (1, S11, "nous indexerons les salaires sur l'inflation, comme cela a existé jusqu'en 1982", False),
     'trav7': (1, S8, "Par le haut : c'est un tiers de salariés dans le conseil d'administration", False),

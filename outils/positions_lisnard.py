@@ -10,7 +10,7 @@ AGRI, EDU, IMM, SANTE, SECU = B + "agriculture/", B + "education/", B + "immigra
 
 P = {
     "eco5": (1, AMBITION, "La baisse de la fiscalité de production doit être intensifiée", False),
-    "eco9": (1, DESTIN, "Pour un plan de réduction des déficits et de la dette publics", True),
+    "eco9": (0.5, DESTIN, "Pour un plan de réduction des déficits et de la dette publics", True),  # R2 (règles de saisie, 14/11/2026)
     "eco10": (-1, DESTIN, "Cette « règle d'or » s'appliquerait aux dépenses de fonctionnement mais pas à l'investissement", True),
     "trav2": (-1, AMBITION, "Les incitations à travailler davantage doivent stimuler la capacité de croissance française", True),
     "trav3": (0.5, AMBITION, "La simplification et l'assouplissement des règles du code du Travail", True),
@@ -40,7 +40,7 @@ P = {
     "sec1": (0.5, AMBITION, "Un plan massif de remise à niveau de la police nationale", False),
     "jus1": (1, SECU, "Rétablir les peines planchers pour les récidivistes", False),
     "jus2": (0.5, AMBITION, "Le recours plus effectif des peines alternatives à la prison", False),
-    "jus5": (1, AMBITION, "L'augmentation des places de prison", False),
+    "jus5": (0.5, AMBITION, "L'augmentation des places de prison", False),  # R2 (règles de saisie, 14/11/2026)
     "jus6": (1, SECU, "Abaisser la majorité pénale à 16 ans", False),
     "jus7": (-1, SECU, "Inverser le principe de l'excuse de minorité dès 13 ans", False),
     "jus8": (0.5, AMBITION, "Donner un budget décent à la justice […] Il faut rattraper la moyenne européenne", False),

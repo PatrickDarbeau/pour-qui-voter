@@ -110,10 +110,10 @@ Pour aller plus loin : [méthode de choix des mesures](docs/methode_choix_mesure
 | Application | Fonctionnellement complète (questionnaire, résultats, fiches candidats, impression/PDF, lien de partage, mode Édition, mode second tour) |
 | Catalogue de mesures | 158 mesures réparties en 17 thèmes |
 | Candidats | 16 candidats, avec fiche (naissance, formation, profession d'après Wikipédia ; portraits sous licence libre issus de Wikimedia Commons) |
-| Positions | 777 positions **en brouillon** pour les 16 candidats, en cours de relecture humaine (4 seulement pour Teddy Riner, dont le programme n'est pas encore publié) |
+| Positions | 775 positions **en brouillon** pour les 16 candidats, en cours de relecture humaine (4 seulement pour Teddy Riner, dont le programme n'est pas encore publié) |
 | Premier pack public | Prévu le 15 janvier 2027 |
 
-Les données actuelles (`data/donnees.json`, version `2026.11.13-test.3`) forment un **pack de test** : ne vous en servez pas pour décider de votre vote.
+Les données actuelles (`data/donnees.json`, version `2026.11.14-test`) forment un **pack de test** : ne vous en servez pas pour décider de votre vote.
 
 ## Prise en main
 
@@ -172,6 +172,7 @@ Une démo peut être publiée sur GitHub Pages avec le workflow manuel **« Dém
 - [Recensement des candidats](docs/recensement_candidats.md) : candidats déclarés, pressentis et retirés, recoupés entre plusieurs sources
 - [Fiches des candidats et sources](docs/fiches_candidats.md)
 - [Méthode de choix des mesures](docs/methode_choix_mesures.md) et [note de réflexion sur le catalogue](docs/reflexion_catalogue_2026-11-14.md)
+- [Règles de saisie des positions](docs/regles_saisie_positions.md) : valeurs, mesures chiffrées, renvoi dos à dos, paires opposées, « à confirmer »
 - [Note aux candidats](docs/candidats/note_aux_candidats.md) : comment les équipes de campagne peuvent transmettre leur programme et répondre aux 158 mesures, avec le [questionnaire de réponse](docs/candidats/questionnaire_mesures.csv)
 
 ## Contribuer

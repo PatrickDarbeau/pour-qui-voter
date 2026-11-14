@@ -31,6 +31,8 @@ def main():
             continue
         # Tuple (valeur, url, citation, à confirmer[, type de source]) ; DATE_SOURCE propre au module si définie
         P = {k: (t + ("site_officiel",))[:5] for k, t in mod.P.items()}
+        # Règle R5 : une position tirée de la presse est toujours « à confirmer »
+        P = {k: (v, s, ci, co or ty == "presse", ty) for k, (v, s, ci, co, ty) in P.items()}
         date_c = getattr(mod, "DATE_SOURCE", DATE_SOURCE)
         inconnues = set(P) - set(mesures)
         assert not inconnues, f"{c['id']} : mesures inconnues {inconnues}"

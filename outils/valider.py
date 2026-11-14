@@ -13,6 +13,8 @@ from pathlib import Path
 RACINE = Path(__file__).resolve().parent.parent
 VALEURS = {-1, 0, 0.5, 1}
 TYPES_SOURCE = {"site_officiel", "programme_pdf", "presse", "interview", "vote"}
+# Paires où un candidat a la même valeur, examinées et conservées (docs/regles_saisie_positions.md, R4)
+PAIRES_EXAMINEES = {("zemmour", "eco1"), ("tondelier", "eco3"), ("philippot", "jus6")}
 
 
 def valider(pack):
@@ -62,6 +64,21 @@ def valider(pack):
             erreurs.append(f"Position {cle} : source obligatoire")
         if p.get("source_type") and p["source_type"] not in TYPES_SOURCE:
             alertes.append(f"Position {cle} : type de source inconnu {p['source_type']}")
+
+    # Règles de saisie R4/R5 (docs/regles_saisie_positions.md)
+    val = {(p.get("candidat"), p.get("mesure")): p for p in pack["positions"] if p.get("valeur")}
+    for m in pack["mesures"]:
+        o = m.get("opposee_a")
+        if not o or m["id"] > o:   # chaque paire une seule fois
+            continue
+        for c in candidats:
+            a, b = val.get((c, m["id"])), val.get((c, o))
+            if a and b and a["valeur"] == b["valeur"] and (c, m["id"]) not in PAIRES_EXAMINEES:
+                motif = "jamais « soutient » sur les deux" if a["valeur"] == 1 else "troisième option ou position intermédiaire ? sinon renvoi dos à dos (R3)"
+                alertes.append(f"Candidat {c} : même valeur {a['valeur']} sur la paire {m['id']} ↔ {o} ({motif})")
+    for cle, p in val.items():
+        if p.get("source_type") == "presse" and not p.get("a_confirmer"):
+            alertes.append(f"Position {cle} : source de presse non marquée « à confirmer » (R5)")
 
     # Couverture : chaque candidat devrait se prononcer sur chaque mesure active
     actives = {m["id"] for m in pack["mesures"] if m.get("actif", True)}

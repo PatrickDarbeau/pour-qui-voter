@@ -5,6 +5,7 @@ Chaque citation a été retrouvée mot pour mot dans la source le 14/11/2026 (v�
 césures et typographie normalisées). « À confirmer » = position déduite d'un principe général
 ou d'un passage portant sur une mesure voisine.
 Valeurs : 1 soutient · 0.5 soutient en partie · -1 s'oppose ; mesure absente = 0 (non trouvé).
+Règle R3 (renvoi dos à dos, docs/regles_saisie_positions.md) : agri4/agri5 (Mercosur) et eu1/eu2 non saisies.
 """
 DATE_SOURCE = "2026-11-14"
 
@@ -29,8 +30,6 @@ P = {
     'edu4': (1, S3, "contre des conditions d'éducation indignes et la sélection dans le système éducatif", True, 'programme_pdf'),
     'edu5': (-1, S3, "contre des conditions d'éducation indignes et la sélection dans le système éducatif", True, 'programme_pdf'),
     'edu6': (-1, S3, 'les discours se multiplient pour préparer la jeunesse à mourir « pour la patrie', True, 'programme_pdf'),
-    'eu1': (-1, S10, "L'UE s'est toujours moquée des intérêts des travailleurs et des peuples.", True),
-    'eu2': (-1, S8, 'Le rétablissement des frontières nationales se traduirait par une régression économique et sociale', True),
     'eu3': (-1, S10, "Sortir de l'Union européenne ne réglera pas les problèmes des travailleurs.", False),
     'eu6': (-1, S2, "Ministres et députés imposent l'austérité budgétaire mais votent 36 milliards de rallonge pour l'armée quasiment sans discussion.", True, 'programme_pdf'),
     'eu7': (-1, S3, 'les discours se multiplient pour préparer la jeunesse à mourir « pour la patrie', True, 'programme_pdf'),

@@ -2,7 +2,7 @@
 
 *Générée par `python outils/positions.py` depuis `outils/positions_attal.py`. Sources consultées le 2026-11-12.*
 
-**27 positions renseignées sur 158 mesures** (11 soutient, 4 en partie, 12 s'oppose) ; les 131 autres valent « ne se prononce pas » (aucun passage trouvé). 13 position(s) marquée(s) « à confirmer » ⚠.
+**27 positions renseignées sur 158 mesures** (10 soutient, 5 en partie, 12 s'oppose) ; les 131 autres valent « ne se prononce pas » (aucun passage trouvé). 13 position(s) marquée(s) « à confirmer » ⚠.
 
 ## 💶 Économie et fiscalité
 
@@ -80,7 +80,7 @@
 | Mesure | Position | Extrait du programme |
 |---|---|---|
 | Limiter les classes à 24 élèves en primaire | · | — |
-| Augmenter le salaire des enseignants de 15 % | **Soutient** | « 200 à 500 euros nets de plus par mois pour les enseignants » ([source](https://attalpresident.fr/programme/education)) |
+| Augmenter le salaire des enseignants de 15 % | **Soutient en partie** | « 200 à 500 euros nets de plus par mois pour les enseignants » ([source](https://attalpresident.fr/programme/education)) |
 | Rendre l'uniforme obligatoire à l'école | · | — |
 | Supprimer Parcoursup et rétablir un accès de droit à l'université après le baccalauréat | · | — |
 | Renforcer la sélection à l'entrée de l'université | · | — |

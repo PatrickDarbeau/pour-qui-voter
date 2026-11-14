@@ -29,7 +29,7 @@ P = {
     "soli3": (-1, M + "aides-directes-plutot-que-baisses-de-taxes", "Une baisse de taxe générale profite d'abord aux plus aisés et elle finit toujours par être payée plus tard", True),
     "soli1": (-1, M + "aides-directes-plutot-que-baisses-de-taxes", "Des aides directes plutôt que des baisses de taxes [sur les carburants]", True),
     # Éducation et numérique
-    "edu2": (1, EDU, "200 à 500 euros nets de plus par mois pour les enseignants", False),
+    "edu2": (0.5, EDU, "200 à 500 euros nets de plus par mois pour les enseignants", False),  # R2 (règles de saisie, 14/11/2026)
     "num1": (1, EDU, "Nous irons au bout de leur interdiction pour les moins de 15 ans", False),
     # Agriculture
     "agri3": (1, B, "Des prix planchers indexés sur les coûts de production", False),

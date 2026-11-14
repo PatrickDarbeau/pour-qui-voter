@@ -2,7 +2,7 @@
 
 *Générée par `python outils/positions.py` depuis `outils/positions_lisnard.py`. Sources consultées le 2026-11-12.*
 
-**45 positions renseignées sur 158 mesures** (19 soutient, 8 en partie, 18 s'oppose) ; les 113 autres valent « ne se prononce pas » (aucun passage trouvé). 11 position(s) marquée(s) « à confirmer » ⚠.
+**45 positions renseignées sur 158 mesures** (17 soutient, 10 en partie, 18 s'oppose) ; les 113 autres valent « ne se prononce pas » (aucun passage trouvé). 11 position(s) marquée(s) « à confirmer » ⚠.
 
 ## 💶 Économie et fiscalité
 
@@ -16,7 +16,7 @@
 | Publier la liste et le montant des aides publiques reçues par chaque entreprise | · | — |
 | Conditionner les aides publiques aux entreprises à des engagements d'emploi et d'investissement | · | — |
 | Simplifier les aides aux entreprises sans leur ajouter de conditions | · | — |
-| Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat | **Soutient** ⚠ | « Pour un plan de réduction des déficits et de la dette publics » ([source](https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/)) |
+| Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat | **Soutient en partie** ⚠ | « Pour un plan de réduction des déficits et de la dette publics » ([source](https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/)) |
 | Augmenter l'investissement public, même au prix d'un déficit plus élevé | **S'oppose** ⚠ | « Cette « règle d'or » s'appliquerait aux dépenses de fonctionnement mais pas à l'investissement » ([source](https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/)) |
 
 ## 👷 Travail et emploi
@@ -196,7 +196,7 @@
 | Développer les peines alternatives à la prison | **Soutient en partie** | « Le recours plus effectif des peines alternatives à la prison » ([source](https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/)) |
 | Calculer le montant des amendes routières en fonction des revenus | · | — |
 | Maintenir des amendes routières forfaitaires identiques pour tous | · | — |
-| Construire 20 000 places de prison supplémentaires | **Soutient** | « L'augmentation des places de prison » ([source](https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/)) |
+| Construire 20 000 places de prison supplémentaires | **Soutient en partie** | « L'augmentation des places de prison » ([source](https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/)) |
 | Abaisser la majorité pénale à 16 ans | **Soutient** | « Abaisser la majorité pénale à 16 ans » ([source](https://www.unenouvelleenergie.fr/notre-programme/securite/)) |
 | Maintenir la justice spécifique des mineurs et l'excuse de minorité | **S'oppose** | « Inverser le principe de l'excuse de minorité dès 13 ans » ([source](https://www.unenouvelleenergie.fr/notre-programme/securite/)) |
 | Doubler le budget de la justice sur le quinquennat | **Soutient en partie** | « Donner un budget décent à la justice […] Il faut rattraper la moyenne européenne » ([source](https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/)) |

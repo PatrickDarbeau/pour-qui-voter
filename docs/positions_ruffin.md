@@ -2,7 +2,7 @@
 
 *Générée par `python outils/positions.py` depuis `outils/positions_ruffin.py`. Sources consultées le 2026-11-14.*
 
-**56 positions renseignées sur 158 mesures** (21 soutient, 17 en partie, 18 s'oppose) ; les 102 autres valent « ne se prononce pas » (aucun passage trouvé). 20 position(s) marquée(s) « à confirmer » ⚠.
+**56 positions renseignées sur 158 mesures** (20 soutient, 18 en partie, 18 s'oppose) ; les 102 autres valent « ne se prononce pas » (aucun passage trouvé). 22 position(s) marquée(s) « à confirmer » ⚠.
 
 ## 💶 Économie et fiscalité
 
@@ -23,7 +23,7 @@
 
 | Mesure | Position | Extrait du programme |
 |---|---|---|
-| Augmenter le SMIC de 10 % | **Soutient** | « Des mesures fortes, concrètes, comme le SMIC à 1 600€ ou la retraite à 60 ans » ([source](https://nouspresident.fr/statut-travailleurs-essentiels/)) |
+| Augmenter le SMIC de 10 % | **Soutient en partie** | « Des mesures fortes, concrètes, comme le SMIC à 1 600€ ou la retraite à 60 ans » ([source](https://nouspresident.fr/statut-travailleurs-essentiels/)) |
 | Réduire la durée légale du travail à 32 heures par semaine | · | — |
 | Permettre aux entreprises de fixer la durée du travail par accord, au-delà de 35 heures | **S'oppose** ⚠ | « y compris si les règles négociées sont moins favorables que la loi » ([source](https://nouspresident.fr/statut-travailleurs-essentiels/)) |
 | Réduire la durée d'indemnisation du chômage lorsque le marché de l'emploi est favorable | · | — |
@@ -220,8 +220,8 @@
 
 | Mesure | Position | Extrait du programme |
 |---|---|---|
-| Renforcer l'intégration européenne | **S'oppose** | « La France doit s'y opposer avec fermeté : la diplomatie et la défense relèvent des États et doivent le rester » ([source](https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope)) |
-| Rendre des compétences aux États membres de l'Union européenne | **Soutient** | « La Commission dispose déjà d'assez de […]   » ([source](https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope)) |
+| Renforcer l'intégration européenne | **S'oppose** ⚠ | « La France doit s'y opposer avec fermeté : la diplomatie et la défense relèvent des États et doivent le rester » ([source](https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope)) |
+| Rendre des compétences aux États membres de l'Union européenne | **Soutient** ⚠ | « La Commission dispose déjà d'assez de « compétences » » ([source](https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope)) |
 | Organiser un référendum sur la sortie de l'Union européenne | · | — |
 | Sortir du commandement intégré de l'OTAN | **Soutient en partie** ⚠ | « Nous avions raison de ne pas vouloir mettre tous nos œufs dans le panier de l'OTAN, raison de maintenir une autonomie stratégique » ([source](https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope)) |
 | Maintenir la pleine participation de la France à l'OTAN | · | — |

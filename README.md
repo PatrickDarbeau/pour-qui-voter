@@ -110,10 +110,10 @@ Further reading (in French): [how the measures were chosen](docs/methode_choix_m
 | Application | Feature-complete (questionnaire, results, candidate pages, print/PDF, share link, edit mode, second-round mode) |
 | Measure catalogue | 158 measures in 17 themes |
 | Candidates | 16 candidates, with profiles (birth, education, profession from Wikipedia; free-licence portraits from Wikimedia Commons) |
-| Positions | 777 **draft** positions for all 16 candidates, under human review (only 4 for Teddy Riner, whose programme is not published yet) |
+| Positions | 775 **draft** positions for all 16 candidates, under human review (only 4 for Teddy Riner, whose programme is not published yet) |
 | First public data pack | Planned for 15 January 2027 |
 
-The current data (`data/donnees.json`, version `2026.11.13-test.3`) is a **test pack**: do not use it to make a voting decision.
+The current data (`data/donnees.json`, version `2026.11.14-test`) is a **test pack**: do not use it to make a voting decision.
 
 ## Quick start
 
@@ -172,6 +172,7 @@ A demo can be published on GitHub Pages with the manual **"Démo en ligne"** wor
 - [Census of candidates](docs/recensement_candidats.md) (in French): declared, presumed and withdrawn candidates, cross-checked across several sources
 - [Candidate profiles and sources](docs/fiches_candidats.md)
 - [How the measures were chosen](docs/methode_choix_mesures.md) and [catalogue review note](docs/reflexion_catalogue_2026-11-14.md) (in French)
+- [Rules for recording positions](docs/regles_saisie_positions.md) (in French): values, figures, "neither option" stances, opposed pairs, "to be confirmed"
 - [Note to candidates](docs/candidats/note_aux_candidats.md) (in French): how campaigns can send their programme and answer the 158 measures, with the [reply questionnaire](docs/candidats/questionnaire_mesures.csv)
 
 ## Contributing

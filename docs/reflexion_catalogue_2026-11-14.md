@@ -99,7 +99,7 @@ La relecture de neutralité par au moins deux personnes de sensibilités différ
 | # | Proposition |
 |---|---|
 | B1 | **Règle d'entrée d'une mesure** : proposée par au moins deux candidats de partis différents, ou proposition phare d'un candidat, toujours assortie d'un contrepoint. Règle de sortie : orpheline au moment d'un pack réel. |
-| B2 | **Règles de saisie écrites, identiques pour tous** : « renvoi dos à dos = pas de position » ; « seuil chiffré » (A2) ; « déduite d'un principe général = à confirmer » (déjà appliquée). À intégrer à la consigne d'Hermès. |
+| B2 | ✅ *Appliqué le 14/11/2026 : [regles_saisie_positions.md](regles_saisie_positions.md).* **Règles de saisie écrites, identiques pour tous** : « renvoi dos à dos = pas de position » ; « seuil chiffré » (A2) ; « déduite d'un principe général = à confirmer » (déjà appliquée). À intégrer à la consigne d'Hermès. |
 | B3 | **Relecture de neutralité croisée** (au moins deux relecteurs de sensibilités différentes) avant le 15/01/2027, avec une grille simple : formulation neutre ? contrepoint juste ? fait vérifié ? |
 | B4 | **Vérifier chaque statu quo** sur Légifrance, service-public.fr ou vie-publique.fr, avec la date de vérification. |
 | B5 | **Compiler chaque semaine les propositions « hors catalogue »** des relevés d'Hermès, pour décider des ajouts sur une base objective (nombre de candidats, diversité des bords). |
@@ -109,9 +109,9 @@ La relecture de neutralité par au moins deux personnes de sensibilités différ
 
 | # | Proposition |
 |---|---|
-| C1 | Ajouter au README (et au LISEZMOI) une section **« Comment les mesures ont été choisies »** : origine, règles, part de subjectivité, limites, lien vers la note de méthode et vers cette note. |
-| C2 | Ajouter à la FAQ de l'application trois questions : **« Comment les mesures ont-elles été choisies ? »**, **« Pourquoi telle proposition n'y figure-t-elle pas ? »** (avec un renvoi vers les tickets pour la proposer), **« Que veulent dire "soutient en partie" et "à confirmer" ? »** |
-| C3 | Dire clairement, dans les deux, que le **catalogue évolue pendant la campagne** et que chaque changement est tracé. |
+| C1 | ✅ *Appliqué le 14/11/2026.* Ajouter au README (et au LISEZMOI) une section **« Comment les mesures ont été choisies »** : origine, règles, part de subjectivité, limites, lien vers la note de méthode et vers cette note. |
+| C2 | ✅ *Appliqué le 14/11/2026.* Ajouter à la FAQ de l'application trois questions : **« Comment les mesures ont-elles été choisies ? »**, **« Pourquoi telle proposition n'y figure-t-elle pas ? »** (avec un renvoi vers les tickets pour la proposer), **« Que veulent dire "soutient en partie" et "à confirmer" ? »** |
+| C3 | ✅ *Appliqué le 14/11/2026.* Dire clairement, dans les deux, que le **catalogue évolue pendant la campagne** et que chaque changement est tracé. |
 
 ### Ordre suggéré
 

@@ -45,6 +45,21 @@ class TestValider(unittest.TestCase):
         erreurs, _ = valider.valider(p)
         self.assertTrue(any("en double" in e for e in erreurs))
 
+    def test_regles_de_saisie(self):
+        """R4 : même valeur sur une paire opposée signalée ; R5 : presse non « à confirmer » signalée."""
+        p = copy.deepcopy(PACK)
+        m = next(x for x in p["mesures"] if x.get("opposee_a"))
+        c = "candidat_test"
+        p["candidats"].append({"id": c, "nom": "Test", "prenom": "Candidat"})
+        for mid in (m["id"], m["opposee_a"]):
+            p["positions"].append({"candidat": c, "mesure": mid, "valeur": -1, "source_url": "https://exemple.fr",
+                                   "source_type": "presse", "a_confirmer": False})
+        _, alertes = valider.valider(p)
+        self.assertTrue(any("même valeur -1 sur la paire" in a and c in a for a in alertes))
+        self.assertTrue(any("(R5)" in a and c in a for a in alertes))
+        _, alertes = valider.valider(copy.deepcopy(PACK))
+        self.assertFalse(any("sur la paire" in a or "(R5)" in a for a in alertes))
+
     def test_second_tour(self):
         p = copy.deepcopy(PACK)
         p["second_tour"] = {"actif": True, "qualifies": [p["candidats"][0]["id"]]}

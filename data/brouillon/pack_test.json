@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "version": "2026.11.13-test.3",
+  "version": "2026.11.14-test",
   "date": "2026-11-14",
   "origine": "officiel",
   "demo": false,
@@ -2309,26 +2309,6 @@
     },
     {
       "candidat": "arthaud",
-      "mesure": "eu1",
-      "valeur": -1,
-      "source_url": "https://www.lutte-ouvriere.org/portail/qui-sommes-nous/qui-sommes-nous-nos-idees-et-positions-politiques-quitter-lunion-europeenne-et-retrouver-de-la-souverainete-une-diversion-et-un-mensonge",
-      "source_type": "site_officiel",
-      "source_date": "2026-11-14",
-      "citation": "L'UE s'est toujours moquée des intérêts des travailleurs et des peuples.",
-      "a_confirmer": true
-    },
-    {
-      "candidat": "arthaud",
-      "mesure": "eu2",
-      "valeur": -1,
-      "source_url": "https://www.lutte-ouvriere.org/portail/qui-sommes-nous/qui-sommes-nous-europe",
-      "source_type": "site_officiel",
-      "source_date": "2026-11-14",
-      "citation": "Le rétablissement des frontières nationales se traduirait par une régression économique et sociale",
-      "a_confirmer": true
-    },
-    {
-      "candidat": "arthaud",
       "mesure": "eu3",
       "valeur": -1,
       "source_url": "https://www.lutte-ouvriere.org/portail/qui-sommes-nous/qui-sommes-nous-nos-idees-et-positions-politiques-quitter-lunion-europeenne-et-retrouver-de-la-souverainete-une-diversion-et-un-mensonge",
@@ -2920,7 +2900,7 @@
     {
       "candidat": "attal",
       "mesure": "edu2",
-      "valeur": 1,
+      "valeur": 0.5,
       "source_url": "https://attalpresident.fr/programme/education",
       "source_type": "site_officiel",
       "source_date": "2026-11-12",
@@ -3685,7 +3665,7 @@
       "source_type": "presse",
       "source_date": "2026-11-14",
       "citation": "s'il y a un Outre-mer qui veut être indépendant, on fait un référendum, cela ne me choque pas",
-      "a_confirmer": false
+      "a_confirmer": true
     },
     {
       "candidat": "dupont_aignan",
@@ -3705,7 +3685,7 @@
       "source_type": "presse",
       "source_date": "2026-11-14",
       "citation": "C'est à l'État de reprendre l'eau potable […] je suis prêt à mettre un milliard d'euros sur la table",
-      "a_confirmer": false
+      "a_confirmer": true
     },
     {
       "candidat": "dupont_aignan",
@@ -4560,7 +4540,7 @@
     {
       "candidat": "lisnard",
       "mesure": "eco9",
-      "valeur": 1,
+      "valeur": 0.5,
       "source_url": "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/",
       "source_type": "site_officiel",
       "source_date": "2026-11-12",
@@ -4860,7 +4840,7 @@
     {
       "candidat": "lisnard",
       "mesure": "jus5",
-      "valeur": 1,
+      "valeur": 0.5,
       "source_url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
       "source_type": "site_officiel",
       "source_date": "2026-11-12",
@@ -6470,7 +6450,7 @@
     {
       "candidat": "philippe",
       "mesure": "jus5",
-      "valeur": 1,
+      "valeur": 0.5,
       "source_url": "https://www.edouardphilippe.fr/programme/justice",
       "source_type": "site_officiel",
       "source_date": "2026-11-12",
@@ -8265,7 +8245,7 @@
       "source_type": "presse",
       "source_date": "2026-11-14",
       "citation": "La France doit s'y opposer avec fermeté : la diplomatie et la défense relèvent des États et doivent le rester",
-      "a_confirmer": false
+      "a_confirmer": true
     },
     {
       "candidat": "ruffin",
@@ -8274,8 +8254,8 @@
       "source_url": "https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope",
       "source_type": "presse",
       "source_date": "2026-11-14",
-      "citation": "La Commission dispose déjà d'assez de […]  ",
-      "a_confirmer": false
+      "citation": "La Commission dispose déjà d'assez de « compétences »",
+      "a_confirmer": true
     },
     {
       "candidat": "ruffin",
@@ -8500,7 +8480,7 @@
     {
       "candidat": "ruffin",
       "mesure": "trav1",
-      "valeur": 1,
+      "valeur": 0.5,
       "source_url": "https://nouspresident.fr/statut-travailleurs-essentiels/",
       "source_type": "site_officiel",
       "source_date": "2026-11-14",

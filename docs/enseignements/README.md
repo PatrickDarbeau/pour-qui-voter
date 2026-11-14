@@ -10,3 +10,4 @@ Une note datée est rédigée après **chaque recensement de sources et chaque s
 | 13/11/2026 | [n°4 — six candidats ajoutés (fiches), sans positions](2026-11-13_recensement_4.md) | [analyse](2026-11-13_analyse_comparative_4.md) |
 | 14/11/2026 | [n°5 — positions des six candidats ajoutés (relevés d'Hermès vérifiés) : 393 positions](2026-11-14_recensement_5.md) | [analyse](2026-11-14_analyse_comparative_5.md) |
 | 14/11/2026 | [n°6 — premières positions de Teddy Riner (presse) : 16 candidats classés](2026-11-14_recensement_6.md) | [analyse](2026-11-14_analyse_comparative_6.md) |
+| 14/11/2026 | [n°7 — règles de saisie écrites et appliquées aux 16 candidats](2026-11-14_recensement_7.md) | [analyse](2026-11-14_analyse_comparative_7.md) |

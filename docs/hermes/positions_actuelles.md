@@ -1,8 +1,8 @@
 # Positions déjà saisies dans le comparateur
 
-*Généré par `python outils/hermes_envoi.py` le 14/11/2026 (données 2026.11.13-test.3). Sert au mode « complément » : ne pas recopier ces positions, chercher ce qui manque.*
+*Généré par `python outils/hermes_envoi.py` le 14/11/2026 (données 2026.11.14-test). Sert au mode « complément » : ne pas recopier ces positions, chercher ce qui manque.*
 
-## arthaud — Nathalie Arthaud (31 positions sur 158 mesures)
+## arthaud — Nathalie Arthaud (29 positions sur 158 mesures)
 
 | Réf. | Mesure | Position | À confirmer | Source |
 |---|---|---|---|---|
@@ -13,8 +13,6 @@
 | edu4 | Supprimer Parcoursup et rétablir un accès de droit à l'université après le baccalauréat | soutient | oui | https://www.lutte-ouvriere.org/medias/document/fichiers/2026/11/Depliant-NA-3nov.pdf |
 | edu5 | Renforcer la sélection à l'entrée de l'université | s'oppose | oui | https://www.lutte-ouvriere.org/medias/document/fichiers/2026/11/Depliant-NA-3nov.pdf |
 | edu6 | Rendre le service national universel obligatoire | s'oppose | oui | https://www.lutte-ouvriere.org/medias/document/fichiers/2026/11/Depliant-NA-3nov.pdf |
-| eu1 | Renforcer l'intégration européenne | s'oppose | oui | https://www.lutte-ouvriere.org/portail/qui-sommes-nous/qui-sommes-nous-nos-idees-et-positions-politiques-quitter-lunion-europeenne-et-retrouver-de-la-souverainete-une-diversion-et-un-mensonge |
-| eu2 | Rendre des compétences aux États membres de l'Union européenne | s'oppose | oui | https://www.lutte-ouvriere.org/portail/qui-sommes-nous/qui-sommes-nous-europe |
 | eu3 | Organiser un référendum sur la sortie de l'Union européenne | s'oppose |  | https://www.lutte-ouvriere.org/portail/qui-sommes-nous/qui-sommes-nous-nos-idees-et-positions-politiques-quitter-lunion-europeenne-et-retrouver-de-la-souverainete-une-diversion-et-un-mensonge |
 | eu6 | Porter le budget de la défense à 3 % du PIB | s'oppose | oui | https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf |
 | eu7 | Rétablir un service militaire obligatoire | s'oppose | oui | https://www.lutte-ouvriere.org/medias/document/fichiers/2026/11/Depliant-NA-3nov.pdf |
@@ -77,7 +75,7 @@
 | eco10 | Augmenter l'investissement public, même au prix d'un déficit plus élevé | s'oppose | oui | https://attalpresident.fr/programme/dette-de-letat |
 | eco5 | Baisser les impôts de production des entreprises | soutient |  | https://attalpresident.fr/programme/mesures/loi-de-stabilite-fiscale |
 | eco9 | Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat | soutient |  | https://attalpresident.fr/programme |
-| edu2 | Augmenter le salaire des enseignants de 15 % | soutient |  | https://attalpresident.fr/programme/education |
+| edu2 | Augmenter le salaire des enseignants de 15 % | en partie |  | https://attalpresident.fr/programme/education |
 | eu1 | Renforcer l'intégration européenne | soutient | oui | https://attalpresident.fr/programme/frontieres |
 | eu2 | Rendre des compétences aux États membres de l'Union européenne | s'oppose | oui | https://attalpresident.fr/programme/frontieres |
 | eu6 | Porter le budget de la défense à 3 % du PIB | en partie | oui | https://attalpresident.fr/programme/frontieres |
@@ -165,9 +163,9 @@
 | num8 | Interdire l'usage du téléphone portable au collège et au lycée | soutient |  | https://www.debout-la-france.fr/projet/instruction-publique/ |
 | num9 | Héberger les données publiques sensibles uniquement chez des prestataires européens | soutient |  | https://www.debout-la-france.fr/projet/sciences-souverainete-industrielle/ |
 | om1 | Aligner le prix des produits de première nécessité des outre-mer sur celui de l'Hexagone | en partie |  | https://www.debout-la-france.fr/projet/outre-mer/ |
-| om2 | Permettre aux territoires d'outre-mer qui le demandent une autonomie élargie, validée par référendum local | en partie |  | https://la1ere.franceinfo.fr/nicolas-dupont-aignan-les-ultramarins-en-ont-ras-le-bol-des-petites-magouilles-politiciennes-dans-la-gestion-de-l-eau-1754289.html |
+| om2 | Permettre aux territoires d'outre-mer qui le demandent une autonomie élargie, validée par référendum local | en partie | oui | https://la1ere.franceinfo.fr/nicolas-dupont-aignan-les-ultramarins-en-ont-ras-le-bol-des-petites-magouilles-politiciennes-dans-la-gestion-de-l-eau-1754289.html |
 | om5 | Maintenir l'octroi de mer, ressource des collectivités d'outre-mer | en partie |  | https://www.debout-la-france.fr/projet/outre-mer/ |
-| om6 | Lancer un plan d'urgence pour l'accès à l'eau potable outre-mer | soutient |  | https://la1ere.franceinfo.fr/nicolas-dupont-aignan-les-ultramarins-en-ont-ras-le-bol-des-petites-magouilles-politiciennes-dans-la-gestion-de-l-eau-1754289.html |
+| om6 | Lancer un plan d'urgence pour l'accès à l'eau potable outre-mer | soutient | oui | https://la1ere.franceinfo.fr/nicolas-dupont-aignan-les-ultramarins-en-ont-ras-le-bol-des-petites-magouilles-politiciennes-dans-la-gestion-de-l-eau-1754289.html |
 | om7 | Supprimer le droit du sol à Mayotte | soutient |  | https://www.debout-la-france.fr/wp-content/uploads/2026/03/Immigration-et-assimilation-2026_03-03_Livret.pdf |
 | om8 | Maintenir le droit du sol à Mayotte dans les conditions actuelles | s'oppose |  | https://www.debout-la-france.fr/wp-content/uploads/2026/03/Immigration-et-assimilation-2026_03-03_Livret.pdf |
 | om9 | Renforcer l'aide aux billets d'avion entre les outre-mer et l'Hexagone | soutient |  | https://www.debout-la-france.fr/projet/outre-mer/ |
@@ -276,7 +274,7 @@
 | ecl2 | Construire de nouveaux réacteurs nucléaires | soutient |  | https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/ |
 | eco10 | Augmenter l'investissement public, même au prix d'un déficit plus élevé | s'oppose | oui | https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/ |
 | eco5 | Baisser les impôts de production des entreprises | soutient |  | https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/ |
-| eco9 | Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat | soutient | oui | https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/ |
+| eco9 | Ramener le déficit public sous 3 % du PIB avant la fin du quinquennat | en partie | oui | https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/ |
 | edu2 | Augmenter le salaire des enseignants de 15 % | soutient |  | https://www.unenouvelleenergie.fr/notre-programme/education/ |
 | edu4 | Supprimer Parcoursup et rétablir un accès de droit à l'université après le baccalauréat | en partie | oui | https://www.unenouvelleenergie.fr/notre-programme/sante/ |
 | edu7 | Réduire le financement public des écoles privées sous contrat | s'oppose |  | https://www.unenouvelleenergie.fr/notre-programme/education/ |
@@ -293,7 +291,7 @@
 | imm9 | Faire exécuter systématiquement les obligations de quitter le territoire (OQTF) | en partie | oui | https://www.unenouvelleenergie.fr/notre-programme/immigration/ |
 | jus1 | Instaurer des peines planchers | soutient |  | https://www.unenouvelleenergie.fr/notre-programme/securite/ |
 | jus2 | Développer les peines alternatives à la prison | en partie |  | https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/ |
-| jus5 | Construire 20 000 places de prison supplémentaires | soutient |  | https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/ |
+| jus5 | Construire 20 000 places de prison supplémentaires | en partie |  | https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/ |
 | jus6 | Abaisser la majorité pénale à 16 ans | soutient |  | https://www.unenouvelleenergie.fr/notre-programme/securite/ |
 | jus7 | Maintenir la justice spécifique des mineurs et l'excuse de minorité | s'oppose |  | https://www.unenouvelleenergie.fr/notre-programme/securite/ |
 | jus8 | Doubler le budget de la justice sur le quinquennat | en partie |  | https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/ |
@@ -453,7 +451,7 @@
 | imm7 | Réserver certaines prestations sociales aux Français (« priorité nationale ») | en partie | oui | https://www.edouardphilippe.fr/programme/immigration |
 | imm9 | Faire exécuter systématiquement les obligations de quitter le territoire (OQTF) | soutient |  | https://www.edouardphilippe.fr/programme/immigration |
 | jus1 | Instaurer des peines planchers | soutient |  | https://www.edouardphilippe.fr/programme/justice |
-| jus5 | Construire 20 000 places de prison supplémentaires | soutient |  | https://www.edouardphilippe.fr/programme/justice |
+| jus5 | Construire 20 000 places de prison supplémentaires | en partie |  | https://www.edouardphilippe.fr/programme/justice |
 | jus6 | Abaisser la majorité pénale à 16 ans | en partie | oui | https://www.edouardphilippe.fr/programme/justice |
 | jus7 | Maintenir la justice spécifique des mineurs et l'excuse de minorité | s'oppose | oui | https://www.edouardphilippe.fr/programme/justice |
 | num4 | Interdire la reconnaissance faciale dans l'espace public | s'oppose |  | https://www.edouardphilippe.fr/programme/securite |
@@ -673,8 +671,8 @@
 | edu2 | Augmenter le salaire des enseignants de 15 % | en partie |  | https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/ |
 | edu4 | Supprimer Parcoursup et rétablir un accès de droit à l'université après le baccalauréat | en partie |  | https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/ |
 | edu7 | Réduire le financement public des écoles privées sous contrat | en partie |  | https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/ |
-| eu1 | Renforcer l'intégration européenne | s'oppose |  | https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope |
-| eu2 | Rendre des compétences aux États membres de l'Union européenne | soutient |  | https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope |
+| eu1 | Renforcer l'intégration européenne | s'oppose | oui | https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope |
+| eu2 | Rendre des compétences aux États membres de l'Union européenne | soutient | oui | https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope |
 | eu4 | Sortir du commandement intégré de l'OTAN | en partie | oui | https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope |
 | imm4 | Régulariser les travailleurs sans papiers dans les métiers en tension | soutient |  | https://debout.fr/notre-manifeste/ |
 | imm5 | Limiter les régularisations de sans-papiers aux cas exceptionnels | s'oppose | oui | https://debout.fr/notre-manifeste/ |
@@ -697,7 +695,7 @@
 | retr8 | Réintégrer le port de charges lourdes et les postures pénibles dans le compte pénibilité | en partie |  | https://nouspresident.fr/statut-travailleurs-essentiels/ |
 | soli1 | Bloquer les prix des carburants en période de forte inflation | s'oppose | oui | https://nouspresident.fr/plan-de-redressement/ |
 | soli2 | Aider de façon ciblée les ménages modestes plutôt que bloquer les prix | soutient |  | https://nouspresident.fr/plan-de-redressement/ |
-| trav1 | Augmenter le SMIC de 10 % | soutient |  | https://nouspresident.fr/statut-travailleurs-essentiels/ |
+| trav1 | Augmenter le SMIC de 10 % | en partie |  | https://nouspresident.fr/statut-travailleurs-essentiels/ |
 | trav3 | Permettre aux entreprises de fixer la durée du travail par accord, au-delà de 35 heures | s'oppose | oui | https://nouspresident.fr/statut-travailleurs-essentiels/ |
 | trav6 | Indexer automatiquement les salaires sur l'inflation | soutient |  | https://nouspresident.fr/statut-travailleurs-essentiels/ |
 | trav7 | Réserver un tiers des sièges des conseils d'administration aux représentants des salariés | soutient |  | https://nouspresident.fr/pour-une-democratie-en-continu-vive-les-etats-generaux/ |

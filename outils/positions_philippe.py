@@ -45,7 +45,7 @@ P = {
     "sec8": (-1, SEC, "Édouard Philippe veut-il punir les consommateurs de drogue ? Oui", False),
     "sec9": (1, SEC, "Des amendes réellement payées, au besoin prélevées sur les prestations sociales", False),
     "jus1": (1, JUS, "Le rétablissement des peines planchers", False),
-    "jus5": (1, JUS, "Une loi d'accélération de la construction de prisons", False),
+    "jus5": (0.5, JUS, "Une loi d'accélération de la construction de prisons", False),  # R2 (règles de saisie, 14/11/2026)
     "jus6": (0.5, JUS, "Lever l'excuse de minorité pour les faits liés au narcotrafic et créer la comparution immédiate des mineurs", True),
     "jus7": (-1, JUS, "Lever l'excuse de minorité pour les faits liés au narcotrafic", True),
     "imm4": (-1, IMM, "Pas de régularisation massive […] il préfère […] des quotas pour choisir notre immigration économique", True),

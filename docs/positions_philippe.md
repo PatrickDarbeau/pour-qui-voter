@@ -2,7 +2,7 @@
 
 *Générée par `python outils/positions.py` depuis `outils/positions_philippe.py`. Sources consultées le 2026-11-12.*
 
-**46 positions renseignées sur 158 mesures** (20 soutient, 9 en partie, 17 s'oppose) ; les 112 autres valent « ne se prononce pas » (aucun passage trouvé). 10 position(s) marquée(s) « à confirmer » ⚠.
+**46 positions renseignées sur 158 mesures** (19 soutient, 10 en partie, 17 s'oppose) ; les 112 autres valent « ne se prononce pas » (aucun passage trouvé). 10 position(s) marquée(s) « à confirmer » ⚠.
 
 ## 💶 Économie et fiscalité
 
@@ -196,7 +196,7 @@
 | Développer les peines alternatives à la prison | · | — |
 | Calculer le montant des amendes routières en fonction des revenus | · | — |
 | Maintenir des amendes routières forfaitaires identiques pour tous | · | — |
-| Construire 20 000 places de prison supplémentaires | **Soutient** | « Une loi d'accélération de la construction de prisons » ([source](https://www.edouardphilippe.fr/programme/justice)) |
+| Construire 20 000 places de prison supplémentaires | **Soutient en partie** | « Une loi d'accélération de la construction de prisons » ([source](https://www.edouardphilippe.fr/programme/justice)) |
 | Abaisser la majorité pénale à 16 ans | **Soutient en partie** ⚠ | « Lever l'excuse de minorité pour les faits liés au narcotrafic et créer la comparution immédiate des mineurs » ([source](https://www.edouardphilippe.fr/programme/justice)) |
 | Maintenir la justice spécifique des mineurs et l'excuse de minorité | **S'oppose** ⚠ | « Lever l'excuse de minorité pour les faits liés au narcotrafic » ([source](https://www.edouardphilippe.fr/programme/justice)) |
 | Doubler le budget de la justice sur le quinquennat | · | — |

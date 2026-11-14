@@ -2,7 +2,7 @@
 
 *Générée par `python outils/positions.py` depuis `outils/positions_arthaud.py`. Sources consultées le 2026-11-14.*
 
-**31 positions renseignées sur 158 mesures** (9 soutient, 2 en partie, 20 s'oppose) ; les 127 autres valent « ne se prononce pas » (aucun passage trouvé). 23 position(s) marquée(s) « à confirmer » ⚠.
+**29 positions renseignées sur 158 mesures** (9 soutient, 2 en partie, 18 s'oppose) ; les 129 autres valent « ne se prononce pas » (aucun passage trouvé). 21 position(s) marquée(s) « à confirmer » ⚠.
 
 ## 💶 Économie et fiscalité
 
@@ -220,8 +220,8 @@
 
 | Mesure | Position | Extrait du programme |
 |---|---|---|
-| Renforcer l'intégration européenne | **S'oppose** ⚠ | « L'UE s'est toujours moquée des intérêts des travailleurs et des peuples. » ([source](https://www.lutte-ouvriere.org/portail/qui-sommes-nous/qui-sommes-nous-nos-idees-et-positions-politiques-quitter-lunion-europeenne-et-retrouver-de-la-souverainete-une-diversion-et-un-mensonge)) |
-| Rendre des compétences aux États membres de l'Union européenne | **S'oppose** ⚠ | « Le rétablissement des frontières nationales se traduirait par une régression économique et sociale » ([source](https://www.lutte-ouvriere.org/portail/qui-sommes-nous/qui-sommes-nous-europe)) |
+| Renforcer l'intégration européenne | · | — |
+| Rendre des compétences aux États membres de l'Union européenne | · | — |
 | Organiser un référendum sur la sortie de l'Union européenne | **S'oppose** | « Sortir de l'Union européenne ne réglera pas les problèmes des travailleurs. » ([source](https://www.lutte-ouvriere.org/portail/qui-sommes-nous/qui-sommes-nous-nos-idees-et-positions-politiques-quitter-lunion-europeenne-et-retrouver-de-la-souverainete-une-diversion-et-un-mensonge)) |
 | Sortir du commandement intégré de l'OTAN | · | — |
 | Maintenir la pleine participation de la France à l'OTAN | · | — |
