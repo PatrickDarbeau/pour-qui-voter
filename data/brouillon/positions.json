@@ -5442,6 +5442,46 @@
       "a_confirmer": false
     },
     {
+      "candidat": "riner",
+      "mesure": "eco10",
+      "valeur": -1,
+      "source_url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html",
+      "source_type": "presse",
+      "source_date": "2026-11-14",
+      "citation": "nous ne sommes pas condamnés à subir la dette. On doit savoir dépenser moins et réinjecter mieux",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "riner",
+      "mesure": "trav3",
+      "valeur": 0.5,
+      "source_url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html",
+      "source_type": "presse",
+      "source_date": "2026-11-14",
+      "citation": "En sortant du carcan figé des 35 heures, mais sans le remettre en question",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "riner",
+      "mesure": "retr5",
+      "valeur": 0.5,
+      "source_url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html",
+      "source_type": "presse",
+      "source_date": "2026-11-14",
+      "citation": "tout en gardant notre système solidaire par répartition […] Et je n'exclus pas une part de capitalisation",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "riner",
+      "mesure": "retr8",
+      "valeur": 0.5,
+      "source_url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html",
+      "source_type": "presse",
+      "source_date": "2026-11-14",
+      "citation": "Tout en prenant en compte un critère important pour moi, celui de la pénibilité de certains métiers",
+      "a_confirmer": true
+    },
+    {
       "candidat": "roussel",
       "mesure": "edu1",
       "valeur": 1,

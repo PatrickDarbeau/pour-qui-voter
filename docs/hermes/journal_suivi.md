@@ -1,6 +1,6 @@
 # Journal de suivi de la veille d'Hermès
 
-*Généré par `python outils/hermes_rapports.py` le 14/11/2026 à 07:12. Ne pas modifier à la main : la colonne « Suite donnée » se tient dans `rapports_traites.txt`.*
+*Généré par `python outils/hermes_rapports.py` le 14/11/2026 à 07:26. Ne pas modifier à la main : la colonne « Suite donnée » se tient dans `rapports_traites.txt`.*
 
 Statuts : ✅ livré sur la VM · ⏳ en cours · 🕒 en file d'attente GLM · ⚠️ terminé sans livrable (à relancer) · ❓ tâche absente de la file. « Rapatrié » : copie présente dans `docs/hermes/rapports/`.
 
@@ -14,7 +14,7 @@ Statuts : ✅ livré sur la VM · ⏳ en cours · 🕒 en file d'attente GLM · 
 | 2026-11-14 | philippot | relevé | `17320d580083` | ✅ livré le 14/11 02:01 (31 Ko) | `2026-11-14_positions-philippot.md` | oui | 14/11/2026 : 67 citations vérifiées ; 67 positions saisies — note n°5 |
 | 2026-11-14 | ruffin | relevé | `ba1886b6f2ab` | ✅ livré le 14/11 02:32 (31 Ko) | `2026-11-14_positions-ruffin.md` | oui | 14/11/2026 : 56 positions saisies (7 déductions reprenant le passage d'une mesure voisine, à confirmer) ; agri2 écartée (aucune citation) — note n°5 |
 | 2026-11-14 | tondelier | relevé | `feede97b8b6d` | ✅ livré le 14/11 06:08 (43 Ko) | `2026-11-14_positions-tondelier.md` | oui | 14/11/2026 : 131 citations vérifiées ; 131 positions saisies (relance après échec de la 1re tâche) — note n°5 |
-| 2026-11-14 | riner | relevé | `63481aa99c2c` | ⏳ en cours | `2026-11-14_positions-riner.md` | non | — |
+| 2026-11-14 | riner | relevé | `63481aa99c2c` | ✅ livré le 14/11 07:20 (12 Ko) | `2026-11-14_positions-riner.md` | oui | 14/11/2026 : 4 citations vérifiées (BFMTV, reprise de l'entretien au Parisien) ; 4 positions saisies, toutes à confirmer (presse) — note n°6 |
 | 2026-11-07 | tondelier | relevé | `f3eec234c734` | ✅ livré le 14/11 06:08 (43 Ko) | `2026-11-14_positions-tondelier.md` | oui | 14/11/2026 : 131 citations vérifiées ; 131 positions saisies (relance après échec de la 1re tâche) — note n°5 |
 
 ## Veilles ponctuelles

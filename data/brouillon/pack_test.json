@@ -2082,7 +2082,7 @@
       ],
       "consulte_le": "2026-11-12",
       "a_verifier": [
-        "Site « La France qu'on veut » : adresse probable riner2027.fr (adresse de contact du candidat), hors service le 13/11/2026 ; seules trois pistes de programme rapportées par la presse (09/11/2026)"
+        "Site « La France qu'on veut » : adresse probable riner2027.fr (adresse de contact du candidat), hors service le 13/11/2026 ; seules trois pistes de programme rapportées par la presse (09/11/2026) ; 4 positions relevées dans la presse le 14/11/2026, à confirmer"
       ]
     },
     {
@@ -7678,6 +7678,46 @@
       "a_confirmer": false
     },
     {
+      "candidat": "riner",
+      "mesure": "eco10",
+      "valeur": -1,
+      "source_url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html",
+      "source_type": "presse",
+      "source_date": "2026-11-14",
+      "citation": "nous ne sommes pas condamnés à subir la dette. On doit savoir dépenser moins et réinjecter mieux",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "riner",
+      "mesure": "trav3",
+      "valeur": 0.5,
+      "source_url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html",
+      "source_type": "presse",
+      "source_date": "2026-11-14",
+      "citation": "En sortant du carcan figé des 35 heures, mais sans le remettre en question",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "riner",
+      "mesure": "retr5",
+      "valeur": 0.5,
+      "source_url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html",
+      "source_type": "presse",
+      "source_date": "2026-11-14",
+      "citation": "tout en gardant notre système solidaire par répartition […] Et je n'exclus pas une part de capitalisation",
+      "a_confirmer": true
+    },
+    {
+      "candidat": "riner",
+      "mesure": "retr8",
+      "valeur": 0.5,
+      "source_url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html",
+      "source_type": "presse",
+      "source_date": "2026-11-14",
+      "citation": "Tout en prenant en compte un critère important pour moi, celui de la pénibilité de certains métiers",
+      "a_confirmer": true
+    },
+    {
       "candidat": "roussel",
       "mesure": "edu1",
       "valeur": 1,
@@ -9969,6 +10009,6 @@
     }
   ],
   "journal": [
-    "Pack de test : 158 mesures, 16 candidats dont 15 avec positions en brouillon à relire ; positions non encore saisies : Riner."
+    "Pack de test : 158 mesures, 16 candidats dont 16 avec positions en brouillon à relire ; positions non encore saisies : aucun."
   ]
 }

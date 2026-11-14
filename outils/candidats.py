@@ -212,7 +212,7 @@ CANDIDATS = [
         "slogan": "La France qu'on veut",
         "site_officiel": None, "site_type": None,
         "sources": ["https://lcp.fr/actualites/le-judoka-teddy-riner-annonce-sa-candidature-a-l-election-presidentielle-de-2027-444920"],
-        "a_verifier": ["Site « La France qu'on veut » : adresse probable riner2027.fr (adresse de contact du candidat), hors service le 13/11/2026 ; seules trois pistes de programme rapportées par la presse (09/11/2026)"],
+        "a_verifier": ["Site « La France qu'on veut » : adresse probable riner2027.fr (adresse de contact du candidat), hors service le 13/11/2026 ; seules trois pistes de programme rapportées par la presse (09/11/2026) ; 4 positions relevées dans la presse le 14/11/2026, à confirmer"],
     },
     {
         "id": "roussel", "prenom": "Fabien", "nom": "Roussel", "parti": "Parti communiste français",

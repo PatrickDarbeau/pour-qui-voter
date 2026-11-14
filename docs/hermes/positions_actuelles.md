@@ -601,9 +601,14 @@
 | trav5 | Allonger la durée d'indemnisation du chômage et annuler les dernières réformes | s'oppose |  | https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf |
 | trav8 | Supprimer les cotisations salariales sur les heures supplémentaires | soutient |  | https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf |
 
-## riner — Teddy Riner (0 positions sur 158 mesures)
+## riner — Teddy Riner (4 positions sur 158 mesures)
 
-Aucune position saisie.
+| Réf. | Mesure | Position | À confirmer | Source |
+|---|---|---|---|---|
+| eco10 | Augmenter l'investissement public, même au prix d'un déficit plus élevé | s'oppose | oui | https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html |
+| retr5 | Introduire une part de capitalisation dans le financement des retraites | en partie | oui | https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html |
+| retr8 | Réintégrer le port de charges lourdes et les postures pénibles dans le compte pénibilité | en partie | oui | https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html |
+| trav3 | Permettre aux entreprises de fixer la durée du travail par accord, au-delà de 35 heures | en partie | oui | https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-retraites-35h-pouvoir-d-achat-les-premieres-pistes-du-programme-de-teddy-riner_AV-202611090492.html |
 
 ## roussel — Fabien Roussel (27 positions sur 158 mesures)
 

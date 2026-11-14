@@ -83,7 +83,7 @@ The method is explained in plain French in the app (*Méthode* page) and impleme
 | Application | Feature-complete (questionnaire, results, candidate pages, print/PDF, share link, edit mode, second-round mode) |
 | Measure catalogue | 158 measures in 17 themes |
 | Candidates | 16 candidates, with profiles (birth, education, profession from Wikipedia; free-licence portraits from Wikimedia Commons) |
-| Positions | 773 **draft** positions for 15 candidates, under human review; Teddy Riner is listed but not ranked yet |
+| Positions | 777 **draft** positions for all 16 candidates, under human review (only 4 for Teddy Riner, whose programme is not published yet) |
 | First public data pack | Planned for 15 January 2027 |
 
 The current data (`data/donnees.json`, version `2026.11.13-test.3`) is a **test pack**: do not use it to make a voting decision.
