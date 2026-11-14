@@ -48,7 +48,7 @@
   - il a conclu à tort qu'une candidate « s'opposait » aux deux options d'un même débat ;
   - des rattachements à des mesures chiffrées étaient trop larges.
 
-  C'est pourquoi **rien de ce qu'il produit n'est saisi sans vérification**.
+  C'est pourquoi **rien de ce qu'il produit n'est saisi sans un minimum de vérification**.
 
 ---
 
