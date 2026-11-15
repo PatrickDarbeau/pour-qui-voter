@@ -10,7 +10,7 @@ Usage : python outils/hermes_rapports.py [--etat]
 
 Les livrables restent toujours sur la VM (sauvegarde) : si Hermès est injoignable, rien n'est perdu ;
 relancer simplement l'outil plus tard. À lancer au début de chaque session de travail sur les positions.
-Prérequis : alias SSH « hermes » (clé installée).
+Prérequis : alias SSH « hermes » (clé installée ; sous Windows, clé chargée dans l'agent ssh-agent).
 """
 import hashlib
 import json
@@ -26,6 +26,11 @@ LOCAL = RACINE / "docs" / "hermes" / "rapports"
 DISTANT = "/home/patrick/workspace/Projets/pour-qui-voter"
 MOTIFS = ["*_positions-*.md", "*_veille-*.md", "*_sources-*.md"]
 H = RACINE / "docs" / "hermes"
+# Sous Windows, passer par le client OpenSSH du système : il utilise l'agent ssh-agent de Windows
+# (clé protégée par une phrase de passe), que le ssh de Git Bash ne voit pas.
+_OPENSSH = Path(r"C:\Windows\System32\OpenSSH")
+SSH = str(_OPENSSH / "ssh.exe") if (_OPENSSH / "ssh.exe").exists() else "ssh"
+SCP = str(_OPENSSH / "scp.exe") if (_OPENSSH / "scp.exe").exists() else "scp"
 # Lecture groupée de l'état de la veille sur la VM (états par semaine, échéances, file GLM, livrables)
 ETAT_VM = r"""python3 - <<'PY'
 import json, glob, os
@@ -46,7 +51,7 @@ PY"""
 
 
 def ssh(commande, timeout=30):
-    r = subprocess.run(["ssh", "-o", "ConnectTimeout=10", "-o", "BatchMode=yes", "hermes", commande],
+    r = subprocess.run([SSH, "-o", "ConnectTimeout=10", "-o", "BatchMode=yes", "hermes", commande],
                        capture_output=True, text=True, encoding="utf-8", timeout=timeout)
     if r.returncode != 0:
         raise ConnectionError(r.stderr.strip() or f"code {r.returncode}")
@@ -75,7 +80,7 @@ def main():
         if essai:
             print(f"  [état] {nom} ({motif})")
             continue
-        r = subprocess.run(["scp", "-q", "-o", "ConnectTimeout=10", f"hermes:{DISTANT}/{nom}", str(LOCAL / nom)])
+        r = subprocess.run([SCP, "-q", "-o", "BatchMode=yes", "-o", "ConnectTimeout=10", f"hermes:{DISTANT}/{nom}", str(LOCAL / nom)])
         print(f"  {'✓' if r.returncode == 0 else '✗ échec :'} {nom} ({motif})")
     try:
         print("\nFile GLM :")

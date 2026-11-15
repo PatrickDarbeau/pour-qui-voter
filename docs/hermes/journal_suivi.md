@@ -1,6 +1,6 @@
 # Journal de suivi de la veille d'Hermès
 
-*Généré par `python outils/hermes_rapports.py` le 14/11/2026 à 07:26. Ne pas modifier à la main : la colonne « Suite donnée » se tient dans `rapports_traites.txt`.*
+*Généré par `python outils/hermes_rapports.py` le 15/11/2026 à 11:13. Ne pas modifier à la main : la colonne « Suite donnée » se tient dans `rapports_traites.txt`.*
 
 Statuts : ✅ livré sur la VM · ⏳ en cours · 🕒 en file d'attente GLM · ⚠️ terminé sans livrable (à relancer) · ❓ tâche absente de la file. « Rapatrié » : copie présente dans `docs/hermes/rapports/`.
 
@@ -23,9 +23,28 @@ Statuts : ✅ livré sur la VM · ⏳ en cours · 🕒 en file d'attente GLM · 
 |---|---|---|---|---|---|
 | 2026-11-18 09:00 | `ea3775d1e075` | PQV-veille-2026-11-18 | pas encore | ⏸ en attente de l'échéance | — |
 | 2026-11-23 09:00 | `1bb4f9f59174` | PQV-veille-2026-11-23 | pas encore | ⏸ en attente de l'échéance | — |
+| 2026-11-15 07:00 | `ab0d6ebc3c32` | PQV-actualisation-2026-11-15-lepen | 2026-11-15 07:00 | `2026-11-15_veille-actualisation.md` | — |
+| 2026-11-15 07:00 | `7efe6ab510c7` | PQV-actualisation-2026-11-15-zemmour | 2026-11-15 07:00 | `2026-11-15_veille-actualisation.md` | — |
+| 2026-11-15 07:00 | `db1afd1406fe` | PQV-actualisation-2026-11-15-attal | 2026-11-15 07:00 | `2026-11-15_veille-actualisation.md` | — |
+| 2026-11-15 07:00 | `fad7663a1e5a` | PQV-actualisation-2026-11-15-roussel | 2026-11-15 07:00 | `2026-11-15_veille-actualisation.md` | — |
+| 2026-11-15 07:00 | `9223f99863ee` | PQV-actualisation-2026-11-15-retailleau | 2026-11-15 07:00 | `2026-11-15_veille-actualisation.md` | — |
+| 2026-11-15 07:00 | `575f4aaef6be` | PQV-actualisation-2026-11-15-lisnard | 2026-11-15 07:00 | `2026-11-15_veille-actualisation.md` | — |
+| 2026-11-15 07:00 | `b5e46d67c167` | PQV-actualisation-2026-11-15-philippe | 2026-11-15 07:00 | `2026-11-15_veille-actualisation.md` | — |
+| 2026-11-15 07:00 | `482e1d0df031` | PQV-actualisation-2026-11-15-glucksmann | 2026-11-15 07:00 | `2026-11-15_veille-actualisation.md` | — |
+| 2026-11-15 07:00 | `10016ee6c5ad` | PQV-actualisation-2026-11-15-melenchon | 2026-11-15 07:00 | `2026-11-15_veille-actualisation.md` | — |
+| 2026-11-15 07:00 | `b4efa72b3bc1` | PQV-actualisation-2026-11-15-synthese | 2026-11-15 07:00 | `2026-11-15_veille-actualisation.md` | — |
 
 ## Autres rapports (recherches ponctuelles)
 
 | Livrable | Rapatrié | Suite donnée |
 |---|---|---|
 | `2026-11-13_sources-lepen-riner.md` | oui | 13/11/2026 : citations vérifiées ; 15 positions de Marine Le Pen saisies ; Riner : aucune position (presse seulement) — note n°3 |
+| `2026-11-15_positions-attal.md` | oui | — |
+| `2026-11-15_positions-glucksmann.md` | oui | — |
+| `2026-11-15_positions-lepen.md` | oui | — |
+| `2026-11-15_positions-lisnard.md` | oui | — |
+| `2026-11-15_positions-melenchon.md` | oui | — |
+| `2026-11-15_positions-philippe.md` | oui | — |
+| `2026-11-15_positions-retailleau.md` | oui | — |
+| `2026-11-15_positions-roussel.md` | oui | — |
+| `2026-11-15_positions-zemmour.md` | oui | — |
